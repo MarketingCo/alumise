@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-charcoal: #1A202C;
+  --color-brand-blue: #2B6CB0;
+  --color-brand-grey: #CBD5E0;
+  --color-brand-white: #FFFFFF;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-brand-white text-brand-charcoal antialiased;
+  }
+}
