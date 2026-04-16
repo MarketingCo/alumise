@@ -82,7 +82,7 @@ export default function Footer() {
               </div>
               <div className="flex items-centre">
                 <Mail className="w-5 h-5 mr-4 text-brand-blue flex-shrink-0" />
-                <p className="text-sm font-bold">info@alumise.co.uk</p>
+                <p className="text-sm font-bold">info@alumise.co.uk (Serving Edinburgh & Lothians)</p>
               </div>
             </address>
           </div>
