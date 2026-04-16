@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Roboto } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -9,18 +9,12 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const roboto = Roboto({
-  variable: "--font-roboto",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
-
 export const metadata: Metadata = {
-  title: "Alumise | Commercial Aluminium Glazing Edinburgh",
-  description: "Edinburgh's premier commercial glazing specialists, delivering high-performance curtain walling and bespoke shopfronts.",
+  title: "Alumise | Premium Architectural Glazing Edinburgh & Lothians",
+  description: "The authority in advanced glazing solutions. Providing precision-engineered aluminium, uPVC, timber, and steel-look systems for luxury residential and commercial projects.",
   openGraph: {
-    title: "Alumise | Commercial Aluminium Glazing Edinburgh",
-    description: "Edinburgh's premier commercial glazing specialists, delivering high-performance curtain walling and bespoke shopfronts.",
+    title: "Alumise | Premium Architectural Glazing Edinburgh & Lothians",
+    description: "The authority in advanced glazing solutions. Providing precision-engineered aluminium, uPVC, timber, and steel-look systems for luxury residential and commercial projects.",
     url: "https://www.alumise.co.uk",
     siteName: "Alumise",
     locale: "en_GB",
@@ -46,7 +40,7 @@ export default function RootLayout({
               image: "https://www.alumise.co.uk/logo.png",
               "@id": "https://www.alumise.co.uk",
               url: "https://www.alumise.co.uk",
-              telephone: "0131 000 0000",
+              telephone: "",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Edinburgh",
@@ -63,7 +57,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} ${roboto.variable} font-[family-name:var(--font-roboto)] flex flex-col min-h-screen`}>
+      <body className={`${inter.variable} font-[family-name:var(--font-inter)] flex flex-col min-h-screen`}>
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

@@ -1,67 +1,72 @@
 'use client';
-import { projects } from '@/data/projects';
+
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { MapPin, ArrowRight, Building2 } from 'lucide-react';
+import { ArrowRight, MapPin, Building2 } from 'lucide-react';
+import { projects } from '@/data/projects';
 
 export default function ProjectsPage() {
   return (
     <div className="bg-white min-h-screen">
-      {/* Header Spacer */}
-      <div className="h-20 bg-brand-charcoal"></div>
-
-      {/* Hero Section */}
-      <section className="bg-brand-charcoal text-white py-24 px-4 relative overflow-hidden">
-        <div className="container mx-auto max-w-6xl relative z-10 text-center">
-          <motion.h1 
+      {/* Header */}
+      <section className="bg-brand-charcoal pt-40 pb-24 text-white">
+        <div className="container mx-auto px-4 max-w-7xl text-centre">
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-6xl md:text-8xl font-bold font-[family-name:var(--font-inter)] tracking-tighter uppercase mb-6"
           >
-            Project <span className="text-brand-blue">Showcase</span>
-          </motion.h1>
-          <p className="text-xl text-brand-grey max-w-2xl mx-auto font-light leading-relaxed">
-            Explore our portfolio of high-performance glazing installations across Edinburgh and the Lothians.
-          </p>
+            <h1 className="text-5xl md:text-8xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+              Defining the <span className="text-brand-blue">Skyline.</span>
+            </h1>
+            <p className="text-xl text-brand-grey max-w-2xl mx-auto font-light leading-relaxed">
+              Explore our portfolio of high-specification architectural glazing projects across Edinburgh and the Lothians.
+            </p>
+          </motion.div>
         </div>
       </section>
 
-      {/* Gallery Grid */}
-      <section className="py-32 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {projects.map((project, i) => (
-              <motion.div 
+      {/* Projects Grid */}
+      <section className="py-24">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {projects.map((project, idx) => (
+              <motion.div
                 key={project.slug}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="group cursor-pointer"
+                transition={{ delay: idx * 0.1 }}
+                className="group flex flex-col"
               >
-                <div className="relative aspect-[4/3] overflow-hidden bg-gray-100 rounded-sm mb-6 shadow-xl">
+                <Link href={`/projects/${project.slug}`} className="relative h-[450px] overflow-hidden mb-8 bg-gray-100">
                   <Image 
-                    src={project.image} 
-                    alt={project.title} 
-                    fill 
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-brand-charcoal opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
-                  <div className="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center gap-2 font-bold uppercase text-[10px] tracking-widest">
-                    View Details <ArrowRight size={14} />
+                  <div className="absolute inset-0 bg-brand-charcoal/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </Link>
+                <div className="space-y-4">
+                  <div className="flex items-centre space-x-4 text-[10px] uppercase tracking-[0.2em] font-bold text-brand-blue">
+                    <span className="flex items-centre"><MapPin className="w-3 h-3 mr-2" /> {project.location}</span>
+                    <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
+                    <span className="flex items-centre"><Building2 className="w-3 h-3 mr-2" /> {project.type}</span>
                   </div>
-                </div>
-                <div className="space-y-3 px-2">
-                  <div className="flex items-center gap-2 text-brand-blue font-black uppercase text-[10px] tracking-widest">
-                    <Building2 size={12} /> {project.type}
-                  </div>
-                  <h3 className="text-2xl font-bold text-brand-charcoal uppercase tracking-tight group-hover:text-brand-blue transition-colors">
+                  <h3 className="text-3xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight group-hover:text-brand-blue transition-colors">
                     {project.title}
                   </h3>
-                  <div className="flex items-center gap-2 text-gray-400 text-xs font-bold uppercase tracking-widest">
-                    <MapPin size={12} className="text-gray-300" /> {project.location}
-                  </div>
+                  <p className="text-gray-500 font-light leading-relaxed max-w-lg">
+                    {project.description}
+                  </p>
+                  <Link 
+                    href={`/projects/${project.slug}`}
+                    className="inline-flex items-centre text-[10px] uppercase tracking-widest font-bold border-b-2 border-brand-charcoal pb-2 group-hover:border-brand-blue group-hover:text-brand-blue transition-all"
+                  >
+                    View Project Case Study <ArrowRight className="ml-2 w-4 h-4" />
+                  </Link>
                 </div>
               </motion.div>
             ))}
@@ -69,12 +74,20 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-gray-50 px-4 text-center">
-        <div className="container mx-auto max-w-4xl space-y-10">
-          <h2 className="text-4xl font-bold text-brand-charcoal uppercase tracking-tighter">Your project could be next.</h2>
-          <Link href="/#contact" className="inline-block bg-brand-blue text-white px-12 py-6 rounded-sm font-black uppercase text-xs tracking-[0.3em] transition-all hover:bg-blue-700 shadow-2xl">
-            Start Your Consultation
+      {/* Final CTA */}
+      <section className="bg-gray-50 py-32 border-t border-gray-100">
+        <div className="container mx-auto px-4 max-w-4xl text-centre">
+          <h2 className="text-4xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+            Your Vision, <span className="text-brand-blue">Precisely Engineered.</span>
+          </h2>
+          <p className="text-lg text-gray-500 font-light mb-12">
+            Whether it's a luxury residential renovation or a multi-storey commercial facade, we bring the same level of engineering exactitude to every project.
+          </p>
+          <Link 
+            href="/quote" 
+            className="inline-block bg-brand-charcoal text-white hover:bg-brand-blue px-12 py-6 rounded-sm font-bold uppercase tracking-widest text-xs transition-all shadow-xl"
+          >
+            Start Your Project
           </Link>
         </div>
       </section>

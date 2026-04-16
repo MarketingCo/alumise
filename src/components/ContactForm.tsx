@@ -8,7 +8,7 @@ export default function ContactForm() {
 
   if (state.succeeded) {
       return (
-        <div className="bg-green-50 border border-green-200 text-green-800 rounded-lg p-6 text-center">
+        <div className="bg-green-50 border border-green-200 text-green-800 rounded-lg p-6 text-centre">
           <h3 className="text-xl font-bold mb-2">Thank you!</h3>
           <p>Your commercial glazing enquiry has been received. Our technical team will be in touch shortly.</p>
         </div>
@@ -79,7 +79,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={state.submitting}
-        className="w-full bg-brand-blue hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-md transition-colors flex justify-center items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+        className="w-full bg-brand-blue hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-md transition-colors flex justify-centre items-centre gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
       >
         {state.submitting ? 'Submitting...' : 'Send Technical Enquiry'}
         {!state.submitting && <Send size={18} />}

@@ -369,7 +369,7 @@
     "image-size-responsive": {
       "id": "image-size-responsive",
       "title": "Serves images with appropriate resolution",
-      "description": "Image natural dimensions should be proportional to the display size and the pixel ratio to maximize image clarity. [Learn how to provide responsive images](https://web.dev/articles/serve-responsive-images).",
+      "description": "Image natural dimensions should be proportional to the display size and the pixel ratio to maximise image clarity. [Learn how to provide responsive images](https://web.dev/articles/serve-responsive-images).",
       "score": 1,
       "scoreDisplayMode": "binary",
       "details": {
@@ -1883,7 +1883,7 @@
     },
     "aria-dialog-name": {
       "id": "aria-dialog-name",
-      "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` have accessible names.",
+      "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` have accessible names",
       "description": "ARIA dialog elements without accessible names may prevent screen readers users from discerning the purpose of these elements. [Learn how to make ARIA dialog elements more accessible](https://dequeuniversity.com/rules/axe/4.11/aria-dialog-name).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
@@ -1999,7 +1999,7 @@
     },
     "aria-required-children": {
       "id": "aria-required-children",
-      "title": "Elements with an ARIA `[role]` that require children to contain a specific `[role]` have all required children.",
+      "title": "Elements with an ARIA `[role]` that require children to contain a specific `[role]` have all required children",
       "description": "Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more about roles and required children elements](https://dequeuniversity.com/rules/axe/4.11/aria-required-children).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
@@ -2035,7 +2035,7 @@
     },
     "aria-text": {
       "id": "aria-text",
-      "title": "Elements with the `role=text` attribute do not have focusable descendents.",
+      "title": "Elements with the `role=text` attribute do not have focusable descendents",
       "description": "Adding `role=text` around a text node split by markup enables VoiceOver to treat it as one phrase, but the element's focusable descendents will not be announced. [Learn more about the `role=text` attribute](https://dequeuniversity.com/rules/axe/4.11/aria-text).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
@@ -2134,10 +2134,10 @@
       "score": null,
       "scoreDisplayMode": "notApplicable"
     },
-    "color-contrast": {
-      "id": "color-contrast",
-      "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+    "colour-contrast": {
+      "id": "colour-contrast",
+      "title": "Background and foreground colors do not have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient colour contrast](https://dequeuniversity.com/rules/axe/4.11/colour-contrast).",
       "score": 0,
       "scoreDisplayMode": "binary",
       "details": {
@@ -2170,7 +2170,7 @@
               },
               "snippet": "<p class=\"text-blue-100\">",
               "nodeLabel": "Years Commercial Experience",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #dbeafe, background color: #2b6cb0, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              "explanation": "Fix any of the following:\n  Element has insufficient colour contrast of 4.44 (foreground colour: #dbeafe, background colour: #2b6cb0, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
               "type": "subitems",
@@ -2212,7 +2212,7 @@
               },
               "snippet": "<p class=\"text-blue-100\">",
               "nodeLabel": "Structural Compliance",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #dbeafe, background color: #2b6cb0, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              "explanation": "Fix any of the following:\n  Element has insufficient colour contrast of 4.44 (foreground colour: #dbeafe, background colour: #2b6cb0, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
               "type": "subitems",
@@ -2254,7 +2254,7 @@
               },
               "snippet": "<p class=\"text-blue-100\">",
               "nodeLabel": "Edinburgh-Based Installers",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #dbeafe, background color: #2b6cb0, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              "explanation": "Fix any of the following:\n  Element has insufficient colour contrast of 4.44 (foreground colour: #dbeafe, background colour: #2b6cb0, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
               "type": "subitems",
@@ -2296,7 +2296,7 @@
               },
               "snippet": "<p class=\"text-blue-100\">",
               "nodeLabel": "Strict Project Deadlines Met",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #dbeafe, background color: #2b6cb0, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              "explanation": "Fix any of the following:\n  Element has insufficient colour contrast of 4.44 (foreground colour: #dbeafe, background colour: #2b6cb0, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
               "type": "subitems",
@@ -2327,7 +2327,7 @@
           "type": "debugdata",
           "impact": "serious",
           "tags": [
-            "cat.color",
+            "cat.colour",
             "wcag2aa",
             "wcag143",
             "TTv5",
@@ -2343,7 +2343,7 @@
     },
     "definition-list": {
       "id": "definition-list",
-      "title": "`<dl>`'s contain only properly-ordered `<dt>` and `<dd>` groups, `<script>`, `<template>` or `<div>` elements.",
+      "title": "`<dl>`'s contain only properly-ordered `<dt>` and `<dd>` groups, `<script>`, `<template>` or `<div>` elements",
       "description": "When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output. [Learn how to structure definition lists correctly](https://dequeuniversity.com/rules/axe/4.11/definition-list).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
@@ -2386,7 +2386,7 @@
     },
     "empty-heading": {
       "id": "empty-heading",
-      "title": "All heading elements contain content.",
+      "title": "All heading elements contain content",
       "description": "A heading with no content or inaccessible text prevent screen reader users from accessing information on the page's structure. [Learn more about headings](https://dequeuniversity.com/rules/axe/4.11/empty-heading).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
@@ -2501,14 +2501,14 @@
     },
     "html-xml-lang-mismatch": {
       "id": "html-xml-lang-mismatch",
-      "title": "`<html>` element has an `[xml:lang]` attribute with the same base language as the `[lang]` attribute.",
+      "title": "`<html>` element has an `[xml:lang]` attribute with the same base language as the `[lang]` attribute",
       "description": "If the webpage does not specify a consistent language, then the screen reader might not announce the page's text correctly. [Learn more about the `lang` attribute](https://dequeuniversity.com/rules/axe/4.11/html-xml-lang-mismatch).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
     },
     "identical-links-same-purpose": {
       "id": "identical-links-same-purpose",
-      "title": "Identical links have the same purpose.",
+      "title": "Identical links have the same purpose",
       "description": "Links with the same destination should have the same description, to help users understand the link's purpose and decide whether to follow it. [Learn more about identical links](https://dequeuniversity.com/rules/axe/4.11/identical-links-same-purpose).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
@@ -2522,14 +2522,14 @@
     },
     "image-redundant-alt": {
       "id": "image-redundant-alt",
-      "title": "Image elements do not have `[alt]` attributes that are redundant text.",
+      "title": "Image elements do not have `[alt]` attributes that are redundant text",
       "description": "Informative elements should aim for short, descriptive alternative text. Alternative text that is exactly the same as the text adjacent to the link or image is potentially confusing for screen reader users, because the text will be read twice. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
     },
     "input-button-name": {
       "id": "input-button-name",
-      "title": "Input buttons have discernible text.",
+      "title": "Input buttons have discernible text",
       "description": "Adding discernable and accessible text to input buttons may help screen reader users understand the purpose of the input button. [Learn more about input buttons](https://dequeuniversity.com/rules/axe/4.11/input-button-name).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
@@ -2543,7 +2543,7 @@
     },
     "label-content-name-mismatch": {
       "id": "label-content-name-mismatch",
-      "title": "Elements with visible text labels have matching accessible names.",
+      "title": "Elements with visible text labels have matching accessible names",
       "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.11/label-content-name-mismatch).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
@@ -2572,7 +2572,7 @@
     },
     "landmark-one-main": {
       "id": "landmark-one-main",
-      "title": "Document has a main landmark.",
+      "title": "Document has a main landmark",
       "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
       "score": 1,
       "scoreDisplayMode": "binary",
@@ -2616,14 +2616,14 @@
     },
     "link-in-text-block": {
       "id": "link-in-text-block",
-      "title": "Links are distinguishable without relying on color.",
+      "title": "Links are distinguishable without relying on colour",
       "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
     },
     "list": {
       "id": "list",
-      "title": "Lists contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+      "title": "Lists contain only `<li>` elements and script supporting elements (`<script>` and `<template>`)",
       "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).",
       "score": 1,
       "scoreDisplayMode": "binary",
@@ -2674,7 +2674,7 @@
     },
     "meta-viewport": {
       "id": "meta-viewport",
-      "title": "`[user-scalable=\"no\"]` is not used in the `<meta name=\"viewport\">` element and the `[maximum-scale]` attribute is not less than 5.",
+      "title": "`[user-scalable=\"no\"]` is not used in the `<meta name=\"viewport\">` element and the `[maximum-scale]` attribute is not less than 5",
       "description": "Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more about the viewport meta tag](https://dequeuniversity.com/rules/axe/4.11/meta-viewport).",
       "score": 1,
       "scoreDisplayMode": "binary",
@@ -2703,14 +2703,14 @@
     },
     "select-name": {
       "id": "select-name",
-      "title": "Select elements have associated label elements.",
+      "title": "Select elements have associated label elements",
       "description": "Form elements without effective labels can create frustrating experiences for screen reader users. [Learn more about the `select` element](https://dequeuniversity.com/rules/axe/4.11/select-name).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
     },
     "skip-link": {
       "id": "skip-link",
-      "title": "Skip links are focusable.",
+      "title": "Skip links are focusable",
       "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.11/skip-link).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
@@ -2724,21 +2724,21 @@
     },
     "table-duplicate-name": {
       "id": "table-duplicate-name",
-      "title": "Tables have different content in the summary attribute and `<caption>`.",
+      "title": "Tables have different content in the summary attribute and `<caption>`",
       "description": "The summary attribute should describe the table structure, while `<caption>` should have the onscreen title. Accurate table mark-up helps users of screen readers. [Learn more about summary and caption](https://dequeuniversity.com/rules/axe/4.11/table-duplicate-name).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
     },
     "table-fake-caption": {
       "id": "table-fake-caption",
-      "title": "Tables use `<caption>` instead of cells with the `[colspan]` attribute to indicate a caption.",
+      "title": "Tables use `<caption>` instead of cells with the `[colspan]` attribute to indicate a caption",
       "description": "Screen readers have features to make navigating tables easier. Ensuring that tables use the actual caption element instead of cells with the `[colspan]` attribute may improve the experience for screen reader users. [Learn more about captions](https://dequeuniversity.com/rules/axe/4.11/table-fake-caption).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
     },
     "target-size": {
       "id": "target-size",
-      "title": "Touch targets have sufficient size and spacing.",
+      "title": "Touch targets have sufficient size and spacing",
       "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
       "score": 1,
       "scoreDisplayMode": "binary",
@@ -2760,21 +2760,21 @@
     },
     "td-has-header": {
       "id": "td-has-header",
-      "title": "`<td>` elements in a large `<table>` have one or more table headers.",
+      "title": "`<td>` elements in a large `<table>` have one or more table headers",
       "description": "Screen readers have features to make navigating tables easier. Ensuring that `<td>` elements in a large table (3 or more cells in width and height) have an associated table header may improve the experience for screen reader users. [Learn more about table headers](https://dequeuniversity.com/rules/axe/4.11/td-has-header).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
     },
     "td-headers-attr": {
       "id": "td-headers-attr",
-      "title": "Cells in a `<table>` element that use the `[headers]` attribute refer to table cells within the same table.",
+      "title": "Cells in a `<table>` element that use the `[headers]` attribute refer to table cells within the same table",
       "description": "Screen readers have features to make navigating tables easier. Ensuring `<td>` cells using the `[headers]` attribute only refer to other cells in the same table may improve the experience for screen reader users. [Learn more about the `headers` attribute](https://dequeuniversity.com/rules/axe/4.11/td-headers-attr).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
     },
     "th-has-data-cells": {
       "id": "th-has-data-cells",
-      "title": "`<th>` elements and elements with `[role=\"columnheader\"/\"rowheader\"]` have data cells they describe.",
+      "title": "`<th>` elements and elements with `[role=\"columnheader\"/\"rowheader\"]` have data cells they describe",
       "description": "Screen readers have features to make navigating tables easier. Ensuring table headers always refer to some set of cells may improve the experience for screen reader users. [Learn more about table headers](https://dequeuniversity.com/rules/axe/4.11/th-has-data-cells).",
       "score": null,
       "scoreDisplayMode": "notApplicable"
@@ -4535,9 +4535,9 @@
           "group": "a11y-navigation"
         },
         {
-          "id": "color-contrast",
+          "id": "colour-contrast",
           "weight": 7,
-          "group": "a11y-color-contrast"
+          "group": "a11y-colour-contrast"
         },
         {
           "id": "definition-list",
@@ -4612,7 +4612,7 @@
         {
           "id": "link-in-text-block",
           "weight": 0,
-          "group": "a11y-color-contrast"
+          "group": "a11y-colour-contrast"
         },
         {
           "id": "link-name",
@@ -4969,7 +4969,7 @@
       "title": "Best practices",
       "description": "These items highlight common accessibility best practices."
     },
-    "a11y-color-contrast": {
+    "a11y-colour-contrast": {
       "title": "Contrast",
       "description": "These are opportunities to improve the legibility of your content."
     },
@@ -6888,7 +6888,7 @@
       },
       {
         "startTime": 30826.66,
-        "name": "lh:audit:color-contrast",
+        "name": "lh:audit:colour-contrast",
         "duration": 1.12,
         "entryType": "measure"
       },
@@ -7963,7 +7963,7 @@
         "audits[aria-valid-attr-value].details.headings[0].label",
         "audits[aria-valid-attr].details.headings[0].label",
         "audits[button-name].details.headings[0].label",
-        "audits[color-contrast].details.headings[0].label",
+        "audits[colour-contrast].details.headings[0].label",
         "audits[document-title].details.headings[0].label",
         "audits[heading-order].details.headings[0].label",
         "audits[html-has-lang].details.headings[0].label",
@@ -8115,11 +8115,11 @@
       "core/audits/accessibility/bypass.js | description": [
         "audits.bypass.description"
       ],
-      "core/audits/accessibility/color-contrast.js | failureTitle": [
-        "audits[color-contrast].title"
+      "core/audits/accessibility/colour-contrast.js | failureTitle": [
+        "audits[colour-contrast].title"
       ],
-      "core/audits/accessibility/color-contrast.js | description": [
-        "audits[color-contrast].description"
+      "core/audits/accessibility/colour-contrast.js | description": [
+        "audits[colour-contrast].description"
       ],
       "core/audits/accessibility/definition-list.js | title": [
         "audits[definition-list].title"
@@ -8753,10 +8753,10 @@
         "categoryGroups[a11y-best-practices].description"
       ],
       "core/config/default-config.js | a11yColorContrastGroupTitle": [
-        "categoryGroups[a11y-color-contrast].title"
+        "categoryGroups[a11y-colour-contrast].title"
       ],
       "core/config/default-config.js | a11yColorContrastGroupDescription": [
-        "categoryGroups[a11y-color-contrast].description"
+        "categoryGroups[a11y-colour-contrast].description"
       ],
       "core/config/default-config.js | a11yNamesLabelsGroupTitle": [
         "categoryGroups[a11y-names-labels].title"
