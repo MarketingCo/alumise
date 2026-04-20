@@ -43,31 +43,33 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section ref={containerRef} className="relative h-screen min-h-[700px] flex items-centre overflow-hidden bg-brand-charcoal text-white">
-        {/* Background Image with Overlay */}
+      <section ref={containerRef} className="relative h-[95vh] min-h-[750px] flex items-center overflow-hidden bg-black text-white">
+        {/* Background Image with Premium Treatment */}
         <motion.div style={{ y }} className="absolute inset-0 z-0">
           <Image 
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
-            alt="Luxury Residential Glazing"
+            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop"
+            alt="Ultra-Luxury Modern Glazing"
             fill
-            className="object-cover opacity-60 scale-105"
+            className="object-cover opacity-70 scale-110 sepia-[0.15] contrast-[1.1]"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-charcoal via-brand-charcoal/80 to-transparent"></div>
+          {/* Instagrammy Vignette and Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.4)_100%)]"></div>
         </motion.div>
 
-        <div className="container mx-auto px-4 max-w-7xl relative z-10 pt-20">
+        <div className="container mx-auto px-6 max-w-7xl relative z-10 pt-32">
           <div className="max-w-4xl">
             <motion.div
               custom={0}
               initial="hidden"
               animate="visible"
               variants={fadeIn as any}
-              className="inline-flex items-center space-x-2 px-3 py-1 bg-brand-blue/20 border border-brand-blue/30 rounded-full mb-6"
+              className="inline-flex items-center space-x-3 px-5 py-2 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full mb-10"
             >
-              <span className="w-2 h-2 bg-brand-blue rounded-full animate-pulse"></span>
-              <span className="text-xs uppercase tracking-[0.2em] font-bold text-brand-blue">
-                Manufactured In-House · Supply & Fit All Glazing
+              <span className="w-2 h-2 bg-gold-400 rounded-full animate-pulse shadow-[0_0_10px_#D4AF37]"></span>
+              <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-white/90">
+                Architectural Integrity · Master Craftsmen
               </span>
             </motion.div>
             
@@ -76,10 +78,10 @@ export default function Home() {
               initial="hidden"
               animate="visible"
               variants={fadeIn as any}
-              className="text-6xl md:text-8xl lg:text-[120px] font-bold leading-[0.9] mb-8 tracking-tighter"
+              className="text-7xl md:text-9xl lg:text-[140px] font-bold leading-[0.8] mb-12 tracking-tighter italic font-[family-name:var(--font-heading)]"
             >
-              Premium <br />
-              <span className="text-brand-blue">Glazing.</span>
+              The Light <br />
+              <span className="text-white/40 outline-text">Horizon.</span>
             </motion.h1>
             
             <motion.p 
@@ -87,9 +89,9 @@ export default function Home() {
               initial="hidden"
               animate="visible"
               variants={fadeIn as any}
-              className="text-2xl md:text-3xl text-white/90 max-w-2xl mb-10 leading-tight font-light"
+              className="text-xl md:text-2xl text-white/80 max-w-xl mb-12 leading-relaxed font-light tracking-wide"
             >
-              From in-house aluminium precision to high-performance timber and uPVC. We provide the complete architectural envelope for luxury homes and commercial projects.
+              Dissolving boundaries between architecture and nature. We engineer ultra-slim aluminium systems for the most discerning residential projects in Scotland.
             </motion.p>
             
             <motion.div 
@@ -97,19 +99,19 @@ export default function Home() {
               initial="hidden"
               animate="visible"
               variants={fadeIn as any}
-              className="flex flex-col sm:flex-row gap-5"
+              className="flex flex-col sm:flex-row gap-6"
             >
               <Link 
                 href="/products" 
-                className="group bg-brand-blue hover:bg-white text-brand-charcoal px-10 py-5 rounded-sm font-semibold tracking-wide transition-all flex items-centre justify-centre"
+                className="group bg-white text-black px-12 py-6 rounded-none font-bold uppercase text-xs tracking-[0.3em] transition-all flex items-center justify-center hover:bg-gold-500 hover:text-white"
               >
-                Explore Systems <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                View Collections
               </Link>
               <Link 
                 href="/quote" 
-                className="bg-white/5 backdrop-blur-sm border border-white/20 hover:border-white text-white px-10 py-5 rounded-sm font-semibold tracking-wide transition-all text-centre"
+                className="bg-transparent backdrop-blur-md border border-white/30 hover:border-white text-white px-12 py-6 rounded-none font-bold uppercase text-xs tracking-[0.3em] transition-all text-center"
               >
-                Request Consultation
+                Project Inquiry
               </Link>
             </motion.div>
           </div>

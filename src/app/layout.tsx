@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Cinzel, Jost } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CustomCursor from "@/components/CustomCursor";
 
-const inter = Inter({
-  variable: "--font-inter",
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
+  subsets: ["latin"],
+});
+
+const jost = Jost({
+  variable: "--font-jost",
   subsets: ["latin"],
 });
 
@@ -57,7 +63,8 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} font-[family-name:var(--font-inter)] flex flex-col min-h-screen`}>
+      <body className={`${cinzel.variable} ${jost.variable} font-[family-name:var(--font-jost)] flex flex-col min-h-screen`}>
+        <CustomCursor />
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

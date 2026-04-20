@@ -20,27 +20,27 @@ export default function Header() {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white text-brand-charcoal shadow-md py-3' : 'bg-brand-charcoal/80 backdrop-blur-md text-brand-white py-5'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled ? 'bg-white/90 backdrop-blur-2xl text-black shadow-2xl py-4' : 'bg-transparent text-white py-8'
       }`}
     >
-      {/* Top Bar (Optional, can be hidden on scroll for cleaner look) */}
+      {/* Top Bar - Ultra Minimal */}
       {!isScrolled && (
-        <div className="container mx-auto px-4 mb-4 flex justify-between items-centre text-[10px] uppercase tracking-[0.2em] opacity-60 max-w-7xl border-b border-white/10 pb-4">
-          <div className="flex space-x-6">
-            <span className="flex items-centre"><Phone className="w-3 h-3 mr-2" /> Email us</span>
-            <span className="flex items-centre"><Mail className="w-3 h-3 mr-2" /> info@alumise.co.uk</span>
+        <div className="container mx-auto px-6 mb-6 flex justify-between items-center text-[9px] uppercase tracking-[0.5em] opacity-40 max-w-7xl">
+          <div className="flex space-x-10">
+            <span className="flex items-center tracking-[0.6em]">Edinburgh HQ</span>
+            <span className="flex items-center tracking-[0.6em]">info@alumise.co.uk</span>
           </div>
           <div className="hidden sm:block">
-            Architectural Glazing Authority
+            Architectural Precision
           </div>
         </div>
       )}
 
-      <div className="container mx-auto px-4 flex justify-between items-centre max-w-7xl">
-        <Link href="/" className="flex items-centre group">
-          <span className="text-2xl font-bold tracking-tighter uppercase font-[family-name:var(--font-oswald)]">
-            Alumise<span className="text-brand-blue group-hover:text-brand-orange transition-colors">.</span>
+      <div className="container mx-auto px-6 flex justify-between items-center max-w-7xl">
+        <Link href="/" className="flex items-center group">
+          <span className="text-3xl font-black tracking-tighter uppercase font-[family-name:var(--font-heading)] italic">
+            Alumise<span className="text-gold-500 transition-colors">.</span>
           </span>
         </Link>
 
@@ -50,16 +50,16 @@ export default function Header() {
         </div>
 
         {/* CTA & Mobile Toggle */}
-        <div className="flex items-centre space-x-6">
+        <div className="flex items-center space-x-8">
           <Link 
             href="/quote" 
-            className={`hidden sm:block px-6 py-2.5 rounded-sm text-xs font-bold uppercase tracking-widest transition-all ${
+            className={`hidden sm:block px-8 py-3 rounded-none text-[10px] font-black uppercase tracking-[0.3em] transition-all border ${
               isScrolled 
-                ? 'bg-brand-charcoal text-white hover:bg-brand-blue' 
-                : 'bg-brand-blue text-white hover:bg-white hover:text-brand-charcoal'
+                ? 'bg-black text-white border-black hover:bg-gold-500 hover:border-gold-500' 
+                : 'bg-white/10 text-white border-white/20 backdrop-blur-md hover:bg-white hover:text-black'
             }`}
           >
-            Get a Quote
+            Inquire
           </Link>
           
           <button 
