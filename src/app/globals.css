@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-white: #FFFFFF;
+  --color-brand-black: #000000;
+  --color-brand-gold: #D4AF37;
+  --color-brand-grey: #71717A;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    cursor: none;
+  }
+  body {
+    @apply bg-brand-white text-brand-black antialiased text-lg;
+    cursor: none;
+  }
+  h1 { @apply text-6xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tighter font-bold mb-10 font-[family-name:var(--font-cinzel)]; }
+  h2 { @apply text-4xl md:text-6xl font-bold tracking-tight mb-8 font-[family-name:var(--font-cinzel)]; }
+  h3 { @apply text-2xl md:text-4xl font-bold mb-6 font-[family-name:var(--font-cinzel)]; }
+  p { @apply text-xl md:text-2xl text-brand-grey font-light leading-relaxed mb-6 font-[family-name:var(--font-jost)]; }
+}
+
+/* Emergency Fallbacks */
+.bg-brand-gold { background-color: #D4AF37 !important; }
+.text-brand-gold { color: #D4AF37 !important; }
+.bg-brand-black { background-color: #000000 !important; }
+.text-brand-black { color: #000000 !important; }
+.bg-brand-white { background-color: #ffffff !important; }
+.text-brand-white { color: #ffffff !important; }

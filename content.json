@@ -1,0 +1,35 @@
+{
+  "businessName": "Alumise",
+  "industry": "Bespoke Architectural Glazing & Commercial Aluminium Manufacturing",
+  "designLanguage": "Architectural Luxury",
+  "visualArchetype": "The Minimalist Horizon",
+  "usp": "Precision-engineered commercial aluminium systems and luxury residential glazing manufactured in-house. Delivering light-maximizing systems and slimline frames for Edinburgh and the Lothians.",
+  "heroHeadline": "Premium Glazing. Manufactured In-House.",
+  "heroSubtext": "Alumise provides the complete architectural envelope. Whether it's a luxury residential extension featuring our bespoke bi-folds and roof lanterns, or high-performance commercial curtain walling, we manufacture, supply, and fit every detail—down to the custom aluminium trims.",
+  "services": [
+    {
+      "title": "Bespoke Bi-Folds & Sliding Doors",
+      "description": "Manufactured in-house to your exact specifications. Our slimline aluminium systems maximise light and space, creating seamless transitions for luxury homes and commercial spaces alike."
+    },
+    {
+      "title": "Roof Lights & Architectural Lanterns",
+      "description": "Illuminate your living space from above. We offer a full range of high-performance roof lanterns and flat skylights, engineered for elite thermal efficiency and stunning visual impact."
+    },
+    {
+      "title": "Commercial Curtain Walling & Shopfronts",
+      "description": "High-performance aluminium framing systems for retail, commercial, and major developments. Engineered for structural integrity and thermal precision."
+    },
+    {
+      "title": "Aluminium Trims & Custom Detailing",
+      "description": "The finishing touch. We fabricate custom aluminium trims and architectural detailing in-house, ensuring a flawless, precision-engineered finish for every glazing installation."
+    }
+  ],
+  "phone": "0131 210 0321",
+  "email": "info@alumise.co.uk",
+  "address": "Unit 2B, Eastfield Industrial Estate, Penicuik, EH26 8HA",
+  "colorPrimary": "#050505",
+  "colorSecondary": "#FFFFFF",
+  "googleFont": "Montserrat",
+  "googleFontBody": "Inter",
+  "slug": "alumise"
+}
