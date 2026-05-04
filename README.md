@@ -16,3 +16,6 @@ Deployed at: https://www.alumise.co.uk
 - Next.js
 - Tailwind CSS
 - Vercel
+
+## Notes
+- Shared address with Forge & Frame and Ballong Collective (Unit 2B, Penicuik)
