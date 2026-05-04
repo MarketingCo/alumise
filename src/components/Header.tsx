@@ -92,8 +92,11 @@ export default function Header() {
             
             <nav className="flex flex-col space-y-8 text-2xl font-bold uppercase tracking-tight">
               <Link href="/products" onClick={() => setIsMobileMenuOpen(false)}>Products</Link>
-              <Link href="/process" onClick={() => setIsMobileMenuOpen(false)}>Our Process</Link>
+              <Link href="/services" onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
+              <Link href="/locations" onClick={() => setIsMobileMenuOpen(false)}>Locations</Link>
               <Link href="/projects" onClick={() => setIsMobileMenuOpen(false)}>Projects</Link>
+              <Link href="/materials" onClick={() => setIsMobileMenuOpen(false)}>Materials</Link>
+              <Link href="/blog" onClick={() => setIsMobileMenuOpen(false)}>Insights</Link>
               <Link href="/trust" onClick={() => setIsMobileMenuOpen(false)}>Trust & Technical</Link>
               <Link href="/quote" onClick={() => setIsMobileMenuOpen(false)} className="text-brand-blue">Request Quote</Link>
             </nav>

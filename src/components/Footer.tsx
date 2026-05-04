@@ -22,6 +22,19 @@ export default function Footer() {
             </p>
           </div>
 
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-blue mb-8">Company</h4>
+            <ul className="space-y-4">
+              <li><Link href="/services" className="text-sm text-brand-grey hover:text-white transition-colors flex items-centre group">Services <ArrowUpRight className="w-3 h-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+              <li><Link href="/locations" className="text-sm text-brand-grey hover:text-white transition-colors flex items-centre group">Locations <ArrowUpRight className="w-3 h-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+              <li><Link href="/blog" className="text-sm text-brand-grey hover:text-white transition-colors flex items-centre group">Insights <ArrowUpRight className="w-3 h-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+              <li><Link href="/materials" className="text-sm text-brand-grey hover:text-white transition-colors flex items-centre group">Materials <ArrowUpRight className="w-3 h-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+              <li><Link href="/about" className="text-sm text-brand-grey hover:text-white transition-colors flex items-centre group">About Us <ArrowUpRight className="w-3 h-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+              <li><Link href="/contact" className="text-sm text-brand-grey hover:text-white transition-colors flex items-centre group">Contact <ArrowUpRight className="w-3 h-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+            </ul>
+          </div>
+
           {/* Product Categories */}
           <div>
             <h4 className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-blue mb-8">Systems</h4>
@@ -44,23 +57,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Material Solutions */}
-          <div>
-            <h4 className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-blue mb-8">Materials</h4>
-            <ul className="space-y-4">
-              {materials.map(mat => (
-                <li key={mat}>
-                  <Link 
-                    href={`/products?material=${mat.toLowerCase().replace(' ', '-')}`}
-                    className="text-sm text-brand-grey hover:text-white transition-colors flex items-centre group"
-                  >
-                    {mat} <ArrowUpRight className="w-3 h-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Contact & Location */}
           <div>
             <h4 className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-blue mb-8">Get in Touch</h4>
@@ -68,6 +64,7 @@ export default function Footer() {
               <div className="flex items-start">
                 <MapPin className="w-5 h-5 mr-4 text-brand-blue flex-shrink-0" />
                 <p className="text-sm text-brand-grey font-light">
+                  <span className="font-bold text-white">Alumise Ltd</span><br />
                   Unit 2B, Eastfield Industrial Estate,<br />
                   Penicuik, Midlothian,<br />
                   EH26 8HA

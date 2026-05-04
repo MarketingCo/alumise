@@ -78,20 +78,28 @@ export default function Home() {
               initial="hidden"
               animate="visible"
               variants={fadeIn as any}
-              className="text-7xl md:text-9xl lg:text-[140px] font-bold leading-[0.8] mb-12 tracking-tighter italic font-[family-name:var(--font-heading)]"
+              className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] mb-6 tracking-tighter italic font-[family-name:var(--font-heading)]"
             >
-              The Light <br />
-              <span className="text-white/40 outline-text">Horizon.</span>
+              Premium Aluminium Windows, Bifold Doors & Architectural Glazing
             </motion.h1>
+            <motion.h2 
+              custom={1}
+              initial="hidden"
+              animate="visible"
+              variants={fadeIn as any}
+              className="text-xl md:text-2xl font-light text-white/80 mb-12 tracking-wide max-w-2xl"
+            >
+              Edinburgh & Midlothian
+            </motion.h2>
             
             <motion.p 
               custom={2}
               initial="hidden"
               animate="visible"
               variants={fadeIn as any}
-              className="text-xl md:text-2xl text-white/80 max-w-xl mb-12 leading-relaxed font-light tracking-wide"
+              className="text-lg md:text-xl text-white/70 max-w-xl mb-12 leading-relaxed font-light tracking-wide"
             >
-              Dissolving boundaries between architecture and nature. We engineer ultra-slim aluminium systems for the most discerning residential projects in Scotland.
+              Manufactured in Penicuik. Installed across Edinburgh, the Lothians and Scotland. Specialising in bifold doors, sliding doors, roof lanterns, curtain walling and shopfronts.
             </motion.p>
             
             <motion.div 

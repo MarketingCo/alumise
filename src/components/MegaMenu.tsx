@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, DoorOpen, Layout, Grid3X3, Building2, Layers, TreeDeciduous, Hammer, ShieldCheck, Zap } from 'lucide-react';
+import { ChevronDown, DoorOpen, Layout, Grid3X3, Building2, Layers, TreeDeciduous, Hammer, ShieldCheck, Zap, MapPin } from 'lucide-react';
 import { categories, materials, products } from '@/data/products';
 
 const MegaMenu = () => {
@@ -16,6 +16,21 @@ const MegaMenu = () => {
   };
 
   const menuItems = [
+    {
+      title: 'Services',
+      slug: 'services',
+      columns: [
+        {
+          heading: 'What We Do',
+          icon: <Zap className="w-4 h-4 mr-2 text-brand-blue" />,
+          items: [
+            { name: 'Design & Engineering', href: '/services#design', desc: 'Precision CAD and structural analysis.' },
+            { name: 'Fabrication', href: '/services#fabrication', desc: 'Expert craftsmanship in our local facility.' },
+            { name: 'Installation', href: '/services#installation', desc: 'White-glove service by certified teams.' }
+          ]
+        }
+      ]
+    },
     {
       title: 'Products',
       slug: 'products',
@@ -57,6 +72,21 @@ const MegaMenu = () => {
             { name: 'Design & Engineering', href: '/process#design', desc: 'Precision CAD and structural analysis.' },
             { name: 'Fabrication', href: '/process#fabrication', desc: 'Expert craftsmanship in our local facility.' },
             { name: 'Installation', href: '/process#installation', desc: 'White-glove service by certified teams.' }
+          ]
+        }
+      ]
+    },
+    {
+      title: 'Locations',
+      slug: 'locations',
+      columns: [
+        {
+          heading: 'Areas We Cover',
+          icon: <MapPin className="w-4 h-4 mr-2 text-brand-blue" />,
+          items: [
+            { name: 'Edinburgh', href: '/locations', desc: 'All districts and neighbourhoods.' },
+            { name: 'Midlothian', href: '/locations', desc: 'Penicuik and surrounding areas.' },
+            { name: 'The Lothians', href: '/locations', desc: 'East and West Lothian coverage.' }
           ]
         }
       ]
@@ -154,6 +184,12 @@ const MegaMenu = () => {
           </AnimatePresence>
         </div>
       ))}
+      <Link href="/materials" className="px-4 py-2 text-sm font-medium hover:text-brand-blue transition-colors uppercase tracking-wider">
+        Materials
+      </Link>
+      <Link href="/blog" className="px-4 py-2 text-sm font-medium hover:text-brand-blue transition-colors uppercase tracking-wider">
+        Insights
+      </Link>
       <Link href="/about" className="px-4 py-2 text-sm font-medium hover:text-brand-blue transition-colors uppercase tracking-wider">
         About Us
       </Link>

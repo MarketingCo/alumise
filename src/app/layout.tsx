@@ -23,7 +23,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org/",
   "@type": "LocalBusiness",
   "name": "Alumise",
-  "description": "The authority in advanced glazing solutions. Precision-engineered aluminium, uPVC, timber, and steel-look systems for luxury residential and commercial projects across Edinburgh and Midlothian. Manufacturing hub in Penicuik.",
+  "description": "Alumise Ltd — Premium aluminium windows, bifold doors, sliding doors, roof lanterns, curtain walling and architectural glazing. Manufactured in Penicuik, installed across Edinburgh, Midlothian and Scotland. FENSA accredited.",
   "image": "https://www.alumise.co.uk/logo.png",
   "url": "https://www.alumise.co.uk",
   "sameAs": [],
@@ -70,15 +70,15 @@ const localBusinessSchema = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Alumise | Premium Architectural Glazing Edinburgh & Midlothian",
+    default: "Alumise | Aluminium Windows, Bifold Doors & Glazing Edinburgh",
     template: "%s | Alumise"
   },
-  description: "Alumise: Premium architectural glazing manufactured in our Penicuik facility. Precision-engineered aluminium, uPVC, timber, and steel-look systems for luxury projects across Edinburgh and the Lothians.",
-  keywords: "commercial aluminium glazing Edinburgh, architectural glazing Penicuik, bifold doors Midlothian, curtain walling contractors Scotland, aluminium manufacturing Edinburgh, high-end glazing systems",
+  description: "Alumise Ltd — Premium aluminium windows, bifold doors, sliding doors, roof lanterns, curtain walling and architectural glazing. Manufactured in Penicuik, installed across Edinburgh, Midlothian and Scotland. FENSA accredited.",
+  keywords: "aluminium windows Edinburgh, bifold doors Edinburgh, sliding doors Edinburgh, roof lanterns Edinburgh, curtain walling Scotland, shopfronts Edinburgh, architectural glazing Penicuik, double glazing Midlothian, FENSA accredited Edinburgh, aluminium manufacturing Scotland",
   metadataBase: new URL('https://www.alumise.co.uk'),
   alternates: { canonical: '/' },
   openGraph: {
-    title: "Alumise | Premium Architectural Glazing Edinburgh & Midlothian",
+    title: "Alumise | Aluminium Windows, Bifold Doors & Glazing Edinburgh",
     description: "Premium architectural glazing manufactured in our Penicuik facility. Precision-engineered aluminium systems for luxury residential and commercial projects.",
     url: "https://www.alumise.co.uk",
     siteName: "Alumise",

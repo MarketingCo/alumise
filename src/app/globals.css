@@ -5,6 +5,8 @@
   --color-brand-black: #000000;
   --color-brand-gold: #D4AF37;
   --color-brand-grey: #71717A;
+  --color-brand-charcoal: #050505;
+  --color-brand-blue: #3B82F6;
 }
 
 @layer base {
