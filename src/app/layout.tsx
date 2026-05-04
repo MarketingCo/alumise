@@ -24,8 +24,8 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   "name": "Alumise",
   "description": "The authority in advanced glazing solutions. Precision-engineered aluminium, uPVC, timber, and steel-look systems for luxury residential and commercial projects across Edinburgh and Midlothian. Manufacturing hub in Penicuik.",
-  "image": "https://www.alumise.co.uk/logo.png",
-  "url": "https://www.alumise.co.uk",
+  "image": "https://alumise.vercel.app/logo.png",
+  "url": "https://alumise.vercel.app",
   "telephone": "0131 210 0321",
   "email": "info@alumise.co.uk",
   "priceRange": "£££",
@@ -74,18 +74,18 @@ export const metadata: Metadata = {
   },
   description: "Alumise: Premium architectural glazing manufactured in our Penicuik facility. Precision-engineered aluminium, uPVC, timber, and steel-look systems for luxury projects across Edinburgh and the Lothians.",
   keywords: "commercial aluminium glazing Edinburgh, architectural glazing Penicuik, bifold doors Midlothian, curtain walling contractors Scotland, aluminium manufacturing Edinburgh, high-end glazing systems",
-  metadataBase: new URL("https://www.alumise.co.uk"),
+  metadataBase: new URL("https://alumise.vercel.app"),
   alternates: { canonical: '/' },
   openGraph: {
     title: "Alumise | Premium Architectural Glazing Edinburgh & Midlothian",
     description: "Premium architectural glazing manufactured in our Penicuik facility. Precision-engineered aluminium systems for luxury residential and commercial projects.",
-    url: "https://www.alumise.co.uk",
+    url: "https://alumise.vercel.app",
     siteName: "Alumise",
     locale: "en_GB",
     type: "website",
     images: [
       {
-        url: "https://www.alumise.co.uk/og-image.jpg",
+        url: "https://alumise.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Alumise — Premium Architectural Glazing"
