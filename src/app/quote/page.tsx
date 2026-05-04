@@ -130,7 +130,7 @@ export default function QuotePage() {
                             : 'border-gray-100 hover:border-gray-300'
                         }`}
                       >
-                        <Building2 className={`w-6 h-6 mr-4 ${formData.category === cat ? 'text-brand-blue' : 'text-gray-300'}`} />
+                        <Building2 className={`w-6 h-6 mr-4 ${formData.category === cat ? 'text-brand-blue' : 'text-gray-500'}`} />
                         <span className="font-bold uppercase tracking-tight text-sm">{cat}</span>
                       </button>
                     ))}
@@ -205,7 +205,7 @@ export default function QuotePage() {
                             : 'border-gray-100 hover:border-gray-300'
                         }`}
                       >
-                        <Layers size={24} className={`mb-4 ${formData.material === mat ? 'text-brand-blue' : 'text-gray-300'}`} />
+                        <Layers size={24} className={`mb-4 ${formData.material === mat ? 'text-brand-blue' : 'text-gray-500'}`} />
                         <span className="font-bold uppercase tracking-tight text-[10px]">{mat}</span>
                       </button>
                     ))}
@@ -216,7 +216,7 @@ export default function QuotePage() {
                   <button
                     type="button"
                     onClick={prevStep}
-                    className="flex items-centre text-gray-400 hover:text-brand-charcoal px-6 py-4 font-bold uppercase tracking-widest text-xs transition-all"
+                    className="flex items-centre text-gray-500 hover:text-brand-charcoal px-6 py-4 font-bold uppercase tracking-widest text-xs transition-all"
                   >
                     <ArrowLeft className="mr-2 w-4 h-4" /> Back
                   </button>
@@ -245,7 +245,7 @@ export default function QuotePage() {
                   <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-brand-blue mb-6">04. Project Specifications</h3>
                   <div className="space-y-6">
                     <div>
-                      <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-gray-400 mb-2">Estimated Dimensions / Quantity</label>
+                      <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-gray-500 mb-2">Estimated Dimensions / Quantity</label>
                       <input 
                         type="text"
                         placeholder="e.g. 3m x 2.1m Bifold, 4 Standard Windows"
@@ -255,7 +255,7 @@ export default function QuotePage() {
                       />
                     </div>
                     <div>
-                      <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-gray-400 mb-2">Additional Technical Details</label>
+                      <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-gray-500 mb-2">Additional Technical Details</label>
                       <textarea 
                         rows={4}
                         placeholder="Tell us about any specific requirements, U-values, or aesthetic constraints..."
@@ -271,7 +271,7 @@ export default function QuotePage() {
                   <button
                     type="button"
                     onClick={prevStep}
-                    className="flex items-centre text-gray-400 hover:text-brand-charcoal px-6 py-4 font-bold uppercase tracking-widest text-xs transition-all"
+                    className="flex items-centre text-gray-500 hover:text-brand-charcoal px-6 py-4 font-bold uppercase tracking-widest text-xs transition-all"
                   >
                     <ArrowLeft className="mr-2 w-4 h-4" /> Back
                   </button>
@@ -299,7 +299,7 @@ export default function QuotePage() {
                   <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-brand-blue mb-6">05. Contact Information</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-gray-400 mb-2">Full Name</label>
+                      <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-gray-500 mb-2">Full Name</label>
                       <input 
                         type="text"
                         required
@@ -309,7 +309,7 @@ export default function QuotePage() {
                       />
                     </div>
                     <div>
-                      <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-gray-400 mb-2">Email Address</label>
+                      <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-gray-500 mb-2">Email Address</label>
                       <input 
                         type="email"
                         required
@@ -319,7 +319,7 @@ export default function QuotePage() {
                       />
                     </div>
                     <div>
-                      <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-gray-400 mb-2">Phone Number</label>
+                      <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-gray-500 mb-2">Phone Number</label>
                       <input 
                         type="tel"
                         className="w-full bg-gray-50 border border-gray-100 p-4 rounded-sm focus:border-brand-blue outline-none transition-all text-sm"
@@ -328,7 +328,7 @@ export default function QuotePage() {
                       />
                     </div>
                     <div>
-                      <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-gray-400 mb-2">Project Location</label>
+                      <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-gray-500 mb-2">Project Location</label>
                       <input 
                         type="text"
                         className="w-full bg-gray-50 border border-gray-100 p-4 rounded-sm focus:border-brand-blue outline-none transition-all text-sm"
@@ -343,7 +343,7 @@ export default function QuotePage() {
                   <button
                     type="button"
                     onClick={prevStep}
-                    className="flex items-centre text-gray-400 hover:text-brand-charcoal px-6 py-4 font-bold uppercase tracking-widest text-xs transition-all"
+                    className="flex items-centre text-gray-500 hover:text-brand-charcoal px-6 py-4 font-bold uppercase tracking-widest text-xs transition-all"
                   >
                     <ArrowLeft className="mr-2 w-4 h-4" /> Back
                   </button>

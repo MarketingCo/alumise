@@ -116,7 +116,7 @@ const MegaMenu = () => {
                               className="group/item flex flex-col"
                             >
                               <span className="font-bold text-sm group-hover/item:text-brand-blue transition-colors">{subItem.name}</span>
-                              <span className="text-xs text-gray-400 mt-1 leading-tight">{subItem.desc}</span>
+                              <span className="text-xs text-gray-500 mt-1 leading-tight">{subItem.desc}</span>
                             </Link>
                           </li>
                         ))}

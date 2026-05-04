@@ -50,7 +50,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
         
         <ul className="space-y-2 mb-8">
           {product.features.slice(0, 3).map((feature, idx) => (
-            <li key={idx} className="flex items-centre text-xs text-gray-400">
+            <li key={idx} className="flex items-centre text-xs text-gray-600">
               <CheckCircle2 className="w-3 h-3 mr-2 text-brand-blue flex-shrink-0" />
               {feature}
             </li>

@@ -41,19 +41,19 @@ export default function ContactPage() {
                 
                 <div className="space-y-6">
                   <div className="group">
-                    <p className="text-[10px] uppercase tracking-widest font-bold text-gray-400 mb-2 group-hover:text-brand-blue transition-colors">Project Estimations</p>
+                    <p className="text-[10px] uppercase tracking-widest font-bold text-gray-500 mb-2 group-hover:text-brand-blue transition-colors">Project Estimations</p>
                     <p className="text-xl font-bold mb-1">Email us</p>
                     <p className="text-sm text-gray-500 font-light">info@alumise.co.uk</p>
                   </div>
                   
                   <div className="group">
-                    <p className="text-[10px] uppercase tracking-widest font-bold text-gray-400 mb-2 group-hover:text-brand-blue transition-colors">Technical & Engineering</p>
+                    <p className="text-[10px] uppercase tracking-widest font-bold text-gray-500 mb-2 group-hover:text-brand-blue transition-colors">Technical & Engineering</p>
                     <p className="text-xl font-bold mb-1">Email us</p>
                     <p className="text-sm text-gray-500 font-light">info@alumise.co.uk</p>
                   </div>
 
                   <div className="group">
-                    <p className="text-[10px] uppercase tracking-widest font-bold text-gray-400 mb-2 group-hover:text-brand-blue transition-colors">Post-Installation Support</p>
+                    <p className="text-[10px] uppercase tracking-widest font-bold text-gray-500 mb-2 group-hover:text-brand-blue transition-colors">Post-Installation Support</p>
                     <p className="text-xl font-bold mb-1">Email us</p>
                     <p className="text-sm text-gray-500 font-light">info@alumise.co.uk</p>
                   </div>
