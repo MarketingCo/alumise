@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 import { products, categories, materials } from '@/data/products';
 import { projects } from '@/data/projects';
-import PartnerMarquee from '@/components/PartnerMarquee';
+
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -441,8 +441,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Partner Marquee */}
-      <PartnerMarquee />
 
       {/* Final CTA Section */}
       <section className="py-40 bg-white text-brand-charcoal relative overflow-hidden">

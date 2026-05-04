@@ -14,7 +14,7 @@ import {
   Users
 } from 'lucide-react';
 import Link from 'next/link';
-import PartnerMarquee from '@/components/PartnerMarquee';
+
 import ThermalEstimator from '@/components/ThermalEstimator';
 
 const accreditations = [
@@ -155,7 +155,7 @@ export default function TrustHub() {
       </section>
 
       {/* Partner Marquee */}
-      <PartnerMarquee />
+
 
       {/* Final CTA */}
       <section className="bg-brand-charcoal py-32 text-white">
