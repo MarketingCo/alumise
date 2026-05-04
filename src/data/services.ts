@@ -189,7 +189,7 @@ export const services: Service[] = [
       "Internal tilt-in function for safe cleaning of upper-storey flats",
       "No painting or sanding — lifetime colour stability guaranteed",
     ],
-    relatedProducts: ["casement-windows", "steel-look-heritage", "secondary-glazing"],
+    relatedProducts: ["casement-windows", "steel-look-heritage", "entrance-doors"],
     image:
       "https://images.unsplash.com/photo-1503708928676-1cb796a0891e?q=80&w=1974&auto=format&fit=crop",
     faq: [
@@ -285,7 +285,7 @@ export const services: Service[] = [
       "Thermal breaks eliminate condensation on internal rafter surfaces",
       "Bespoke sizing means no standard-size compromises or infill panels",
     ],
-    relatedProducts: ["roof-lanterns", "skylights", "conservatories"],
+    relatedProducts: ["roof-lanterns", "casement-windows", "bifold-doors"],
     image:
       "https://images.unsplash.com/photo-1513519245088-0e12902e35ca?q=80&w=2070&auto=format&fit=crop",
     faq: [
@@ -333,7 +333,7 @@ export const services: Service[] = [
       "Non-fragile construction safe for roof maintenance access",
       "Bespoke flashing ensures weathertight integration with existing roof",
     ],
-    relatedProducts: ["roof-lanterns", "casement-windows", "conservatories"],
+    relatedProducts: ["roof-lanterns", "casement-windows", "bifold-doors"],
     image:
       "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop",
     faq: [
@@ -381,7 +381,7 @@ export const services: Service[] = [
       "CWCT certification satisfies warranty and insurance requirements",
       "In-house design team provides BIM-compatible facade models",
     ],
-    relatedProducts: ["curtain-walling", "commercial-doors", "shopfronts"],
+    relatedProducts: ["curtain-walling", "entrance-doors", "steel-look-heritage"],
     image:
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
     faq: [
@@ -429,7 +429,7 @@ export const services: Service[] = [
       "Powder-coated finish will not fade, peel, or corrode",
       "In-house installation includes removal and making good",
     ],
-    relatedProducts: ["curtain-walling", "commercial-doors", "entrance-doors"],
+    relatedProducts: ["curtain-walling", "entrance-doors", "steel-look-heritage"],
     image:
       "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop",
     faq: [
@@ -477,7 +477,7 @@ export const services: Service[] = [
       "Access control integration prevents unauthorised entry",
       "Local maintenance team provides rapid breakdown response",
     ],
-    relatedProducts: ["curtain-walling", "shopfronts", "entrance-doors"],
+    relatedProducts: ["curtain-walling", "entrance-doors", "steel-look-heritage"],
     image:
       "https://images.unsplash.com/photo-1517502884422-41eaadeff171?q=80&w=1918&auto=format&fit=crop",
     faq: [
@@ -669,7 +669,7 @@ export const services: Service[] = [
       "Dramatic noise reduction for Edinburgh's busy streets",
       "Significant thermal improvement without replacing original joinery",
     ],
-    relatedProducts: ["casement-windows", "sash-windows", "steel-look-heritage"],
+    relatedProducts: ["casement-windows", "entrance-doors", "steel-look-heritage"],
     image:
       "https://images.unsplash.com/photo-1503708928676-1cb796a0891e?q=80&w=1974&auto=format&fit=crop",
     faq: [

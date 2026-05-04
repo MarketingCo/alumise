@@ -1,27 +1,26 @@
-import type { Metadata } from 'next';
+import { Metadata } from 'next';
 import { blogPosts } from '@/data/blog';
-import BlogPostContent from './Content';
+import BlogPostClient from './BlogPostClient';
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const post = blogPosts.find(p => p.slug === params.slug);
-  
   if (!post) {
-    return {
-      title: 'Article Not Found | Alumise',
-    };
+    return { title: 'Article Not Found | Alumise' };
   }
-
   return {
-    title: `${post.title} | Alumise`,
+    title: post.title,
     description: post.excerpt,
+    alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
-      title: `${post.title} | Alumise`,
+      title: post.title,
       description: post.excerpt,
-      images: [post.image],
+      url: `https://www.alumise.co.uk/blog/${post.slug}`,
+      type: 'article',
+      images: [{ url: post.image, alt: post.title }],
     },
   };
 }
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  return <BlogPostContent slug={params.slug} />;
+  return <BlogPostClient slug={params.slug} />;
 }
