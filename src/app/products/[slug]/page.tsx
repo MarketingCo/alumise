@@ -2,6 +2,10 @@ import type { Metadata } from 'next';
 import { products } from '@/data/products';
 import ProductPageContent from './Content';
 
+export function generateStaticParams() {
+  return products.map((p) => ({ slug: p.slug }));
+}
+
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const product = products.find(p => p.slug === params.slug);
   

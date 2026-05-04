@@ -21,15 +21,34 @@ const MegaMenu = () => {
       slug: 'services',
       columns: [
         {
-          heading: 'What We Do',
-          icon: <Zap className="w-4 h-4 mr-2 text-brand-blue" />,
+          heading: 'Residential',
+          icon: <DoorOpen className="w-4 h-4 mr-2 text-brand-blue" />,
           items: [
-            { name: 'Design & Engineering', href: '/services#design', desc: 'Precision CAD and structural analysis.' },
-            { name: 'Fabrication', href: '/services#fabrication', desc: 'Expert craftsmanship in our local facility.' },
-            { name: 'Installation', href: '/services#installation', desc: 'White-glove service by certified teams.' }
+            { name: 'Bifold Doors', href: '/services/bifold-doors', desc: 'Slimline aluminium bifolds manufactured in Penicuik.' },
+            { name: 'Sliding Doors', href: '/services/sliding-doors', desc: 'Minimalist patio doors for modern extensions.' },
+            { name: 'Sash Windows', href: '/services/sash-windows', desc: 'Heritage & modern timber-look sash systems.' },
+            { name: 'Casement Windows', href: '/services/casement-windows', desc: 'High-performance aluminium & uPVC windows.' },
+            { name: 'Roof Lanterns', href: '/services/roof-lanterns', desc: 'Bespoke skylights and flat rooflights.' }
+          ]
+        },
+        {
+          heading: 'Commercial',
+          icon: <Building2 className="w-4 h-4 mr-2 text-brand-blue" />,
+          items: [
+            { name: 'Curtain Walling', href: '/services/curtain-walling', desc: 'Structural glazing for multi-storey developments.' },
+            { name: 'Shopfronts', href: '/services/shopfronts', desc: 'Bespoke aluminium retail frontages.' },
+            { name: 'Commercial Doors', href: '/services/commercial-doors', desc: 'Automatic & manual entrance systems.' },
+            { name: 'Window Installation', href: '/services/window-installation', desc: 'Full replacement & new build fitting.' },
+            { name: 'Door Installation', href: '/services/door-installation', desc: 'Expert fitting for all door types.' }
           ]
         }
-      ]
+      ],
+      featured: {
+        title: 'All Services',
+        desc: 'Browse our complete range of glazing and aluminium services for residential and commercial projects across Edinburgh and the Lothians.',
+        image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop',
+        href: '/services'
+      }
     },
     {
       title: 'Products',
@@ -81,12 +100,25 @@ const MegaMenu = () => {
       slug: 'locations',
       columns: [
         {
-          heading: 'Areas We Cover',
+          heading: 'Edinburgh',
           icon: <MapPin className="w-4 h-4 mr-2 text-brand-blue" />,
           items: [
-            { name: 'Edinburgh', href: '/locations', desc: 'All districts and neighbourhoods.' },
-            { name: 'Midlothian', href: '/locations', desc: 'Penicuik and surrounding areas.' },
-            { name: 'The Lothians', href: '/locations', desc: 'East and West Lothian coverage.' }
+            { name: 'New Town', href: '/locations/new-town', desc: 'Heritage glazing for Georgian architecture.' },
+            { name: 'Leith', href: '/locations/leith', desc: 'Waterfront residential & commercial facades.' },
+            { name: 'Morningside', href: '/locations/morningside', desc: 'Premium villas & tenement upgrades.' },
+            { name: 'Stockbridge', href: '/locations/stockbridge', desc: 'Conservation area sash replacements.' },
+            { name: 'West End', href: '/locations/west-end', desc: 'Victorian & modern mixed developments.' }
+          ]
+        },
+        {
+          heading: 'Lothians & Beyond',
+          icon: <MapPin className="w-4 h-4 mr-2 text-brand-blue" />,
+          items: [
+            { name: 'Penicuik', href: '/locations/penicuik', desc: 'Our manufacturing hub & local projects.' },
+            { name: 'Musselburgh', href: '/locations/musselburgh', desc: 'Coastal-grade glazing East Lothian.' },
+            { name: 'Dalkeith', href: '/locations/dalkeith', desc: 'Suburban residential window replacement.' },
+            { name: 'Livingston', href: '/locations/livingston', desc: 'West Lothian new build & retrofit.' },
+            { name: 'All Areas', href: '/locations', desc: 'View our full coverage map.' }
           ]
         }
       ]

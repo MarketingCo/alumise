@@ -6,6 +6,7 @@ import { projects } from '@/data/projects';
 import { locations } from '@/data/locations';
 import { blogPosts } from '@/data/blog';
 import { materialsData } from '@/data/materials';
+import { services } from '@/data/services';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.alumise.co.uk';
@@ -26,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/terms',
     '/cookies',
     '/materials',
+    '/services',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -73,5 +75,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...corePages, ...productPages, ...projectPages, ...locationPages, ...materialPages, ...blogPages];
+  // Dynamic Service Pages
+  const servicePages = services.map((service) => ({
+    url: `${baseUrl}/services/${service.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
+  return [...corePages, ...productPages, ...projectPages, ...locationPages, ...materialPages, ...blogPages, ...servicePages];
 }

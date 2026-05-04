@@ -2,6 +2,10 @@ import { Metadata } from 'next';
 import { locations } from '@/data/locations';
 import LocationPageClient from './LocationPageClient';
 
+export function generateStaticParams() {
+  return locations.map((l) => ({ slug: l.slug }));
+}
+
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const location = locations.find(l => l.slug === params.slug);
   if (!location) {
