@@ -18,4 +18,4 @@ Deployed at: https://www.alumise.co.uk
 - Vercel
 
 ## Notes
-- Shared address with Forge & Frame and Ballong Collective (Unit 2B, Penicuik)
+- Shared address with Forge & Frame and Balloon Collective (Unit 2B, Penicuik)

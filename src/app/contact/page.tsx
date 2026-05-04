@@ -65,9 +65,9 @@ export default function ContactPage() {
                 <div className="flex items-start">
                   <MapPin className="w-5 h-5 mr-4 text-brand-blue flex-shrink-0" />
                   <p className="text-sm text-gray-500 font-light leading-relaxed">
-                    Unit 14, Prince Regent Street,<br />
-                    Port of Leith, Edinburgh,<br />
-                    EH6 4AP
+                    Unit 2B, Eastfield Industrial Estate,<br />
+                    Penicuik,<br />
+                    EH26 8HA
                   </p>
                 </div>
                 <div className="flex items-start">
@@ -121,7 +121,7 @@ export default function ContactPage() {
       {/* Trust Bar */}
       <section className="py-24 border-t border-gray-100 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-centre opacity-40">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-centre opacity-100">
             <div className="flex flex-col items-centre">
               <ShieldCheck size={32} className="mb-4" />
               <p className="text-[10px] uppercase tracking-[0.2em] font-bold">Data Protected</p>

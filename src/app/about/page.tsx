@@ -63,14 +63,14 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue">The Alumise Mission</h2>
               <p className="text-4xl font-bold font-[family-name:var(--font-oswald)] uppercase leading-tight tracking-tight">
-                Architectural Performance, <span className="text-gray-300">Perfectly Delivered.</span>
+                Architectural Performance, <span className="text-gray-600">Perfectly Delivered.</span>
               </p>
             </div>
             <p className="text-lg text-gray-500 font-light leading-relaxed">
-              We specialize in the bridge between high-concept architectural design and high-performance structural reality. Our team isn't just a collection of installers; we are engineering partners who manage risk through calculation and meticulous fabrication.
+              We design, manufacture and install premium aluminium glazing systems for commercial and high-end residential projects across Edinburgh and Scotland. Every frame is fabricated in our Penicuik facility and fitted by our own installation team.
             </p>
             <p className="text-lg text-gray-500 font-light leading-relaxed">
-              Based in the Port of Leith, our facility is the heart of our operations, where every system is verified for its structural integrity before it ever arrives on site. This commitment to in-house quality control is what sets Alumise apart as the authority in advanced glazing.
+              Based in Penicuik, our facility is the heart of our operations, where every window, door and curtain walling system is manufactured to exact specifications before installation. This commitment to in-house fabrication and fitting is what sets Alumise apart as Edinburgh's trusted glazing partner.
             </p>
             <div className="flex flex-wrap gap-8 pt-6">
               <div className="flex items-centre space-x-3">
@@ -111,7 +111,7 @@ export default function AboutPage() {
             <div className="max-w-2xl">
               <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue mb-4">Technical Leadership</h2>
               <p className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-oswald)] uppercase leading-tight tracking-tight">
-                Guided by <span className="text-gray-300">Engineering.</span>
+                Guided by <span className="text-gray-600">Engineering.</span>
               </p>
             </div>
           </div>
