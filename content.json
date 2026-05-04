@@ -1,11 +1,11 @@
 {
-  "businessName": "Alumise",
+  "businessName": "Alumise Ltd",
   "industry": "Bespoke Architectural Glazing & Commercial Aluminium Manufacturing",
   "designLanguage": "Architectural Luxury",
   "visualArchetype": "The Minimalist Horizon",
   "usp": "Precision-engineered commercial aluminium systems and luxury residential glazing manufactured in-house. Delivering light-maximizing systems and slimline frames for Edinburgh and the Lothians.",
   "heroHeadline": "Premium Glazing. Manufactured In-House.",
-  "heroSubtext": "Alumise provides the complete architectural envelope. Whether it's a luxury residential extension featuring our bespoke bi-folds and roof lanterns, or high-performance commercial curtain walling, we manufacture, supply, and fit every detail—down to the custom aluminium trims.",
+  "heroSubtext": "Alumise provides the complete architectural envelope. Whether it's a luxury residential extension featuring our bespoke bi-folds and roof lanterns, or high-performance commercial curtain walling, we manufacture, supply, and fit every detail\u2014down to the custom aluminium trims.",
   "services": [
     {
       "title": "Bespoke Bi-Folds & Sliding Doors",
@@ -26,7 +26,7 @@
   ],
   "phone": "0131 210 0321",
   "email": "info@alumise.co.uk",
-  "address": "Unit 2B, Eastfield Industrial Estate, Penicuik, EH26 8HA",
+  "address": "Unit 2B, Penicuik, EH26 8HA",
   "colorPrimary": "#050505",
   "colorSecondary": "#FFFFFF",
   "googleFont": "Montserrat",

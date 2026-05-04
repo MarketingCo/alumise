@@ -1,21 +1,18 @@
-# Alumise Website
+# Alumise Ltd
 
-This project is a static Next.js application built for Alumise, Edinburgh's premier commercial glazing specialists.
-
-## Tech Stack
-- Next.js (App Router)
-- Tailwind CSS v4
-- Formspree for Contact Forms
+## Brand Information
+- **Business Name:** Alumise Ltd
+- **Phone:** 0131 210 0321
+- **Email:** info@alumise.co.uk
+- **Address:** Unit 2B, Penicuik, EH26 8HA
+- **Domain:** https://www.alumise.co.uk
+- **Services:** Aluminium glazing, shop fronts, all glazing
+- **USP:** Local fabrication in Penicuik, rapid quotes, great prices
 
 ## Deployment
-Deployed on Vercel. 
-**Live URL:** https://alumise.vercel.app
+Deployed at: https://www.alumise.co.uk
 
-### DNS Records Required for Custom Domain (www.alumise.co.uk)
-To link the custom domain, add the following records to your DNS provider:
-- **Type:** A
-  - **Name:** @ (or leave blank)
-  - **Value:** 76.76.21.21
-- **Type:** CNAME
-  - **Name:** www
-  - **Value:** cname.vercel-dns.com.
+## Tech Stack
+- Next.js
+- Tailwind CSS
+- Vercel

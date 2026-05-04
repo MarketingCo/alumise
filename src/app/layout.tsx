@@ -74,7 +74,7 @@ export const metadata: Metadata = {
   },
   description: "Alumise: Premium architectural glazing manufactured in our Penicuik facility. Precision-engineered aluminium, uPVC, timber, and steel-look systems for luxury projects across Edinburgh and the Lothians.",
   keywords: "commercial aluminium glazing Edinburgh, architectural glazing Penicuik, bifold doors Midlothian, curtain walling contractors Scotland, aluminium manufacturing Edinburgh, high-end glazing systems",
-  metadataBase: new URL("https://alumise.vercel.app"),
+  metadataBase: new URL('https://www.alumise.co.uk'),
   alternates: { canonical: '/' },
   openGraph: {
     title: "Alumise | Premium Architectural Glazing Edinburgh & Midlothian",

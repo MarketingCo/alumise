@@ -8,7 +8,7 @@ import { blogPosts } from '@/data/blog';
 import { materialsData } from '@/data/materials';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://alumise.vercel.app';
+  const baseUrl = 'https://www.alumise.co.uk';
 
   // Core Pages
   const corePages = [
