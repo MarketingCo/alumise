@@ -167,7 +167,7 @@ export default function Home() {
                     <h3 className="text-2xl font-bold mb-4 uppercase tracking-tighter">{cat}</h3>
                     <ul className="space-y-2 mb-6 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                       {catProducts.slice(0, 3).map(p => (
-                        <li key={p.slug} className="flex items-centre text-xs font-medium text-brand-grey">
+                        <li key={p.slug} className="flex items-centre text-xs font-medium text-white/90">
                           <CheckCircle2 className="w-3 h-3 mr-2 text-brand-blue" /> {p.title}
                         </li>
                       ))}

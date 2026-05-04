@@ -106,11 +106,11 @@ export default function MaterialDetailPage({ params }: { params: { slug: string 
                   </ul>
                 </div>
                 <div className="space-y-8">
-                  <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-gray-400">Considerations</h3>
+                  <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-gray-600">Considerations</h3>
                   <ul className="space-y-4">
                     {material.cons.map(con => (
-                      <li key={con} className="flex items-start text-sm text-gray-400 font-light">
-                        <XCircle className="w-5 h-5 mr-3 text-gray-200 flex-shrink-0" /> {con}
+                      <li key={con} className="flex items-start text-sm text-gray-600 font-light">
+                        <XCircle className="w-5 h-5 mr-3 text-gray-500 flex-shrink-0" /> {con}
                       </li>
                     ))}
                   </ul>

@@ -111,7 +111,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           <div className="flex justify-between items-end mb-12">
             <div>
               <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue mb-4">Deep Learning</h2>
-              <p className="text-3xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">Related <span className="text-gray-300">Insights.</span></p>
+              <p className="text-3xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">Related <span className="text-gray-600">Insights.</span></p>
             </div>
             <Link href="/blog" className="text-xs font-bold uppercase tracking-widest border-b border-brand-charcoal pb-1 hover:text-brand-blue transition-all">
               All Articles

@@ -364,7 +364,7 @@ export default function QuotePage() {
           </AnimatePresence>
         </form>
         
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-centre border-t border-gray-100 pt-12 opacity-40">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-centre border-t border-gray-100 pt-12">
           <div className="space-y-2">
             <ShieldCheck size={20} className="mx-auto" />
             <p className="text-[8px] uppercase tracking-widest font-bold">Secure Data Transmission</p>

@@ -25,7 +25,7 @@ export default function LocationsPage() {
           {regions.map((region, rIdx) => (
             <div key={region} className="space-y-12">
               <div className="flex items-centre space-x-6 border-b border-gray-100 pb-4">
-                <span className="text-4xl font-bold font-[family-name:var(--font-oswald)] text-gray-200">0{rIdx + 1}</span>
+                <span className="text-4xl font-bold font-[family-name:var(--font-oswald)] text-gray-600">0{rIdx + 1}</span>
                 <h2 className="text-3xl font-bold uppercase tracking-tight">{region} Region</h2>
               </div>
               

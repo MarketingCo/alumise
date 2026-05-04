@@ -76,7 +76,7 @@ export default function LocationPage() {
             <div className="space-y-6">
               <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue">Total Clarity</h2>
               <p className="text-4xl font-bold font-[family-name:var(--font-oswald)] uppercase leading-tight tracking-tight">
-                Engineering Perfection in <span className="text-gray-300">Every District.</span>
+                Engineering Perfection in <span className="text-gray-600">Every District.</span>
               </p>
             </div>
             <p className="text-lg text-gray-500 font-light leading-relaxed">

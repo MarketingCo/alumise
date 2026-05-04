@@ -79,21 +79,21 @@ export default function TrustHub() {
                 <CheckCircle2 className="w-5 h-5 mr-4 text-brand-blue flex-shrink-0" />
                 <div>
                   <h4 className="font-bold text-sm uppercase tracking-tight">10-Year Structural Integrity</h4>
-                  <p className="text-xs text-gray-400 mt-1">Covers frames, structural glass seals, and load-bearing components.</p>
+                  <p className="text-xs text-gray-600 mt-1">Covers frames, structural glass seals, and load-bearing components.</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <CheckCircle2 className="w-5 h-5 mr-4 text-brand-blue flex-shrink-0" />
                 <div>
                   <h4 className="font-bold text-sm uppercase tracking-tight">5-Year Hardware & Seals</h4>
-                  <p className="text-xs text-gray-400 mt-1">Covers locks, hinges, and weatherproofing gaskets.</p>
+                  <p className="text-xs text-gray-600 mt-1">Covers locks, hinges, and weatherproofing gaskets.</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <CheckCircle2 className="w-5 h-5 mr-4 text-brand-blue flex-shrink-0" />
                 <div>
                   <h4 className="font-bold text-sm uppercase tracking-tight">Post-Installation Support</h4>
-                  <p className="text-xs text-gray-400 mt-1">Direct access to our engineering team for any operational adjustments.</p>
+                  <p className="text-xs text-gray-600 mt-1">Direct access to our engineering team for any operational adjustments.</p>
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function TrustHub() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-centre mb-20">
             <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue mb-6">Performance & Sustainability</h2>
-            <p className="text-4xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">Technical <span className="text-gray-300">Benchmarks.</span></p>
+            <p className="text-4xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">Technical <span className="text-gray-600">Benchmarks.</span></p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

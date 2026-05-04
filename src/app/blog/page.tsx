@@ -50,7 +50,7 @@ export default function BlogPage() {
                 </div>
               </Link>
               <div className="p-8 flex-grow flex flex-col">
-                <div className="flex items-centre space-x-4 text-[10px] uppercase tracking-widest font-bold text-gray-400 mb-4">
+                <div className="flex items-centre space-x-4 text-[10px] uppercase tracking-widest font-bold text-gray-600 mb-4">
                   <span className="flex items-centre"><Calendar className="w-3 h-3 mr-2" /> {post.date}</span>
                   <span className="flex items-centre"><User className="w-3 h-3 mr-2" /> {post.author}</span>
                 </div>

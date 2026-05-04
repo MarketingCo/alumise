@@ -53,7 +53,7 @@ const EngineeringHotspot: React.FC<EngineeringHotspotProps> = ({ hotspots, child
                   <div className="flex justify-between items-start mb-2">
                     <h4 className="text-[10px] uppercase tracking-widest font-black text-brand-blue">{spot.title}</h4>
                     <button onClick={() => setActiveHotspot(null)}>
-                      <X className="w-3 h-3 text-gray-300 hover:text-brand-charcoal" />
+                      <X className="w-3 h-3 text-gray-600 hover:text-brand-charcoal" />
                     </button>
                   </div>
                   <p className="text-xs text-gray-500 leading-relaxed font-light">

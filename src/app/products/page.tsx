@@ -136,9 +136,9 @@ function ProductsContent() {
                 animate={{ opacity: 1 }}
                 className="text-centre py-40 border-2 border-dashed border-gray-100 rounded-xl"
               >
-                <SlidersHorizontal className="w-12 h-12 mx-auto text-gray-200 mb-6" />
+                <SlidersHorizontal className="w-12 h-12 mx-auto text-gray-500 mb-6" />
                 <h3 className="text-2xl font-bold uppercase tracking-tight text-brand-charcoal mb-4">No matching systems found</h3>
-                <p className="text-gray-400 mb-8 max-w-md mx-auto">Try adjusting your filters or contact our engineering team for bespoke solutions.</p>
+                <p className="text-gray-600 mb-8 max-w-md mx-auto">Try adjusting your filters or contact our engineering team for bespoke solutions.</p>
                 <button 
                   onClick={() => { setActiveCategory(null); setActiveMaterial(null); }}
                   className="bg-brand-blue text-white px-8 py-3 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-brand-charcoal transition-colors"

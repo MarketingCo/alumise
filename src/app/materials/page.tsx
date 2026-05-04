@@ -70,7 +70,7 @@ export default function MaterialsComparisonPage() {
           {/* Labels Column */}
           <div className="hidden lg:block lg:col-span-3 pt-[280px] space-y-[72px]">
             {['Durability', 'Thermal Efficiency', 'Maintenance', 'Cost Effectiveness', 'Slim Sightlines'].map((label) => (
-              <div key={label} className="text-[10px] uppercase tracking-[0.2em] font-black text-gray-300 text-right pr-8">
+              <div key={label} className="text-[10px] uppercase tracking-[0.2em] font-black text-gray-600 text-right pr-8">
                 {label}
               </div>
             ))}
@@ -92,7 +92,7 @@ export default function MaterialsComparisonPage() {
                     <div className="p-8 border-b border-gray-200 bg-white">
                       <div className="flex justify-between items-start mb-4">
                         <h3 className="text-2xl font-bold uppercase tracking-tight leading-none">{mat.name}</h3>
-                        <button onClick={() => toggleMaterial(mat.slug)} className="text-gray-300 hover:text-red-500 transition-colors">
+                        <button onClick={() => toggleMaterial(mat.slug)} className="text-gray-500 hover:text-red-500 transition-colors">
                           <X size={16} />
                         </button>
                       </div>
