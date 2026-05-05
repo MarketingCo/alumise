@@ -23,7 +23,7 @@ function ServiceCard({
     >
       <Link
         href={`/services/${service.slug}`}
-        className="group block bg-white border border-gray-100 hover:border-brand-blue/30 hover:shadow-xl transition-all duration-300"
+        className="group block bg-white border border-gray-100 hover:border-brand-gold/30 hover:shadow-xl transition-all duration-300"
       >
         <div className="relative h-56 overflow-hidden">
           <Image
@@ -34,7 +34,7 @@ function ServiceCard({
           />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/60 via-transparent to-transparent" />
           <div className="absolute bottom-4 left-4">
-            <span className="text-[10px] uppercase tracking-widest font-bold text-white bg-brand-blue/80 backdrop-blur-sm px-3 py-1">
+            <span className="text-[10px] uppercase tracking-widest font-bold text-white bg-brand-gold/80 backdrop-blur-sm px-3 py-1">
               {service.slug.includes("installation")
                 ? "Installation"
                 : service.slug.includes("curtain") ||
@@ -46,13 +46,13 @@ function ServiceCard({
           </div>
         </div>
         <div className="p-6">
-          <h3 className="text-lg font-bold uppercase tracking-tight mb-3 group-hover:text-brand-blue transition-colors">
+          <h3 className="text-lg font-bold uppercase tracking-tight mb-3 group-hover:text-brand-gold transition-colors">
             {service.title}
           </h3>
           <p className="text-sm text-gray-500 font-light leading-relaxed mb-4 line-clamp-3">
             {service.shortDesc}
           </p>
-          <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-brand-blue">
+          <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-brand-gold">
             View Service{" "}
             <ArrowRight className="ml-2 w-3 h-3 group-hover:translate-x-1 transition-transform" />
           </span>
@@ -80,8 +80,8 @@ function SectionHeader({
       className="mb-16"
     >
       <div className="flex items-center gap-3 mb-4">
-        <Icon className="w-5 h-5 text-brand-blue" />
-        <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-blue">
+        <Icon className="w-5 h-5 text-brand-gold" />
+        <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-gold">
           {label}
         </span>
       </div>

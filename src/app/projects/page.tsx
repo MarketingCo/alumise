@@ -18,7 +18,7 @@ export default function ProjectsPage() {
             animate={{ opacity: 1, y: 0 }}
           >
             <h1 className="text-5xl md:text-8xl font-bold uppercase mb-8 tracking-tighter">
-              Defining the <span className="text-brand-blue">Skyline.</span>
+              Defining the <span className="text-brand-gold">Skyline.</span>
             </h1>
             <p className="text-xl text-brand-grey max-w-2xl mx-auto font-light leading-relaxed">
               Explore our portfolio of high-specification architectural glazing projects across Edinburgh and the Lothians.
@@ -50,12 +50,12 @@ export default function ProjectsPage() {
                   <div className="absolute inset-0 bg-brand-charcoal/20 group-hover:bg-transparent transition-colors duration-500"></div>
                 </Link>
                 <div className="space-y-4">
-                  <div className="flex items-center space-x-4 text-[10px] uppercase tracking-[0.2em] font-bold text-brand-blue">
+                  <div className="flex items-center space-x-4 text-[10px] uppercase tracking-[0.2em] font-bold text-brand-gold">
                     <span className="flex items-center"><MapPin className="w-3 h-3 mr-2" /> {project.location}</span>
                     <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
                     <span className="flex items-center"><Building2 className="w-3 h-3 mr-2" /> {project.type}</span>
                   </div>
-                  <h3 className="text-3xl font-bold uppercase tracking-tight group-hover:text-brand-blue transition-colors">
+                  <h3 className="text-3xl font-bold uppercase tracking-tight group-hover:text-brand-gold transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-gray-500 font-light leading-relaxed max-w-lg">
@@ -63,7 +63,7 @@ export default function ProjectsPage() {
                   </p>
                   <Link 
                     href={`/projects/${project.slug}`}
-                    className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold border-b-2 border-brand-charcoal pb-2 group-hover:border-brand-blue group-hover:text-brand-blue transition-all"
+                    className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold border-b-2 border-brand-charcoal pb-2 group-hover:border-brand-gold group-hover:text-brand-gold transition-all"
                   >
                     View Project Case Study <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>
@@ -78,14 +78,14 @@ export default function ProjectsPage() {
       <section className="bg-gray-50 py-32 border-t border-gray-100">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-4xl font-bold uppercase mb-8 tracking-tighter">
-            Your Vision, <span className="text-brand-blue">Precisely Engineered.</span>
+            Your Vision, <span className="text-brand-gold">Precisely Engineered.</span>
           </h2>
           <p className="text-lg text-gray-500 font-light mb-12">
             Whether it's a luxury residential renovation or a multi-storey commercial facade, we bring the same level of engineering exactitude to every project.
           </p>
           <Link 
             href="/quote" 
-            className="inline-block bg-brand-charcoal text-white hover:bg-brand-blue px-12 py-6 rounded-sm font-bold uppercase tracking-widest text-xs transition-all shadow-xl"
+            className="inline-block bg-brand-charcoal text-white hover:bg-brand-gold px-12 py-6 rounded-sm font-bold uppercase tracking-widest text-xs transition-all shadow-xl"
           >
             Start Your Project
           </Link>

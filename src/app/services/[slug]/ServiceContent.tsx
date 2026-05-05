@@ -61,7 +61,7 @@ export default function ServiceContent({ service }: { service: Service }) {
             transition={{ duration: 0.5 }}
             className="mb-12"
           >
-            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-blue block mb-4">
+            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-gold block mb-4">
               Engineering Detail
             </span>
             <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight">
@@ -79,10 +79,10 @@ export default function ServiceContent({ service }: { service: Service }) {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.08, duration: 0.5 }}
-                  className="group p-8 border border-gray-100 hover:border-brand-blue/30 hover:shadow-lg transition-all duration-300 bg-white"
+                  className="group p-8 border border-gray-100 hover:border-brand-gold/30 hover:shadow-lg transition-all duration-300 bg-white"
                 >
                   <div className="mb-6">
-                    <Icon className="w-8 h-8 text-brand-blue group-hover:scale-110 transition-transform duration-300" />
+                    <Icon className="w-8 h-8 text-brand-gold group-hover:scale-110 transition-transform duration-300" />
                   </div>
                   <p className="text-sm font-bold text-brand-charcoal uppercase tracking-tight leading-relaxed">
                     {feature}
@@ -104,7 +104,7 @@ export default function ServiceContent({ service }: { service: Service }) {
             transition={{ duration: 0.5 }}
             className="mb-12"
           >
-            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-blue block mb-4">
+            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-gold block mb-4">
               Why Alumise
             </span>
             <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight">
@@ -120,10 +120,10 @@ export default function ServiceContent({ service }: { service: Service }) {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1, duration: 0.5 }}
-                className="flex items-start gap-4 p-6 bg-white border border-gray-100 hover:border-brand-blue/30 hover:shadow-md transition-all"
+                className="flex items-start gap-4 p-6 bg-white border border-gray-100 hover:border-brand-gold/30 hover:shadow-md transition-all"
               >
                 <div className="mt-1">
-                  <CheckCircle2 className="w-6 h-6 text-brand-blue flex-shrink-0" />
+                  <CheckCircle2 className="w-6 h-6 text-brand-gold flex-shrink-0" />
                 </div>
                 <p className="text-sm font-medium text-brand-charcoal leading-relaxed">
                   {benefit}
@@ -144,7 +144,7 @@ export default function ServiceContent({ service }: { service: Service }) {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-blue block mb-4">
+            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-gold block mb-4">
               Common Questions
             </span>
             <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight">
@@ -172,7 +172,7 @@ export default function ServiceContent({ service }: { service: Service }) {
                     {faq.question}
                   </span>
                   <ChevronDown
-                    className={`w-5 h-5 text-brand-blue flex-shrink-0 transition-transform duration-300 ${
+                    className={`w-5 h-5 text-brand-gold flex-shrink-0 transition-transform duration-300 ${
                       openFaqIndex === idx ? "rotate-180" : ""
                     }`}
                   />

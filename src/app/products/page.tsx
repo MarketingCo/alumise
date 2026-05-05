@@ -33,7 +33,7 @@ function ProductsContent() {
       <section className="bg-brand-charcoal pt-40 pb-20 text-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <h1 className="text-5xl md:text-7xl font-bold uppercase mb-6 tracking-tighter">
-            Architectural <span className="text-brand-blue">Systems.</span>
+            Architectural <span className="text-brand-gold">Systems.</span>
           </h1>
           <p className="text-lg text-brand-grey max-w-2xl font-light leading-relaxed">
             Explore our comprehensive range of precision-engineered glazing solutions. From high-performance aluminium to heritage timber.
@@ -54,7 +54,7 @@ function ProductsContent() {
               <div className="flex flex-wrap gap-2">
                 <button
                   onClick={() => setActiveCategory(null)}
-                  className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${!activeCategory ? 'bg-brand-blue text-white' : 'bg-white border border-gray-200 text-brand-charcoal hover:border-brand-blue'}`}
+                  className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${!activeCategory ? 'bg-brand-gold text-white' : 'bg-white border border-gray-200 text-brand-charcoal hover:border-brand-gold'}`}
                 >
                   All Categories
                 </button>
@@ -62,7 +62,7 @@ function ProductsContent() {
                   <button
                     key={cat}
                     onClick={() => setActiveCategory(cat)}
-                    className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${activeCategory?.toLowerCase() === cat.toLowerCase() ? 'bg-brand-blue text-white' : 'bg-white border border-gray-200 text-brand-charcoal hover:border-brand-blue'}`}
+                    className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${activeCategory?.toLowerCase() === cat.toLowerCase() ? 'bg-brand-gold text-white' : 'bg-white border border-gray-200 text-brand-charcoal hover:border-brand-gold'}`}
                   >
                     {cat}
                   </button>
@@ -75,7 +75,7 @@ function ProductsContent() {
               <div className="flex flex-wrap gap-2">
                 <button
                   onClick={() => setActiveMaterial(null)}
-                  className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${!activeMaterial ? 'bg-brand-blue text-white' : 'bg-white border border-gray-200 text-brand-charcoal hover:border-brand-blue'}`}
+                  className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${!activeMaterial ? 'bg-brand-gold text-white' : 'bg-white border border-gray-200 text-brand-charcoal hover:border-brand-gold'}`}
                 >
                   All Materials
                 </button>
@@ -83,7 +83,7 @@ function ProductsContent() {
                   <button
                     key={mat}
                     onClick={() => setActiveMaterial(mat)}
-                    className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${activeMaterial?.toLowerCase() === mat.toLowerCase() ? 'bg-brand-blue text-white' : 'bg-white border border-gray-200 text-brand-charcoal hover:border-brand-blue'}`}
+                    className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${activeMaterial?.toLowerCase() === mat.toLowerCase() ? 'bg-brand-gold text-white' : 'bg-white border border-gray-200 text-brand-charcoal hover:border-brand-gold'}`}
                   >
                     {mat}
                   </button>
@@ -104,12 +104,12 @@ function ProductsContent() {
           <div className="container mx-auto px-4 max-w-7xl flex items-center gap-3">
             <span className="text-[10px] uppercase font-bold text-gray-400">Active:</span>
             {activeCategory && (
-              <span className="inline-flex items-center bg-gray-100 px-3 py-1 rounded-full text-[10px] font-bold text-brand-blue uppercase">
+              <span className="inline-flex items-center bg-gray-100 px-3 py-1 rounded-full text-[10px] font-bold text-brand-gold uppercase">
                 {activeCategory} <button onClick={() => setActiveCategory(null)}><X className="w-3 h-3 ml-2 hover:text-brand-charcoal transition-colors" /></button>
               </span>
             )}
             {activeMaterial && (
-              <span className="inline-flex items-center bg-gray-100 px-3 py-1 rounded-full text-[10px] font-bold text-brand-blue uppercase">
+              <span className="inline-flex items-center bg-gray-100 px-3 py-1 rounded-full text-[10px] font-bold text-brand-gold uppercase">
                 {activeMaterial} <button onClick={() => setActiveMaterial(null)}><X className="w-3 h-3 ml-2 hover:text-brand-charcoal transition-colors" /></button>
               </span>
             )}
@@ -141,7 +141,7 @@ function ProductsContent() {
                 <p className="text-gray-600 mb-8 max-w-md mx-auto">Try adjusting your filters or contact our engineering team for bespoke solutions.</p>
                 <button 
                   onClick={() => { setActiveCategory(null); setActiveMaterial(null); }}
-                  className="bg-brand-blue text-white px-8 py-3 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-brand-charcoal transition-colors"
+                  className="bg-brand-gold text-white px-8 py-3 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-brand-charcoal transition-colors"
                 >
                   Clear All Filters
                 </button>
@@ -158,7 +158,7 @@ function ProductsContent() {
       <section className="bg-gray-50 py-32 border-t border-gray-200">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-4xl font-bold uppercase mb-8 tracking-tighter">
-            Need a <span className="text-brand-blue">Bespoke</span> Solution?
+            Need a <span className="text-brand-gold">Bespoke</span> Solution?
           </h2>
           <p className="text-lg text-gray-500 font-light mb-12 leading-relaxed">
             Our engineers specialize in custom glazing designs that push the boundaries of what's possible. Let's discuss your project today.
@@ -166,7 +166,7 @@ function ProductsContent() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link 
               href="/quote" 
-              className="bg-brand-charcoal text-white hover:bg-brand-blue px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all"
+              className="bg-brand-charcoal text-white hover:bg-brand-gold px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all"
             >
               Request Consultation
             </Link>
@@ -187,7 +187,7 @@ export default function ProductsPage() {
   return (
     <Suspense fallback={
       <div className="min-h-screen flex items-center justify-center bg-brand-charcoal text-white">
-        <div className="w-8 h-8 border-4 border-brand-blue border-t-transparent rounded-full animate-spin"></div>
+        <div className="w-8 h-8 border-4 border-brand-gold border-t-transparent rounded-full animate-spin"></div>
       </div>
     }>
       <ProductsContent />

@@ -14,7 +14,7 @@ export default function BlogPage() {
       <div className="container mx-auto px-4 max-w-7xl">
         <header className="mb-20 text-center max-w-3xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold uppercase mb-8 tracking-tighter">
-            Architectural <span className="text-brand-blue">Insights.</span>
+            Architectural <span className="text-brand-gold">Insights.</span>
           </h1>
           <p className="text-xl text-gray-500 font-light leading-relaxed">
             The authority in architectural glazing. Explore our latest technical guides, material comparisons, and heritage restoration insights.
@@ -44,7 +44,7 @@ export default function BlogPage() {
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-brand-blue text-white text-[8px] uppercase tracking-widest font-bold px-3 py-1">
+                  <span className="bg-brand-gold text-white text-[8px] uppercase tracking-widest font-bold px-3 py-1">
                     {post.category}
                   </span>
                 </div>
@@ -54,7 +54,7 @@ export default function BlogPage() {
                   <span className="flex items-center"><Calendar className="w-3 h-3 mr-2" /> {post.date}</span>
                   <span className="flex items-center"><User className="w-3 h-3 mr-2" /> {post.author}</span>
                 </div>
-                <h3 className="text-2xl font-bold uppercase tracking-tight mb-4 group-hover:text-brand-blue transition-colors leading-tight">
+                <h3 className="text-2xl font-bold uppercase tracking-tight mb-4 group-hover:text-brand-gold transition-colors leading-tight">
                   {post.title}
                 </h3>
                 <p className="text-sm text-gray-500 font-light mb-8 line-clamp-3 leading-relaxed">
@@ -62,7 +62,7 @@ export default function BlogPage() {
                 </p>
                 <Link 
                   href={`/blog/${post.slug}`}
-                  className="mt-auto inline-flex items-center text-[10px] uppercase tracking-widest font-bold border-b-2 border-brand-charcoal pb-1 group-hover:border-brand-blue transition-all w-max"
+                  className="mt-auto inline-flex items-center text-[10px] uppercase tracking-widest font-bold border-b-2 border-brand-charcoal pb-1 group-hover:border-brand-gold transition-all w-max"
                 >
                   Read Full Insight <ArrowRight className="ml-2 w-3 h-3 group-hover:translate-x-1 transition-transform" />
                 </Link>

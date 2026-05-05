@@ -22,7 +22,7 @@ const MegaMenu = () => {
       columns: [
         {
           heading: 'Residential',
-          icon: <DoorOpen className="w-4 h-4 mr-2 text-brand-blue" />,
+          icon: <DoorOpen className="w-4 h-4 mr-2 text-brand-gold" />,
           items: [
             { name: 'Bifold Doors', href: '/services/bifold-doors', desc: 'Slimline aluminium bifolds manufactured in Penicuik.' },
             { name: 'Sliding Doors', href: '/services/sliding-doors', desc: 'Minimalist patio doors for modern extensions.' },
@@ -33,7 +33,7 @@ const MegaMenu = () => {
         },
         {
           heading: 'Commercial',
-          icon: <Building2 className="w-4 h-4 mr-2 text-brand-blue" />,
+          icon: <Building2 className="w-4 h-4 mr-2 text-brand-gold" />,
           items: [
             { name: 'Curtain Walling', href: '/services/curtain-walling', desc: 'Structural glazing for multi-storey developments.' },
             { name: 'Shopfronts', href: '/services/shopfronts', desc: 'Bespoke aluminium retail frontages.' },
@@ -56,7 +56,7 @@ const MegaMenu = () => {
       columns: [
         {
           heading: 'By Category',
-          icon: <Grid3X3 className="w-4 h-4 mr-2 text-brand-blue" />,
+          icon: <Grid3X3 className="w-4 h-4 mr-2 text-brand-gold" />,
           items: categories.map(cat => ({
             name: cat,
             href: `/products?category=${cat.toLowerCase().replace(' ', '-')}`,
@@ -65,7 +65,7 @@ const MegaMenu = () => {
         },
         {
           heading: 'By Material',
-          icon: <Layers className="w-4 h-4 mr-2 text-brand-blue" />,
+          icon: <Layers className="w-4 h-4 mr-2 text-brand-gold" />,
           items: materials.map(mat => ({
             name: mat,
             href: `/materials/${mat.toLowerCase().replace(' ', '-')}`,
@@ -86,7 +86,7 @@ const MegaMenu = () => {
       columns: [
         {
           heading: 'The Journey',
-          icon: <Zap className="w-4 h-4 mr-2 text-brand-blue" />,
+          icon: <Zap className="w-4 h-4 mr-2 text-brand-gold" />,
           items: [
             { name: 'Design & Engineering', href: '/process#design', desc: 'Precision CAD and structural analysis.' },
             { name: 'Fabrication', href: '/process#fabrication', desc: 'Expert craftsmanship in our local facility.' },
@@ -101,7 +101,7 @@ const MegaMenu = () => {
       columns: [
         {
           heading: 'Edinburgh',
-          icon: <MapPin className="w-4 h-4 mr-2 text-brand-blue" />,
+          icon: <MapPin className="w-4 h-4 mr-2 text-brand-gold" />,
           items: [
             { name: 'New Town', href: '/locations/new-town', desc: 'Heritage glazing for Georgian architecture.' },
             { name: 'Leith', href: '/locations/leith', desc: 'Waterfront residential & commercial facades.' },
@@ -112,7 +112,7 @@ const MegaMenu = () => {
         },
         {
           heading: 'Lothians & Beyond',
-          icon: <MapPin className="w-4 h-4 mr-2 text-brand-blue" />,
+          icon: <MapPin className="w-4 h-4 mr-2 text-brand-gold" />,
           items: [
             { name: 'Penicuik', href: '/locations/penicuik', desc: 'Our manufacturing hub & local projects.' },
             { name: 'Musselburgh', href: '/locations/musselburgh', desc: 'Coastal-grade glazing East Lothian.' },
@@ -129,7 +129,7 @@ const MegaMenu = () => {
       columns: [
         {
           heading: 'Sectors',
-          icon: <Building2 className="w-4 h-4 mr-2 text-brand-blue" />,
+          icon: <Building2 className="w-4 h-4 mr-2 text-brand-gold" />,
           items: [
             { name: 'Residential Luxury', href: '/projects?sector=residential', desc: 'Edinburgh\'s finest homes.' },
             { name: 'Commercial & Retail', href: '/projects?sector=commercial', desc: 'High-traffic retail and office facades.' },
@@ -149,7 +149,7 @@ const MegaMenu = () => {
           onMouseEnter={() => setActiveMenu(item.slug)}
           onMouseLeave={() => setActiveMenu(null)}
         >
-          <button className="px-4 py-2 flex items-center text-sm font-medium hover:text-brand-blue transition-colors uppercase tracking-wider">
+          <button className="px-4 py-2 flex items-center text-sm font-medium hover:text-brand-gold transition-colors uppercase tracking-wider">
             {item.title}
             <ChevronDown className={`ml-1 w-4 h-4 transition-transform duration-300 ${activeMenu === item.slug ? 'rotate-180' : ''}`} />
           </button>
@@ -177,7 +177,7 @@ const MegaMenu = () => {
                               href={subItem.href}
                               className="group/item flex flex-col"
                             >
-                              <span className="font-bold text-sm group-hover/item:text-brand-blue transition-colors">{subItem.name}</span>
+                              <span className="font-bold text-sm group-hover/item:text-brand-gold transition-colors">{subItem.name}</span>
                               <span className="text-xs text-gray-500 mt-1 leading-tight">{subItem.desc}</span>
                             </Link>
                           </li>
@@ -195,14 +195,14 @@ const MegaMenu = () => {
                     </div>
                     <Link 
                       href={item.featured.href}
-                      className="text-xs font-bold text-brand-blue hover:underline flex items-center"
+                      className="text-xs font-bold text-brand-gold hover:underline flex items-center"
                     >
                       Learn more <Zap className="w-3 h-3 ml-1 fill-current" />
                     </Link>
                   </div>
                 ) : (
                   <div className="border-l border-gray-100 pl-8 flex flex-col justify-center">
-                    <div className="flex items-center text-brand-blue mb-4">
+                    <div className="flex items-center text-brand-gold mb-4">
                       <ShieldCheck className="w-6 h-6 mr-2" />
                       <span className="font-bold text-xs uppercase tracking-wider">Guaranteed Quality</span>
                     </div>
@@ -216,19 +216,19 @@ const MegaMenu = () => {
           </AnimatePresence>
         </div>
       ))}
-      <Link href="/materials" className="px-4 py-2 text-sm font-medium hover:text-brand-blue transition-colors uppercase tracking-wider">
+      <Link href="/materials" className="px-4 py-2 text-sm font-medium hover:text-brand-gold transition-colors uppercase tracking-wider">
         Materials
       </Link>
-      <Link href="/blog" className="px-4 py-2 text-sm font-medium hover:text-brand-blue transition-colors uppercase tracking-wider">
+      <Link href="/blog" className="px-4 py-2 text-sm font-medium hover:text-brand-gold transition-colors uppercase tracking-wider">
         Insights
       </Link>
-      <Link href="/about" className="px-4 py-2 text-sm font-medium hover:text-brand-blue transition-colors uppercase tracking-wider">
+      <Link href="/about" className="px-4 py-2 text-sm font-medium hover:text-brand-gold transition-colors uppercase tracking-wider">
         About Us
       </Link>
-      <Link href="/trust" className="px-4 py-2 text-sm font-medium hover:text-brand-blue transition-colors uppercase tracking-wider">
+      <Link href="/trust" className="px-4 py-2 text-sm font-medium hover:text-brand-gold transition-colors uppercase tracking-wider">
         Trust & Technical
       </Link>
-      <Link href="/contact" className="px-4 py-2 text-sm font-medium hover:text-brand-blue transition-colors uppercase tracking-wider">
+      <Link href="/contact" className="px-4 py-2 text-sm font-medium hover:text-brand-gold transition-colors uppercase tracking-wider">
         Contact
       </Link>
     </nav>

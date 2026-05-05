@@ -40,13 +40,13 @@ export default function CookieBanner() {
             <div className="flex items-center gap-3 shrink-0">
               <button
                 onClick={handleAccept}
-                className="px-5 py-2.5 bg-brand-blue text-white text-sm font-semibold rounded-sm hover:bg-brand-charcoal transition-colors duration-200"
+                className="px-5 py-2.5 bg-brand-gold text-white text-sm font-semibold rounded-sm hover:bg-brand-charcoal transition-colors duration-200"
               >
                 Accept
               </button>
               <button
                 onClick={handleDecline}
-                className="px-5 py-2.5 border border-brand-blue text-brand-blue text-sm font-semibold rounded-sm hover:bg-brand-blue hover:text-white transition-colors duration-200"
+                className="px-5 py-2.5 border border-brand-gold text-brand-gold text-sm font-semibold rounded-sm hover:bg-brand-gold hover:text-white transition-colors duration-200"
               >
                 Decline
               </button>

@@ -101,7 +101,7 @@ export default function ServicePage({
         <div className="container mx-auto px-4 max-w-7xl relative z-10 pb-20">
           <Link
             href="/services"
-            className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-brand-blue mb-8 hover:text-white transition-colors"
+            className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-brand-gold mb-8 hover:text-white transition-colors"
           >
             <ArrowLeft className="w-3 h-3 mr-2" /> All Services
           </Link>
@@ -120,7 +120,7 @@ export default function ServicePage({
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-20">
             <div className="lg:col-span-2 space-y-8">
               <div>
-                <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-blue block mb-4">
+                <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-gold block mb-4">
                   Service Overview
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight">
@@ -150,7 +150,7 @@ export default function ServicePage({
                 <div className="space-y-4">
                   <Link
                     href="/quote"
-                    className="flex items-center justify-center w-full bg-brand-blue hover:bg-white hover:text-brand-charcoal text-white px-6 py-4 rounded-sm text-xs font-bold uppercase tracking-widest transition-all"
+                    className="flex items-center justify-center w-full bg-brand-gold hover:bg-white hover:text-brand-charcoal text-white px-6 py-4 rounded-sm text-xs font-bold uppercase tracking-widest transition-all"
                   >
                     Get a Quote <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>
@@ -163,15 +163,15 @@ export default function ServicePage({
                 </div>
                 <div className="mt-10 pt-10 border-t border-white/10 space-y-4">
                   <div className="flex items-center gap-3">
-                    <Phone className="w-4 h-4 text-brand-blue" />
+                    <Phone className="w-4 h-4 text-brand-gold" />
                     <span className="text-sm font-bold">0131 210 0321</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Mail className="w-4 h-4 text-brand-blue" />
+                    <Mail className="w-4 h-4 text-brand-gold" />
                     <span className="text-sm font-bold">info@alumise.co.uk</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <MapPin className="w-4 h-4 text-brand-blue flex-shrink-0 mt-0.5" />
+                    <MapPin className="w-4 h-4 text-brand-gold flex-shrink-0 mt-0.5" />
                     <span className="text-sm text-brand-grey font-light">
                       Unit 2B, Eastfield Industrial Estate,
                       <br />
@@ -194,7 +194,7 @@ export default function ServicePage({
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="flex justify-between items-end mb-12">
               <div>
-                <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-blue block mb-4">
+                <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-gold block mb-4">
                   Explore Further
                 </span>
                 <h2 className="text-3xl font-bold uppercase tracking-tight">
@@ -204,7 +204,7 @@ export default function ServicePage({
               </div>
               <Link
                 href="/products"
-                className="hidden md:inline-flex items-center text-xs font-bold uppercase tracking-widest border-b border-brand-charcoal pb-1 hover:text-brand-blue hover:border-brand-blue transition-all"
+                className="hidden md:inline-flex items-center text-xs font-bold uppercase tracking-widest border-b border-brand-charcoal pb-1 hover:text-brand-gold hover:border-brand-gold transition-all"
               >
                 View All Systems{" "}
                 <ArrowRight className="ml-2 w-4 h-4" />
@@ -226,7 +226,7 @@ export default function ServicePage({
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
-                  <h4 className="font-bold uppercase tracking-tight mb-2 group-hover:text-brand-blue transition-colors">
+                  <h4 className="font-bold uppercase tracking-tight mb-2 group-hover:text-brand-gold transition-colors">
                     {product.title}
                   </h4>
                   <p className="text-xs text-gray-500 line-clamp-2">
@@ -244,7 +244,7 @@ export default function ServicePage({
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-4xl md:text-6xl font-bold uppercase mb-8 tracking-tighter">
             Start Your{" "}
-            <span className="text-brand-blue">{service.title}</span> Project.
+            <span className="text-brand-gold">{service.title}</span> Project.
           </h2>
           <p className="text-lg text-gray-500 font-light mb-12 max-w-2xl mx-auto leading-relaxed">
             Our engineering team is ready to survey, specify, and install your
@@ -254,7 +254,7 @@ export default function ServicePage({
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
               href="/quote"
-              className="bg-brand-charcoal text-white hover:bg-brand-blue px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all shadow-xl"
+              className="bg-brand-charcoal text-white hover:bg-brand-gold px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all shadow-xl"
             >
               Request a Quote
             </Link>
