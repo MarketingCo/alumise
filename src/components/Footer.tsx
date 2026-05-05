@@ -86,6 +86,7 @@ export default function Footer() {
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-centre gap-8 text-[10px] uppercase tracking-[0.2em] text-brand-grey font-bold">
           <div className="flex space-x-8">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy (GDPR)</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
             <Link href="/cookies" className="hover:text-white transition-colors">Cookie Policy</Link>
           </div>
