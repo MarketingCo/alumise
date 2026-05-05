@@ -5,20 +5,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { 
-  Users, 
-  Target, 
-  History, 
   ShieldCheck, 
   ArrowRight,
   CheckCircle2,
-  Building2,
   Award
 } from 'lucide-react';
 
 export default function AboutPage() {
   const stats = [
-    { label: 'Founded', value: '2012' },
-    { label: 'Projects Completed', value: '500+' },
     { label: 'Materials Offered', value: '6+' },
     { label: 'Structural Guarantee', value: '10 Yrs' }
   ];
@@ -54,10 +48,7 @@ export default function AboutPage() {
               fill
               className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />
-            <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-brand-blue p-8 flex flex-col justify-centre text-white hidden md:flex">
-              <span className="text-4xl font-bold font-[family-name:var(--font-oswald)] mb-2">10+</span>
-              <span className="text-[10px] uppercase tracking-widest font-bold">Years Industry Authority</span>
-            </div>
+
           </div>
           <div className="space-y-10">
             <div className="space-y-6">
@@ -86,57 +77,6 @@ export default function AboutPage() {
                 <span className="text-xs font-bold uppercase tracking-widest">BIM Ready</span>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Banner */}
-      <section className="py-24 bg-gray-50 border-y border-gray-100">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 text-centre">
-            {stats.map((stat) => (
-              <div key={stat.label}>
-                <p className="text-5xl font-bold font-[family-name:var(--font-oswald)] mb-2">{stat.value}</p>
-                <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-gray-400">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Experts Section */}
-      <section className="py-32">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-            <div className="max-w-2xl">
-              <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue mb-4">Technical Leadership</h2>
-              <p className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-oswald)] uppercase leading-tight tracking-tight">
-                Guided by <span className="text-gray-600">Engineering.</span>
-              </p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {[
-              { name: 'Technical Director', role: 'Structural Engineering', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop' },
-              { name: 'Lead Estimator', role: 'Commercial Projects', image: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=2048&auto=format&fit=crop' },
-              { name: 'Senior Surveyor', role: 'Technical Compliance', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop' }
-            ].map((member, idx) => (
-              <motion.div 
-                key={member.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="group"
-              >
-                <div className="relative h-96 overflow-hidden mb-6 bg-gray-100">
-                  <Image src={member.image} alt={member.name} fill className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
-                </div>
-                <h4 className="text-xl font-bold uppercase tracking-tight">{member.name}</h4>
-                <p className="text-[10px] uppercase tracking-widest text-brand-blue font-bold">{member.role}</p>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>

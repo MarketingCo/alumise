@@ -232,20 +232,12 @@ export default function Home() {
 
             <div className="grid grid-cols-2 gap-4">
               <div className="glass-panel p-12 text-center group hover:bg-brand-blue/10 transition-colors duration-500">
-                <h3 className="text-6xl font-semibold mb-2">15+</h3>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-brand-blue font-bold">Years Experience</p>
-              </div>
-              <div className="glass-panel p-12 text-center group hover:bg-brand-blue/10 transition-colors duration-500 mt-12">
-                <h3 className="text-6xl font-semibold mb-2">500+</h3>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-brand-blue font-bold">Projects Delivered</p>
-              </div>
-              <div className="glass-panel p-12 text-center group hover:bg-brand-blue/10 transition-colors duration-500">
                 <h3 className="text-6xl font-semibold mb-2">100%</h3>
                 <p className="text-[10px] uppercase tracking-[0.2em] text-brand-blue font-bold">Bespoke Design</p>
               </div>
               <div className="glass-panel p-12 text-center group hover:bg-brand-blue/10 transition-colors duration-500 mt-12">
-                <h3 className="text-6xl font-semibold mb-2">Elite</h3>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-brand-blue font-bold">Supply Partners</p>
+                <h3 className="text-6xl font-semibold mb-2">FENSA</h3>
+                <p className="text-[10px] uppercase tracking-[0.2em] text-brand-blue font-bold">Accredited Installer</p>
               </div>
             </div>
           </div>
@@ -338,57 +330,6 @@ export default function Home() {
             >
               Learn More About Our Process <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-32 bg-gray-50 border-y border-gray-100">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="text-center mb-20">
-            <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue mb-4">Voices of Luxury</h2>
-            <p className="text-4xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">The Alumise <span className="text-gray-400">Horizon.</span></p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {[
-              { 
-                quote: "Alumise manufactured and installed a full curtain walling system for our Edinburgh office refurbishment. The thermal performance exceeded spec and the installation was completed ahead of schedule.", 
-                author: "Verified Commercial Client", 
-                org: "Edinburgh City Centre" 
-              },
-              { 
-                quote: "We had Alumise replace all our windows and install bifold doors to the garden. The steel-look design matches our period property perfectly and the glazing quality is excellent.", 
-                author: "Verified Residential Client", 
-                org: "Morningside, Edinburgh" 
-              },
-              { 
-                quote: "As a main contractor, I need suppliers who deliver on programme. Alumise's in-house manufacturing at Penicuik means lead times are predictable and their site teams are thorough.", 
-                author: "Verified Contractor", 
-                org: "Central Belt Projects" 
-              }
-            ].map((t, idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="bg-white p-10 shadow-sm border border-gray-100 flex flex-col justify-between"
-              >
-                <div className="space-y-6">
-                  <div className="flex text-brand-blue">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                    ))}
-                  </div>
-                  <p className="text-lg text-brand-charcoal font-light italic leading-relaxed">"{t.quote}"</p>
-                </div>
-                <div className="mt-8 pt-8 border-t border-gray-50">
-                  <p className="text-xs font-bold uppercase tracking-widest">{t.author}</p>
-                  <p className="text-[10px] text-gray-400 uppercase tracking-widest mt-1">{t.org}</p>
-                </div>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>

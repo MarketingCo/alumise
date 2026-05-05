@@ -18,10 +18,7 @@ import Link from 'next/link';
 import ThermalEstimator from '@/components/ThermalEstimator';
 
 const accreditations = [
-  { name: 'FENSA Certified', desc: 'Industry standard for replacement windows and doors in England and Wales.' },
-  { name: 'BSI Kitemark', desc: 'The ultimate symbol of quality and safety for glazing products.' },
-  { name: 'Secured by Design', desc: 'Police-backed initiative focused on crime prevention through architectural design.' },
-  { name: 'Constructionline Gold', desc: 'Verified excellence in health and safety, environment, and quality management.' }
+  { name: 'FENSA Certified', desc: 'Industry standard for replacement windows and doors in England and Wales.' }
 ];
 
 export default function TrustHub() {
