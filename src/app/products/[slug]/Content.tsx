@@ -15,7 +15,6 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { products } from '@/data/products';
-import EngineeringHotspot from '@/components/EngineeringHotspot';
 
 export default function ProductPageContent({ slug }: { slug: string }) {
   const product = products.find(p => p.slug === slug);
@@ -46,25 +45,19 @@ export default function ProductPageContent({ slug }: { slug: string }) {
       />
       {/* Product Hero */}
       <section className="relative h-[70vh] min-h-[500px] flex items-end bg-brand-charcoal text-white overflow-hidden">
-        <EngineeringHotspot hotspots={[
-          { x: 30, y: 40, title: "Precision Frame", content: "High-performance thermally broken core prevents heat transfer and eliminates condensation risks." },
-          { x: 60, y: 50, title: "Structural Glass", content: "Low-E coated safety glass with argon-filled cavities for superior thermal efficiency and acoustic dampening." },
-          { x: 45, y: 75, title: "Engineered Seals", content: "Multi-layered EPDM gaskets ensure absolute airtightness and weather resistance in extreme conditions." }
-        ]}>
-          <Image 
-            src={product.heroImage}
-            alt={product.title}
-            fill
-            className="object-cover opacity-60"
-            priority
-          />
-        </EngineeringHotspot>
+        <Image
+          src={product.heroImage}
+          alt={product.title}
+          fill
+          className="object-cover opacity-60"
+          priority
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal via-transparent to-transparent pointer-events-none"></div>
         
         <div className="container mx-auto px-4 max-w-7xl relative z-10 pb-20">
           <Link 
             href="/products" 
-            className="inline-flex items-centre text-[10px] uppercase tracking-widest font-bold text-brand-blue mb-8 hover:text-white transition-colors"
+            className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-brand-blue mb-8 hover:text-white transition-colors"
           >
             <ArrowLeft className="w-3 h-3 mr-2" /> Back to Systems
           </Link>
@@ -75,7 +68,7 @@ export default function ProductPageContent({ slug }: { slug: string }) {
               </span>
             ))}
           </div>
-          <h1 className="text-6xl md:text-8xl font-bold font-[family-name:var(--font-oswald)] uppercase leading-none tracking-tighter mb-4">
+          <h1 className="text-6xl md:text-8xl font-bold uppercase leading-none tracking-tighter mb-4">
             {product.title}
           </h1>
           <p className="text-xl text-brand-grey max-w-2xl font-light leading-relaxed">
@@ -111,16 +104,16 @@ export default function ProductPageContent({ slug }: { slug: string }) {
                 <div className="bg-gray-50 p-8 rounded-sm">
                   <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-charcoal mb-6">Technical Verification</h3>
                   <ul className="space-y-4">
-                    <li className="flex items-centre text-xs text-gray-500">
+                    <li className="flex items-center text-xs text-gray-500">
                       <ShieldCheck className="w-4 h-4 mr-3 text-brand-blue" /> UK Building Regs Compliant
                     </li>
-                    <li className="flex items-centre text-xs text-gray-500">
+                    <li className="flex items-center text-xs text-gray-500">
                       <Zap className="w-4 h-4 mr-3 text-brand-blue" /> High Thermal Efficiency
                     </li>
-                    <li className="flex items-centre text-xs text-gray-500">
+                    <li className="flex items-center text-xs text-gray-500">
                       <Ruler className="w-4 h-4 mr-3 text-brand-blue" /> Custom Structural Analysis
                     </li>
-                    <li className="flex items-centre text-xs text-gray-500">
+                    <li className="flex items-center text-xs text-gray-500">
                       <Clock className="w-4 h-4 mr-3 text-brand-blue" /> FENSA Certified Installation
                     </li>
                   </ul>
@@ -133,7 +126,7 @@ export default function ProductPageContent({ slug }: { slug: string }) {
                   <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-blue mb-8">Technical Specifications</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-6">
                     {Object.entries(product.technicalSpecs).map(([key, value]) => (
-                      <div key={key} className="flex justify-between items-centre py-4 border-b border-gray-50">
+                      <div key={key} className="flex justify-between items-center py-4 border-b border-gray-50">
                         <span className="text-[10px] uppercase tracking-widest font-bold text-gray-400">
                           {key.replace(/([A-Z])/g, ' $1').trim()}
                         </span>
@@ -148,7 +141,7 @@ export default function ProductPageContent({ slug }: { slug: string }) {
             {/* Right Column: Sticky CTA / Sidebar */}
             <div className="relative">
               <div className="sticky top-32 bg-brand-charcoal text-white p-10 rounded-sm shadow-2xl">
-                <h3 className="text-2xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-6 tracking-tight">
+                <h3 className="text-2xl font-bold uppercase mb-6 tracking-tight">
                   Request Technical <br />Consultation
                 </h3>
                 <p className="text-sm text-brand-grey mb-8 font-light leading-relaxed">
@@ -157,19 +150,19 @@ export default function ProductPageContent({ slug }: { slug: string }) {
                 <div className="space-y-4">
                   <Link 
                     href="/quote" 
-                    className="flex items-centre justify-centre w-full bg-brand-blue hover:bg-white hover:text-brand-charcoal text-white px-6 py-4 rounded-sm text-xs font-bold uppercase tracking-widest transition-all"
+                    className="flex items-center justify-center w-full bg-brand-blue hover:bg-white hover:text-brand-charcoal text-white px-6 py-4 rounded-sm text-xs font-bold uppercase tracking-widest transition-all"
                   >
                     Get a Quote <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>
                   <Link 
                     href="/contact" 
-                    className="flex items-centre justify-centre w-full bg-transparent border border-white/20 hover:border-white text-white px-6 py-4 rounded-sm text-xs font-bold uppercase tracking-widest transition-all"
+                    className="flex items-center justify-center w-full bg-transparent border border-white/20 hover:border-white text-white px-6 py-4 rounded-sm text-xs font-bold uppercase tracking-widest transition-all"
                   >
                     Speak with an Expert
                   </Link>
                 </div>
                 
-                <div className="mt-10 pt-10 border-t border-white/10 text-centre">
+                <div className="mt-10 pt-10 border-t border-white/10 text-center">
                   <p className="text-[10px] uppercase tracking-widest text-brand-blue font-bold mb-2">Direct Line</p>
                   <p className="text-xl font-bold">Email us</p>
                 </div>
@@ -185,7 +178,7 @@ export default function ProductPageContent({ slug }: { slug: string }) {
           <div className="flex justify-between items-end mb-12">
             <div>
               <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue mb-4">Complete Your Vision</h2>
-              <p className="text-3xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">Complementary <span className="text-gray-400">Systems.</span></p>
+              <p className="text-3xl font-bold uppercase tracking-tight">Complementary <span className="text-gray-400">Systems.</span></p>
             </div>
             <Link href="/products" className="text-xs font-bold uppercase tracking-widest border-b border-brand-charcoal pb-1 hover:text-brand-blue hover:border-brand-blue transition-all">
               View All Systems

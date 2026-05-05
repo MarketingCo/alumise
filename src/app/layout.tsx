@@ -1,24 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Oswald } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import WhatsAppBubble from "@/components/WhatsAppBubble";
-import SmoothScrollProvider from "@/components/SmoothScrollProvider";
-
 import CookieBanner from "@/components/CookieBanner";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const oswald = Oswald({
-  variable: "--font-oswald",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 const localBusinessSchema = {
   "@context": "https://schema.org/",
@@ -27,7 +11,10 @@ const localBusinessSchema = {
   "description": "Alumise Ltd — Premium aluminium windows, bifold doors, sliding doors, roof lanterns, curtain walling and architectural glazing. Manufactured in Penicuik, installed across Edinburgh, Midlothian and Scotland. FENSA accredited.",
   "image": "https://www.alumise.co.uk/logo.png",
   "url": "https://www.alumise.co.uk",
-  "sameAs": [],
+  "logo": "https://www.alumise.co.uk/logo.png",
+  "sameAs": [
+    "https://www.fensa.org.uk",
+  ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Architectural Glazing Services",
@@ -56,6 +43,14 @@ const localBusinessSchema = {
     "latitude": 55.8340,
     "longitude": -3.2185
   },
+  "areaServed": [
+    { "@type": "City", "name": "Edinburgh" },
+    { "@type": "AdministrativeArea", "name": "Midlothian" },
+    { "@type": "AdministrativeArea", "name": "East Lothian" },
+    { "@type": "AdministrativeArea", "name": "West Lothian" },
+    { "@type": "AdministrativeArea", "name": "Fife" },
+    { "@type": "AdministrativeArea", "name": "Scottish Borders" }
+  ],
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -77,34 +72,24 @@ const localBusinessSchema = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Alumise | Aluminium Windows, Bifold Doors & Glazing Edinburgh",
+    default: "Alumise | Premium Aluminium Windows & Bifold Doors Edinburgh",
     template: "%s | Alumise"
   },
-  description: "Alumise Ltd — Premium aluminium windows, bifold doors, sliding doors, roof lanterns, curtain walling and architectural glazing. Manufactured in Penicuik, installed across Edinburgh, Midlothian and Scotland. FENSA accredited.",
-  keywords: "aluminium windows Edinburgh, bifold doors Edinburgh, sliding doors Edinburgh, roof lanterns Edinburgh, curtain walling Scotland, shopfronts Edinburgh, architectural glazing Penicuik, double glazing Midlothian, FENSA accredited Edinburgh, aluminium manufacturing Scotland",
+  description: "Alumise Ltd — Premium aluminium windows, bifold doors, sliding doors, roof lanterns and architectural glazing. Manufactured in our Penicuik facility and installed across Edinburgh and Scotland. FENSA accredited. 10-year guarantee.",
   metadataBase: new URL('https://www.alumise.co.uk'),
   alternates: { canonical: '/' },
   openGraph: {
-    title: "Alumise | Aluminium Windows, Bifold Doors & Glazing Edinburgh",
-    description: "Premium architectural glazing manufactured in our Penicuik facility. Precision-engineered aluminium systems for luxury residential and commercial projects.",
+    title: "Alumise | Premium Aluminium Windows & Bifold Doors Edinburgh",
+    description: "Premium architectural glazing manufactured in our Penicuik facility. Precision-engineered aluminium systems for luxury residential and commercial projects across Edinburgh and Scotland.",
     url: "https://www.alumise.co.uk",
     siteName: "Alumise",
     locale: "en_GB",
     type: "website",
-    images: [
-      {
-        url: "https://www.alumise.co.uk/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Alumise — Premium Architectural Glazing"
-      }
-    ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alumise | Premium Architectural Glazing",
-    description: "Precision-engineered glazing systems. Manufactured in-house at our Midlothian hub.",
-    images: ["https://www.alumise.co.uk/og-image.jpg"],
+    title: "Alumise | Premium Aluminium Windows & Bifold Doors Edinburgh",
+    description: "Premium architectural glazing manufactured in Penicuik. Installed across Edinburgh and Scotland.",
   },
   robots: {
     index: true,
@@ -121,8 +106,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-GB" className={`${inter.variable} ${oswald.variable}`}>
+    <html lang="en-GB">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <link rel="preconnect" href="https://images.unsplash.com" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <script
@@ -130,13 +118,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
       </head>
-      <body className="font-[family-name:var(--font-inter)] flex flex-col min-h-screen bg-white text-brand-charcoal antialiased">
-        <SmoothScrollProvider>
-          <Header />
-          <main className="flex-grow">{children}</main>
-          <Footer />
-          <WhatsAppBubble />
-        </SmoothScrollProvider>
+      <body className="flex flex-col min-h-screen bg-white text-brand-charcoal antialiased" style={{ fontFamily: "'Inter', ui-sans-serif, system-ui, sans-serif" }}>
+        <Header />
+        <main className="flex-grow">{children}</main>
+        <Footer />
         <CookieBanner />
       </body>
     </html>

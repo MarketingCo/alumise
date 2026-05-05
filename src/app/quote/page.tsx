@@ -63,16 +63,16 @@ export default function QuotePage() {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen bg-brand-charcoal text-white flex items-centre justify-centre p-4">
+      <div className="min-h-screen bg-brand-charcoal text-white flex items-center justify-center p-4">
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="max-w-md w-full bg-white text-brand-charcoal p-12 text-centre rounded-sm shadow-2xl"
+          className="max-w-md w-full bg-white text-brand-charcoal p-12 text-center rounded-sm shadow-2xl"
         >
-          <div className="w-20 h-20 bg-brand-blue/10 text-brand-blue rounded-full flex items-centre justify-centre mx-auto mb-8">
+          <div className="w-20 h-20 bg-brand-blue/10 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-8">
             <CheckCircle2 size={40} />
           </div>
-          <h2 className="text-3xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-4 tracking-tight">Request Received</h2>
+          <h2 className="text-3xl font-bold uppercase mb-4 tracking-tight">Request Received</h2>
           <p className="text-gray-500 font-light mb-8 leading-relaxed">
             Thank you, {formData.name}. Our lead engineer will review your project specifications and contact you within 24 hours to discuss the next steps.
           </p>
@@ -89,8 +89,8 @@ export default function QuotePage() {
       <div className="container mx-auto px-4 max-w-4xl">
         {/* Progress Header */}
         <div className="mb-12">
-          <div className="flex justify-between items-centre mb-4">
-            <h1 className="text-4xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tighter">
+          <div className="flex justify-between items-center mb-4">
+            <h1 className="text-4xl font-bold uppercase tracking-tighter">
               Project <span className="text-brand-blue">Configurator.</span>
             </h1>
             <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Step {step} of 4</span>
@@ -124,7 +124,7 @@ export default function QuotePage() {
                         type="button"
                         aria-label={`Select ${cat} category`}
                         onClick={() => updateData('category', cat)}
-                        className={`flex items-centre p-6 border transition-all ${
+                        className={`flex items-center p-6 border transition-all ${
                           formData.category === cat 
                             ? 'border-brand-blue bg-brand-blue/5 text-brand-blue shadow-lg' 
                             : 'border-gray-100 hover:border-gray-300'
@@ -144,7 +144,7 @@ export default function QuotePage() {
                       type="button"
                       aria-label="Select Residential Luxury sector"
                       onClick={() => updateData('projectType', 'Residential')}
-                      className={`flex-1 flex flex-col items-centre p-6 border transition-all ${
+                      className={`flex-1 flex flex-col items-center p-6 border transition-all ${
                         formData.projectType === 'Residential' 
                           ? 'border-brand-blue bg-brand-blue/5 text-brand-blue' 
                           : 'border-gray-100 hover:border-gray-300'
@@ -157,7 +157,7 @@ export default function QuotePage() {
                       type="button"
                       aria-label="Select Commercial and Retail sector"
                       onClick={() => updateData('projectType', 'Commercial')}
-                      className={`flex-1 flex flex-col items-centre p-6 border transition-all ${
+                      className={`flex-1 flex flex-col items-center p-6 border transition-all ${
                         formData.projectType === 'Commercial' 
                           ? 'border-brand-blue bg-brand-blue/5 text-brand-blue' 
                           : 'border-gray-100 hover:border-gray-300'
@@ -174,7 +174,7 @@ export default function QuotePage() {
                     type="button"
                     disabled={!formData.category}
                     onClick={nextStep}
-                    className="flex items-centre bg-brand-charcoal text-white px-10 py-4 rounded-sm font-bold uppercase tracking-widest text-xs disabled:opacity-30 transition-all hover:bg-brand-blue"
+                    className="flex items-center bg-brand-charcoal text-white px-10 py-4 rounded-sm font-bold uppercase tracking-widest text-xs disabled:opacity-30 transition-all hover:bg-brand-blue"
                   >
                     Next Step <ArrowRight className="ml-2 w-4 h-4" />
                   </button>
@@ -199,7 +199,7 @@ export default function QuotePage() {
                         key={mat}
                         type="button"
                         onClick={() => updateData('material', mat)}
-                        className={`flex flex-col items-centre p-6 border transition-all ${
+                        className={`flex flex-col items-center p-6 border transition-all ${
                           formData.material === mat 
                             ? 'border-brand-blue bg-brand-blue/5 text-brand-blue shadow-lg' 
                             : 'border-gray-100 hover:border-gray-300'
@@ -216,7 +216,7 @@ export default function QuotePage() {
                   <button
                     type="button"
                     onClick={prevStep}
-                    className="flex items-centre text-gray-500 hover:text-brand-charcoal px-6 py-4 font-bold uppercase tracking-widest text-xs transition-all"
+                    className="flex items-center text-gray-500 hover:text-brand-charcoal px-6 py-4 font-bold uppercase tracking-widest text-xs transition-all"
                   >
                     <ArrowLeft className="mr-2 w-4 h-4" /> Back
                   </button>
@@ -224,7 +224,7 @@ export default function QuotePage() {
                     type="button"
                     disabled={!formData.material}
                     onClick={nextStep}
-                    className="flex items-centre bg-brand-charcoal text-white px-10 py-4 rounded-sm font-bold uppercase tracking-widest text-xs disabled:opacity-30 transition-all hover:bg-brand-blue"
+                    className="flex items-center bg-brand-charcoal text-white px-10 py-4 rounded-sm font-bold uppercase tracking-widest text-xs disabled:opacity-30 transition-all hover:bg-brand-blue"
                   >
                     Next Step <ArrowRight className="ml-2 w-4 h-4" />
                   </button>
@@ -271,14 +271,14 @@ export default function QuotePage() {
                   <button
                     type="button"
                     onClick={prevStep}
-                    className="flex items-centre text-gray-500 hover:text-brand-charcoal px-6 py-4 font-bold uppercase tracking-widest text-xs transition-all"
+                    className="flex items-center text-gray-500 hover:text-brand-charcoal px-6 py-4 font-bold uppercase tracking-widest text-xs transition-all"
                   >
                     <ArrowLeft className="mr-2 w-4 h-4" /> Back
                   </button>
                   <button
                     type="button"
                     onClick={nextStep}
-                    className="flex items-centre bg-brand-charcoal text-white px-10 py-4 rounded-sm font-bold uppercase tracking-widest text-xs transition-all hover:bg-brand-blue"
+                    className="flex items-center bg-brand-charcoal text-white px-10 py-4 rounded-sm font-bold uppercase tracking-widest text-xs transition-all hover:bg-brand-blue"
                   >
                     Next Step <ArrowRight className="ml-2 w-4 h-4" />
                   </button>
@@ -343,14 +343,14 @@ export default function QuotePage() {
                   <button
                     type="button"
                     onClick={prevStep}
-                    className="flex items-centre text-gray-500 hover:text-brand-charcoal px-6 py-4 font-bold uppercase tracking-widest text-xs transition-all"
+                    className="flex items-center text-gray-500 hover:text-brand-charcoal px-6 py-4 font-bold uppercase tracking-widest text-xs transition-all"
                   >
                     <ArrowLeft className="mr-2 w-4 h-4" /> Back
                   </button>
                   <button
                     type="submit"
                     disabled={isSubmitting || !formData.email || !formData.name}
-                    className="flex items-centre bg-brand-blue text-white px-12 py-5 rounded-sm font-bold uppercase tracking-widest text-xs disabled:opacity-30 transition-all shadow-xl hover:bg-brand-charcoal"
+                    className="flex items-center bg-brand-blue text-white px-12 py-5 rounded-sm font-bold uppercase tracking-widest text-xs disabled:opacity-30 transition-all shadow-xl hover:bg-brand-charcoal"
                   >
                     {isSubmitting ? (
                       <>Processing <Loader2 className="ml-2 w-4 h-4 animate-spin" /></>
@@ -364,7 +364,7 @@ export default function QuotePage() {
           </AnimatePresence>
         </form>
         
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-centre border-t border-gray-100 pt-12">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center border-t border-gray-100 pt-12">
           <div className="space-y-2">
             <ShieldCheck size={20} className="mx-auto" />
             <p className="text-[8px] uppercase tracking-widest font-bold">Secure Data Transmission</p>

@@ -141,7 +141,7 @@ const MegaMenu = () => {
   ];
 
   return (
-    <nav className="hidden lg:flex items-centre space-x-1">
+    <nav className="hidden lg:flex items-center space-x-1">
       {menuItems.map((item) => (
         <div
           key={item.slug}
@@ -149,7 +149,7 @@ const MegaMenu = () => {
           onMouseEnter={() => setActiveMenu(item.slug)}
           onMouseLeave={() => setActiveMenu(null)}
         >
-          <button className="px-4 py-2 flex items-centre text-sm font-medium hover:text-brand-blue transition-colors uppercase tracking-wider">
+          <button className="px-4 py-2 flex items-center text-sm font-medium hover:text-brand-blue transition-colors uppercase tracking-wider">
             {item.title}
             <ChevronDown className={`ml-1 w-4 h-4 transition-transform duration-300 ${activeMenu === item.slug ? 'rotate-180' : ''}`} />
           </button>
@@ -166,7 +166,7 @@ const MegaMenu = () => {
                 <div className="col-span-2 grid grid-cols-2 gap-8">
                   {item.columns.map((col, idx) => (
                     <div key={idx}>
-                      <div className="flex items-centre mb-4 pb-2 border-b border-gray-100">
+                      <div className="flex items-center mb-4 pb-2 border-b border-gray-100">
                         {col.icon}
                         <h4 className="font-bold text-xs uppercase tracking-widest text-gray-500">{col.heading}</h4>
                       </div>
@@ -195,14 +195,14 @@ const MegaMenu = () => {
                     </div>
                     <Link 
                       href={item.featured.href}
-                      className="text-xs font-bold text-brand-blue hover:underline flex items-centre"
+                      className="text-xs font-bold text-brand-blue hover:underline flex items-center"
                     >
                       Learn more <Zap className="w-3 h-3 ml-1 fill-current" />
                     </Link>
                   </div>
                 ) : (
-                  <div className="border-l border-gray-100 pl-8 flex flex-col justify-centre">
-                    <div className="flex items-centre text-brand-blue mb-4">
+                  <div className="border-l border-gray-100 pl-8 flex flex-col justify-center">
+                    <div className="flex items-center text-brand-blue mb-4">
                       <ShieldCheck className="w-6 h-6 mr-2" />
                       <span className="font-bold text-xs uppercase tracking-wider">Guaranteed Quality</span>
                     </div>

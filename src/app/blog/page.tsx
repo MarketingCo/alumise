@@ -12,8 +12,8 @@ export default function BlogPage() {
   return (
     <div className="bg-white min-h-screen pt-40 pb-20">
       <div className="container mx-auto px-4 max-w-7xl">
-        <header className="mb-20 text-centre max-w-3xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+        <header className="mb-20 text-center max-w-3xl mx-auto">
+          <h1 className="text-5xl md:text-7xl font-bold uppercase mb-8 tracking-tighter">
             Architectural <span className="text-brand-blue">Insights.</span>
           </h1>
           <p className="text-xl text-gray-500 font-light leading-relaxed">
@@ -50,9 +50,9 @@ export default function BlogPage() {
                 </div>
               </Link>
               <div className="p-8 flex-grow flex flex-col">
-                <div className="flex items-centre space-x-4 text-[10px] uppercase tracking-widest font-bold text-gray-600 mb-4">
-                  <span className="flex items-centre"><Calendar className="w-3 h-3 mr-2" /> {post.date}</span>
-                  <span className="flex items-centre"><User className="w-3 h-3 mr-2" /> {post.author}</span>
+                <div className="flex items-center space-x-4 text-[10px] uppercase tracking-widest font-bold text-gray-600 mb-4">
+                  <span className="flex items-center"><Calendar className="w-3 h-3 mr-2" /> {post.date}</span>
+                  <span className="flex items-center"><User className="w-3 h-3 mr-2" /> {post.author}</span>
                 </div>
                 <h3 className="text-2xl font-bold uppercase tracking-tight mb-4 group-hover:text-brand-blue transition-colors leading-tight">
                   {post.title}
@@ -62,7 +62,7 @@ export default function BlogPage() {
                 </p>
                 <Link 
                   href={`/blog/${post.slug}`}
-                  className="mt-auto inline-flex items-centre text-[10px] uppercase tracking-widest font-bold border-b-2 border-brand-charcoal pb-1 group-hover:border-brand-blue transition-all w-max"
+                  className="mt-auto inline-flex items-center text-[10px] uppercase tracking-widest font-bold border-b-2 border-brand-charcoal pb-1 group-hover:border-brand-blue transition-all w-max"
                 >
                   Read Full Insight <ArrowRight className="ml-2 w-3 h-3 group-hover:translate-x-1 transition-transform" />
                 </Link>

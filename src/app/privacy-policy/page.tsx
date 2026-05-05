@@ -8,7 +8,7 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="bg-white min-h-screen pt-40 pb-20">
       <div className="container mx-auto px-4 max-w-4xl">
-        <h1 className="text-4xl md:text-6xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-12 tracking-tighter">
+        <h1 className="text-4xl md:text-6xl font-bold uppercase mb-12 tracking-tighter">
           Privacy <span className="text-brand-blue">Policy.</span>
         </h1>
 

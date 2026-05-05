@@ -105,7 +105,7 @@ export default function ServicePage({
           >
             <ArrowLeft className="w-3 h-3 mr-2" /> All Services
           </Link>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-[family-name:var(--font-oswald)] uppercase leading-none tracking-tighter mb-6 max-w-5xl">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold uppercase leading-none tracking-tighter mb-6 max-w-5xl">
             {service.title}
           </h1>
           <p className="text-xl text-brand-grey max-w-2xl font-light leading-relaxed">
@@ -123,7 +123,7 @@ export default function ServicePage({
                 <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-blue block mb-4">
                   Service Overview
                 </span>
-                <h2 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">
+                <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight">
                   Manufactured in Penicuik. Installed Across the Lothians.
                 </h2>
               </div>
@@ -140,7 +140,7 @@ export default function ServicePage({
             </div>
             <div className="relative">
               <div className="sticky top-32 bg-brand-charcoal text-white p-10 rounded-sm shadow-2xl">
-                <h3 className="text-2xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-6 tracking-tight">
+                <h3 className="text-2xl font-bold uppercase mb-6 tracking-tight">
                   Request a Consultation
                 </h3>
                 <p className="text-sm text-brand-grey mb-8 font-light leading-relaxed">
@@ -197,7 +197,7 @@ export default function ServicePage({
                 <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-blue block mb-4">
                   Explore Further
                 </span>
-                <h2 className="text-3xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">
+                <h2 className="text-3xl font-bold uppercase tracking-tight">
                   Related{" "}
                   <span className="text-gray-400">Systems.</span>
                 </h2>
@@ -242,7 +242,7 @@ export default function ServicePage({
       {/* Contact CTA */}
       <section className="py-32 bg-white">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-4xl md:text-6xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+          <h2 className="text-4xl md:text-6xl font-bold uppercase mb-8 tracking-tighter">
             Start Your{" "}
             <span className="text-brand-blue">{service.title}</span> Project.
           </h2>

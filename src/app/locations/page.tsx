@@ -12,8 +12,8 @@ export default function LocationsPage() {
   return (
     <div className="bg-white min-h-screen pt-40 pb-20">
       <div className="container mx-auto px-4 max-w-7xl">
-        <header className="mb-20 text-centre max-w-3xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+        <header className="mb-20 text-center max-w-3xl mx-auto">
+          <h1 className="text-5xl md:text-7xl font-bold uppercase mb-8 tracking-tighter">
             Operational <span className="text-brand-blue">Districts.</span>
           </h1>
           <p className="text-xl text-gray-500 font-light leading-relaxed">
@@ -24,8 +24,8 @@ export default function LocationsPage() {
         <div className="space-y-24">
           {regions.map((region, rIdx) => (
             <div key={region} className="space-y-12">
-              <div className="flex items-centre space-x-6 border-b border-gray-100 pb-4">
-                <span className="text-4xl font-bold font-[family-name:var(--font-oswald)] text-gray-600">0{rIdx + 1}</span>
+              <div className="flex items-center space-x-6 border-b border-gray-100 pb-4">
+                <span className="text-4xl font-bold text-gray-600">0{rIdx + 1}</span>
                 <h2 className="text-3xl font-bold uppercase tracking-tight">{region} Region</h2>
               </div>
               
@@ -39,7 +39,7 @@ export default function LocationsPage() {
                     transition={{ delay: idx * 0.05 }}
                     className="group border border-gray-100 p-10 hover:shadow-2xl hover:border-brand-blue transition-all"
                   >
-                    <div className="flex items-centre text-brand-blue mb-6">
+                    <div className="flex items-center text-brand-blue mb-6">
                       <MapPin className="w-6 h-6 mr-3" />
                       <span className="text-[10px] uppercase tracking-widest font-bold">Operational District</span>
                     </div>
@@ -49,7 +49,7 @@ export default function LocationsPage() {
                     </p>
                     <Link 
                       href={`/locations/${location.slug}`}
-                      className="inline-flex items-centre text-[10px] uppercase tracking-widest font-bold border-b-2 border-brand-charcoal pb-1 group-hover:border-brand-blue transition-all"
+                      className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold border-b-2 border-brand-charcoal pb-1 group-hover:border-brand-blue transition-all"
                     >
                       Explore Local Projects <ArrowRight className="ml-2 w-3 h-3 group-hover:translate-x-1 transition-transform" />
                     </Link>

@@ -46,7 +46,7 @@ function ServiceCard({
           </div>
         </div>
         <div className="p-6">
-          <h3 className="text-lg font-bold uppercase tracking-tight mb-3 group-hover:text-brand-blue transition-colors font-[family-name:var(--font-oswald)]">
+          <h3 className="text-lg font-bold uppercase tracking-tight mb-3 group-hover:text-brand-blue transition-colors">
             {service.title}
           </h3>
           <p className="text-sm text-gray-500 font-light leading-relaxed mb-4 line-clamp-3">
@@ -85,7 +85,7 @@ function SectionHeader({
           {label}
         </span>
       </div>
-      <h2 className="text-3xl md:text-5xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">
+      <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight">
         {title}
       </h2>
     </motion.div>

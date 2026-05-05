@@ -32,7 +32,7 @@ function ProductsContent() {
       {/* Header */}
       <section className="bg-brand-charcoal pt-40 pb-20 text-white">
         <div className="container mx-auto px-4 max-w-7xl">
-          <h1 className="text-5xl md:text-7xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-6 tracking-tighter">
+          <h1 className="text-5xl md:text-7xl font-bold uppercase mb-6 tracking-tighter">
             Architectural <span className="text-brand-blue">Systems.</span>
           </h1>
           <p className="text-lg text-brand-grey max-w-2xl font-light leading-relaxed">
@@ -44,9 +44,9 @@ function ProductsContent() {
       {/* Filter Bar */}
       <section className="sticky top-[72px] z-40 bg-gray-50 border-b border-gray-200 py-4 shadow-sm">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="flex flex-wrap items-centre justify-between gap-4">
-            <div className="flex flex-wrap items-centre gap-4">
-              <div className="flex items-centre text-xs font-bold uppercase tracking-widest text-gray-400 mr-2">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="flex flex-wrap items-center gap-4">
+              <div className="flex items-center text-xs font-bold uppercase tracking-widest text-gray-400 mr-2">
                 <Filter className="w-3 h-3 mr-2" /> Filter By:
               </div>
               
@@ -101,15 +101,15 @@ function ProductsContent() {
       {/* Active Filters Display */}
       {(activeCategory || activeMaterial) && (
         <div className="bg-white py-4 border-b border-gray-100">
-          <div className="container mx-auto px-4 max-w-7xl flex items-centre gap-3">
+          <div className="container mx-auto px-4 max-w-7xl flex items-center gap-3">
             <span className="text-[10px] uppercase font-bold text-gray-400">Active:</span>
             {activeCategory && (
-              <span className="inline-flex items-centre bg-gray-100 px-3 py-1 rounded-full text-[10px] font-bold text-brand-blue uppercase">
+              <span className="inline-flex items-center bg-gray-100 px-3 py-1 rounded-full text-[10px] font-bold text-brand-blue uppercase">
                 {activeCategory} <button onClick={() => setActiveCategory(null)}><X className="w-3 h-3 ml-2 hover:text-brand-charcoal transition-colors" /></button>
               </span>
             )}
             {activeMaterial && (
-              <span className="inline-flex items-centre bg-gray-100 px-3 py-1 rounded-full text-[10px] font-bold text-brand-blue uppercase">
+              <span className="inline-flex items-center bg-gray-100 px-3 py-1 rounded-full text-[10px] font-bold text-brand-blue uppercase">
                 {activeMaterial} <button onClick={() => setActiveMaterial(null)}><X className="w-3 h-3 ml-2 hover:text-brand-charcoal transition-colors" /></button>
               </span>
             )}
@@ -134,7 +134,7 @@ function ProductsContent() {
               <motion.div 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="text-centre py-40 border-2 border-dashed border-gray-100 rounded-xl"
+                className="text-center py-40 border-2 border-dashed border-gray-100 rounded-xl"
               >
                 <SlidersHorizontal className="w-12 h-12 mx-auto text-gray-500 mb-6" />
                 <h3 className="text-2xl font-bold uppercase tracking-tight text-brand-charcoal mb-4">No matching systems found</h3>
@@ -156,14 +156,14 @@ function ProductsContent() {
 
       {/* Final CTA */}
       <section className="bg-gray-50 py-32 border-t border-gray-200">
-        <div className="container mx-auto px-4 max-w-4xl text-centre">
-          <h2 className="text-4xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <h2 className="text-4xl font-bold uppercase mb-8 tracking-tighter">
             Need a <span className="text-brand-blue">Bespoke</span> Solution?
           </h2>
           <p className="text-lg text-gray-500 font-light mb-12 leading-relaxed">
             Our engineers specialize in custom glazing designs that push the boundaries of what's possible. Let's discuss your project today.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-centre">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link 
               href="/quote" 
               className="bg-brand-charcoal text-white hover:bg-brand-blue px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all"
@@ -186,7 +186,7 @@ function ProductsContent() {
 export default function ProductsPage() {
   return (
     <Suspense fallback={
-      <div className="min-h-screen flex items-centre justify-centre bg-brand-charcoal text-white">
+      <div className="min-h-screen flex items-center justify-center bg-brand-charcoal text-white">
         <div className="w-8 h-8 border-4 border-brand-blue border-t-transparent rounded-full animate-spin"></div>
       </div>
     }>

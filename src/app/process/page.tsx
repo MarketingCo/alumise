@@ -60,7 +60,7 @@ export default function ProcessPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-7xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+            <h1 className="text-5xl md:text-7xl font-bold uppercase mb-8 tracking-tighter">
               The Alumise <span className="text-brand-blue">Methodology.</span>
             </h1>
             <p className="text-xl text-brand-grey max-w-2xl font-light leading-relaxed">
@@ -80,17 +80,17 @@ export default function ProcessPage() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
-                className={`flex flex-col lg:flex-row gap-20 items-centre ${idx % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
+                className={`flex flex-col lg:flex-row gap-20 items-center ${idx % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
               >
                 <div className="lg:w-1/2 space-y-10">
-                  <div className="flex items-centre space-x-6">
-                    <span className="text-7xl font-bold font-[family-name:var(--font-oswald)] text-gray-100">{step.number}</span>
-                    <div className="w-16 h-16 bg-brand-blue/10 rounded-full flex items-centre justify-centre text-brand-blue">
+                  <div className="flex items-center space-x-6">
+                    <span className="text-7xl font-bold text-gray-100">{step.number}</span>
+                    <div className="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center text-brand-blue">
                       {step.icon}
                     </div>
                   </div>
                   <div>
-                    <h2 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight mb-6">
+                    <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tight mb-6">
                       {step.title}
                     </h2>
                     <p className="text-lg text-gray-500 font-light leading-relaxed mb-10">
@@ -98,7 +98,7 @@ export default function ProcessPage() {
                     </p>
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {step.details.map((detail, dIdx) => (
-                        <li key={dIdx} className="flex items-centre text-xs font-bold uppercase tracking-wider text-brand-charcoal">
+                        <li key={dIdx} className="flex items-center text-xs font-bold uppercase tracking-wider text-brand-charcoal">
                           <CheckCircle2 className="w-4 h-4 mr-3 text-brand-blue" /> {detail}
                         </li>
                       ))}
@@ -123,7 +123,7 @@ export default function ProcessPage() {
       {/* Trust Banner */}
       <section className="bg-brand-blue py-24 text-white">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-centre">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <div className="space-y-4">
               <ShieldCheck className="w-12 h-12 mx-auto mb-6" />
               <h4 className="text-xl font-bold uppercase tracking-tight">Fully Accredited</h4>
@@ -144,9 +144,9 @@ export default function ProcessPage() {
       </section>
 
       {/* Quote CTA */}
-      <section className="py-32 text-centre">
+      <section className="py-32 text-center">
         <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+          <h2 className="text-4xl md:text-5xl font-bold uppercase mb-8 tracking-tighter">
             Ready to Begin <br /><span className="text-brand-blue">Stage 01?</span>
           </h2>
           <p className="text-lg text-gray-500 font-light mb-12">
@@ -154,7 +154,7 @@ export default function ProcessPage() {
           </p>
           <Link 
             href="/quote" 
-            className="inline-flex items-centre bg-brand-charcoal text-white hover:bg-brand-blue px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all"
+            className="inline-flex items-center bg-brand-charcoal text-white hover:bg-brand-blue px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all"
           >
             Start Your Consultation <ArrowRight className="ml-2 w-4 h-4" />
           </Link>

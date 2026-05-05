@@ -38,8 +38,8 @@ export default function MaterialsComparisonPage() {
   return (
     <div className="bg-white min-h-screen pt-40 pb-20">
       <div className="container mx-auto px-4 max-w-7xl">
-        <header className="mb-20 text-centre max-w-3xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+        <header className="mb-20 text-center max-w-3xl mx-auto">
+          <h1 className="text-5xl md:text-7xl font-bold uppercase mb-8 tracking-tighter">
             Decision <span className="text-brand-blue">Intelligence.</span>
           </h1>
           <p className="text-xl text-gray-500 font-light leading-relaxed">
@@ -48,12 +48,12 @@ export default function MaterialsComparisonPage() {
         </header>
 
         {/* Selection Bar */}
-        <div className="flex flex-wrap justify-centre gap-4 mb-16">
+        <div className="flex flex-wrap justify-center gap-4 mb-16">
           {materialsData.map((mat) => (
             <button
               key={mat.slug}
               onClick={() => toggleMaterial(mat.slug)}
-              className={`px-6 py-3 text-[10px] uppercase tracking-widest font-bold border transition-all flex items-centre ${
+              className={`px-6 py-3 text-[10px] uppercase tracking-widest font-bold border transition-all flex items-center ${
                 selectedMaterials.includes(mat.slug)
                   ? 'bg-brand-blue border-brand-blue text-white shadow-xl'
                   : 'bg-white border-gray-100 text-brand-charcoal hover:border-brand-blue'
@@ -137,7 +137,7 @@ export default function MaterialsComparisonPage() {
                       </div>
                       <Link 
                         href={`/materials/${mat.slug}`}
-                        className="flex items-centre justify-between w-full text-[10px] uppercase tracking-widest font-black border-b-2 border-brand-charcoal pb-2 hover:text-brand-blue hover:border-brand-blue transition-all"
+                        className="flex items-center justify-between w-full text-[10px] uppercase tracking-widest font-black border-b-2 border-brand-charcoal pb-2 hover:text-brand-blue hover:border-brand-blue transition-all"
                       >
                         Technical Deep-Dive <ArrowRight className="w-3 h-3" />
                       </Link>
@@ -150,16 +150,16 @@ export default function MaterialsComparisonPage() {
         </div>
 
         {/* Global CTA */}
-        <section className="mt-32 py-24 bg-brand-charcoal text-white text-centre relative overflow-hidden rounded-sm shadow-2xl">
+        <section className="mt-32 py-24 bg-brand-charcoal text-white text-center relative overflow-hidden rounded-sm shadow-2xl">
           <div className="absolute top-0 left-0 w-full h-full bg-brand-blue opacity-5 blur-3xl rounded-full"></div>
           <div className="relative z-10 max-w-2xl mx-auto px-4">
-            <h2 className="text-3xl md:text-5xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+            <h2 className="text-3xl md:text-5xl font-bold uppercase mb-8 tracking-tighter">
               Still Unsure of the <span className="text-brand-blue">Right Choice?</span>
             </h2>
             <p className="text-lg text-brand-grey font-light mb-12">
               Our engineering team can provide a site-specific performance analysis based on your project's location and exposure.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-centre">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link 
                 href="/quote" 
                 className="bg-brand-blue text-white px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-brand-charcoal transition-all"

@@ -80,7 +80,7 @@ function ServiceCard({
           </div>
         </div>
         <div className="p-6">
-          <h3 className="text-lg font-bold uppercase tracking-tight mb-3 group-hover:text-brand-blue transition-colors font-[family-name:var(--font-oswald)]">
+          <h3 className="text-lg font-bold uppercase tracking-tight mb-3 group-hover:text-brand-blue transition-colors">
             {service.title}
           </h3>
           <p className="text-sm text-gray-500 font-light leading-relaxed mb-4 line-clamp-3">
@@ -113,7 +113,7 @@ function SectionHeader({
           {label}
         </span>
       </div>
-      <h2 className="text-3xl md:text-5xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">
+      <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight">
         {title}
       </h2>
     </div>
@@ -127,7 +127,7 @@ export default function ServicesPageClient() {
       <section className="bg-brand-charcoal pt-40 pb-24 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-blue opacity-5 blur-3xl rounded-full translate-x-1/2" />
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter max-w-5xl">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold uppercase mb-8 tracking-tighter max-w-5xl">
             Our Glazing &{" "}
             <span className="text-brand-blue">Aluminium Services.</span>
           </h1>
@@ -212,7 +212,7 @@ export default function ServicesPageClient() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-6xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+            <h2 className="text-4xl md:text-6xl font-bold uppercase mb-8 tracking-tighter">
               Discuss Your{" "}
               <span className="text-brand-blue">Project.</span>
             </h2>

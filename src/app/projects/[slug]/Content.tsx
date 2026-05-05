@@ -31,19 +31,19 @@ export default function ProjectCaseStudyContent({ slug }: { slug: string }) {
         <div className="container mx-auto px-4 max-w-7xl relative z-10 pb-20">
           <Link 
             href="/projects" 
-            className="inline-flex items-centre text-[10px] uppercase tracking-widest font-bold text-brand-blue mb-8 hover:text-white transition-colors"
+            className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-brand-blue mb-8 hover:text-white transition-colors"
           >
             <ArrowLeft className="w-3 h-3 mr-2" /> Back to Portfolio
           </Link>
           <div className="flex flex-wrap gap-4 mb-6">
-            <span className="flex items-centre text-[10px] uppercase tracking-[0.2em] font-bold text-brand-blue bg-white/5 backdrop-blur-md px-4 py-2 border border-white/10">
+            <span className="flex items-center text-[10px] uppercase tracking-[0.2em] font-bold text-brand-blue bg-white/5 backdrop-blur-md px-4 py-2 border border-white/10">
               <MapPin className="w-3 h-3 mr-2" /> {project.location}
             </span>
-            <span className="flex items-centre text-[10px] uppercase tracking-[0.2em] font-bold text-brand-blue bg-white/5 backdrop-blur-md px-4 py-2 border border-white/10">
+            <span className="flex items-center text-[10px] uppercase tracking-[0.2em] font-bold text-brand-blue bg-white/5 backdrop-blur-md px-4 py-2 border border-white/10">
               <Building2 className="w-3 h-3 mr-2" /> {project.type}
             </span>
           </div>
-          <h1 className="text-6xl md:text-9xl font-bold font-[family-name:var(--font-oswald)] uppercase leading-none tracking-tighter mb-4 max-w-4xl">
+          <h1 className="text-6xl md:text-9xl font-bold uppercase leading-none tracking-tighter mb-4 max-w-4xl">
             {project.title}
           </h1>
         </div>
@@ -92,7 +92,7 @@ export default function ProjectCaseStudyContent({ slug }: { slug: string }) {
                     </li>
                   </ul>
                 </div>
-                <div className="bg-gray-50 p-10 flex flex-col justify-centre">
+                <div className="bg-gray-50 p-10 flex flex-col justify-center">
                   <ShieldCheck className="w-12 h-12 text-brand-blue mb-6" />
                   <h3 className="font-bold uppercase tracking-tight text-lg mb-4">Total Compliance</h3>
                   <p className="text-xs text-gray-500 font-light leading-relaxed">
@@ -105,21 +105,21 @@ export default function ProjectCaseStudyContent({ slug }: { slug: string }) {
             {/* Sidebar Details */}
             <div className="space-y-12">
               <div className="bg-white border border-gray-100 p-10 shadow-2xl">
-                <h3 className="text-xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tight">Project Specs</h3>
+                <h3 className="text-xl font-bold uppercase mb-8 tracking-tight">Project Specs</h3>
                 <div className="space-y-6">
-                  <div className="flex justify-between items-centre py-4 border-b border-gray-50">
+                  <div className="flex justify-between items-center py-4 border-b border-gray-50">
                     <span className="text-[10px] uppercase tracking-widest font-bold text-gray-400">Sector</span>
                     <span className="text-xs font-bold uppercase">{project.type}</span>
                   </div>
-                  <div className="flex justify-between items-centre py-4 border-b border-gray-50">
+                  <div className="flex justify-between items-center py-4 border-b border-gray-50">
                     <span className="text-[10px] uppercase tracking-widest font-bold text-gray-400">Location</span>
                     <span className="text-xs font-bold uppercase">{project.location}</span>
                   </div>
-                  <div className="flex justify-between items-centre py-4 border-b border-gray-50">
+                  <div className="flex justify-between items-center py-4 border-b border-gray-50">
                     <span className="text-[10px] uppercase tracking-widest font-bold text-gray-400">Status</span>
                     <span className="text-xs font-bold uppercase text-brand-blue">Completed</span>
                   </div>
-                  <div className="flex justify-between items-centre py-4">
+                  <div className="flex justify-between items-center py-4">
                     <span className="text-[10px] uppercase tracking-widest font-bold text-gray-400">Warranty</span>
                     <span className="text-xs font-bold uppercase">10 Year Structural</span>
                   </div>
@@ -127,7 +127,7 @@ export default function ProjectCaseStudyContent({ slug }: { slug: string }) {
                 
                 <Link 
                   href="/quote" 
-                  className="mt-12 w-full bg-brand-charcoal text-white text-centre block px-8 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all hover:bg-brand-blue shadow-xl"
+                  className="mt-12 w-full bg-brand-charcoal text-white text-center block px-8 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all hover:bg-brand-blue shadow-xl"
                 >
                   Discuss Similar Project
                 </Link>

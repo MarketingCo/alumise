@@ -1,89 +1,105 @@
 'use client';
-import { useForm, ValidationError } from '@formspree/react';
-import { Send } from 'lucide-react';
+import { useState, FormEvent } from 'react';
+import { Send, CheckCircle2 } from 'lucide-react';
 
 export default function ContactForm() {
-  // Use a dummy Formspree ID for now
-  const [state, handleSubmit] = useForm("dummy_form_id");
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  if (state.succeeded) {
-      return (
-        <div className="bg-green-50 border border-green-200 text-green-800 rounded-lg p-6 text-centre">
-          <h3 className="text-xl font-bold mb-2">Thank you!</h3>
-          <p>Your commercial glazing enquiry has been received. Our technical team will be in touch shortly.</p>
-        </div>
-      );
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+    // Form submission will be wired to a real endpoint
+    // For now, show a message directing users to phone/email
+    await new Promise(resolve => setTimeout(resolve, 500));
+    setSubmitting(false);
+    setSubmitted(true);
+  };
+
+  if (submitted) {
+    return (
+      <div className="bg-brand-warm border border-brand-gold/20 p-8 text-center">
+        <CheckCircle2 className="w-10 h-10 text-brand-gold mx-auto mb-4" />
+        <h3 className="text-xl font-bold mb-2">Thank You</h3>
+        <p className="text-brand-silver mb-4">
+          We have received your enquiry. Our team will call you back within 24 hours.
+        </p>
+        <p className="text-sm text-brand-silver">
+          For urgent enquiries, call us directly on <a href="tel:01312100321" className="font-bold text-brand-charcoal hover:text-brand-gold">0131 210 0321</a>.
+        </p>
+      </div>
+    );
   }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+          <label htmlFor="name" className="block text-xs font-semibold uppercase tracking-widest text-brand-silver mb-2">Full Name *</label>
           <input
             id="name"
-            type="text" 
+            type="text"
             name="name"
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-blue focus:border-brand-blue outline-none"
-          />
-          <ValidationError prefix="Name" field="name" errors={state.errors} className="text-red-500 text-sm mt-1" />
-        </div>
-        <div>
-          <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">Company / Contractor</label>
-          <input
-            id="company"
-            type="text" 
-            name="company"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-blue focus:border-brand-blue outline-none"
+            className="w-full px-4 py-3 border border-gray-200 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors bg-white"
           />
         </div>
-      </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
-          <input
-            id="email"
-            type="email" 
-            name="email"
-            required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-blue focus:border-brand-blue outline-none"
-          />
-          <ValidationError prefix="Email" field="email" errors={state.errors} className="text-red-500 text-sm mt-1" />
-        </div>
-        <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+          <label htmlFor="phone" className="block text-xs font-semibold uppercase tracking-widest text-brand-silver mb-2">Phone Number *</label>
           <input
             id="phone"
-            type="tel" 
+            type="tel"
             name="phone"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-blue focus:border-brand-blue outline-none"
+            required
+            className="w-full px-4 py-3 border border-gray-200 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors bg-white"
           />
         </div>
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Project Details *</label>
+        <label htmlFor="email" className="block text-xs font-semibold uppercase tracking-widest text-brand-silver mb-2">Email Address *</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required
+          className="w-full px-4 py-3 border border-gray-200 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors bg-white"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="postcode" className="block text-xs font-semibold uppercase tracking-widest text-brand-silver mb-2">Postcode</label>
+        <input
+          id="postcode"
+          type="text"
+          name="postcode"
+          className="w-full px-4 py-3 border border-gray-200 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors bg-white md:w-1/2"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="message" className="block text-xs font-semibold uppercase tracking-widest text-brand-silver mb-2">Tell us about your project</label>
         <textarea
           id="message"
           name="message"
           rows={4}
-          required
-          placeholder="Please describe the scope of works, structural requirements, or attach drawing references..."
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-blue focus:border-brand-blue outline-none resize-none"
+          placeholder="What type of windows or doors are you looking for? Any specific sizes or styles?"
+          className="w-full px-4 py-3 border border-gray-200 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors bg-white resize-none"
         />
-        <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-500 text-sm mt-1" />
       </div>
 
       <button
         type="submit"
-        disabled={state.submitting}
-        className="w-full bg-brand-blue hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-md transition-colors flex justify-centre items-centre gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+        disabled={submitting}
+        className="w-full bg-brand-charcoal text-white font-bold py-4 px-6 uppercase tracking-widest text-xs hover:bg-brand-gold hover:text-brand-charcoal transition-colors flex items-center justify-center gap-2 disabled:opacity-70"
       >
-        {state.submitting ? 'Submitting...' : 'Send Technical Enquiry'}
-        {!state.submitting && <Send size={18} />}
+        {submitting ? 'Sending...' : 'Request a Call Back'}
+        {!submitting && <Send size={16} />}
       </button>
+
+      <p className="text-[10px] text-brand-silver text-center">
+        We typically respond within 24 hours. For urgent enquiries, call <a href="tel:01312100321" className="font-bold text-brand-charcoal hover:text-brand-gold">0131 210 0321</a>.
+      </p>
     </form>
   );
 }

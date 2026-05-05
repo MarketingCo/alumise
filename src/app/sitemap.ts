@@ -2,86 +2,66 @@ export const dynamic = 'force-static';
 
 import { MetadataRoute } from 'next';
 import { products } from '@/data/products';
-import { projects } from '@/data/projects';
 import { locations } from '@/data/locations';
 import { blogPosts } from '@/data/blog';
 import { materialsData } from '@/data/materials';
 import { services } from '@/data/services';
 
+const BASE_DATE = '2026-05-04';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.alumise.co.uk';
 
-  // Core Pages
-  const corePages = [
-    '',
-    '/products',
-    '/projects',
-    '/process',
-    '/trust',
-    '/quote',
-    '/blog',
-    '/locations',
-    '/about',
-    '/contact',
-    '/privacy',
-    '/terms',
-    '/cookies',
-    '/materials',
-    '/services',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1 : 0.8,
-  }));
+  const corePages: MetadataRoute.Sitemap = [
+    { url: `${baseUrl}/`, lastModified: BASE_DATE, changeFrequency: 'weekly', priority: 1.0 },
+    { url: `${baseUrl}/products`, lastModified: BASE_DATE, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/services`, lastModified: BASE_DATE, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/process`, lastModified: BASE_DATE, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/quote`, lastModified: BASE_DATE, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/about`, lastModified: BASE_DATE, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/contact`, lastModified: BASE_DATE, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/locations`, lastModified: BASE_DATE, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/materials`, lastModified: BASE_DATE, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/blog`, lastModified: BASE_DATE, changeFrequency: 'weekly', priority: 0.6 },
+    { url: `${baseUrl}/privacy-policy`, lastModified: BASE_DATE, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${baseUrl}/terms`, lastModified: BASE_DATE, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${baseUrl}/cookies`, lastModified: BASE_DATE, changeFrequency: 'yearly', priority: 0.3 },
+  ];
 
-  // Dynamic Product Pages
   const productPages = products.map((product) => ({
     url: `${baseUrl}/products/${product.slug}`,
-    lastModified: new Date(),
+    lastModified: BASE_DATE,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
 
-  // Dynamic Project Pages
-  const projectPages = projects.map((project) => ({
-    url: `${baseUrl}/projects/${project.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }));
-
-  // Dynamic Location Pages
   const locationPages = locations.map((location) => ({
     url: `${baseUrl}/locations/${location.slug}`,
-    lastModified: new Date(),
+    lastModified: BASE_DATE,
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }));
 
-  // Dynamic Material Pages
   const materialPages = materialsData.map((mat) => ({
     url: `${baseUrl}/materials/${mat.slug}`,
-    lastModified: new Date(),
+    lastModified: BASE_DATE,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
 
-  // Dynamic Blog Pages
   const blogPages = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(),
+    lastModified: BASE_DATE,
     changeFrequency: 'monthly' as const,
     priority: 0.5,
   }));
 
-  // Dynamic Service Pages
   const servicePages = services.map((service) => ({
     url: `${baseUrl}/services/${service.slug}`,
-    lastModified: new Date(),
+    lastModified: BASE_DATE,
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }));
 
-  return [...corePages, ...productPages, ...projectPages, ...locationPages, ...materialPages, ...blogPages, ...servicePages];
+  return [...corePages, ...productPages, ...locationPages, ...materialPages, ...blogPages, ...servicePages];
 }

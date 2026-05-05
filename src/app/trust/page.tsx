@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 
-import ThermalEstimator from '@/components/ThermalEstimator';
+
 
 const accreditations = [
   { name: 'FENSA Certified', desc: 'Industry standard for replacement windows and doors in England and Wales.' }
@@ -27,7 +27,7 @@ export default function TrustHub() {
       {/* Header */}
       <section className="bg-brand-charcoal pt-40 pb-24 text-white">
         <div className="container mx-auto px-4 max-w-7xl">
-          <h1 className="text-5xl md:text-7xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+          <h1 className="text-5xl md:text-7xl font-bold uppercase mb-8 tracking-tighter">
             Technical & <span className="text-brand-blue">Trust Hub.</span>
           </h1>
           <p className="text-xl text-brand-grey max-w-2xl font-light leading-relaxed">
@@ -47,9 +47,9 @@ export default function TrustHub() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="text-centre space-y-4"
+                className="text-center space-y-4"
               >
-                <div className="w-20 h-20 bg-gray-50 rounded-full flex items-centre justify-centre mx-auto mb-6">
+                <div className="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Award className="w-10 h-10 text-brand-blue" />
                 </div>
                 <h4 className="font-bold uppercase tracking-tight text-lg">{acc.name}</h4>
@@ -62,10 +62,10 @@ export default function TrustHub() {
 
       {/* Warranty Section */}
       <section className="py-32 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-20 items-centre">
+        <div className="container mx-auto px-4 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
             <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue mb-6">The Alumise Guarantee</h2>
-            <p className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-oswald)] uppercase leading-tight tracking-tight mb-8">
+            <p className="text-4xl md:text-5xl font-bold uppercase leading-tight tracking-tight mb-8">
               A Decade of Absolute <span className="text-brand-blue">Confidence.</span>
             </p>
             <p className="text-lg text-gray-500 font-light leading-relaxed mb-10">
@@ -97,18 +97,18 @@ export default function TrustHub() {
           </div>
           <div className="bg-brand-charcoal p-12 text-white relative overflow-hidden">
             <ShieldCheck className="absolute -top-10 -right-10 w-64 h-64 text-white opacity-5" />
-            <h3 className="text-2xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tight relative z-10">Download <br />Technical Documentation</h3>
+            <h3 className="text-2xl font-bold uppercase mb-8 tracking-tight relative z-10">Download <br />Technical Documentation</h3>
             <div className="space-y-4 relative z-10">
-              <button className="flex items-centre justify-between w-full bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition-all group">
-                <span className="flex items-centre text-xs font-bold uppercase tracking-widest"><FileText className="w-4 h-4 mr-4 text-brand-blue" /> Warranty Terms & Conditions</span>
+              <button className="flex items-center justify-between w-full bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition-all group">
+                <span className="flex items-center text-xs font-bold uppercase tracking-widest"><FileText className="w-4 h-4 mr-4 text-brand-blue" /> Warranty Terms & Conditions</span>
                 <span className="text-[8px] opacity-40 group-hover:opacity-100 uppercase tracking-[0.2em]">PDF (1.2MB)</span>
               </button>
-              <button className="flex items-centre justify-between w-full bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition-all group">
-                <span className="flex items-centre text-xs font-bold uppercase tracking-widest"><Zap className="w-4 h-4 mr-4 text-brand-blue" /> Thermal Performance Guide</span>
+              <button className="flex items-center justify-between w-full bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition-all group">
+                <span className="flex items-center text-xs font-bold uppercase tracking-widest"><Zap className="w-4 h-4 mr-4 text-brand-blue" /> Thermal Performance Guide</span>
                 <span className="text-[8px] opacity-40 group-hover:opacity-100 uppercase tracking-[0.2em]">PDF (2.4MB)</span>
               </button>
-              <button className="flex items-centre justify-between w-full bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition-all group">
-                <span className="flex items-centre text-xs font-bold uppercase tracking-widest"><Lock className="w-4 h-4 mr-4 text-brand-blue" /> Security & Safety Specs</span>
+              <button className="flex items-center justify-between w-full bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition-all group">
+                <span className="flex items-center text-xs font-bold uppercase tracking-widest"><Lock className="w-4 h-4 mr-4 text-brand-blue" /> Security & Safety Specs</span>
                 <span className="text-[8px] opacity-40 group-hover:opacity-100 uppercase tracking-[0.2em]">PDF (0.8MB)</span>
               </button>
             </div>
@@ -116,19 +116,12 @@ export default function TrustHub() {
         </div>
       </section>
 
-      {/* Thermal Estimator Tool */}
-      <section className="py-32 border-b border-gray-100">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <ThermalEstimator />
-        </div>
-      </section>
-
       {/* Performance Standards */}
       <section className="py-32">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="text-centre mb-20">
+          <div className="text-center mb-20">
             <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue mb-6">Performance & Sustainability</h2>
-            <p className="text-4xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">Technical <span className="text-gray-600">Benchmarks.</span></p>
+            <p className="text-4xl font-bold uppercase tracking-tight">Technical <span className="text-gray-600">Benchmarks.</span></p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -156,8 +149,8 @@ export default function TrustHub() {
 
       {/* Final CTA */}
       <section className="bg-brand-charcoal py-32 text-white">
-        <div className="container mx-auto px-4 max-w-4xl text-centre">
-          <h2 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <h2 className="text-4xl md:text-5xl font-bold uppercase mb-8 tracking-tighter">
             Need Detailed <span className="text-brand-blue">Technical Specs?</span>
           </h2>
           <p className="text-lg text-brand-grey font-light mb-12">

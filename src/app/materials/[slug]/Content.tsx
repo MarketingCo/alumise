@@ -64,15 +64,15 @@ export default function MaterialDetailContent({ slug }: { slug: string }) {
         <div className="container mx-auto px-4 max-w-7xl relative z-10 pb-20">
           <Link 
             href="/materials" 
-            className="inline-flex items-centre text-[10px] uppercase tracking-widest font-bold text-brand-blue mb-8 hover:text-white transition-colors"
+            className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-brand-blue mb-8 hover:text-white transition-colors"
           >
             <ArrowLeft className="w-3 h-3 mr-2" /> Back to Comparison
           </Link>
-          <div className="flex items-centre space-x-2 text-brand-blue mb-4">
+          <div className="flex items-center space-x-2 text-brand-blue mb-4">
             <ShieldCheck className="w-4 h-4" />
             <span className="text-[10px] uppercase tracking-widest font-bold">Material Specification</span>
           </div>
-          <h1 className="text-6xl md:text-9xl font-bold font-[family-name:var(--font-oswald)] uppercase leading-none tracking-tighter mb-4">
+          <h1 className="text-6xl md:text-9xl font-bold uppercase leading-none tracking-tighter mb-4">
             {material.name.split(' ')[0]} <span className="text-brand-blue">{material.name.split(' ')[1]}</span>
           </h1>
           <p className="text-xl text-brand-grey max-w-2xl font-light leading-relaxed">
@@ -119,13 +119,13 @@ export default function MaterialDetailContent({ slug }: { slug: string }) {
 
               {/* Technical FAQs */}
               <div className="pt-24 border-t border-gray-100">
-                <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-blue mb-12 text-centre">Technical FAQ</h3>
+                <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-blue mb-12 text-center">Technical FAQ</h3>
                 <div className="max-w-3xl mx-auto space-y-4">
                   {material.faqs.map((faq, idx) => (
                     <div key={idx} className="border border-gray-100 rounded-sm">
                       <button 
                         onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-                        className="w-full flex items-centre justify-between p-6 text-left hover:bg-gray-50 transition-colors"
+                        className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
                       >
                         <span className="font-bold uppercase tracking-tight text-sm">{faq.question}</span>
                         <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${openFaq === idx ? 'rotate-180' : ''}`} />
@@ -154,13 +154,13 @@ export default function MaterialDetailContent({ slug }: { slug: string }) {
             <div className="space-y-12">
               <div className="sticky top-32">
                 <div className="bg-brand-charcoal p-10 text-white rounded-sm mb-8 shadow-2xl">
-                  <h3 className="text-xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-6 tracking-tight">Available <br />Systems</h3>
+                  <h3 className="text-xl font-bold uppercase mb-6 tracking-tight">Available <br />Systems</h3>
                   <div className="space-y-4">
                     {compatibleProducts.map(p => (
                       <Link 
                         key={p.slug}
                         href={`/products/${p.slug}`}
-                        className="flex items-centre justify-between group py-3 border-b border-white/5 hover:border-brand-blue transition-all"
+                        className="flex items-center justify-between group py-3 border-b border-white/5 hover:border-brand-blue transition-all"
                       >
                         <span className="text-[10px] font-bold uppercase tracking-widest text-brand-grey group-hover:text-white">{p.title}</span>
                         <ArrowRight className="w-3 h-3 text-brand-blue opacity-0 group-hover:opacity-100 transition-all" />

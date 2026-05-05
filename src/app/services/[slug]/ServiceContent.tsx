@@ -64,7 +64,7 @@ export default function ServiceContent({ service }: { service: Service }) {
             <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-blue block mb-4">
               Engineering Detail
             </span>
-            <h2 className="text-3xl md:text-5xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight">
               Key Features
             </h2>
           </motion.div>
@@ -107,7 +107,7 @@ export default function ServiceContent({ service }: { service: Service }) {
             <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-blue block mb-4">
               Why Alumise
             </span>
-            <h2 className="text-3xl md:text-5xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight">
               Benefits
             </h2>
           </motion.div>
@@ -147,7 +147,7 @@ export default function ServiceContent({ service }: { service: Service }) {
             <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-blue block mb-4">
               Common Questions
             </span>
-            <h2 className="text-3xl md:text-5xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight">
               Frequently Asked Questions
             </h2>
           </motion.div>

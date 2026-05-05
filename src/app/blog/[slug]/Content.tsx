@@ -31,15 +31,15 @@ export default function BlogPostContent({ slug }: { slug: string }) {
         <div className="container mx-auto px-4 max-w-4xl relative z-10 pb-20">
           <Link 
             href="/blog" 
-            className="inline-flex items-centre text-[10px] uppercase tracking-widest font-bold text-brand-blue mb-8 hover:text-white transition-colors"
+            className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-brand-blue mb-8 hover:text-white transition-colors"
           >
             <ArrowLeft className="w-3 h-3 mr-2" /> Back to Insights
           </Link>
-          <div className="flex items-centre space-x-4 text-[10px] uppercase tracking-widest font-bold text-brand-blue mb-6">
+          <div className="flex items-center space-x-4 text-[10px] uppercase tracking-widest font-bold text-brand-blue mb-6">
             <span className="bg-brand-blue/20 backdrop-blur-md px-3 py-1 border border-brand-blue/30 text-white">{post.category}</span>
-            <span className="flex items-centre"><Calendar className="w-3 h-3 mr-2" /> {post.date}</span>
+            <span className="flex items-center"><Calendar className="w-3 h-3 mr-2" /> {post.date}</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold font-[family-name:var(--font-oswald)] uppercase leading-tight tracking-tighter mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold uppercase leading-tight tracking-tighter mb-4">
             {post.title}
           </h1>
         </div>
@@ -56,27 +56,27 @@ export default function BlogPostContent({ slug }: { slug: string }) {
 
           {/* CTA Box inside article */}
           <div className="bg-gray-50 border border-gray-100 p-12 my-20 rounded-sm">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-centre">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="text-2xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-4 tracking-tight">Need Technical <br />Specification?</h3>
+                <h3 className="text-2xl font-bold uppercase mb-4 tracking-tight">Need Technical <br />Specification?</h3>
                 <p className="text-sm text-gray-400 mb-8 leading-relaxed font-light">
                   Speak directly with our engineering team for bespoke structural calculations and architectural glazing support.
                 </p>
                 <Link 
                   href="/quote" 
-                  className="inline-flex items-centre bg-brand-charcoal text-white px-8 py-4 rounded-sm text-[10px] font-bold uppercase tracking-widest hover:bg-brand-blue transition-all"
+                  className="inline-flex items-center bg-brand-charcoal text-white px-8 py-4 rounded-sm text-[10px] font-bold uppercase tracking-widest hover:bg-brand-blue transition-all"
                 >
                   Request Consultation <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </div>
               <div className="space-y-4">
-                <div className="flex items-centre text-xs font-bold uppercase tracking-tight">
+                <div className="flex items-center text-xs font-bold uppercase tracking-tight">
                   <ShieldCheck className="w-4 h-4 mr-3 text-brand-blue" /> UK Building Regs Compliant
                 </div>
-                <div className="flex items-centre text-xs font-bold uppercase tracking-tight">
+                <div className="flex items-center text-xs font-bold uppercase tracking-tight">
                   <Zap className="w-4 h-4 mr-3 text-brand-blue" /> Precision Engineering
                 </div>
-                <div className="flex items-centre text-xs font-bold uppercase tracking-tight">
+                <div className="flex items-center text-xs font-bold uppercase tracking-tight">
                   <CheckCircle2 className="w-4 h-4 mr-3 text-brand-blue" /> Certified Installation
                 </div>
               </div>
@@ -84,9 +84,9 @@ export default function BlogPostContent({ slug }: { slug: string }) {
           </div>
 
           <footer className="pt-20 border-t border-gray-100">
-            <div className="flex justify-between items-centre">
-              <div className="flex items-centre">
-                <div className="w-12 h-12 bg-gray-100 rounded-full flex items-centre justify-centre mr-4">
+            <div className="flex justify-between items-center">
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mr-4">
                   <User className="w-6 h-6 text-gray-400" />
                 </div>
                 <div>
@@ -96,7 +96,7 @@ export default function BlogPostContent({ slug }: { slug: string }) {
               </div>
               <div className="flex space-x-4">
                 {/* Social Share Placeholders */}
-                <div className="w-10 h-10 bg-gray-50 rounded-full flex items-centre justify-centre text-gray-400 hover:text-brand-blue transition-colors cursor-pointer">
+                <div className="w-10 h-10 bg-gray-50 rounded-full flex items-center justify-center text-gray-400 hover:text-brand-blue transition-colors cursor-pointer">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export default function BlogPostContent({ slug }: { slug: string }) {
           <div className="flex justify-between items-end mb-12">
             <div>
               <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue mb-4">Deep Learning</h2>
-              <p className="text-3xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">Related <span className="text-gray-600">Insights.</span></p>
+              <p className="text-3xl font-bold uppercase tracking-tight">Related <span className="text-gray-600">Insights.</span></p>
             </div>
             <Link href="/blog" className="text-xs font-bold uppercase tracking-widest border-b border-brand-charcoal pb-1 hover:text-brand-blue transition-all">
               All Articles

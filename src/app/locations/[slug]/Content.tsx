@@ -37,15 +37,15 @@ export default function LocationContent({ slug }: { slug: string }) {
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <Link 
             href="/locations" 
-            className="inline-flex items-centre text-[10px] uppercase tracking-widest font-bold text-brand-blue mb-8 hover:text-white transition-colors"
+            className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-brand-blue mb-8 hover:text-white transition-colors"
           >
             <ArrowLeft className="w-3 h-3 mr-2" /> All Districts
           </Link>
-          <div className="flex items-centre space-x-2 text-brand-blue mb-4">
+          <div className="flex items-center space-x-2 text-brand-blue mb-4">
             <MapPin className="w-4 h-4" />
             <span className="text-[10px] uppercase tracking-widest font-bold">Local Hub: {location.region}</span>
           </div>
-          <h1 className="text-5xl md:text-8xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter max-w-4xl">
+          <h1 className="text-5xl md:text-8xl font-bold uppercase mb-8 tracking-tighter max-w-4xl">
             Architectural Glazing in <span className="text-brand-blue">{location.name}.</span>
           </h1>
           <p className="text-xl text-brand-grey max-w-2xl font-light leading-relaxed">
@@ -57,9 +57,9 @@ export default function LocationContent({ slug }: { slug: string }) {
       {/* Local Services Grid */}
       <section className="py-24 border-b border-gray-50">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="text-centre mb-16 space-y-4">
+          <div className="text-center mb-16 space-y-4">
             <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue">Regional Expertise</h2>
-            <p className="text-3xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">Our Solutions for {location.name}</p>
+            <p className="text-3xl font-bold uppercase tracking-tight">Our Solutions for {location.name}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {categories.map((cat, idx) => (
@@ -83,11 +83,11 @@ export default function LocationContent({ slug }: { slug: string }) {
 
       {/* Trust & Authority Section */}
       <section className="py-32">
-        <div className="container mx-auto px-4 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-20 items-centre">
+        <div className="container mx-auto px-4 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="space-y-12">
             <div className="space-y-6">
               <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue">Total Clarity</h2>
-              <p className="text-4xl font-bold font-[family-name:var(--font-oswald)] uppercase leading-tight tracking-tight">
+              <p className="text-4xl font-bold uppercase leading-tight tracking-tight">
                 Engineering Perfection in <span className="text-gray-600">Every District.</span>
               </p>
             </div>
@@ -131,7 +131,7 @@ export default function LocationContent({ slug }: { slug: string }) {
             <div className="flex justify-between items-end mb-16">
               <div className="space-y-4">
                 <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue">Proven Locally</h2>
-                <p className="text-3xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">Case Studies in {location.name}</p>
+                <p className="text-3xl font-bold uppercase tracking-tight">Case Studies in {location.name}</p>
               </div>
               <Link href="/projects" className="text-xs font-bold uppercase tracking-widest border-b border-brand-charcoal pb-1 hover:text-brand-blue transition-all">
                 View All Projects
@@ -146,7 +146,7 @@ export default function LocationContent({ slug }: { slug: string }) {
                   <div className="p-8">
                     <span className="text-[10px] uppercase tracking-widest font-bold text-brand-blue block mb-2">{project.type}</span>
                     <h4 className="text-lg font-bold uppercase tracking-tight mb-4 group-hover:text-brand-blue transition-colors">{project.title}</h4>
-                    <span className="text-[10px] uppercase tracking-widest font-bold flex items-centre">
+                    <span className="text-[10px] uppercase tracking-widest font-bold flex items-center">
                       View Project <ArrowRight className="ml-2 w-3 h-3 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </div>
@@ -158,15 +158,15 @@ export default function LocationContent({ slug }: { slug: string }) {
       )}
 
       {/* Quote CTA */}
-      <section className="py-40 bg-white text-centre">
+      <section className="py-40 bg-white text-center">
         <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-5xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+          <h2 className="text-5xl font-bold uppercase mb-8 tracking-tighter">
             Discuss Your Project in <span className="text-brand-blue">{location.name}.</span>
           </h2>
           <p className="text-xl text-gray-500 font-light mb-12">
             Speak directly with our engineering team. We provide full technical support for projects across {location.name} and the Lothians.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-centre">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link 
               href="/quote" 
               className="bg-brand-charcoal text-white hover:bg-brand-blue px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all shadow-xl"

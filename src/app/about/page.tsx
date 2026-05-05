@@ -28,7 +28,7 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-8xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+            <h1 className="text-5xl md:text-8xl font-bold uppercase mb-8 tracking-tighter">
               Engineering <span className="text-brand-blue">Total Clarity.</span>
             </h1>
             <p className="text-xl text-brand-grey max-w-2xl font-light leading-relaxed">
@@ -40,7 +40,7 @@ export default function AboutPage() {
 
       {/* Narrative Section */}
       <section className="py-32">
-        <div className="container mx-auto px-4 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-20 items-centre">
+        <div className="container mx-auto px-4 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="relative h-[600px] bg-gray-100">
             <Image 
               src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop"
@@ -53,7 +53,7 @@ export default function AboutPage() {
           <div className="space-y-10">
             <div className="space-y-6">
               <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue">The Alumise Mission</h2>
-              <p className="text-4xl font-bold font-[family-name:var(--font-oswald)] uppercase leading-tight tracking-tight">
+              <p className="text-4xl font-bold uppercase leading-tight tracking-tight">
                 Architectural Performance, <span className="text-gray-600">Perfectly Delivered.</span>
               </p>
             </div>
@@ -64,15 +64,15 @@ export default function AboutPage() {
               Based in Penicuik, our facility is the heart of our operations, where every window, door and curtain walling system is manufactured to exact specifications before installation. This commitment to in-house fabrication and fitting is what sets Alumise apart as Edinburgh's trusted glazing partner.
             </p>
             <div className="flex flex-wrap gap-8 pt-6">
-              <div className="flex items-centre space-x-3">
+              <div className="flex items-center space-x-3">
                 <ShieldCheck className="w-5 h-5 text-brand-blue" />
                 <span className="text-xs font-bold uppercase tracking-widest">FENSA Accredited</span>
               </div>
-              <div className="flex items-centre space-x-3">
+              <div className="flex items-center space-x-3">
                 <CheckCircle2 className="w-5 h-5 text-brand-blue" />
                 <span className="text-xs font-bold uppercase tracking-widest">Structural QA</span>
               </div>
-              <div className="flex items-centre space-x-3">
+              <div className="flex items-center space-x-3">
                 <Award className="w-5 h-5 text-brand-blue" />
                 <span className="text-xs font-bold uppercase tracking-widest">BIM Ready</span>
               </div>
@@ -82,10 +82,10 @@ export default function AboutPage() {
       </section>
 
       {/* Quote CTA */}
-      <section className="py-40 bg-brand-charcoal text-white text-centre relative overflow-hidden">
+      <section className="py-40 bg-brand-charcoal text-white text-center relative overflow-hidden">
         <div className="absolute -top-24 -left-24 w-96 h-96 bg-brand-blue opacity-5 blur-3xl rounded-full"></div>
         <div className="container mx-auto px-4 max-w-3xl relative z-10">
-          <h2 className="text-4xl md:text-6xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+          <h2 className="text-4xl md:text-6xl font-bold uppercase mb-8 tracking-tighter">
             Ready to Build <span className="text-brand-blue">Precisely?</span>
           </h2>
           <p className="text-lg text-brand-grey font-light mb-12">
@@ -93,7 +93,7 @@ export default function AboutPage() {
           </p>
           <Link 
             href="/quote" 
-            className="inline-flex items-centre bg-brand-blue text-white hover:bg-white hover:text-brand-charcoal px-12 py-6 rounded-sm font-bold uppercase tracking-widest text-xs transition-all shadow-2xl"
+            className="inline-flex items-center bg-brand-blue text-white hover:bg-white hover:text-brand-charcoal px-12 py-6 rounded-sm font-bold uppercase tracking-widest text-xs transition-all shadow-2xl"
           >
             Request Technical Consultation <ArrowRight className="ml-2 w-4 h-4" />
           </Link>

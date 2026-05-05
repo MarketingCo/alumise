@@ -21,7 +21,7 @@ export default function ContactPage() {
       {/* Header */}
       <section className="bg-brand-charcoal pt-40 pb-24 text-white">
         <div className="container mx-auto px-4 max-w-7xl">
-          <h1 className="text-5xl md:text-8xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tighter">
+          <h1 className="text-5xl md:text-8xl font-bold uppercase mb-8 tracking-tighter">
             Direct <span className="text-brand-blue">Engagement.</span>
           </h1>
           <p className="text-xl text-brand-grey max-w-2xl font-light leading-relaxed">
@@ -83,7 +83,7 @@ export default function ContactPage() {
             {/* Form */}
             <div className="lg:col-span-2">
               <div className="bg-gray-50 p-12 rounded-sm shadow-inner">
-                <h3 className="text-3xl font-bold font-[family-name:var(--font-oswald)] uppercase mb-8 tracking-tight">General Inquiry</h3>
+                <h3 className="text-3xl font-bold uppercase mb-8 tracking-tight">General Inquiry</h3>
                 <form className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-2">
                     <label className="text-[10px] uppercase font-bold tracking-widest text-gray-400">Full Name</label>
@@ -107,7 +107,7 @@ export default function ContactPage() {
                     <textarea rows={6} className="w-full bg-white border border-gray-100 p-4 outline-none focus:border-brand-blue transition-all text-sm"></textarea>
                   </div>
                   <div className="md:col-span-2 pt-4">
-                    <button className="flex items-centre bg-brand-charcoal text-white px-12 py-5 rounded-sm font-bold uppercase tracking-widest text-xs hover:bg-brand-blue transition-all shadow-xl group">
+                    <button className="flex items-center bg-brand-charcoal text-white px-12 py-5 rounded-sm font-bold uppercase tracking-widest text-xs hover:bg-brand-blue transition-all shadow-xl group">
                       Send Inquiry <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                     </button>
                   </div>
@@ -121,16 +121,16 @@ export default function ContactPage() {
       {/* Trust Bar */}
       <section className="py-24 border-t border-gray-100 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-centre opacity-100">
-            <div className="flex flex-col items-centre">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center opacity-100">
+            <div className="flex flex-col items-center">
               <ShieldCheck size={32} className="mb-4" />
               <p className="text-[10px] uppercase tracking-[0.2em] font-bold">Data Protected</p>
             </div>
-            <div className="flex flex-col items-centre">
+            <div className="flex flex-col items-center">
               <Building2 size={32} className="mb-4" />
               <p className="text-[10px] uppercase tracking-[0.2em] font-bold">Direct from Fabricator</p>
             </div>
-            <div className="flex flex-col items-centre">
+            <div className="flex flex-col items-center">
               <MessageSquare size={32} className="mb-4" />
               <p className="text-[10px] uppercase tracking-[0.2em] font-bold">Expert Human Support</p>
             </div>
