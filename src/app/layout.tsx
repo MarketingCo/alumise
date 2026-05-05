@@ -22,12 +22,24 @@ const oswald = Oswald({
 
 const localBusinessSchema = {
   "@context": "https://schema.org/",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "Service"],
   "name": "Alumise",
   "description": "Alumise Ltd — Premium aluminium windows, bifold doors, sliding doors, roof lanterns, curtain walling and architectural glazing. Manufactured in Penicuik, installed across Edinburgh, Midlothian and Scotland. FENSA accredited.",
   "image": "https://www.alumise.co.uk/logo.png",
   "url": "https://www.alumise.co.uk",
   "sameAs": [],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Architectural Glazing Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aluminium Windows", "description": "Premium aluminium casement and tilt-turn windows manufactured in Penicuik." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bifold Doors", "description": "Slim-profile bifold door systems for residential and commercial openings." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sliding Doors", "description": "Minimal-frame sliding patio and lift-slide door systems." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Lanterns", "description": "Bespoke aluminium and glass roof lanterns for natural light." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Curtain Walling", "description": "Structural glazing facades for commercial buildings and shopfronts." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steel-Look Systems", "description": "Heritage-style steel-look aluminium windows and doors." } }
+    ]
+  },
   "telephone": "0131 210 0321",
   "email": "info@alumise.co.uk",
   "priceRange": "£££",
@@ -52,12 +64,6 @@ const localBusinessSchema = {
       "closes": "17:00"
     }
   ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "42",
-    "bestRating": "5"
-  },
   "knowsAbout": [
     "Architectural Glazing",
     "Aluminium Windows",
@@ -98,10 +104,18 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Alumise | Premium Architectural Glazing",
     description: "Precision-engineered glazing systems. Manufactured in-house at our Midlothian hub.",
+    images: ["https://www.alumise.co.uk/og-image.jpg"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   }
 };
 

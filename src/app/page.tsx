@@ -130,7 +130,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-centre space-y-2 opacity-50"
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-2 opacity-50"
         >
           <span className="text-[10px] uppercase tracking-widest">Scroll to Explore</span>
           <div className="w-[1px] h-12 bg-gradient-to-b from-white to-transparent"></div>
@@ -147,7 +147,7 @@ export default function Home() {
                 Light-Maximizing Solutions for the <span className="text-brand-silver">Modern Threshold.</span>
               </p>
             </div>
-            <Link href="/products" className="group flex items-centre font-semibold tracking-wide border-b-2 border-brand-blue pb-2 hover:text-brand-blue transition-colors">
+            <Link href="/products" className="group flex items-center font-semibold tracking-wide border-b-2 border-brand-blue pb-2 hover:text-brand-blue transition-colors">
               Explore All Systems <ChevronRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
@@ -175,14 +175,14 @@ export default function Home() {
                     <h3 className="text-2xl font-bold mb-4 uppercase tracking-tighter">{cat}</h3>
                     <ul className="space-y-2 mb-6 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                       {catProducts.slice(0, 3).map(p => (
-                        <li key={p.slug} className="flex items-centre text-xs font-medium text-white/90">
+                        <li key={p.slug} className="flex items-center text-xs font-medium text-white/90">
                           <CheckCircle2 className="w-3 h-3 mr-2 text-brand-blue" /> {p.title}
                         </li>
                       ))}
                     </ul>
                     <Link 
                       href={`/products?category=${cat.toLowerCase().replace(' ', '-')}`}
-                      className="inline-flex items-centre text-[10px] uppercase tracking-widest font-bold border border-white/30 px-4 py-2 hover:bg-white hover:text-brand-charcoal transition-colors w-max"
+                      className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold border border-white/30 px-4 py-2 hover:bg-white hover:text-brand-charcoal transition-colors w-max"
                     >
                       View Category
                     </Link>
@@ -198,7 +198,7 @@ export default function Home() {
       <section className="bg-brand-charcoal py-40 text-white relative">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-blue opacity-5 blur-3xl rounded-full"></div>
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-centre">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="space-y-10">
               <h2 className="text-4xl md:text-6xl font-semibold leading-[1.1] tracking-tight">
                 The Luxury of <br />
@@ -231,19 +231,19 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="glass-panel p-12 text-centre group hover:bg-brand-blue/10 transition-colors duration-500">
+              <div className="glass-panel p-12 text-center group hover:bg-brand-blue/10 transition-colors duration-500">
                 <h3 className="text-6xl font-semibold mb-2">15+</h3>
                 <p className="text-[10px] uppercase tracking-[0.2em] text-brand-blue font-bold">Years Experience</p>
               </div>
-              <div className="glass-panel p-12 text-centre group hover:bg-brand-blue/10 transition-colors duration-500 mt-12">
+              <div className="glass-panel p-12 text-center group hover:bg-brand-blue/10 transition-colors duration-500 mt-12">
                 <h3 className="text-6xl font-semibold mb-2">500+</h3>
                 <p className="text-[10px] uppercase tracking-[0.2em] text-brand-blue font-bold">Projects Delivered</p>
               </div>
-              <div className="glass-panel p-12 text-centre group hover:bg-brand-blue/10 transition-colors duration-500">
+              <div className="glass-panel p-12 text-center group hover:bg-brand-blue/10 transition-colors duration-500">
                 <h3 className="text-6xl font-semibold mb-2">100%</h3>
                 <p className="text-[10px] uppercase tracking-[0.2em] text-brand-blue font-bold">Bespoke Design</p>
               </div>
-              <div className="glass-panel p-12 text-centre group hover:bg-brand-blue/10 transition-colors duration-500 mt-12">
+              <div className="glass-panel p-12 text-center group hover:bg-brand-blue/10 transition-colors duration-500 mt-12">
                 <h3 className="text-6xl font-semibold mb-2">Elite</h3>
                 <p className="text-[10px] uppercase tracking-[0.2em] text-brand-blue font-bold">Supply Partners</p>
               </div>
@@ -255,7 +255,7 @@ export default function Home() {
       {/* Materials Showcase */}
       <section className="py-40 bg-gray-50 text-brand-charcoal overflow-hidden">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="text-centre mb-20 max-w-3xl mx-auto space-y-6">
+          <div className="text-center mb-20 max-w-3xl mx-auto space-y-6">
             <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-blue">The Palette of Clarity</h2>
             <p className="text-4xl md:text-5xl font-semibold tracking-tight">
               One Partner. <span className="text-brand-silver">The Luxury of Choice.</span>
@@ -265,12 +265,12 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-centre gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             {materials.map((mat) => (
               <Link 
                 key={mat}
                 href={`/products?material=${mat.toLowerCase().replace(' ', '-')}`}
-                className="bg-white border border-gray-100 px-8 py-6 rounded-sm shadow-sm hover:shadow-xl hover:border-brand-blue transition-all group flex flex-col items-centre min-w-[180px]"
+                className="bg-white border border-gray-100 px-8 py-6 rounded-sm shadow-sm hover:shadow-xl hover:border-brand-blue transition-all group flex flex-col items-center min-w-[180px]"
               >
                 {mat === 'Aluminium' && <Zap className="w-8 h-8 mb-4 text-brand-blue group-hover:scale-110 transition-transform" />}
                 {mat === 'uPVC' && <ShieldCheck className="w-8 h-8 mb-4 text-brand-blue group-hover:scale-110 transition-transform" />}
@@ -287,7 +287,7 @@ export default function Home() {
 
       {/* The Alumise Process Section */}
       <section className="py-40 bg-white text-brand-charcoal">
-        <div className="container mx-auto px-4 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-20 items-centre">
+        <div className="container mx-auto px-4 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="relative h-[600px]">
             <Image 
               src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop"
@@ -295,7 +295,7 @@ export default function Home() {
               fill
               className="object-cover"
             />
-            <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-brand-blue p-12 flex flex-col justify-centre text-brand-charcoal hidden md:flex">
+            <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-brand-blue p-12 flex flex-col justify-center text-brand-charcoal hidden md:flex">
               <p className="text-4xl font-semibold mb-2">0%</p>
               <p className="text-[10px] uppercase tracking-[0.2em] font-bold">Risk Tolerance in Engineering</p>
             </div>
@@ -334,7 +334,7 @@ export default function Home() {
             
             <Link 
               href="/process" 
-              className="inline-flex items-centre text-xs font-bold uppercase tracking-widest border-b-2 border-brand-charcoal pb-2 hover:text-brand-blue hover:border-brand-blue transition-all"
+              className="inline-flex items-center text-xs font-bold uppercase tracking-widest border-b-2 border-brand-charcoal pb-2 hover:text-brand-blue hover:border-brand-blue transition-all"
             >
               Learn More About Our Process <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
@@ -345,26 +345,26 @@ export default function Home() {
       {/* Testimonials Section */}
       <section className="py-32 bg-gray-50 border-y border-gray-100">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="text-centre mb-20">
+          <div className="text-center mb-20">
             <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-blue mb-4">Voices of Luxury</h2>
             <p className="text-4xl font-bold font-[family-name:var(--font-oswald)] uppercase tracking-tight">The Alumise <span className="text-gray-400">Horizon.</span></p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               { 
-                quote: "Alumise delivered a level of visual clarity that is rare in the industry. Their minimalist frames and attention to junction details were flawless.", 
-                author: "Principal Architect", 
-                org: "Elite Design Studio" 
+                quote: "Alumise manufactured and installed a full curtain walling system for our Edinburgh office refurbishment. The thermal performance exceeded spec and the installation was completed ahead of schedule.", 
+                author: "Verified Commercial Client", 
+                org: "Edinburgh City Centre" 
               },
               { 
-                quote: "The seamless integration of the light-maximizing bifold systems and the frameless rooflight transformed our perspective. Truly a luxury experience.", 
-                author: "Luxury Homeowner", 
-                org: "Morningside" 
+                quote: "We had Alumise replace all our windows and install bifold doors to the garden. The steel-look design matches our period property perfectly and the glazing quality is excellent.", 
+                author: "Verified Residential Client", 
+                org: "Morningside, Edinburgh" 
               },
               { 
-                quote: "As a developer, I seek the threshold of design. Alumise's minimalist systems and light-maximizing glass ensure every project represents the pinnacle of luxury.", 
-                author: "Design Director", 
-                org: "Luxury Development Group" 
+                quote: "As a main contractor, I need suppliers who deliver on programme. Alumise's in-house manufacturing at Penicuik means lead times are predictable and their site teams are thorough.", 
+                author: "Verified Contractor", 
+                org: "Central Belt Projects" 
               }
             ].map((t, idx) => (
               <motion.div 
@@ -403,7 +403,7 @@ export default function Home() {
                 Defining the <span className="text-brand-blue">Edinburgh Skyline.</span>
               </p>
             </div>
-            <Link href="/projects" className="hidden md:flex items-centre font-bold uppercase tracking-widest text-xs group">
+            <Link href="/projects" className="hidden md:flex items-center font-bold uppercase tracking-widest text-xs group">
               View All Projects <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
@@ -444,7 +444,7 @@ export default function Home() {
 
       {/* Final CTA Section */}
       <section className="py-40 bg-white text-brand-charcoal relative overflow-hidden">
-        <div className="container mx-auto px-4 max-w-4xl text-centre relative z-10">
+        <div className="container mx-auto px-4 max-w-4xl text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -457,7 +457,7 @@ export default function Home() {
             <p className="text-xl text-gray-500 font-light mb-12 max-w-2xl mx-auto leading-relaxed">
               Whether you're an architect with a complex vision or a homeowner seeking the ultimate aesthetic, Alumise provides the engineering expertise to make it happen.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-centre">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link 
                 href="/quote" 
                 className="bg-brand-charcoal text-white hover:bg-brand-blue px-12 py-6 rounded-sm font-bold uppercase tracking-widest text-xs transition-all shadow-2xl"
