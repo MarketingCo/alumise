@@ -92,6 +92,12 @@ export default function Footer() {
           </div>
           <p>&copy; {currentYear} Alumise Ltd. All Rights Reserved.</p>
         </div>
+
+        <div className="mt-8 py-4 text-center border-t border-white/5">
+          <p className="text-sm text-brand-grey">
+            Website developed by <a href="https://marketing-company.co.uk" target="_blank" rel="noopener noreferrer" className="underline hover:text-brand-blue transition-colors">Marketing Company</a>
+          </p>
+        </div>
       </div>
     </footer>
   );

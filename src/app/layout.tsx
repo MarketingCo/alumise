@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppBubble from "@/components/WhatsAppBubble";
 import SmoothScrollProvider from "@/components/SmoothScrollProvider";
-import NetworkPartners from "@/components/NetworkPartners";
+
 import CookieBanner from "@/components/CookieBanner";
 
 const inter = Inter({
@@ -134,7 +134,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <SmoothScrollProvider>
           <Header />
           <main className="flex-grow">{children}</main>
-          <NetworkPartners />
           <Footer />
           <WhatsAppBubble />
         </SmoothScrollProvider>
