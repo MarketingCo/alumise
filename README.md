@@ -1,21 +1,27 @@
-# Alumise Ltd
+# Alumise
 
-## Brand Information
-- **Business Name:** Alumise Ltd
-- **Phone:** 0131 210 0321
-- **Email:** info@alumise.co.uk
-- **Address:** Unit 2B, Penicuik, EH26 8HA
-- **Domain:** https://www.alumise.co.uk
-- **Services:** Aluminium glazing, shop fronts, all glazing
-- **USP:** Local fabrication in Penicuik, rapid quotes, great prices
+**Domain:** https://alumise.co.uk  
+**Status:** Ready for deployment  
+**Deployed:** Pending Vercel auth
 
 ## Deployment
-Deployed at: https://www.alumise.co.uk
 
-## Tech Stack
-- Next.js
-- Tailwind CSS
-- Vercel
+```bash
+vercel login
+vercel --prod
+```
+
+Or use Rocky:
+
+```bash
+rocky deploy alumise
+```
+
+## SEO
+
+- robots.txt: ✅ Generated
+- sitemap.xml: ✅ Generated
 
 ## Notes
-- Shared address with Forge & Frame and Balloon Collective (Unit 2B, Penicuik)
+
+Managed by Rocky as Iain automation system.
