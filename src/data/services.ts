@@ -21,9 +21,9 @@ export const services: Service[] = [
   {
     slug: "bifold-doors",
     title: "Bifold Doors",
-    metaTitle: "Bifold Doors Edinburgh & Midlothian | Manufactured & Installed",
+    metaTitle: "Bifold Doors Edinburgh | Manufactured & Installed",
     metaDescription:
-      "Premium aluminium bifold doors manufactured in Penicuik and installed across Edinburgh and the Lothians. U-values from 1.3 W/m²K, PAS 24 security, Secured by Design options.",
+      "Aluminium bifold doors manufactured in Penicuik and installed across Edinburgh. U-values from 1.3 W/m²K, PAS 24 security, Secured by Design.",
     shortDesc:
       "Engineered aluminium bifold door systems manufactured in our Penicuik facility and installed across Edinburgh and the Lothians.",
     description: [
@@ -71,7 +71,7 @@ export const services: Service[] = [
     title: "Sliding Doors",
     metaTitle: "Sliding Doors Edinburgh | Slimline Aluminium Patio Doors",
     metaDescription:
-      "Slimline aluminium sliding doors manufactured in Penicuik for Edinburgh homes. Lift-and-slide and inline systems. U-values from 1.1 W/m²K, PAS 24 / RC3 security, up to 3.5m panels.",
+      "Slimline aluminium sliding doors manufactured in Penicuik. Lift-and-slide and inline systems. U-values from 1.1 W/m²K, PAS 24 security.",
     shortDesc:
       "Slimline aluminium sliding door systems with panoramic glass, engineered for thermal efficiency and effortless operation across Edinburgh.",
     description: [
@@ -119,7 +119,7 @@ export const services: Service[] = [
     title: "French Doors",
     metaTitle: "French Doors Edinburgh | Aluminium & uPVC Double Doors",
     metaDescription:
-      "Bespoke aluminium and uPVC French doors manufactured in Penicuik. Double-door systems with multi-point locking, U-values from 1.4 W/m²K, and heritage or modern styling for Edinburgh homes.",
+      "Aluminium and uPVC French doors manufactured in Penicuik. Multi-point locking, U-values from 1.4 W/m²K, heritage and modern styling for Edinburgh.",
     shortDesc:
       "Classic and contemporary French door systems in aluminium and uPVC, manufactured in Penicuik and installed across Edinburgh and the Lothians.",
     description: [
@@ -143,7 +143,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["entrance-doors", "casement-windows", "bifold-doors"],
     image:
-      "https://images.unsplash.com/photo-1517502884422-41eaadeff171?q=80&w=1918&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=1918&auto=format&fit=crop",
     faq: [
       {
         question: "Should I choose aluminium or uPVC French doors?",
@@ -167,7 +167,7 @@ export const services: Service[] = [
     title: "Sash Windows",
     metaTitle: "Sash Windows Edinburgh | Heritage & Modern Timber-Look",
     metaDescription:
-      "Vertical sliding sash windows manufactured in Penicuik for Edinburgh period properties. Timber-look uPVC and aluminium with mechanical joints, U-values from 1.2 W/m²K, heritage compliance.",
+      "Sash windows manufactured in Penicuik for Edinburgh period properties. Timber-look uPVC and aluminium, U-values from 1.2 W/m²K, heritage compliance.",
     shortDesc:
       "Heritage-compliant vertical sliding sash windows in timber-look uPVC and aluminium, manufactured for Edinburgh's period properties.",
     description: [
@@ -215,7 +215,7 @@ export const services: Service[] = [
     title: "Casement Windows",
     metaTitle: "Casement Windows Edinburgh | Aluminium & uPVC",
     metaDescription:
-      "High-performance casement windows manufactured in Penicuik. Aluminium and uPVC systems with U-values from 0.8 W/m²K, PAS 24 security, concealed hinges, and heritage options.",
+      "Casement windows manufactured in Penicuik. Aluminium and uPVC with U-values from 0.8 W/m²K, PAS 24 security, concealed hinges.",
     shortDesc:
       "Versatile aluminium and uPVC casement windows engineered for thermal efficiency, security, and architectural flexibility across Edinburgh.",
     description: [
@@ -263,7 +263,7 @@ export const services: Service[] = [
     title: "Roof Lanterns",
     metaTitle: "Roof Lanterns Edinburgh | Bespoke Aluminium Skylights",
     metaDescription:
-      "Bespoke aluminium roof lanterns manufactured in Penicuik for Edinburgh homes. Slimline rafters, self-cleaning glass, solar control, U-values from 1.0 W/m²K. Installed across the Lothians.",
+      "Aluminium roof lanterns manufactured in Penicuik. Slimline rafters, self-cleaning glass, U-values from 1.0 W/m²K.",
     shortDesc:
       "Architectural aluminium roof lanterns with slimline rafters, self-cleaning glass, and superior thermal performance for Edinburgh properties.",
     description: [
@@ -287,7 +287,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["roof-lanterns", "casement-windows", "bifold-doors"],
     image:
-      "https://images.unsplash.com/photo-1513519245088-0e12902e35ca?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
     faq: [
       {
         question: "What size roof lantern can you manufacture?",
@@ -311,7 +311,7 @@ export const services: Service[] = [
     title: "Skylights",
     metaTitle: "Skylights Edinburgh | Fixed & Opening Rooflights",
     metaDescription:
-      "Fixed and opening skylights manufactured and installed across Edinburgh. Electric and manual venting, U-values from 1.0 W/m²K, rain sensors, and integrated blinds. Penicuik manufacturing.",
+      "Fixed and opening skylights across Edinburgh. Electric venting, U-values from 1.0 W/m²K, rain sensors and integrated blinds.",
     shortDesc:
       "Fixed and opening skylights for flat and pitched roofs, with electric venting, rain sensors, and integrated blinds for Edinburgh homes.",
     description: [
@@ -359,7 +359,7 @@ export const services: Service[] = [
     title: "Curtain Walling",
     metaTitle: "Curtain Walling Edinburgh | Commercial Glazing Systems",
     metaDescription:
-      "Structural curtain walling systems for Edinburgh commercial developments. Stick-build and unitised aluminium facades, thermal breaks, structural silicone glazing, CWCT Sequence B certified.",
+      "Curtain walling for Edinburgh commercial developments. Stick-build and unitised aluminium facades, thermal breaks, CWCT certified.",
     shortDesc:
       "High-performance structural glazing facades for Edinburgh commercial developments, from stick-build to unitised systems.",
     description: [
@@ -407,7 +407,7 @@ export const services: Service[] = [
     title: "Shopfronts",
     metaTitle: "Shopfronts Edinburgh | Aluminium Retail Frontages",
     metaDescription:
-      "Bespoke aluminium shopfronts manufactured and installed across Edinburgh. Slimline profiles, RAL colour powder coating, laminated safety glass, integrated signage, and enhanced security hardware.",
+      "Aluminium shopfronts manufactured across Edinburgh. Slimline profiles, RAL powder coating, laminated safety glass, security hardware.",
     shortDesc:
       "Bespoke aluminium retail shopfronts for Edinburgh high streets, designed for security, visibility, and brand impact.",
     description: [
@@ -455,7 +455,7 @@ export const services: Service[] = [
     title: "Commercial Doors",
     metaTitle: "Commercial Doors Edinburgh | Automatic & Manual Systems",
     metaDescription:
-      "Automatic and manual commercial door systems for Edinburgh businesses. DDA-compliant access, aluminium heavy-duty profiles, motion sensors, panic bar integration, and brushless motor drives.",
+      "Commercial door systems for Edinburgh. DDA-compliant access, aluminium profiles, motion sensors, panic bar integration.",
     shortDesc:
       "Automatic sliding, swing, and manual commercial door systems engineered for high-traffic Edinburgh businesses.",
     description: [
@@ -479,7 +479,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["curtain-walling", "entrance-doors", "steel-look-heritage"],
     image:
-      "https://images.unsplash.com/photo-1517502884422-41eaadeff171?q=80&w=1918&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=1918&auto=format&fit=crop",
     faq: [
       {
         question: "Are automatic doors expensive to run?",
@@ -503,7 +503,7 @@ export const services: Service[] = [
     title: "Window Installation",
     metaTitle: "Window Installation Edinburgh | Replacement & New Build",
     metaDescription:
-      "Expert window installation across Edinburgh and the Lothians. FENSA certified, Building Regs compliant, thermal bridging mitigation, airtightness testing, and 10-year insurance-backed guarantee.",
+      "Window installation across Edinburgh and the Lothians. FENSA certified, Building Regs compliant, 10-year insurance-backed guarantee.",
     shortDesc:
       "Professional window installation for replacement and new-build projects across Edinburgh, with FENSA certification and airtightness testing.",
     description: [
@@ -551,7 +551,7 @@ export const services: Service[] = [
     title: "Door Installation",
     metaTitle: "Door Installation Edinburgh | Front, Patio & Bifold",
     metaDescription:
-      "Professional door installation across Edinburgh and the Lothians. FENSA certified, PAS 24 security compliance, thermal bridging mitigation, threshold drainage, and 10-year insurance-backed guarantee.",
+      "Door installation across Edinburgh and the Lothians. FENSA certified, PAS 24 compliance, 10-year insurance-backed guarantee.",
     shortDesc:
       "Expert installation of front, patio, bifold, and French doors across Edinburgh with FENSA certification and security compliance.",
     description: [
@@ -599,7 +599,7 @@ export const services: Service[] = [
     title: "Conservatories & Orangeries",
     metaTitle: "Conservatories & Orangeries Edinburgh | Bespoke Glass Rooms",
     metaDescription:
-      "Bespoke conservatories and orangeries manufactured in Penicuik for Edinburgh homes. Aluminium frames, self-cleaning glass, U-values from 1.2 W/m²K, solid warm roofs, and lantern integrations.",
+      "Conservatories manufactured in Penicuik for Edinburgh. Aluminium frames, self-cleaning glass, U-values from 1.2 W/m²K.",
     shortDesc:
       "Bespoke conservatories and orangeries engineered for year-round comfort with superior thermal performance and architectural detail.",
     description: [
@@ -623,7 +623,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["roof-lanterns", "casement-windows", "bifold-doors"],
     image:
-      "https://images.unsplash.com/photo-1513519245088-0e12902e35ca?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
     faq: [
       {
         question: "Do I need planning permission for a conservatory?",
@@ -647,7 +647,7 @@ export const services: Service[] = [
     title: "Secondary Glazing",
     metaTitle: "Secondary Glazing Edinburgh | Soundproofing for Sash Windows",
     metaDescription:
-      "Secondary glazing manufactured in Penicuik for Edinburgh period properties. Acoustic laminated glass, U-values from 1.8 W/m²K, heritage-compliant slimline frames, and easy-clean tilt operation.",
+      "Secondary glazing manufactured in Penicuik. Acoustic laminated glass, U-values from 1.8 W/m²K, heritage-compliant slimline frames.",
     shortDesc:
       "Heritage-compliant secondary glazing for Edinburgh period properties, delivering acoustic insulation and thermal improvement without altering original windows.",
     description: [
@@ -695,7 +695,7 @@ export const services: Service[] = [
     title: "Steel-Look Windows",
     metaTitle: "Steel-Look Windows Edinburgh | Heritage Crittall Style",
     metaDescription:
-      "Steel-look aluminium windows manufactured in Penicuik. Crittall-style slim glazing bars, U-values from 1.2 W/m²K, PAS 24 security, and heritage compliance for Edinburgh properties.",
+      "Steel-look aluminium windows manufactured in Penicuik. Crittall-style glazing bars, U-values from 1.2 W/m²K, PAS 24 security.",
     shortDesc:
       "Crittall-style steel-look aluminium windows with authentic slim glazing bars and modern thermal performance for Edinburgh homes.",
     description: [

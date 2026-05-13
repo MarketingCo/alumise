@@ -42,7 +42,7 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
         "addressCountry": "GB"
       },
       "telephone": "0131 210 0321",
-      "url": "https://www.alumise.co.uk"
+      "url": "https://alumise.co.uk"
     },
     "serviceType": "Architectural Glazing"
   } : null;

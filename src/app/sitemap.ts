@@ -10,7 +10,7 @@ import { services } from '@/data/services';
 const BASE_DATE = '2026-05-04';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.alumise.co.uk';
+  const baseUrl = 'https://alumise.co.uk';
 
   const corePages: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/`, lastModified: BASE_DATE, changeFrequency: 'weekly', priority: 1.0 },
@@ -26,6 +26,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/privacy-policy`, lastModified: BASE_DATE, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${baseUrl}/terms`, lastModified: BASE_DATE, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${baseUrl}/cookies`, lastModified: BASE_DATE, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${baseUrl}/projects`, lastModified: BASE_DATE, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/trust`, lastModified: BASE_DATE, changeFrequency: 'monthly', priority: 0.6 },
   ];
 
   const productPages = products.map((product) => ({

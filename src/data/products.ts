@@ -80,7 +80,7 @@ export const products: Product[] = [
       "Every door is built with advanced security cores and premium hardware to ensure long-term reliability and safety."
     ],
     features: ['Smart Lock Integration', 'Thermally Broken Thresholds', 'Limitless Design Options', 'Police-Approved Security'],
-    heroImage: 'https://images.unsplash.com/photo-1517502884422-41eaadeff171?q=80&w=1918&auto=format&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=1918&auto=format&fit=crop',
     technicalSpecs: {
       uValue: 'From 0.9 W/m²K',
       maxDimensions: 'Bespoke Sizing up to 1.5m width',
@@ -145,7 +145,7 @@ export const products: Product[] = [
       "Available in traditional lantern styles or minimalist flat rooflights for a modern look."
     ],
     features: ['Self-Cleaning Glass', 'Solar Control Coatings', 'Ultra-Slim Rafters', 'High-Performance Insulated Glass'],
-    heroImage: 'https://images.unsplash.com/photo-1513519245088-0e12902e35ca?q=80&w=2070&auto=format&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
     technicalSpecs: {
       uValue: 'From 1.0 W/m²K (Overall)',
       maxDimensions: 'Unlimited via Link Systems',

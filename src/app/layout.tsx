@@ -9,9 +9,9 @@ const localBusinessSchema = {
   "@type": ["LocalBusiness", "Service"],
   "name": "Alumise",
   "description": "Alumise Ltd — Premium aluminium windows, bifold doors, sliding doors, roof lanterns, curtain walling and architectural glazing. Manufactured in Penicuik, installed across Edinburgh, Midlothian and Scotland. FENSA accredited.",
-  "image": "https://www.alumise.co.uk/logo.png",
-  "url": "https://www.alumise.co.uk",
-  "logo": "https://www.alumise.co.uk/logo.png",
+  "image": "https://alumise.co.uk/logo.png",
+  "url": "https://alumise.co.uk",
+  "logo": "https://alumise.co.uk/logo.png",
   "sameAs": [
     "https://www.fensa.org.uk",
   ],
@@ -76,12 +76,11 @@ export const metadata: Metadata = {
     template: "%s | Alumise"
   },
   description: "Alumise Ltd — Premium aluminium windows, bifold doors, sliding doors, roof lanterns and architectural glazing. Manufactured in our Penicuik facility and installed across Edinburgh and Scotland. FENSA accredited. 10-year guarantee.",
-  metadataBase: new URL('https://www.alumise.co.uk'),
-  alternates: { canonical: '/' },
+  metadataBase: new URL('https://alumise.co.uk'),
   openGraph: {
     title: "Alumise | Premium Aluminium Windows & Bifold Doors Edinburgh",
     description: "Premium architectural glazing manufactured in our Penicuik facility. Precision-engineered aluminium systems for luxury residential and commercial projects across Edinburgh and Scotland.",
-    url: "https://www.alumise.co.uk",
+    url: "https://alumise.co.uk",
     siteName: "Alumise",
     locale: "en_GB",
     type: "website",

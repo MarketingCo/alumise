@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, DoorOpen, Layout, Grid3X3, Building2, Layers, TreeDeciduous, Hammer, ShieldCheck, Zap, MapPin } from 'lucide-react';
-import { categories, materials, products } from '@/data/products';
+import { categories, products } from '@/data/products';
+import { materialsData } from '@/data/materials';
 
 const MegaMenu = () => {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -66,10 +67,10 @@ const MegaMenu = () => {
         {
           heading: 'By Material',
           icon: <Layers className="w-4 h-4 mr-2 text-brand-gold" />,
-          items: materials.map(mat => ({
-            name: mat,
-            href: `/materials/${mat.toLowerCase().replace(' ', '-')}`,
-            desc: `Technical deep-dive into ${mat.toLowerCase()} systems.`
+          items: materialsData.map(mat => ({
+            name: mat.name,
+            href: `/materials/${mat.slug}`,
+            desc: `Technical deep-dive into ${mat.name.toLowerCase()} systems.`
           }))
         }
       ],
@@ -77,7 +78,7 @@ const MegaMenu = () => {
         title: 'Bespoke Solutions',
         desc: 'Need something unique? Our engineering team can design custom glazing for any project.',
         image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop',
-        href: '/products/bespoke'
+        href: '/products'
       }
     },
     {

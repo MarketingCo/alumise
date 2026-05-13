@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `https://www.alumise.co.uk/blog/${post.slug}`,
+      url: `https://alumise.co.uk/blog/${post.slug}`,
       type: 'article',
       images: [{ url: post.image, alt: post.title }],
     },

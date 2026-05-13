@@ -77,7 +77,7 @@ export default function ServicePage({
       email: "info@alumise.co.uk",
     },
     areaServed: ["Edinburgh", "Midlothian", "East Lothian", "West Lothian"],
-    url: `https://www.alumise.co.uk/services/${service.slug}`,
+    url: `https://alumise.co.uk/services/${service.slug}`,
     image: service.image,
   };
 
