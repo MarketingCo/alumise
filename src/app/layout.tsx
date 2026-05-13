@@ -75,12 +75,12 @@ export const metadata: Metadata = {
     default: "Alumise | Premium Aluminium Windows & Bifold Doors Edinburgh",
     template: "%s | Alumise"
   },
-  description: "Alumise Ltd — Premium aluminium windows, bifold doors, sliding doors, roof lanterns and architectural glazing. Manufactured in our Penicuik facility and installed across Edinburgh and Scotland. FENSA accredited. 10-year guarantee.",
+  description: "Premium aluminium windows, bifold doors and architectural glazing manufactured in Penicuik, installed across Edinburgh and Scotland. FENSA accredited.",
   metadataBase: new URL('https://alumise.co.uk'),
   openGraph: {
     title: "Alumise | Premium Aluminium Windows & Bifold Doors Edinburgh",
     description: "Premium architectural glazing manufactured in our Penicuik facility. Precision-engineered aluminium systems for luxury residential and commercial projects across Edinburgh and Scotland.",
-    url: "https://alumise.co.uk",
+    images: [{ url: 'https://alumise.co.uk/og-image.jpg', width: 1200, height: 630, alt: 'Alumise — Premium Architectural Glazing' }],
     siteName: "Alumise",
     locale: "en_GB",
     type: "website",

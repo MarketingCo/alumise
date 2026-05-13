@@ -6,8 +6,9 @@ export function generateStaticParams() {
   return locations.map((l) => ({ slug: l.slug }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const location = locations.find(l => l.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const location = locations.find(l => l.slug === slug);
   if (!location) {
     return { title: 'Location Not Found | Alumise' };
   }
@@ -15,11 +16,17 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     title: `Architectural Glazing in ${location.name}, ${location.region} | Alumise`,
     description: `${location.description} Get a free quote for windows, doors and curtain walling in ${location.name}.`,
     alternates: { canonical: `/locations/${location.slug}` },
+    openGraph: {
+      title: `Architectural Glazing in ${location.name}, ${location.region} | Alumise`,
+      description: `${location.description} Get a free quote for windows, doors and curtain walling in ${location.name}.`,
+      images: [{ url: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop", width: 1200, height: 630, alt: `Architectural Glazing in ${location.name}` }],
+    },
   };
 }
 
-export default function LocationPage({ params }: { params: { slug: string } }) {
-  const location = locations.find(l => l.slug === params.slug);
+export default async function LocationPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const location = locations.find(l => l.slug === slug);
 
   const serviceSchema = location ? {
     "@context": "https://schema.org",
@@ -55,7 +62,7 @@ export default function LocationPage({ params }: { params: { slug: string } }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
         />
       )}
-      <LocationPageClient slug={params.slug} />
+      <LocationPageClient slug={slug} />
     </>
   );
 }

@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import HomeContent from '@/components/HomeContent';
 
 export const metadata: Metadata = {
-  title: 'Alumise | Aluminium Windows, Bifold Doors & Architectural Glazing Edinburgh',
-  description: 'Alumise Ltd — Premium aluminium windows, bifold doors, sliding doors, roof lanterns, curtain walling and architectural glazing. Manufactured in Penicuik, installed across Edinburgh, Midlothian and Scotland. FENSA accredited.',
+  title: 'Alumise | Aluminium Windows & Bifold Doors Edinburgh',
+  description: 'Premium aluminium windows, bifold doors and architectural glazing manufactured in Penicuik, installed across Edinburgh and Scotland. FENSA accredited.',
   keywords: 'aluminium windows Edinburgh, bifold doors Edinburgh, sliding doors Edinburgh, roof lanterns Edinburgh, curtain walling Scotland, shopfronts Edinburgh, architectural glazing Penicuik, double glazing Midlothian, FENSA accredited Edinburgh, aluminium manufacturing Scotland',
   alternates: { canonical: '/' },
   openGraph: {
