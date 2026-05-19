@@ -95,25 +95,25 @@ export default async function ServicePage({
       />
       <div className="min-h-screen bg-white">
         {/* Hero */}
-        <section className="bg-brand-charcoal pt-40 pb-24 text-white relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-gold opacity-5 blur-3xl rounded-full translate-x-1/2" />
+        <section className="bg-alumise-obsidian pt-40 pb-24 text-white relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-1/3 h-full bg-alumise-gold opacity-5 blur-3xl rounded-full translate-x-1/2" />
           <div className="container mx-auto px-4 max-w-7xl relative z-10">
             <Link
               href="/services"
-              className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-brand-gold mb-8 hover:text-white transition-colors"
+              className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-alumise-gold mb-8 hover:text-white transition-colors"
             >
               <ArrowLeft className="w-3 h-3 mr-2" /> All Services
             </Link>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold uppercase leading-none tracking-tighter mb-6 max-w-5xl">
               {service.title}{" "}
-              <span className="text-brand-gold">Services.</span>
+              <span className="text-alumise-gold">Services.</span>
             </h1>
             <p className="text-xl text-brand-grey max-w-2xl font-light leading-relaxed mb-10">
               {service.shortDesc}
             </p>
             <div className="flex flex-wrap gap-8 text-sm text-brand-grey">
               <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-brand-gold" />
+                <MapPin className="w-4 h-4 text-alumise-gold" />
                 <span>Edinburgh & Lothians</span>
               </div>
             </div>
@@ -127,7 +127,7 @@ export default async function ServicePage({
           <section className="py-32 border-t border-gray-100">
             <div className="container mx-auto px-4 max-w-7xl">
               <div className="text-center mb-16 space-y-4">
-                <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-gold">
+                <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-alumise-gold">
                   Compatible Systems
                 </h2>
                 <p className="text-3xl font-bold uppercase tracking-tight">
@@ -150,10 +150,10 @@ export default async function ServicePage({
                       />
                     </div>
                     <div className="p-8">
-                      <span className="text-[10px] uppercase tracking-widest font-bold text-brand-gold block mb-2">
+                      <span className="text-[10px] uppercase tracking-widest font-bold text-alumise-gold block mb-2">
                         {product.category}
                       </span>
-                      <h4 className="text-lg font-bold uppercase tracking-tight mb-4 group-hover:text-brand-gold transition-colors">
+                      <h4 className="text-lg font-bold uppercase tracking-tight mb-4 group-hover:text-alumise-gold transition-colors">
                         {product.title}
                       </h4>
                       <span className="text-[10px] uppercase tracking-widest font-bold flex items-center">
@@ -173,7 +173,7 @@ export default async function ServicePage({
           <div className="container mx-auto px-4 max-w-3xl">
             <h2 className="text-5xl font-bold uppercase mb-8 tracking-tighter">
               Start Your{" "}
-              <span className="text-brand-gold">{service.title} Project.</span>
+              <span className="text-alumise-gold">{service.title} Project.</span>
             </h2>
             <p className="text-xl text-gray-500 font-light mb-12">
               Get a fixed-price quotation for {service.title.toLowerCase()}{" "}
@@ -182,13 +182,13 @@ export default async function ServicePage({
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
                 href="/quote"
-                className="bg-brand-charcoal text-white hover:bg-brand-gold px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all shadow-xl"
+                className="bg-alumise-obsidian text-white hover:bg-alumise-gold px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all shadow-xl"
               >
                 Get a Quote
               </Link>
               <Link
                 href="/contact"
-                className="bg-white border border-gray-200 hover:border-brand-charcoal text-brand-charcoal px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all"
+                className="bg-white border border-gray-200 hover:border-alumise-obsidian text-alumise-obsidian px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all"
               >
                 Speak to an Engineer
               </Link>

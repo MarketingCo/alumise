@@ -30,10 +30,10 @@ function ProductsContent() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="bg-brand-charcoal pt-40 pb-20 text-white">
+      <section className="bg-alumise-obsidian pt-40 pb-20 text-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <h1 className="text-5xl md:text-7xl font-bold uppercase mb-6 tracking-tighter">
-            Architectural <span className="text-brand-gold">Systems.</span>
+            Architectural <span className="text-alumise-gold">Systems.</span>
           </h1>
           <p className="text-lg text-brand-grey max-w-2xl font-light leading-relaxed">
             Explore our comprehensive range of precision-engineered glazing solutions. From high-performance aluminium to heritage timber.
@@ -54,7 +54,7 @@ function ProductsContent() {
               <div className="flex flex-wrap gap-2">
                 <button
                   onClick={() => setActiveCategory(null)}
-                  className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${!activeCategory ? 'bg-brand-gold text-white' : 'bg-white border border-gray-200 text-brand-charcoal hover:border-brand-gold'}`}
+                  className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${!activeCategory ? 'bg-alumise-gold text-white' : 'bg-white border border-gray-200 text-alumise-obsidian hover:border-alumise-gold'}`}
                 >
                   All Categories
                 </button>
@@ -62,7 +62,7 @@ function ProductsContent() {
                   <button
                     key={cat}
                     onClick={() => setActiveCategory(cat)}
-                    className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${activeCategory?.toLowerCase() === cat.toLowerCase() ? 'bg-brand-gold text-white' : 'bg-white border border-gray-200 text-brand-charcoal hover:border-brand-gold'}`}
+                    className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${activeCategory?.toLowerCase() === cat.toLowerCase() ? 'bg-alumise-gold text-white' : 'bg-white border border-gray-200 text-alumise-obsidian hover:border-alumise-gold'}`}
                   >
                     {cat}
                   </button>
@@ -75,7 +75,7 @@ function ProductsContent() {
               <div className="flex flex-wrap gap-2">
                 <button
                   onClick={() => setActiveMaterial(null)}
-                  className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${!activeMaterial ? 'bg-brand-gold text-white' : 'bg-white border border-gray-200 text-brand-charcoal hover:border-brand-gold'}`}
+                  className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${!activeMaterial ? 'bg-alumise-gold text-white' : 'bg-white border border-gray-200 text-alumise-obsidian hover:border-alumise-gold'}`}
                 >
                   All Materials
                 </button>
@@ -83,7 +83,7 @@ function ProductsContent() {
                   <button
                     key={mat}
                     onClick={() => setActiveMaterial(mat)}
-                    className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${activeMaterial?.toLowerCase() === mat.toLowerCase() ? 'bg-brand-gold text-white' : 'bg-white border border-gray-200 text-brand-charcoal hover:border-brand-gold'}`}
+                    className={`px-4 py-2 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${activeMaterial?.toLowerCase() === mat.toLowerCase() ? 'bg-alumise-gold text-white' : 'bg-white border border-gray-200 text-alumise-obsidian hover:border-alumise-gold'}`}
                   >
                     {mat}
                   </button>
@@ -104,13 +104,13 @@ function ProductsContent() {
           <div className="container mx-auto px-4 max-w-7xl flex items-center gap-3">
             <span className="text-[10px] uppercase font-bold text-gray-400">Active:</span>
             {activeCategory && (
-              <span className="inline-flex items-center bg-gray-100 px-3 py-1 rounded-full text-[10px] font-bold text-brand-gold uppercase">
-                {activeCategory} <button onClick={() => setActiveCategory(null)}><X className="w-3 h-3 ml-2 hover:text-brand-charcoal transition-colors" /></button>
+              <span className="inline-flex items-center bg-gray-100 px-3 py-1 rounded-full text-[10px] font-bold text-alumise-gold uppercase">
+                {activeCategory} <button onClick={() => setActiveCategory(null)}><X className="w-3 h-3 ml-2 hover:text-alumise-obsidian transition-colors" /></button>
               </span>
             )}
             {activeMaterial && (
-              <span className="inline-flex items-center bg-gray-100 px-3 py-1 rounded-full text-[10px] font-bold text-brand-gold uppercase">
-                {activeMaterial} <button onClick={() => setActiveMaterial(null)}><X className="w-3 h-3 ml-2 hover:text-brand-charcoal transition-colors" /></button>
+              <span className="inline-flex items-center bg-gray-100 px-3 py-1 rounded-full text-[10px] font-bold text-alumise-gold uppercase">
+                {activeMaterial} <button onClick={() => setActiveMaterial(null)}><X className="w-3 h-3 ml-2 hover:text-alumise-obsidian transition-colors" /></button>
               </span>
             )}
           </div>
@@ -137,11 +137,11 @@ function ProductsContent() {
                 className="text-center py-40 border-2 border-dashed border-gray-100 rounded-xl"
               >
                 <SlidersHorizontal className="w-12 h-12 mx-auto text-gray-500 mb-6" />
-                <h3 className="text-2xl font-bold uppercase tracking-tight text-brand-charcoal mb-4">No matching systems found</h3>
+                <h3 className="text-2xl font-bold uppercase tracking-tight text-alumise-obsidian mb-4">No matching systems found</h3>
                 <p className="text-gray-600 mb-8 max-w-md mx-auto">Try adjusting your filters or contact our engineering team for bespoke solutions.</p>
                 <button 
                   onClick={() => { setActiveCategory(null); setActiveMaterial(null); }}
-                  className="bg-brand-gold text-white px-8 py-3 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-brand-charcoal transition-colors"
+                  className="bg-alumise-gold text-white px-8 py-3 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-alumise-obsidian transition-colors"
                 >
                   Clear All Filters
                 </button>
@@ -158,7 +158,7 @@ function ProductsContent() {
       <section className="bg-gray-50 py-32 border-t border-gray-200">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-4xl font-bold uppercase mb-8 tracking-tighter">
-            Need a <span className="text-brand-gold">Bespoke</span> Solution?
+            Need a <span className="text-alumise-gold">Bespoke</span> Solution?
           </h2>
           <p className="text-lg text-gray-500 font-light mb-12 leading-relaxed">
             Our engineers specialize in custom glazing designs that push the boundaries of what's possible. Let's discuss your project today.
@@ -166,13 +166,13 @@ function ProductsContent() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link 
               href="/quote" 
-              className="bg-brand-charcoal text-white hover:bg-brand-gold px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all"
+              className="bg-alumise-obsidian text-white hover:bg-alumise-gold px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all"
             >
               Request Consultation
             </Link>
             <Link 
               href="/contact" 
-              className="bg-white border border-gray-200 hover:border-brand-charcoal text-brand-charcoal px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all"
+              className="bg-white border border-gray-200 hover:border-alumise-obsidian text-alumise-obsidian px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all"
             >
               Contact Sales Team
             </Link>
@@ -186,8 +186,8 @@ function ProductsContent() {
 export default function ProductsPage() {
   return (
     <Suspense fallback={
-      <div className="min-h-screen flex items-center justify-center bg-brand-charcoal text-white">
-        <div className="w-8 h-8 border-4 border-brand-gold border-t-transparent rounded-full animate-spin"></div>
+      <div className="min-h-screen flex items-center justify-center bg-alumise-obsidian text-white">
+        <div className="w-8 h-8 border-4 border-alumise-gold border-t-transparent rounded-full animate-spin"></div>
       </div>
     }>
       <ProductsContent />

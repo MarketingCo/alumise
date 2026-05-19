@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <div className="min-h-[80vh] flex flex-col items-center justify-center bg-white text-brand-charcoal px-6 py-24">
+    <div className="min-h-[80vh] flex flex-col items-center justify-center bg-white text-alumise-obsidian px-6 py-24">
       <h1 className="text-8xl md:text-9xl font-bold leading-none tracking-tighter">
         404
       </h1>
@@ -19,7 +19,7 @@ export default function NotFound() {
       </p>
       <Link
         href="/"
-        className="mt-10 px-10 py-4 bg-brand-charcoal text-white font-bold uppercase text-xs tracking-[0.3em] hover:bg-brand-gold transition-all"
+        className="mt-10 px-10 py-4 bg-alumise-obsidian text-white font-bold uppercase text-xs tracking-[0.3em] hover:bg-alumise-gold transition-all"
       >
         Back to Home
       </Link>

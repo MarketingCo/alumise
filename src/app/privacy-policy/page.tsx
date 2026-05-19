@@ -9,19 +9,19 @@ export default function PrivacyPolicyPage() {
     <div className="bg-white min-h-screen pt-40 pb-20">
       <div className="container mx-auto px-4 max-w-4xl">
         <h1 className="text-4xl md:text-6xl font-bold uppercase mb-12 tracking-tighter">
-          Privacy <span className="text-brand-gold">Policy.</span>
+          Privacy <span className="text-alumise-gold">Policy.</span>
         </h1>
 
         <div className="prose prose-slate max-w-none font-light leading-relaxed text-gray-500 space-y-8">
           <section>
-            <h2 className="text-xl font-bold uppercase text-brand-charcoal mb-4">1. Who We Are</h2>
+            <h2 className="text-xl font-bold uppercase text-alumise-obsidian mb-4">1. Who We Are</h2>
             <p>
               Alumise Ltd (“we”, “us”, or “our”) is a registered company in Scotland, operating from Unit 2B, Eastfield Industrial Estate, Penicuik, Midlothian, EH26 8HA. We are the data controller responsible for the personal information we collect through our website and during the course of our business.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold uppercase text-brand-charcoal mb-4">2. What Data We Collect</h2>
+            <h2 className="text-xl font-bold uppercase text-alumise-obsidian mb-4">2. What Data We Collect</h2>
             <p>
               We may collect and process the following personal data about you:
             </p>
@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold uppercase text-brand-charcoal mb-4">3. How We Use Cookies</h2>
+            <h2 className="text-xl font-bold uppercase text-alumise-obsidian mb-4">3. How We Use Cookies</h2>
             <p>
               Our website uses cookies to distinguish you from other users. This helps us to provide you with a good experience when you browse our website and also allows us to improve our site. We use:
             </p>
@@ -49,7 +49,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold uppercase text-brand-charcoal mb-4">4. How We Use Your Information</h2>
+            <h2 className="text-xl font-bold uppercase text-alumise-obsidian mb-4">4. How We Use Your Information</h2>
             <p>
               We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:
             </p>
@@ -62,14 +62,14 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold uppercase text-brand-charcoal mb-4">5. Data Retention</h2>
+            <h2 className="text-xl font-bold uppercase text-alumise-obsidian mb-4">5. Data Retention</h2>
             <p>
               We will only retain your personal data for as long as necessary to fulfil the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements. For tax purposes, we typically retain customer records for six years.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold uppercase text-brand-charcoal mb-4">6. Your Rights</h2>
+            <h2 className="text-xl font-bold uppercase text-alumise-obsidian mb-4">6. Your Rights</h2>
             <p>
               Under UK GDPR, you have the following rights:
             </p>
@@ -87,7 +87,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold uppercase text-brand-charcoal mb-4">7. Contact Information</h2>
+            <h2 className="text-xl font-bold uppercase text-alumise-obsidian mb-4">7. Contact Information</h2>
             <p>
               If you have any questions about this privacy policy or our data practices, or if you wish to exercise your rights, please contact us:
             </p>
@@ -99,7 +99,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold uppercase text-brand-charcoal mb-4">8. Updates to This Policy</h2>
+            <h2 className="text-xl font-bold uppercase text-alumise-obsidian mb-4">8. Updates to This Policy</h2>
             <p>
               We may update this Privacy Policy from time to time to reflect changes in our practices or for legal and regulatory reasons. The date of the latest update will be indicated at the top of this page.
             </p>

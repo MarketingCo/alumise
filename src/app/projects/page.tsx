@@ -11,14 +11,14 @@ export default function ProjectsPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Header */}
-      <section className="bg-brand-charcoal pt-40 pb-24 text-white">
+      <section className="bg-alumise-obsidian pt-40 pb-24 text-white">
         <div className="container mx-auto px-4 max-w-7xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
           >
             <h1 className="text-5xl md:text-8xl font-bold uppercase mb-8 tracking-tighter">
-              Defining the <span className="text-brand-gold">Skyline.</span>
+              Defining the <span className="text-alumise-gold">Skyline.</span>
             </h1>
             <p className="text-xl text-brand-grey max-w-2xl mx-auto font-light leading-relaxed">
               Explore our portfolio of high-specification architectural glazing projects across Edinburgh and the Lothians.
@@ -47,15 +47,15 @@ export default function ProjectsPage() {
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-brand-charcoal/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                  <div className="absolute inset-0 bg-alumise-obsidian/20 group-hover:bg-transparent transition-colors duration-500"></div>
                 </Link>
                 <div className="space-y-4">
-                  <div className="flex items-center space-x-4 text-[10px] uppercase tracking-[0.2em] font-bold text-brand-gold">
+                  <div className="flex items-center space-x-4 text-[10px] uppercase tracking-[0.2em] font-bold text-alumise-gold">
                     <span className="flex items-center"><MapPin className="w-3 h-3 mr-2" /> {project.location}</span>
                     <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
                     <span className="flex items-center"><Building2 className="w-3 h-3 mr-2" /> {project.type}</span>
                   </div>
-                  <h3 className="text-3xl font-bold uppercase tracking-tight group-hover:text-brand-gold transition-colors">
+                  <h3 className="text-3xl font-bold uppercase tracking-tight group-hover:text-alumise-gold transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-gray-500 font-light leading-relaxed max-w-lg">
@@ -63,7 +63,7 @@ export default function ProjectsPage() {
                   </p>
                   <Link 
                     href={`/projects/${project.slug}`}
-                    className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold border-b-2 border-brand-charcoal pb-2 group-hover:border-brand-gold group-hover:text-brand-gold transition-all"
+                    className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold border-b-2 border-alumise-obsidian pb-2 group-hover:border-alumise-gold group-hover:text-alumise-gold transition-all"
                   >
                     View Project Case Study <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>
@@ -78,14 +78,14 @@ export default function ProjectsPage() {
       <section className="bg-gray-50 py-32 border-t border-gray-100">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-4xl font-bold uppercase mb-8 tracking-tighter">
-            Your Vision, <span className="text-brand-gold">Precisely Engineered.</span>
+            Your Vision, <span className="text-alumise-gold">Precisely Engineered.</span>
           </h2>
           <p className="text-lg text-gray-500 font-light mb-12">
             Whether it's a luxury residential renovation or a multi-storey commercial facade, we bring the same level of engineering exactitude to every project.
           </p>
           <Link 
             href="/quote" 
-            className="inline-block bg-brand-charcoal text-white hover:bg-brand-gold px-12 py-6 rounded-sm font-bold uppercase tracking-widest text-xs transition-all shadow-xl"
+            className="inline-block bg-alumise-obsidian text-white hover:bg-alumise-gold px-12 py-6 rounded-sm font-bold uppercase tracking-widest text-xs transition-all shadow-xl"
           >
             Start Your Project
           </Link>

@@ -52,8 +52,8 @@ export default function ProcessPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Header */}
-      <section className="bg-brand-charcoal pt-40 pb-24 text-white overflow-hidden relative">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-brand-gold opacity-10 blur-3xl rounded-full translate-x-1/2"></div>
+      <section className="bg-alumise-obsidian pt-40 pb-24 text-white overflow-hidden relative">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-alumise-gold opacity-10 blur-3xl rounded-full translate-x-1/2"></div>
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -61,7 +61,7 @@ export default function ProcessPage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl md:text-7xl font-bold uppercase mb-8 tracking-tighter">
-              The Alumise <span className="text-brand-gold">Methodology.</span>
+              The Alumise <span className="text-alumise-gold">Methodology.</span>
             </h1>
             <p className="text-xl text-brand-grey max-w-2xl font-light leading-relaxed">
               We bridge the gap between architectural concept and structural reality through a meticulously engineered four-stage process.
@@ -85,7 +85,7 @@ export default function ProcessPage() {
                 <div className="lg:w-1/2 space-y-10">
                   <div className="flex items-center space-x-6">
                     <span className="text-7xl font-bold text-gray-100">{step.number}</span>
-                    <div className="w-16 h-16 bg-brand-gold/10 rounded-full flex items-center justify-center text-brand-gold">
+                    <div className="w-16 h-16 bg-alumise-gold/10 rounded-full flex items-center justify-center text-alumise-gold">
                       {step.icon}
                     </div>
                   </div>
@@ -98,8 +98,8 @@ export default function ProcessPage() {
                     </p>
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {step.details.map((detail, dIdx) => (
-                        <li key={dIdx} className="flex items-center text-xs font-bold uppercase tracking-wider text-brand-charcoal">
-                          <CheckCircle2 className="w-4 h-4 mr-3 text-brand-gold" /> {detail}
+                        <li key={dIdx} className="flex items-center text-xs font-bold uppercase tracking-wider text-alumise-obsidian">
+                          <CheckCircle2 className="w-4 h-4 mr-3 text-alumise-gold" /> {detail}
                         </li>
                       ))}
                     </ul>
@@ -112,7 +112,7 @@ export default function ProcessPage() {
                     fill
                     className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   />
-                  <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-brand-charcoal hidden lg:block"></div>
+                  <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-alumise-obsidian hidden lg:block"></div>
                 </div>
               </motion.div>
             ))}
@@ -121,7 +121,7 @@ export default function ProcessPage() {
       </section>
 
       {/* Trust Banner */}
-      <section className="bg-brand-gold py-24 text-white">
+      <section className="bg-alumise-gold py-24 text-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <div className="space-y-4">
@@ -147,14 +147,14 @@ export default function ProcessPage() {
       <section className="py-32 text-center">
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-4xl md:text-5xl font-bold uppercase mb-8 tracking-tighter">
-            Ready to Begin <br /><span className="text-brand-gold">Stage 01?</span>
+            Ready to Begin <br /><span className="text-alumise-gold">Stage 01?</span>
           </h2>
           <p className="text-lg text-gray-500 font-light mb-12">
             The first step is a technical conversation about your architectural intent. No obligation, just expert advice.
           </p>
           <Link 
             href="/quote" 
-            className="inline-flex items-center bg-brand-charcoal text-white hover:bg-brand-gold px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all"
+            className="inline-flex items-center bg-alumise-obsidian text-white hover:bg-alumise-gold px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs transition-all"
           >
             Start Your Consultation <ArrowRight className="ml-2 w-4 h-4" />
           </Link>

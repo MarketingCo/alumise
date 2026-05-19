@@ -44,7 +44,7 @@ export default function ProductPageContent({ slug }: { slug: string }) {
         }}
       />
       {/* Product Hero */}
-      <section className="relative h-[70vh] min-h-[500px] flex items-end bg-brand-charcoal text-white overflow-hidden">
+      <section className="relative h-[70vh] min-h-[500px] flex items-end bg-alumise-obsidian text-white overflow-hidden">
         <Image
           src={product.heroImage}
           alt={product.title}
@@ -52,18 +52,18 @@ export default function ProductPageContent({ slug }: { slug: string }) {
           className="object-cover opacity-60"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal via-transparent to-transparent pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-alumise-obsidian via-transparent to-transparent pointer-events-none"></div>
         
         <div className="container mx-auto px-4 max-w-7xl relative z-10 pb-20">
           <Link 
             href="/products" 
-            className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-brand-gold mb-8 hover:text-white transition-colors"
+            className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-alumise-gold mb-8 hover:text-white transition-colors"
           >
             <ArrowLeft className="w-3 h-3 mr-2" /> Back to Systems
           </Link>
           <div className="flex flex-wrap gap-2 mb-4">
             {product.materials.map(mat => (
-              <span key={mat} className="bg-brand-gold/20 backdrop-blur-md border border-brand-gold/30 text-[8px] uppercase tracking-[0.2em] px-3 py-1 font-bold">
+              <span key={mat} className="bg-alumise-gold/20 backdrop-blur-md border border-alumise-gold/30 text-[8px] uppercase tracking-[0.2em] px-3 py-1 font-bold">
                 {mat}
               </span>
             ))}
@@ -91,30 +91,30 @@ export default function ProductPageContent({ slug }: { slug: string }) {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-gray-100">
                 <div>
-                  <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-gold mb-6">Key Engineering Features</h3>
+                  <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-alumise-gold mb-6">Key Engineering Features</h3>
                   <ul className="space-y-4">
                     {product.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start text-sm text-brand-charcoal font-medium">
-                        <CheckCircle2 className="w-5 h-5 mr-3 text-brand-gold flex-shrink-0" />
+                      <li key={idx} className="flex items-start text-sm text-alumise-obsidian font-medium">
+                        <CheckCircle2 className="w-5 h-5 mr-3 text-alumise-gold flex-shrink-0" />
                         {feature}
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="bg-gray-50 p-8 rounded-sm">
-                  <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-charcoal mb-6">Technical Verification</h3>
+                  <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-alumise-obsidian mb-6">Technical Verification</h3>
                   <ul className="space-y-4">
                     <li className="flex items-center text-xs text-gray-500">
-                      <ShieldCheck className="w-4 h-4 mr-3 text-brand-gold" /> UK Building Regs Compliant
+                      <ShieldCheck className="w-4 h-4 mr-3 text-alumise-gold" /> UK Building Regs Compliant
                     </li>
                     <li className="flex items-center text-xs text-gray-500">
-                      <Zap className="w-4 h-4 mr-3 text-brand-gold" /> High Thermal Efficiency
+                      <Zap className="w-4 h-4 mr-3 text-alumise-gold" /> High Thermal Efficiency
                     </li>
                     <li className="flex items-center text-xs text-gray-500">
-                      <Ruler className="w-4 h-4 mr-3 text-brand-gold" /> Custom Structural Analysis
+                      <Ruler className="w-4 h-4 mr-3 text-alumise-gold" /> Custom Structural Analysis
                     </li>
                     <li className="flex items-center text-xs text-gray-500">
-                      <Clock className="w-4 h-4 mr-3 text-brand-gold" /> FENSA Certified Installation
+                      <Clock className="w-4 h-4 mr-3 text-alumise-gold" /> FENSA Certified Installation
                     </li>
                   </ul>
                 </div>
@@ -123,14 +123,14 @@ export default function ProductPageContent({ slug }: { slug: string }) {
               {/* Technical Specifications Table */}
               {product.technicalSpecs && (
                 <div className="pt-16 border-t border-gray-100">
-                  <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-gold mb-8">Technical Specifications</h3>
+                  <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-alumise-gold mb-8">Technical Specifications</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-6">
                     {Object.entries(product.technicalSpecs).map(([key, value]) => (
                       <div key={key} className="flex justify-between items-center py-4 border-b border-gray-50">
                         <span className="text-[10px] uppercase tracking-widest font-bold text-gray-400">
                           {key.replace(/([A-Z])/g, ' $1').trim()}
                         </span>
-                        <span className="text-sm font-bold text-brand-charcoal">{value}</span>
+                        <span className="text-sm font-bold text-alumise-obsidian">{value}</span>
                       </div>
                     ))}
                   </div>
@@ -140,7 +140,7 @@ export default function ProductPageContent({ slug }: { slug: string }) {
 
             {/* Right Column: Sticky CTA / Sidebar */}
             <div className="relative">
-              <div className="sticky top-32 bg-brand-charcoal text-white p-10 rounded-sm shadow-2xl">
+              <div className="sticky top-32 bg-alumise-obsidian text-white p-10 rounded-sm shadow-2xl">
                 <h3 className="text-2xl font-bold uppercase mb-6 tracking-tight">
                   Request Technical <br />Consultation
                 </h3>
@@ -150,7 +150,7 @@ export default function ProductPageContent({ slug }: { slug: string }) {
                 <div className="space-y-4">
                   <Link 
                     href="/quote" 
-                    className="flex items-center justify-center w-full bg-brand-gold hover:bg-white hover:text-brand-charcoal text-white px-6 py-4 rounded-sm text-xs font-bold uppercase tracking-widest transition-all"
+                    className="flex items-center justify-center w-full bg-alumise-gold hover:bg-white hover:text-alumise-obsidian text-white px-6 py-4 rounded-sm text-xs font-bold uppercase tracking-widest transition-all"
                   >
                     Get a Quote <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>
@@ -163,7 +163,7 @@ export default function ProductPageContent({ slug }: { slug: string }) {
                 </div>
                 
                 <div className="mt-10 pt-10 border-t border-white/10 text-center">
-                  <p className="text-[10px] uppercase tracking-widest text-brand-gold font-bold mb-2">Direct Line</p>
+                  <p className="text-[10px] uppercase tracking-widest text-alumise-gold font-bold mb-2">Direct Line</p>
                   <p className="text-xl font-bold">Email us</p>
                 </div>
               </div>
@@ -177,10 +177,10 @@ export default function ProductPageContent({ slug }: { slug: string }) {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex justify-between items-end mb-12">
             <div>
-              <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-gold mb-4">Complete Your Vision</h2>
+              <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-alumise-gold mb-4">Complete Your Vision</h2>
               <p className="text-3xl font-bold uppercase tracking-tight">Complementary <span className="text-gray-400">Systems.</span></p>
             </div>
-            <Link href="/products" className="text-xs font-bold uppercase tracking-widest border-b border-brand-charcoal pb-1 hover:text-brand-gold hover:border-brand-gold transition-all">
+            <Link href="/products" className="text-xs font-bold uppercase tracking-widest border-b border-alumise-obsidian pb-1 hover:text-alumise-gold hover:border-alumise-gold transition-all">
               View All Systems
             </Link>
           </div>
@@ -198,7 +198,7 @@ export default function ProductPageContent({ slug }: { slug: string }) {
                   <div className="relative h-48 mb-6 overflow-hidden">
                     <Image src={p.heroImage} alt={p.title} fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
                   </div>
-                  <h4 className="font-bold uppercase tracking-tight mb-2 group-hover:text-brand-gold transition-colors">{p.title}</h4>
+                  <h4 className="font-bold uppercase tracking-tight mb-2 group-hover:text-alumise-gold transition-colors">{p.title}</h4>
                   <p className="text-xs text-gray-500 line-clamp-2">{p.shortDesc}</p>
                 </Link>
               ))}

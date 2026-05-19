@@ -30,7 +30,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
         />
         <div className="absolute top-4 left-4 flex flex-wrap gap-2">
           {product.materials.map(mat => (
-            <span key={mat} className="bg-brand-charcoal/80 backdrop-blur-md text-[8px] uppercase tracking-widest text-white px-2 py-1 font-bold">
+            <span key={mat} className="bg-alumise-obsidian/80 backdrop-blur-md text-[8px] uppercase tracking-widest text-white px-2 py-1 font-bold">
               {mat}
             </span>
           ))}
@@ -38,10 +38,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
       </div>
       
       <div className="p-8">
-        <span className="text-[10px] uppercase tracking-[0.2em] text-brand-gold font-bold mb-2 block">
+        <span className="text-[10px] uppercase tracking-[0.2em] text-alumise-gold font-bold mb-2 block">
           {product.category}
         </span>
-        <h3 className="text-2xl font-bold uppercase mb-4 tracking-tight group-hover:text-brand-gold transition-colors">
+        <h3 className="text-2xl font-bold uppercase mb-4 tracking-tight group-hover:text-alumise-gold transition-colors">
           {product.title}
         </h3>
         <p className="text-sm text-gray-500 mb-6 line-clamp-2 font-light leading-relaxed">
@@ -51,7 +51,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
         <ul className="space-y-2 mb-8">
           {product.features.slice(0, 3).map((feature, idx) => (
             <li key={idx} className="flex items-center text-xs text-gray-600">
-              <CheckCircle2 className="w-3 h-3 mr-2 text-brand-gold flex-shrink-0" />
+              <CheckCircle2 className="w-3 h-3 mr-2 text-alumise-gold flex-shrink-0" />
               {feature}
             </li>
           ))}
@@ -59,7 +59,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
         
         <Link 
           href={`/products/${product.slug}`}
-          className="inline-flex items-center text-[10px] uppercase tracking-[0.2em] font-bold border-b-2 border-brand-charcoal pb-1 group-hover:border-brand-gold group-hover:text-brand-gold transition-all"
+          className="inline-flex items-center text-[10px] uppercase tracking-[0.2em] font-bold border-b-2 border-alumise-obsidian pb-1 group-hover:border-alumise-gold group-hover:text-alumise-gold transition-all"
         >
           View Technical Specs <ArrowRight className="ml-2 w-3 h-3 group-hover:translate-x-1 transition-transform" />
         </Link>

@@ -20,8 +20,8 @@ export default function AboutPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero */}
-      <section className="bg-brand-charcoal pt-40 pb-24 text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-brand-gold opacity-5 blur-3xl rounded-full translate-x-1/2"></div>
+      <section className="bg-alumise-obsidian pt-40 pb-24 text-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-alumise-gold opacity-5 blur-3xl rounded-full translate-x-1/2"></div>
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl md:text-8xl font-bold uppercase mb-8 tracking-tighter">
-              Engineering <span className="text-brand-gold">Total Clarity.</span>
+              Engineering <span className="text-alumise-gold">Total Clarity.</span>
             </h1>
             <p className="text-xl text-brand-grey max-w-2xl font-light leading-relaxed">
               Alumise was founded on a single principle: providing architects and homeowners with the technical exactitude they deserve.
@@ -52,7 +52,7 @@ export default function AboutPage() {
           </div>
           <div className="space-y-10">
             <div className="space-y-6">
-              <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-brand-gold">The Alumise Mission</h2>
+              <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-alumise-gold">The Alumise Mission</h2>
               <p className="text-4xl font-bold uppercase leading-tight tracking-tight">
                 Architectural Performance, <span className="text-gray-600">Perfectly Delivered.</span>
               </p>
@@ -65,15 +65,15 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-wrap gap-8 pt-6">
               <div className="flex items-center space-x-3">
-                <ShieldCheck className="w-5 h-5 text-brand-gold" />
+                <ShieldCheck className="w-5 h-5 text-alumise-gold" />
                 <span className="text-xs font-bold uppercase tracking-widest">FENSA Accredited</span>
               </div>
               <div className="flex items-center space-x-3">
-                <CheckCircle2 className="w-5 h-5 text-brand-gold" />
+                <CheckCircle2 className="w-5 h-5 text-alumise-gold" />
                 <span className="text-xs font-bold uppercase tracking-widest">Structural QA</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Award className="w-5 h-5 text-brand-gold" />
+                <Award className="w-5 h-5 text-alumise-gold" />
                 <span className="text-xs font-bold uppercase tracking-widest">BIM Ready</span>
               </div>
             </div>
@@ -82,18 +82,18 @@ export default function AboutPage() {
       </section>
 
       {/* Quote CTA */}
-      <section className="py-40 bg-brand-charcoal text-white text-center relative overflow-hidden">
-        <div className="absolute -top-24 -left-24 w-96 h-96 bg-brand-gold opacity-5 blur-3xl rounded-full"></div>
+      <section className="py-40 bg-alumise-obsidian text-white text-center relative overflow-hidden">
+        <div className="absolute -top-24 -left-24 w-96 h-96 bg-alumise-gold opacity-5 blur-3xl rounded-full"></div>
         <div className="container mx-auto px-4 max-w-3xl relative z-10">
           <h2 className="text-4xl md:text-6xl font-bold uppercase mb-8 tracking-tighter">
-            Ready to Build <span className="text-brand-gold">Precisely?</span>
+            Ready to Build <span className="text-alumise-gold">Precisely?</span>
           </h2>
           <p className="text-lg text-brand-grey font-light mb-12">
             Let's discuss how our engineering-first approach can elevate your next project. 
           </p>
           <Link 
             href="/quote" 
-            className="inline-flex items-center bg-brand-gold text-white hover:bg-white hover:text-brand-charcoal px-12 py-6 rounded-sm font-bold uppercase tracking-widest text-xs transition-all shadow-2xl"
+            className="inline-flex items-center bg-alumise-gold text-white hover:bg-white hover:text-alumise-obsidian px-12 py-6 rounded-sm font-bold uppercase tracking-widest text-xs transition-all shadow-2xl"
           >
             Request Technical Consultation <ArrowRight className="ml-2 w-4 h-4" />
           </Link>

@@ -11,6 +11,36 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'aluminium-windows-vs-upvc-2026-edinburgh-guide',
+    title: 'Aluminium Windows vs uPVC: The 2026 Edinburgh Homeowner\'s Guide',
+    excerpt: 'A comprehensive comparison of aluminium and uPVC windows for Edinburgh properties. Energy efficiency, durability, aesthetics, and value — everything you need to know before upgrading your glazing.',
+    date: 'May 19, 2026',
+    author: 'Technical Director',
+    category: 'Materials',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop',
+    content: [
+      "Choosing between aluminium and uPVC windows is one of the most important decisions Edinburgh homeowners face when upgrading their property. Both materials have evolved dramatically, and the gap between them has narrowed in some areas while widening in others. This guide cuts through the marketing noise to give you the facts you need for 2026.",
+      "<h3 class='text-xl font-bold mb-3 mt-8'>Thermal Performance: The Numbers That Matter</h3>",
+      "In Scotland's climate, thermal efficiency is non-negotiable. Modern uPVC windows with multi-chamber profiles achieve U-values around 1.2 W/m²K with standard double glazing. Aluminium windows, thanks to thermal break technology, now match or exceed this performance. Premium aluminium systems with triple glazing can reach U-values as low as 0.8 W/m²K — a significant advantage for north-facing rooms and exposed coastal properties.",
+      "The critical difference lies in frame expansion and seal longevity. uPVC expands and contracts more with temperature swings, which can degrade gasket seals over 15–20 years. Aluminium's dimensional stability means seals last longer, maintaining thermal performance for decades. For Edinburgh's freeze-thaw cycles, this matters.",
+      "<h3 class='text-xl font-bold mb-3 mt-8'>Durability in Scottish Weather</h3>",
+      "Scotland's weather is uniquely demanding. Horizontal rain, salt air on the coast, and temperature extremes test every building material. Aluminium wins decisively on durability. Powder-coated aluminium frames carry 25–30 year guarantees and routinely last 40+ years with minimal maintenance. uPVC frames, while durable, can discolour, warp, and become brittle after 20–25 years of UV exposure.",
+      "For coastal properties in North Berwick, Dunbar, or Burntisland, aluminium's corrosion resistance is essential. Marine-grade powder coatings and anodised finishes withstand salt spray that degrades standard uPVC. Even inland, Edinburgh's wind-driven rain demands frames that won't swell, warp, or leak.",
+      "<h3 class='text-xl font-bold mb-3 mt-8'>Aesthetics and Sightlines</h3>",
+      "This is where aluminium truly separates itself. The strength-to-weight ratio of aluminium allows frame profiles as slim as 35mm — less than half the width of typical uPVC frames. For period properties in Edinburgh's New Town or Morningside, slim aluminium frames replicate the elegant sightlines of original steel windows while delivering modern thermal performance.",
+      "uPVC has improved aesthetically — anthracite grey and black foils now look sophisticated — but the bulkier profiles remain visible. For contemporary extensions or minimalist designs, aluminium's slimmer lines maximise glass area and natural light. Our <a href='/products/casement-windows'>aluminium casement windows</a> achieve sightlines impossible with uPVC.",
+      "<h3 class='text-xl font-bold mb-3 mt-8'>Cost Comparison: Edinburgh 2026</h3>",
+      "uPVC remains the more affordable option upfront. For a typical three-bedroom Edinburgh semi, expect to pay £4,000–£6,000 for quality uPVC windows versus £6,500–£9,500 for equivalent aluminium systems. Over a 30-year lifespan, however, aluminium's lower maintenance costs and longer service life narrow the gap significantly.",
+      "Consider also resale value. Estate agents consistently report that premium aluminium glazing increases buyer interest and achieved prices, particularly in Edinburgh's competitive property market. For landlords, uPVC's lower capital cost and decent durability make it a pragmatic choice. For owner-occupiers planning to stay, aluminium offers superior long-term value.",
+      "<h3 class='text-xl font-bold mb-3 mt-8'>Environmental Credentials</h3>",
+      "Aluminium is infinitely recyclable without quality loss, and recycled aluminium requires 95% less energy than primary production. At Alumise, we use high recycled-content aluminium in our Penicuik manufacturing facility. uPVC is technically recyclable, but recycling infrastructure in the UK remains limited, and many uPVC frames end up in landfill after removal.",
+      "From a whole-life carbon perspective, the longer service life of aluminium windows means fewer replacements and less embodied carbon over the building's lifespan. For homeowners targeting net-zero or building to Passivhaus standards, aluminium's combination of slim profiles, triple-glazing compatibility, and recyclability makes it the clear choice.",
+      "<h3 class='text-xl font-bold mb-3 mt-8'>The Verdict for Edinburgh Homes</h3>",
+      "For coastal and exposed properties, listed buildings, and design-led projects, aluminium is the superior material. For budget-conscious renovations of standard suburban homes, modern uPVC offers excellent value. The decision ultimately depends on your property type, location, budget, and how long you plan to stay.",
+      "At Alumise, we manufacture both <a href='/materials/aluminium'>premium aluminium</a> and high-grade uPVC systems at our Penicuik facility. We never push one material over the other — we assess your specific needs and recommend the optimal solution. <a href='/quote'>Book a free design visit</a> and our technical team will help you choose the right windows for your Edinburgh home."
+    ]
+  },
+  {
     slug: 'architects-guide-structural-glazing',
     title: "The Architect's Guide to Frameless Structural Glazing",
     excerpt: "Understanding the engineering requirements, load-bearing capacities, and aesthetic possibilities of frameless glass systems.",

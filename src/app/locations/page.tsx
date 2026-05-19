@@ -14,7 +14,7 @@ export default function LocationsPage() {
       <div className="container mx-auto px-4 max-w-7xl">
         <header className="mb-20 text-center max-w-3xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold uppercase mb-8 tracking-tighter">
-            Operational <span className="text-brand-gold">Districts.</span>
+            Operational <span className="text-alumise-gold">Districts.</span>
           </h1>
           <p className="text-xl text-gray-500 font-light leading-relaxed">
             Alumise provides precision-engineered glazing solutions across Edinburgh, the Lothians, and Fife. Explore our regional hubs.
@@ -37,19 +37,19 @@ export default function LocationsPage() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: idx * 0.05 }}
-                    className="group border border-gray-100 p-10 hover:shadow-2xl hover:border-brand-gold transition-all"
+                    className="group border border-gray-100 p-10 hover:shadow-2xl hover:border-alumise-gold transition-all"
                   >
-                    <div className="flex items-center text-brand-gold mb-6">
+                    <div className="flex items-center text-alumise-gold mb-6">
                       <MapPin className="w-6 h-6 mr-3" />
                       <span className="text-[10px] uppercase tracking-widest font-bold">Operational District</span>
                     </div>
-                    <h3 className="text-2xl font-bold uppercase mb-4 tracking-tight group-hover:text-brand-gold transition-colors">{location.name}</h3>
+                    <h3 className="text-2xl font-bold uppercase mb-4 tracking-tight group-hover:text-alumise-gold transition-colors">{location.name}</h3>
                     <p className="text-sm text-gray-500 font-light mb-8 line-clamp-2 leading-relaxed">
                       {location.description}
                     </p>
                     <Link 
                       href={`/locations/${location.slug}`}
-                      className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold border-b-2 border-brand-charcoal pb-1 group-hover:border-brand-gold transition-all"
+                      className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold border-b-2 border-alumise-obsidian pb-1 group-hover:border-alumise-gold transition-all"
                     >
                       Explore Local Projects <ArrowRight className="ml-2 w-3 h-3 group-hover:translate-x-1 transition-transform" />
                     </Link>

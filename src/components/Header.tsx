@@ -27,7 +27,7 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md text-brand-charcoal shadow-sm py-4'
+          ? 'bg-white/95 backdrop-blur-md text-alumise-obsidian shadow-sm py-4'
           : 'bg-transparent text-white py-6'
       }`}
     >
@@ -35,7 +35,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <span className="text-2xl font-bold tracking-tight uppercase" style={{ fontFamily: 'var(--font-oswald)' }}>
-            Alumise<span className="text-brand-gold">.</span>
+            Alumise<span className="text-alumise-gold">.</span>
           </span>
         </Link>
 
@@ -45,7 +45,7 @@ export default function Header() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-xs uppercase tracking-[0.2em] font-semibold hover:text-brand-gold transition-colors duration-300"
+              className="text-xs uppercase tracking-[0.2em] font-semibold hover:text-alumise-gold transition-colors duration-300"
             >
               {link.name}
             </Link>
@@ -56,7 +56,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-6">
           <a
             href="tel:01312100321"
-            className="flex items-center gap-2 text-sm font-semibold tracking-wide hover:text-brand-gold transition-colors"
+            className="flex items-center gap-2 text-sm font-semibold tracking-wide hover:text-alumise-gold transition-colors"
           >
             <Phone size={16} />
             0131 210 0321
@@ -65,8 +65,8 @@ export default function Header() {
             href="/quote"
             className={`px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] transition-all border ${
               isScrolled
-                ? 'bg-brand-charcoal text-white border-brand-charcoal hover:bg-brand-gold hover:border-brand-gold'
-                : 'bg-white/10 text-white border-white/30 hover:bg-white hover:text-brand-charcoal'
+                ? 'bg-alumise-obsidian text-white border-alumise-obsidian hover:bg-alumise-gold hover:border-alumise-gold'
+                : 'bg-white/10 text-white border-white/30 hover:bg-white hover:text-alumise-obsidian'
             }`}
           >
             Get a Quote
@@ -91,7 +91,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 bg-brand-charcoal text-white z-[60] pt-24 px-8"
+            className="fixed inset-0 bg-alumise-obsidian text-white z-[60] pt-24 px-8"
           >
             <button
               onClick={() => setIsMobileMenuOpen(false)}
@@ -107,7 +107,7 @@ export default function Header() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="hover:text-brand-gold transition-colors"
+                  className="hover:text-alumise-gold transition-colors"
                 >
                   {link.name}
                 </Link>

@@ -99,7 +99,7 @@ export const products: Product[] = [
     shortDesc: 'Versatile and efficient window systems suitable for any architectural style.',
     fullContent: [
       "Our casement windows combine classic design with modern engineering. From ultra-slim aluminium frames to high-performance uPVC and traditional timber, we offer solutions for both heritage renovations and modern new builds.",
-      "Optimized for high thermal performance and noise reduction, our windows are a cornerstone of a comfortable, energy-efficient building."
+      "Optimised for high thermal performance and noise reduction, our windows are a cornerstone of a comfortable, energy-efficient building."
     ],
     features: ['A-Rated Energy Efficiency', 'Double or Triple Glazing', 'Heritage Steel-Look Options', 'Concealed Hinges'],
     heroImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop',

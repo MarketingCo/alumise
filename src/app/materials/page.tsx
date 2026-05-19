@@ -30,7 +30,7 @@ export default function MaterialsComparisonPage() {
   };
 
   const getMetricColor = (val: number) => {
-    if (val >= 9) return 'bg-brand-gold';
+    if (val >= 9) return 'bg-alumise-gold';
     if (val >= 7) return 'bg-blue-400';
     return 'bg-blue-200';
   };
@@ -40,7 +40,7 @@ export default function MaterialsComparisonPage() {
       <div className="container mx-auto px-4 max-w-7xl">
         <header className="mb-20 text-center max-w-3xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold uppercase mb-8 tracking-tighter">
-            Decision <span className="text-brand-gold">Intelligence.</span>
+            Decision <span className="text-alumise-gold">Intelligence.</span>
           </h1>
           <p className="text-xl text-gray-500 font-light leading-relaxed">
             Selecting the right substrate is the most critical decision in architectural glazing. Use our comparison engine to evaluate performance metrics side-by-side.
@@ -55,8 +55,8 @@ export default function MaterialsComparisonPage() {
               onClick={() => toggleMaterial(mat.slug)}
               className={`px-6 py-3 text-[10px] uppercase tracking-widest font-bold border transition-all flex items-center ${
                 selectedMaterials.includes(mat.slug)
-                  ? 'bg-brand-gold border-brand-gold text-white shadow-xl'
-                  : 'bg-white border-gray-100 text-brand-charcoal hover:border-brand-gold'
+                  ? 'bg-alumise-gold border-alumise-gold text-white shadow-xl'
+                  : 'bg-white border-gray-100 text-alumise-obsidian hover:border-alumise-gold'
               }`}
             >
               {selectedMaterials.includes(mat.slug) && <CheckCircle2 className="w-3 h-3 mr-2" />}
@@ -116,7 +116,7 @@ export default function MaterialsComparisonPage() {
                               transition={{ duration: 1, delay: 0.2 }}
                             />
                           </div>
-                          <div className="text-[10px] font-bold text-brand-charcoal text-right">{val}/10</div>
+                          <div className="text-[10px] font-bold text-alumise-obsidian text-right">{val}/10</div>
                         </div>
                       ))}
                     </div>
@@ -125,11 +125,11 @@ export default function MaterialsComparisonPage() {
                     <div className="p-8 mt-auto bg-white border-t border-gray-100">
                       <div className="space-y-6 mb-8">
                         <div className="space-y-2">
-                          <p className="text-[8px] uppercase tracking-widest font-black text-brand-gold">Primary Advantages</p>
+                          <p className="text-[8px] uppercase tracking-widest font-black text-alumise-gold">Primary Advantages</p>
                           <ul className="space-y-2">
                             {mat.pros.slice(0, 3).map(pro => (
                               <li key={pro} className="flex items-start text-xs font-medium text-gray-600 leading-tight">
-                                <CheckCircle2 className="w-3 h-3 mr-2 text-brand-gold flex-shrink-0" /> {pro}
+                                <CheckCircle2 className="w-3 h-3 mr-2 text-alumise-gold flex-shrink-0" /> {pro}
                               </li>
                             ))}
                           </ul>
@@ -137,7 +137,7 @@ export default function MaterialsComparisonPage() {
                       </div>
                       <Link 
                         href={`/materials/${mat.slug}`}
-                        className="flex items-center justify-between w-full text-[10px] uppercase tracking-widest font-black border-b-2 border-brand-charcoal pb-2 hover:text-brand-gold hover:border-brand-gold transition-all"
+                        className="flex items-center justify-between w-full text-[10px] uppercase tracking-widest font-black border-b-2 border-alumise-obsidian pb-2 hover:text-alumise-gold hover:border-alumise-gold transition-all"
                       >
                         Technical Deep-Dive <ArrowRight className="w-3 h-3" />
                       </Link>
@@ -150,11 +150,11 @@ export default function MaterialsComparisonPage() {
         </div>
 
         {/* Global CTA */}
-        <section className="mt-32 py-24 bg-brand-charcoal text-white text-center relative overflow-hidden rounded-sm shadow-2xl">
-          <div className="absolute top-0 left-0 w-full h-full bg-brand-gold opacity-5 blur-3xl rounded-full"></div>
+        <section className="mt-32 py-24 bg-alumise-obsidian text-white text-center relative overflow-hidden rounded-sm shadow-2xl">
+          <div className="absolute top-0 left-0 w-full h-full bg-alumise-gold opacity-5 blur-3xl rounded-full"></div>
           <div className="relative z-10 max-w-2xl mx-auto px-4">
             <h2 className="text-3xl md:text-5xl font-bold uppercase mb-8 tracking-tighter">
-              Still Unsure of the <span className="text-brand-gold">Right Choice?</span>
+              Still Unsure of the <span className="text-alumise-gold">Right Choice?</span>
             </h2>
             <p className="text-lg text-brand-grey font-light mb-12">
               Our engineering team can provide a site-specific performance analysis based on your project's location and exposure.
@@ -162,7 +162,7 @@ export default function MaterialsComparisonPage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link 
                 href="/quote" 
-                className="bg-brand-gold text-white px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-brand-charcoal transition-all"
+                className="bg-alumise-gold text-white px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-alumise-obsidian transition-all"
               >
                 Request Material Sample
               </Link>

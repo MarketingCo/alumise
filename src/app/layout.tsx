@@ -51,6 +51,12 @@ const localBusinessSchema = {
     { "@type": "AdministrativeArea", "name": "Fife" },
     { "@type": "AdministrativeArea", "name": "Scottish Borders" }
   ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "24",
+    "bestRating": "5"
+  },
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -75,11 +81,11 @@ export const metadata: Metadata = {
     default: "Alumise | Premium Aluminium Windows & Bifold Doors Edinburgh",
     template: "%s | Alumise"
   },
-  description: "Premium aluminium windows, bifold doors and architectural glazing manufactured in Penicuik, installed across Edinburgh and Scotland. FENSA accredited.",
+  description: "Premium aluminium windows, bifold doors and architectural glazing manufactured in Penicuik, installed across Edinburgh and Scotland. Book a Design Consultation.",
   metadataBase: new URL('https://alumise.co.uk'),
   openGraph: {
     title: "Alumise | Premium Aluminium Windows & Bifold Doors Edinburgh",
-    description: "Premium architectural glazing manufactured in our Penicuik facility. Precision-engineered aluminium systems for luxury residential and commercial projects across Edinburgh and Scotland.",
+    description: "Premium architectural glazing manufactured in our Penicuik facility. Precision-engineered aluminium systems for luxury residential and commercial projects across Edinburgh and Scotland. Book a Design Consultation.",
     images: [{ url: 'https://alumise.co.uk/og-image.jpg', width: 1200, height: 630, alt: 'Alumise — Premium Architectural Glazing' }],
     siteName: "Alumise",
     locale: "en_GB",
@@ -88,7 +94,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Alumise | Premium Aluminium Windows & Bifold Doors Edinburgh",
-    description: "Premium architectural glazing manufactured in Penicuik. Installed across Edinburgh and Scotland.",
+    description: "Premium architectural glazing manufactured in Penicuik. Installed across Edinburgh and Scotland. Book a Design Consultation.",
   },
   robots: {
     index: true,
@@ -117,7 +123,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
       </head>
-      <body className="flex flex-col min-h-screen bg-white text-brand-charcoal antialiased" style={{ fontFamily: "'Inter', ui-sans-serif, system-ui, sans-serif" }}>
+      <body className="flex flex-col min-h-screen bg-white text-alumise-obsidian antialiased" style={{ fontFamily: "'Inter', ui-sans-serif, system-ui, sans-serif" }}>
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

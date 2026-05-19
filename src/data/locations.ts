@@ -66,6 +66,7 @@ export const locations: Location[] = [
   { slug: 'merchiston', name: 'Merchiston', region: 'Edinburgh', description: 'Elite architectural glazing for the exclusive residences of Merchiston, with bespoke manufacturing from Penicuik.' },
   { slug: 'oxgangs', name: 'Oxgangs', region: 'Edinburgh', description: 'Energy-efficient window systems for the residential blocks of Oxgangs, with supply from our Penicuik hub.' },
   { slug: 'powderhall', name: 'Powderhall', region: 'Edinburgh', description: 'Contemporary glazing for the residential developments of Powderhall, manufactured locally in Penicuik.' },
+  { slug: 'colinton', name: 'Colinton', region: 'Edinburgh', description: 'Bespoke aluminium windows and architectural glazing for luxury homes and high-end developments in Colinton, manufactured in our Penicuik facility.' },
 
   // Midlothian
   { slug: 'penicuik', name: 'Penicuik', region: 'Midlothian', description: 'High-quality architectural glazing for homes and commercial units in Penicuik, manufactured directly at our local Eastfield Industrial Estate facility.' },

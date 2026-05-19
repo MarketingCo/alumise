@@ -51,7 +51,7 @@ export default function MaterialDetailContent({ slug }: { slug: string }) {
       />
 
       {/* Hero */}
-      <section className="relative h-[70vh] min-h-[500px] flex items-end bg-brand-charcoal text-white overflow-hidden">
+      <section className="relative h-[70vh] min-h-[500px] flex items-end bg-alumise-obsidian text-white overflow-hidden">
         <Image 
           src={material.heroImage}
           alt={material.name}
@@ -59,21 +59,21 @@ export default function MaterialDetailContent({ slug }: { slug: string }) {
           className="object-cover opacity-60"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-alumise-obsidian via-transparent to-transparent"></div>
         
         <div className="container mx-auto px-4 max-w-7xl relative z-10 pb-20">
           <Link 
             href="/materials" 
-            className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-brand-gold mb-8 hover:text-white transition-colors"
+            className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-alumise-gold mb-8 hover:text-white transition-colors"
           >
             <ArrowLeft className="w-3 h-3 mr-2" /> Back to Comparison
           </Link>
-          <div className="flex items-center space-x-2 text-brand-gold mb-4">
+          <div className="flex items-center space-x-2 text-alumise-gold mb-4">
             <ShieldCheck className="w-4 h-4" />
             <span className="text-[10px] uppercase tracking-widest font-bold">Material Specification</span>
           </div>
           <h1 className="text-6xl md:text-9xl font-bold uppercase leading-none tracking-tighter mb-4">
-            {material.name.split(' ')[0]} <span className="text-brand-gold">{material.name.split(' ')[1]}</span>
+            {material.name.split(' ')[0]} <span className="text-alumise-gold">{material.name.split(' ')[1]}</span>
           </h1>
           <p className="text-xl text-brand-grey max-w-2xl font-light leading-relaxed">
             {material.shortDesc}
@@ -96,11 +96,11 @@ export default function MaterialDetailContent({ slug }: { slug: string }) {
               {/* Pros & Cons */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-12 border-t border-gray-100">
                 <div className="space-y-8">
-                  <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-gold">Strategic Advantages</h3>
+                  <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-alumise-gold">Strategic Advantages</h3>
                   <ul className="space-y-4">
                     {material.pros.map(pro => (
-                      <li key={pro} className="flex items-start text-sm text-brand-charcoal font-medium">
-                        <CheckCircle2 className="w-5 h-5 mr-3 text-brand-gold flex-shrink-0" /> {pro}
+                      <li key={pro} className="flex items-start text-sm text-alumise-obsidian font-medium">
+                        <CheckCircle2 className="w-5 h-5 mr-3 text-alumise-gold flex-shrink-0" /> {pro}
                       </li>
                     ))}
                   </ul>
@@ -119,7 +119,7 @@ export default function MaterialDetailContent({ slug }: { slug: string }) {
 
               {/* Technical FAQs */}
               <div className="pt-24 border-t border-gray-100">
-                <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-gold mb-12 text-center">Technical FAQ</h3>
+                <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-alumise-gold mb-12 text-center">Technical FAQ</h3>
                 <div className="max-w-3xl mx-auto space-y-4">
                   {material.faqs.map((faq, idx) => (
                     <div key={idx} className="border border-gray-100 rounded-sm">
@@ -153,17 +153,17 @@ export default function MaterialDetailContent({ slug }: { slug: string }) {
             {/* Sidebar */}
             <div className="space-y-12">
               <div className="sticky top-32">
-                <div className="bg-brand-charcoal p-10 text-white rounded-sm mb-8 shadow-2xl">
+                <div className="bg-alumise-obsidian p-10 text-white rounded-sm mb-8 shadow-2xl">
                   <h3 className="text-xl font-bold uppercase mb-6 tracking-tight">Available <br />Systems</h3>
                   <div className="space-y-4">
                     {compatibleProducts.map(p => (
                       <Link 
                         key={p.slug}
                         href={`/products/${p.slug}`}
-                        className="flex items-center justify-between group py-3 border-b border-white/5 hover:border-brand-gold transition-all"
+                        className="flex items-center justify-between group py-3 border-b border-white/5 hover:border-alumise-gold transition-all"
                       >
                         <span className="text-[10px] font-bold uppercase tracking-widest text-brand-grey group-hover:text-white">{p.title}</span>
-                        <ArrowRight className="w-3 h-3 text-brand-gold opacity-0 group-hover:opacity-100 transition-all" />
+                        <ArrowRight className="w-3 h-3 text-alumise-gold opacity-0 group-hover:opacity-100 transition-all" />
                       </Link>
                     ))}
                   </div>
@@ -174,7 +174,7 @@ export default function MaterialDetailContent({ slug }: { slug: string }) {
                   <p className="text-xs text-gray-500 font-light leading-relaxed mb-8">
                     Every project is unique. Let our technical team review your plans to ensure the optimal material selection for your project's environmental load and aesthetic goals.
                   </p>
-                  <Link href="/quote" className="inline-block bg-brand-charcoal text-white px-8 py-4 rounded-sm text-[10px] font-bold uppercase tracking-widest hover:bg-brand-gold transition-all">
+                  <Link href="/quote" className="inline-block bg-alumise-obsidian text-white px-8 py-4 rounded-sm text-[10px] font-bold uppercase tracking-widest hover:bg-alumise-gold transition-all">
                     Request Technical Pack
                   </Link>
                 </div>

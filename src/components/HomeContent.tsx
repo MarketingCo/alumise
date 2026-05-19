@@ -161,7 +161,7 @@ export default function HomeContent() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="relative min-h-[100dvh] bg-brand-charcoal text-white overflow-hidden flex items-end">
+      <section className="relative min-h-[100dvh] bg-alumise-obsidian text-white overflow-hidden flex items-end">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop"
@@ -171,7 +171,7 @@ export default function HomeContent() {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal via-brand-charcoal/60 to-brand-charcoal/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-alumise-obsidian via-alumise-obsidian/60 to-alumise-obsidian/30" />
         </div>
 
         <div className="relative z-10 w-full px-6 md:px-10 pb-24 pt-32 max-w-7xl mx-auto">
@@ -183,7 +183,7 @@ export default function HomeContent() {
               variants={fadeUp}
               className="flex items-center gap-3 mb-8"
             >
-              <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur-sm border border-white/10 text-[10px] uppercase tracking-[0.3em] font-bold text-brand-gold">
+              <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur-sm border border-white/10 text-[10px] uppercase tracking-[0.3em] font-bold text-alumise-gold">
                 <MapPin size={12} />
                 Manufactured in Penicuik &middot; Installed across Edinburgh
               </span>
@@ -197,13 +197,7 @@ export default function HomeContent() {
               className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-tight mb-8"
               style={{ fontFamily: 'var(--font-oswald)' }}
             >
-              The Last Glazing
-              <br />
-              Your Home Will
-              <br />
-              Ever Need
-              <br />
-              <span className="text-brand-gold text-3xl md:text-5xl lg:text-6xl">| Aluminium Windows & Bifold Doors Edinburgh</span>
+              The Last Glazing Your Home Will Ever Need | Aluminium Windows & Bifold Doors Edinburgh
             </motion.h1>
 
             <motion.p
@@ -213,7 +207,7 @@ export default function HomeContent() {
               variants={fadeUp}
               className="text-lg md:text-xl text-white/70 max-w-2xl mb-12 leading-relaxed"
             >
-              Precision-engineered aluminium windows, bifold doors and architectural glazing — designed, manufactured and fitted by one team in Edinburgh and the Lothians.
+              Architectural aluminium windows, bespoke bifold doors and precision-engineered glazing — crafted with fidelity in our Penicuik facility, building a legacy of excellence across Edinburgh and the Lothians.
             </motion.p>
 
             <motion.div
@@ -225,14 +219,14 @@ export default function HomeContent() {
             >
               <Link
                 href="/quote"
-                className="group inline-flex items-center justify-center gap-3 bg-brand-gold text-brand-charcoal px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:bg-brand-gold-light transition-colors"
+                className="group inline-flex items-center justify-center gap-3 bg-alumise-gold text-alumise-obsidian px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:bg-alumise-gold-light transition-colors"
               >
                 Book Your Free Design Visit
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </Link>
               <a
                 href="tel:01312100321"
-                className="inline-flex items-center justify-center gap-3 border border-white/30 text-white px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:border-brand-gold hover:text-brand-gold transition-colors"
+                className="inline-flex items-center justify-center gap-3 border border-white/30 text-white px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:border-alumise-gold hover:text-alumise-gold transition-colors"
               >
                 <Phone size={16} />
                 0131 210 0321
@@ -253,7 +247,7 @@ export default function HomeContent() {
             <motion.div
               animate={{ y: ['-100%', '100%'] }}
               transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
-              className="absolute top-0 left-0 w-full h-1/2 bg-brand-gold"
+              className="absolute top-0 left-0 w-full h-1/2 bg-alumise-gold"
             />
           </div>
         </motion.div>
@@ -269,8 +263,8 @@ export default function HomeContent() {
               { icon: Award, text: '10-Year Insurance-Backed' },
               { icon: Star, text: 'Building Standards Compliant' },
             ].map((item) => (
-              <span key={item.text} className="flex items-center gap-2.5 text-[11px] uppercase tracking-[0.2em] font-semibold text-brand-silver">
-                <item.icon size={16} className="text-brand-gold" />
+              <span key={item.text} className="flex items-center gap-2.5 text-[11px] uppercase tracking-[0.2em] font-semibold text-alumise-silver">
+                <item.icon size={16} className="text-alumise-gold" />
                 {item.text}
               </span>
             ))}
@@ -288,7 +282,7 @@ export default function HomeContent() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-brand-gold mb-4">Our Systems</p>
+              <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-alumise-gold mb-4">Our Systems</p>
               <h2
                 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
                 style={{ fontFamily: 'var(--font-oswald)' }}
@@ -306,7 +300,7 @@ export default function HomeContent() {
             >
               <Link
                 href="/products"
-                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] border-b-2 border-brand-charcoal pb-2 hover:text-brand-gold hover:border-brand-gold transition-colors"
+                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] border-b-2 border-alumise-obsidian pb-2 hover:text-alumise-gold hover:border-alumise-gold transition-colors"
               >
                 View All Products <ArrowRight size={16} />
               </Link>
@@ -330,9 +324,9 @@ export default function HomeContent() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/90 via-brand-charcoal/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-alumise-obsidian/90 via-alumise-obsidian/30 to-transparent" />
                 <div className="absolute top-5 left-5">
-                  <span className="inline-block px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/10 text-[10px] uppercase tracking-[0.2em] font-bold text-brand-gold">
+                  <span className="inline-block px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/10 text-[10px] uppercase tracking-[0.2em] font-bold text-alumise-gold">
                     {product.tag}
                   </span>
                 </div>
@@ -346,7 +340,7 @@ export default function HomeContent() {
                   <p className="text-sm text-white/70 mb-5 max-w-sm leading-relaxed">{product.desc}</p>
                   <Link
                     href={product.href}
-                    className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] font-bold text-brand-gold hover:text-white transition-colors"
+                    className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] font-bold text-alumise-gold hover:text-white transition-colors"
                   >
                     View Details <ArrowRight size={14} />
                   </Link>
@@ -358,7 +352,7 @@ export default function HomeContent() {
       </section>
 
       {/* ── WHY ALUMISE ── */}
-      <section className="py-28 md:py-36 bg-brand-warm">
+      <section className="py-28 md:py-36 bg-alumise-cream">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <motion.div
@@ -368,7 +362,7 @@ export default function HomeContent() {
               transition={{ duration: 0.6 }}
               className="order-2 lg:order-1"
             >
-              <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-brand-gold mb-4">Why Alumise</p>
+              <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-alumise-gold mb-4">Why Alumise</p>
               <h2
                 className="text-4xl md:text-5xl font-bold tracking-tight mb-6"
                 style={{ fontFamily: 'var(--font-oswald)' }}
@@ -377,7 +371,7 @@ export default function HomeContent() {
                 <br />
                 Guaranteed here.
               </h2>
-              <p className="text-brand-silver leading-relaxed mb-10 text-lg">
+              <p className="text-alumise-silver leading-relaxed mb-10 text-lg">
                 Most companies buy frames from England and subcontract the fitting. We manufacture every frame in our Penicuik facility and install with our own team. If something needs adjusting, we do it — no blame, no delays.
               </p>
 
@@ -389,11 +383,11 @@ export default function HomeContent() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.1, duration: 0.5 }}
-                    className="bg-white p-6 border border-gray-100 hover:border-brand-gold/30 transition-colors"
+                    className="bg-white p-6 border border-gray-100 hover:border-alumise-gold/30 transition-colors"
                   >
-                    <item.icon size={24} className="text-brand-gold mb-4" />
+                    <item.icon size={24} className="text-alumise-gold mb-4" />
                     <h4 className="font-bold mb-1">{item.title}</h4>
-                    <p className="text-sm text-brand-silver leading-relaxed">{item.desc}</p>
+                    <p className="text-sm text-alumise-silver leading-relaxed">{item.desc}</p>
                   </motion.div>
                 ))}
               </div>
@@ -401,7 +395,7 @@ export default function HomeContent() {
               <div className="mt-10">
                 <Link
                   href="/about"
-                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] border-b-2 border-brand-charcoal pb-2 hover:text-brand-gold hover:border-brand-gold transition-colors"
+                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] border-b-2 border-alumise-obsidian pb-2 hover:text-alumise-gold hover:border-alumise-gold transition-colors"
                 >
                   Our Story <ArrowRight size={16} />
                 </Link>
@@ -423,8 +417,8 @@ export default function HomeContent() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute bottom-6 left-6 right-6 bg-white p-6">
-                <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-gold mb-2">Our Facility</p>
-                <p className="text-sm text-brand-charcoal leading-relaxed">
+                <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-alumise-gold mb-2">Our Facility</p>
+                <p className="text-sm text-alumise-obsidian leading-relaxed">
                   Unit 2B, Eastfield Industrial Estate, Penicuik — where every frame is manufactured to millimetre precision.
                 </p>
               </div>
@@ -443,7 +437,7 @@ export default function HomeContent() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-brand-gold mb-4">Recent Work</p>
+              <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-alumise-gold mb-4">Recent Work</p>
               <h2
                 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
                 style={{ fontFamily: 'var(--font-oswald)' }}
@@ -461,7 +455,7 @@ export default function HomeContent() {
             >
               <Link
                 href="/projects"
-                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] border-b-2 border-brand-charcoal pb-2 hover:text-brand-gold hover:border-brand-gold transition-colors"
+                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] border-b-2 border-alumise-obsidian pb-2 hover:text-alumise-gold hover:border-alumise-gold transition-colors"
               >
                 View All Projects <ArrowRight size={16} />
               </Link>
@@ -491,9 +485,9 @@ export default function HomeContent() {
                       : '(max-width: 768px) 100vw, 25vw'
                   }
                 />
-                <div className="absolute inset-0 bg-brand-charcoal/0 group-hover:bg-brand-charcoal/40 transition-colors duration-500" />
+                <div className="absolute inset-0 bg-alumise-obsidian/0 group-hover:bg-alumise-obsidian/40 transition-colors duration-500" />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <span className="inline-flex items-center gap-2 px-5 py-3 bg-white text-brand-charcoal text-[10px] uppercase tracking-[0.2em] font-bold">
+                  <span className="inline-flex items-center gap-2 px-5 py-3 bg-white text-alumise-obsidian text-[10px] uppercase tracking-[0.2em] font-bold">
                     View Project <ArrowRight size={14} />
                   </span>
                 </div>
@@ -504,7 +498,7 @@ export default function HomeContent() {
       </section>
 
       {/* ── PROCESS ── */}
-      <section className="py-28 md:py-36 bg-brand-charcoal text-white">
+      <section className="py-28 md:py-36 bg-alumise-obsidian text-white">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -513,7 +507,7 @@ export default function HomeContent() {
             transition={{ duration: 0.6 }}
             className="mb-20 text-center max-w-3xl mx-auto"
           >
-            <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-brand-gold mb-4">How It Works</p>
+            <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-alumise-gold mb-4">How It Works</p>
             <h2
               className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
               style={{ fontFamily: 'var(--font-oswald)' }}
@@ -538,7 +532,7 @@ export default function HomeContent() {
                   transition={{ delay: i * 0.12, duration: 0.6 }}
                   className="relative text-center"
                 >
-                  <div className="relative z-10 inline-flex items-center justify-center w-16 h-16 bg-brand-charcoal border border-brand-gold/30 text-brand-gold text-sm font-bold tracking-widest mb-8 mx-auto">
+                  <div className="relative z-10 inline-flex items-center justify-center w-16 h-16 bg-alumise-obsidian border border-alumise-gold/30 text-alumise-gold text-sm font-bold tracking-widest mb-8 mx-auto">
                     {step.num}
                   </div>
                   <h3
@@ -556,7 +550,7 @@ export default function HomeContent() {
       </section>
 
       {/* ── TESTIMONIALS ── */}
-      <section className="py-28 md:py-36 bg-brand-warm">
+      <section className="py-28 md:py-36 bg-alumise-cream">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -565,7 +559,7 @@ export default function HomeContent() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-brand-gold mb-4">Testimonials</p>
+            <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-alumise-gold mb-4">Testimonials</p>
             <h2
               className="text-4xl md:text-5xl font-bold tracking-tight"
               style={{ fontFamily: 'var(--font-oswald)' }}
@@ -586,13 +580,13 @@ export default function HomeContent() {
               >
                 <div className="flex gap-1 mb-6">
                   {Array.from({ length: t.rating }).map((_, j) => (
-                    <Star key={j} size={16} className="fill-brand-gold text-brand-gold" />
+                    <Star key={j} size={16} className="fill-alumise-gold text-alumise-gold" />
                   ))}
                 </div>
-                <p className="text-brand-charcoal leading-relaxed mb-8 flex-grow">&ldquo;{t.text}&rdquo;</p>
+                <p className="text-alumise-obsidian leading-relaxed mb-8 flex-grow">&ldquo;{t.text}&rdquo;</p>
                 <div className="pt-6 border-t border-gray-100">
                   <p className="font-bold text-sm">{t.name}</p>
-                  <p className="text-xs text-brand-silver uppercase tracking-wider">{t.location}</p>
+                  <p className="text-xs text-alumise-silver uppercase tracking-wider">{t.location}</p>
                 </div>
               </motion.div>
             ))}
@@ -610,7 +604,7 @@ export default function HomeContent() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-brand-gold mb-4">Local Service</p>
+              <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-alumise-gold mb-4">Local Service</p>
               <h2
                 className="text-4xl md:text-5xl font-bold tracking-tight mb-6"
                 style={{ fontFamily: 'var(--font-oswald)' }}
@@ -619,7 +613,7 @@ export default function HomeContent() {
                 <br />
                 Edinburgh & the Lothians
               </h2>
-              <p className="text-brand-silver leading-relaxed mb-10 text-lg">
+              <p className="text-alumise-silver leading-relaxed mb-10 text-lg">
                 We are based in Penicuik and serve homeowners, architects and developers across Edinburgh, Midlothian, East Lothian, West Lothian, Fife and the Scottish Borders.
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
@@ -634,9 +628,9 @@ export default function HomeContent() {
                   <Link
                     key={area}
                     href={`/locations/${area.toLowerCase().replace(/ /g, '-')}`}
-                    className="group flex items-center gap-2 text-sm font-semibold text-brand-charcoal hover:text-brand-gold transition-colors"
+                    className="group flex items-center gap-2 text-sm font-semibold text-alumise-obsidian hover:text-alumise-gold transition-colors"
                   >
-                    <ChevronRight size={14} className="text-brand-gold opacity-0 group-hover:opacity-100 -ml-5 group-hover:ml-0 transition-all" />
+                    <ChevronRight size={14} className="text-alumise-gold opacity-0 group-hover:opacity-100 -ml-5 group-hover:ml-0 transition-all" />
                     {area}
                   </Link>
                 ))}
@@ -648,7 +642,7 @@ export default function HomeContent() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="relative h-[400px] md:h-[500px] bg-brand-warm"
+              className="relative h-[400px] md:h-[500px] bg-alumise-cream"
             >
               <Image
                 src="https://images.unsplash.com/photo-1506377295352-e3154d43ea9e?q=80&w=1974&auto=format&fit=crop"
@@ -658,8 +652,8 @@ export default function HomeContent() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute bottom-6 left-6 bg-white px-5 py-4">
-                <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-gold mb-1">Free Design Visit</p>
-                <p className="text-sm text-brand-charcoal">Available across all service areas</p>
+                <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-alumise-gold mb-1">Free Design Visit</p>
+                <p className="text-sm text-alumise-obsidian">Available across all service areas</p>
               </div>
             </motion.div>
           </div>
@@ -667,7 +661,7 @@ export default function HomeContent() {
       </section>
 
       {/* ── FINAL CTA ── */}
-      <section className="py-28 md:py-36 bg-brand-charcoal text-white relative overflow-hidden">
+      <section className="py-28 md:py-36 bg-alumise-obsidian text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=2070&auto=format&fit=crop"
@@ -676,7 +670,7 @@ export default function HomeContent() {
             className="object-cover opacity-20"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-charcoal via-brand-charcoal/90 to-brand-charcoal/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-alumise-obsidian via-alumise-obsidian/90 to-alumise-obsidian/70" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10">
@@ -687,7 +681,7 @@ export default function HomeContent() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-brand-gold mb-4">Start Your Project</p>
+              <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-alumise-gold mb-4">Start Your Project</p>
               <h2
                 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6"
                 style={{ fontFamily: 'var(--font-oswald)' }}
@@ -702,14 +696,14 @@ export default function HomeContent() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/quote"
-                  className="group inline-flex items-center justify-center gap-3 bg-brand-gold text-brand-charcoal px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:bg-brand-gold-light transition-colors"
+                  className="group inline-flex items-center justify-center gap-3 bg-alumise-gold text-alumise-obsidian px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:bg-alumise-gold-light transition-colors"
                 >
                   Get Your Free Quote
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <a
                   href="tel:01312100321"
-                  className="inline-flex items-center justify-center gap-3 border border-white/30 text-white px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:border-brand-gold hover:text-brand-gold transition-colors"
+                  className="inline-flex items-center justify-center gap-3 border border-white/30 text-white px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:border-alumise-gold hover:text-alumise-gold transition-colors"
                 >
                   <Phone size={16} />
                   0131 210 0321
@@ -726,13 +720,13 @@ export default function HomeContent() {
             >
               <div className="flex items-start gap-6">
                 <div className="w-12 h-12 flex items-center justify-center border border-white/10 bg-white/5 flex-shrink-0">
-                  <Phone size={20} className="text-brand-gold" />
+                  <Phone size={20} className="text-alumise-gold" />
                 </div>
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.3em] text-brand-silver font-bold mb-1">Call us</p>
+                  <p className="text-[10px] uppercase tracking-[0.3em] text-alumise-silver font-bold mb-1">Call us</p>
                   <a
                     href="tel:01312100321"
-                    className="text-3xl md:text-4xl font-bold hover:text-brand-gold transition-colors"
+                    className="text-3xl md:text-4xl font-bold hover:text-alumise-gold transition-colors"
                     style={{ fontFamily: 'var(--font-oswald)' }}
                   >
                     0131 210 0321
@@ -742,11 +736,11 @@ export default function HomeContent() {
 
               <div className="flex items-start gap-6">
                 <div className="w-12 h-12 flex items-center justify-center border border-white/10 bg-white/5 flex-shrink-0">
-                  <Mail size={20} className="text-brand-gold" />
+                  <Mail size={20} className="text-alumise-gold" />
                 </div>
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.3em] text-brand-silver font-bold mb-1">Email us</p>
-                  <a href="mailto:info@alumise.co.uk" className="text-xl hover:text-brand-gold transition-colors">
+                  <p className="text-[10px] uppercase tracking-[0.3em] text-alumise-silver font-bold mb-1">Email us</p>
+                  <a href="mailto:info@alumise.co.uk" className="text-xl hover:text-alumise-gold transition-colors">
                     info@alumise.co.uk
                   </a>
                 </div>
@@ -754,10 +748,10 @@ export default function HomeContent() {
 
               <div className="flex items-start gap-6">
                 <div className="w-12 h-12 flex items-center justify-center border border-white/10 bg-white/5 flex-shrink-0">
-                  <MapPin size={20} className="text-brand-gold" />
+                  <MapPin size={20} className="text-alumise-gold" />
                 </div>
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.3em] text-brand-silver font-bold mb-1">Visit us</p>
+                  <p className="text-[10px] uppercase tracking-[0.3em] text-alumise-silver font-bold mb-1">Visit us</p>
                   <p className="text-white/60 leading-relaxed">
                     Unit 2B, Eastfield Industrial Estate
                     <br />
@@ -768,15 +762,15 @@ export default function HomeContent() {
 
               <div className="pt-6 border-t border-white/10 space-y-3">
                 <div className="flex items-center gap-3 text-sm text-white/60">
-                  <Check size={16} className="text-brand-gold flex-shrink-0" />
+                  <Check size={16} className="text-alumise-gold flex-shrink-0" />
                   <span>Free design visit across Edinburgh and the Lothians</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm text-white/60">
-                  <Check size={16} className="text-brand-gold flex-shrink-0" />
+                  <Check size={16} className="text-alumise-gold flex-shrink-0" />
                   <span>Fixed-price quotation with no obligation</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm text-white/60">
-                  <Check size={16} className="text-brand-gold flex-shrink-0" />
+                  <Check size={16} className="text-alumise-gold flex-shrink-0" />
                   <span>10-year insurance-backed guarantee</span>
                 </div>
               </div>

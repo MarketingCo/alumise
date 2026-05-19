@@ -3,12 +3,12 @@ import HomeContent from '@/components/HomeContent';
 
 export const metadata: Metadata = {
   title: 'Alumise | Aluminium Windows & Bifold Doors Edinburgh',
-  description: 'Premium aluminium windows, bifold doors and architectural glazing manufactured in Penicuik, installed across Edinburgh and Scotland. FENSA accredited.',
+  description: 'Premium aluminium windows, bifold doors and architectural glazing manufactured in Penicuik, installed across Edinburgh and Scotland. Book a Design Consultation.',
   keywords: 'aluminium windows Edinburgh, bifold doors Edinburgh, sliding doors Edinburgh, roof lanterns Edinburgh, curtain walling Scotland, shopfronts Edinburgh, architectural glazing Penicuik, double glazing Midlothian, FENSA accredited Edinburgh, aluminium manufacturing Scotland',
   alternates: { canonical: '/' },
   openGraph: {
     title: 'Alumise | Aluminium Windows, Bifold Doors & Glazing Edinburgh',
-    description: 'Premium architectural glazing manufactured in our Penicuik facility. Precision-engineered aluminium systems for luxury residential and commercial projects.',
+    description: 'Premium architectural glazing manufactured in our Penicuik facility. Precision-engineered aluminium systems for luxury residential and commercial projects. Book a Design Consultation.',
     url: 'https://alumise.co.uk',
     siteName: 'Alumise',
     locale: 'en_GB',
