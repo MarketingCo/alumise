@@ -202,6 +202,8 @@ export default function HomeContent() {
               Your Home Will
               <br />
               Ever Need
+              <br />
+              <span className="text-brand-gold text-3xl md:text-5xl lg:text-6xl">| Aluminium Windows & Bifold Doors Edinburgh</span>
             </motion.h1>
 
             <motion.p

@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-brand-charcoal text-white pt-20 pb-8 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
           {/* Brand */}
           <div className="space-y-6">
             <Link href="/" className="text-2xl font-bold tracking-tight uppercase" style={{ fontFamily: 'var(--font-oswald)' }}>
@@ -34,6 +34,21 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* Partners */}
+          <div>
+            <h4 className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-gold mb-6">Partners</h4>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="https://www.crescent-builders.co.uk"
+                  className="text-sm text-brand-silver hover:text-white transition-colors"
+                >
+                  Home Extension Management
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -71,7 +86,7 @@ export default function Footer() {
             <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
             <Link href="/cookies" className="hover:text-white transition-colors">Cookies</Link>
           </div>
-          <p>&copy; {new Date().getFullYear()} Alumise Ltd. All Rights Reserved.</p>
+          <p>Website by <a href="https://marketing-company.co.uk" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors underline underline-offset-2">Marketing Company</a> &middot; &copy; {new Date().getFullYear()} Alumise Ltd. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
