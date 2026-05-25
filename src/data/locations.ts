@@ -6,7 +6,13 @@ export interface Location {
 }
 
 export const locations: Location[] = [
-  // Edinburgh
+  // Major Regions
+  { slug: 'edinburgh', name: 'Edinburgh', region: 'Edinburgh', description: 'Alumise is the premier provider of architectural glazing across the City of Edinburgh. From the heritage-sensitive restorations of the New Town and West End to the bold, contemporary developments of the Leith waterfront, we provide precision-engineered aluminium windows and doors manufactured in our nearby Penicuik facility. Our systems are designed to balance Edinburgh’s unique architectural character with modern thermal efficiency, ensuring that every project—from tenement renovations to luxury new builds—meets the highest standards of performance and aesthetics.' },
+  { slug: 'midlothian', name: 'Midlothian', region: 'Midlothian', description: 'Centrally located in Midlothian at Eastfield Industrial Estate, Alumise is the region’s leading manufacturer of high-performance aluminium glazing. We serve residential and commercial projects across Dalkeith, Bonnyrigg, and the wider Midlothian area.' },
+  { slug: 'east-lothian', name: 'East Lothian', region: 'East Lothian', description: 'Supplying coastal-grade aluminium glazing across East Lothian, from Musselburgh to North Berwick and Dunbar. Our systems are engineered to withstand coastal conditions while providing maximum thermal efficiency for East Lothian homes.' },
+  { slug: 'west-lothian', name: 'West Lothian', region: 'West Lothian', description: 'High-performance architectural glazing for West Lothian’s thriving residential and commercial sectors. Serving Livingston, Bathgate, and Linlithgow with precision-engineered systems manufactured at our Midlothian hub.' },
+
+  // Edinburgh Districts
   { slug: 'old-town', name: 'Old Town', region: 'Edinburgh', description: 'Heritage glazing solutions for Edinburgh’s historic Old Town, including specialist timber sash and case windows manufactured at our Penicuik facility.' },
   { slug: 'new-town', name: 'New Town', region: 'Edinburgh', description: 'Expert heritage-approved glazing and slimline framing for New Town’s iconic Georgian architecture, with local manufacturing support from Penicuik.' },
   { slug: 'west-end', name: 'West End', region: 'Edinburgh', description: 'Architectural glazing for grand Victorian townhouses and modern commercial spaces in the West End, engineered in our Midlothian hub.' },
@@ -69,7 +75,7 @@ export const locations: Location[] = [
   { slug: 'colinton', name: 'Colinton', region: 'Edinburgh', description: 'Bespoke aluminium windows and architectural glazing for luxury homes and high-end developments in Colinton, manufactured in our Penicuik facility.' },
 
   // Midlothian
-  { slug: 'penicuik', name: 'Penicuik', region: 'Midlothian', description: 'High-quality architectural glazing for homes and commercial units in Penicuik, manufactured directly at our local Eastfield Industrial Estate facility.' },
+  { slug: 'penicuik', name: 'Penicuik', region: 'Midlothian', description: 'As the home of Alumise, Penicuik is the heart of our operations. From our dedicated manufacturing facility at Eastfield Industrial Estate, we design and fabricate high-performance aluminium windows, bifold doors, and roof lanterns for the local community and across Scotland. We are proud to serve Penicuik homeowners and businesses with direct-from-manufacturer pricing, expert local installation, and unparalleled technical support. If you are looking for premium glazing in Penicuik, look no further than your local specialists at Alumise.' },
   { slug: 'mayfield', name: 'Mayfield', region: 'Midlothian', description: 'Bespoke glazing systems for the traditional townhouses and modern developments of Mayfield, with manufacturing on the doorstep in Penicuik.' },
   { slug: 'dalkeith', name: 'Dalkeith', region: 'Midlothian', description: 'High-performance glazing for Dalkeith\'s mix of historic town centre properties and modern family estates, with fast supply from our Penicuik manufacturing hub just minutes away.' },
   { slug: 'bonnyrigg', name: 'Bonnyrigg', region: 'Midlothian', description: 'Energy-efficient window and door systems for Bonnyrigg\'s expanding residential developments, manufactured locally in Penicuik for shorter lead times across Midlothian.' },
@@ -101,7 +107,7 @@ export const locations: Location[] = [
 
   // West Lothian
   { slug: 'south-queensferry', name: 'South Queensferry', region: 'West Lothian', description: 'Durable and thermal glazing for coastal properties overlooking the Forth Bridges, with supply from our Penicuik hub serving West Lothian.' },
-  { slug: 'livingston', name: 'Livingston', region: 'West Lothian', description: 'Contemporary glazing for Livingston\'s modern housing and commercial developments, with efficient supply chains from our Penicuik manufacturing hub.' },
+  { slug: 'livingston', name: 'Livingston', region: 'West Lothian', description: 'Alumise provides contemporary glazing solutions for Livingston’s thriving residential and commercial sectors. From large-scale bifold door installations in luxury new-build estates to high-performance shopfronts and curtain walling in Livingston’s business parks, we deliver precision-engineered systems manufactured at our nearby Midlothian hub. Our aluminium windows and doors are designed for modern aesthetics and maximum energy efficiency, making them the perfect choice for Livingston’s dynamic architectural landscape.' },
   { slug: 'bathgate', name: 'Bathgate', region: 'West Lothian', description: 'High-performance window systems for Bathgate\'s mix of historic and new-build properties, manufactured in Penicuik and installed across West Lothian.' },
   { slug: 'linlithgow', name: 'Linlithgow', region: 'West Lothian', description: 'Heritage-approved glazing for Linlithgow\'s conservation area and palace-town character, with specialist manufacturing from our Penicuik facility.' },
   { slug: 'broxburn', name: 'Broxburn', region: 'West Lothian', description: 'Practical thermal glazing for Broxburn\'s residential and industrial conversions, supplied from our Penicuik hub serving West Lothian.' },

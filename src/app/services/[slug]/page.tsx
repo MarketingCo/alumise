@@ -87,11 +87,28 @@ export default async function ServicePage({
     serviceType: service.title,
   };
 
+  const schemas: Record<string, unknown>[] = [serviceSchema];
+
+  if (service.faq && service.faq.length > 0) {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: service.faq.map((f: { question: string; answer: string }) => ({
+        "@type": "Question",
+        name: f.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: f.answer,
+        },
+      })),
+    } as Record<string, unknown>);
+  }
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }}
       />
       <div className="min-h-screen bg-white">
         {/* Hero */}

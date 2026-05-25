@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const localBusinessSchema = {
   "@context": "https://schema.org/",
@@ -124,6 +125,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         />
       </head>
       <body className="flex flex-col min-h-screen bg-white text-alumise-obsidian antialiased" style={{ fontFamily: "'Inter', ui-sans-serif, system-ui, sans-serif" }}>
+        <BreadcrumbSchema />
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

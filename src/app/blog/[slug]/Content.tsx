@@ -48,10 +48,54 @@ export default function BlogPostContent({ slug }: { slug: string }) {
       {/* Article Content */}
       <section className="py-24">
         <div className="container mx-auto px-4 max-w-4xl">
+          {/* Table of Contents for long posts */}
+          {post.content.length > 5 && (
+            <div className="mb-16 p-8 bg-gray-50 border-l-4 border-alumise-gold">
+              <h4 className="text-xs font-bold uppercase tracking-[0.2em] mb-6 text-alumise-obsidian">Contents</h4>
+              <nav className="space-y-3">
+                {post.content
+                  .filter(para => para.includes('<h3'))
+                  .map((heading, hIdx) => {
+                    const title = heading.replace(/<[^>]*>/g, '');
+                    const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+                    return (
+                      <a 
+                        key={hIdx} 
+                        href={`#${id}`}
+                        className="block text-sm text-gray-500 hover:text-alumise-gold transition-colors font-medium"
+                      >
+                        {title}
+                      </a>
+                    );
+                  })}
+              </nav>
+            </div>
+          )}
+
           <div className="prose prose-xl prose-slate max-w-none font-light leading-relaxed text-gray-500">
-            {post.content.map((para, idx) => (
-              <p key={idx} className="mb-10">{para}</p>
-            ))}
+            {post.content.map((para, idx) => {
+              const isHtml = /<[a-z][\s\S]*>/i.test(para);
+              
+              if (isHtml) {
+                // If it's a heading, inject an ID for the TOC
+                let processedPara = para;
+                if (para.includes('<h3')) {
+                  const title = para.replace(/<[^>]*>/g, '');
+                  const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+                  processedPara = para.replace('<h3', `<h3 id="${id}"`);
+                }
+
+                return (
+                  <div 
+                    key={idx} 
+                    className="mb-10"
+                    dangerouslySetInnerHTML={{ __html: processedPara }}
+                  />
+                );
+              }
+
+              return <p key={idx} className="mb-10">{para}</p>;
+            })}
           </div>
 
           {/* CTA Box inside article */}

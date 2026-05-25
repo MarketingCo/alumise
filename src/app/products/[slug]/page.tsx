@@ -31,5 +31,33 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ProductPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  return <ProductPageContent slug={slug} />;
+  const product = products.find(p => p.slug === slug);
+
+  if (!product) {
+    return <ProductPageContent slug={slug} />;
+  }
+
+  const productSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": product.title,
+    "image": product.heroImage,
+    "description": product.shortDesc,
+    "brand": {
+      "@type": "Brand",
+      "name": "Alumise"
+    },
+    "category": product.category,
+    "url": `https://alumise.co.uk/products/${product.slug}`
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <ProductPageContent slug={slug} />
+    </>
+  );
 }

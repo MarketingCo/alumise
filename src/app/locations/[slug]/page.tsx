@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { locations } from '@/data/locations';
 import LocationPageClient from './LocationPageClient';
+import { generateLocalBusinessSchema } from '../../../../generate_alumise_schema.js';
 
 export function generateStaticParams() {
   return locations.map((l) => ({ slug: l.slug }));
@@ -28,38 +29,17 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   const location = locations.find(l => l.slug === slug);
 
-  const serviceSchema = location ? {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": `Architectural Glazing Services in ${location.name}`,
-    "description": location.description,
-    "areaServed": {
-      "@type": "City",
-      "name": location.name
-    },
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Alumise",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Unit 2B, Eastfield Industrial Estate",
-        "addressLocality": "Penicuik",
-        "postalCode": "EH26 8HA",
-        "addressRegion": "Midlothian",
-        "addressCountry": "GB"
-      },
-      "telephone": "0131 210 0321",
-      "url": "https://alumise.co.uk"
-    },
-    "serviceType": "Architectural Glazing"
-  } : null;
+  // Jarvis Protocol: Dynamically inject district-aware LocalBusiness schema
+  const localBusinessSchema = location
+    ? generateLocalBusinessSchema(location.name, location.region, location.description)
+    : null;
 
   return (
     <>
-      {serviceSchema && (
+      {localBusinessSchema && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
       )}
       <LocationPageClient slug={slug} />

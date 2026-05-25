@@ -84,9 +84,28 @@ export default function ProductPageContent({ slug }: { slug: string }) {
             {/* Left Column: Detailed Content */}
             <div className="lg:col-span-2 space-y-12">
               <div className="prose prose-lg max-w-none text-gray-500 font-light leading-relaxed">
-                {product.fullContent.map((para, idx) => (
-                  <p key={idx} className="mb-6">{para}</p>
-                ))}
+                {product.fullContent.map((para, idx) => {
+                  // Detect bold text
+                  const formattedPara = para.split(/(\*\*.*?\*\*)/).map((part, i) => {
+                    if (part.startsWith('**') && part.endsWith('**')) {
+                      return <strong key={i} className="text-alumise-obsidian font-bold">{part.slice(2, -2)}</strong>;
+                    }
+                    return part;
+                  });
+
+                  // If it's a short paragraph that's entirely bold, treat it as a heading
+                  const isHeading = para.startsWith('**') && para.endsWith('**') && para.length < 100;
+
+                  if (isHeading) {
+                    return (
+                      <h2 key={idx} className="text-2xl font-bold uppercase tracking-tight text-alumise-obsidian mt-12 mb-6">
+                        {para.slice(2, -2)}
+                      </h2>
+                    );
+                  }
+
+                  return <p key={idx} className="mb-6">{formattedPara}</p>;
+                })}
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-gray-100">
