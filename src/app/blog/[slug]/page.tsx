@@ -12,13 +12,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!post) {
     return { title: 'Article Not Found | Alumise' };
   }
+
+  const title = post.title;
+  const description = post.excerpt.length > 155 ? post.excerpt.substring(0, 152) + '...' : post.excerpt;
+
   return {
-    title: post.title,
-    description: post.excerpt,
+    title: title.length > 60 ? title.substring(0, 57) + '...' : title,
+    description: description,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
+      title: title,
+      description: description,
       url: `https://alumise.co.uk/blog/${post.slug}`,
       type: 'article',
       images: [{ url: post.image, alt: post.title }],

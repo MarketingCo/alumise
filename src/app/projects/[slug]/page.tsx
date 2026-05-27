@@ -16,14 +16,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
   }
 
+  const title = `${project.title} | Alumise`;
+  const description = project.description.length > 155 ? project.description.substring(0, 152) + '...' : project.description;
+
   return {
-    title: `${project.title} | Alumise`,
-    description: project.description,
+    title: title.length > 60 ? title.substring(0, 57) + '...' : title,
+    description: description,
     alternates: { canonical: `/projects/${project.slug}` },
     openGraph: {
-      title: `${project.title} | Alumise`,
-      description: project.description,
+      title: title,
+      description: description,
       url: `https://alumise.co.uk/projects/${project.slug}`,
+      type: 'website',
       images: [project.image],
     },
   };

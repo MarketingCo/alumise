@@ -6,8 +6,8 @@ import CookieBanner from "@/components/CookieBanner";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const localBusinessSchema = {
-  "@context": "https://schema.org/",
-  "@type": ["LocalBusiness", "Service"],
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
   "name": "Alumise",
   "description": "Alumise Ltd — Premium aluminium windows, bifold doors, sliding doors, roof lanterns, curtain walling and architectural glazing. Manufactured in Penicuik, installed across Edinburgh, Midlothian and Scotland. FENSA accredited.",
   "image": "https://alumise.co.uk/logo.png",

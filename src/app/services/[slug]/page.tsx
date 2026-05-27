@@ -32,14 +32,19 @@ export async function generateMetadata({
       title: "Service Not Found | Alumise",
     };
   }
+  
+  const title = service.metaTitle;
+  const description = service.metaDescription.length > 155 ? service.metaDescription.substring(0, 152) + '...' : service.metaDescription;
+
   return {
-    title: service.metaTitle,
-    description: service.metaDescription,
+    title: title.length > 60 ? title.substring(0, 57) + '...' : title,
+    description: description,
     alternates: { canonical: `/services/${service.slug}` },
     openGraph: {
-      title: service.metaTitle,
-      description: service.metaDescription,
+      title: title,
+      description: description,
       url: `https://alumise.co.uk/services/${service.slug}`,
+      type: 'website',
       images: [{ url: service.image, width: 1200, height: 630, alt: service.title }],
     },
   };

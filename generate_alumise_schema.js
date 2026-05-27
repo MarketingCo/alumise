@@ -123,9 +123,10 @@ function generateLocalBusinessSchema(districtName, regionName, description) {
 
   return {
     ...BASE_BUSINESS,
-    description: description || fallbackDescription,
-    knowsAbout: KNOWS_ABOUT,
-    hasOfferCatalog: OFFER_CATALOG,
+    "@type": "LocalBusiness",
+    "description": description || fallbackDescription,
+    "knowsAbout": KNOWS_ABOUT,
+    "hasOfferCatalog": OFFER_CATALOG,
     areaServed: [
       {
         "@type": "City",

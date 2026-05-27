@@ -43,7 +43,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="https://www.crescent-builders.co.uk"
+                  href="https://crescent-builders.co.uk"
                   className="text-sm text-alumise-silver hover:text-white transition-colors"
                 >
                   Home Extension Management

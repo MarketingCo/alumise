@@ -13,13 +13,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!location) {
     return { title: 'Location Not Found | Alumise' };
   }
+
+  const title = `Architectural Glazing in ${location.name}, ${location.region} | Alumise`;
+  const fullDescription = `${location.description} Get a free quote for windows, doors and curtain walling in ${location.name}.`;
+  const description = fullDescription.length > 155 ? fullDescription.substring(0, 152) + '...' : fullDescription;
+
   return {
-    title: `Architectural Glazing in ${location.name}, ${location.region} | Alumise`,
-    description: `${location.description} Get a free quote for windows, doors and curtain walling in ${location.name}.`,
+    title: title.length > 60 ? title.substring(0, 57) + '...' : title,
+    description: description,
     alternates: { canonical: `/locations/${location.slug}` },
     openGraph: {
-      title: `Architectural Glazing in ${location.name}, ${location.region} | Alumise`,
-      description: `${location.description} Get a free quote for windows, doors and curtain walling in ${location.name}.`,
+      title: title,
+      description: description,
+      url: `https://alumise.co.uk/locations/${location.slug}`,
+      type: 'website',
       images: [{ url: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop", width: 1200, height: 630, alt: `Architectural Glazing in ${location.name}` }],
     },
   };
