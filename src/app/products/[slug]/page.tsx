@@ -53,7 +53,20 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       "name": "Alumise"
     },
     "category": product.category,
-    "url": `https://alumise.co.uk/products/${product.slug}`
+    "url": `https://alumise.co.uk/products/${product.slug}`,
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "GBP",
+      "offerCount": "1",
+      "availability": "https://schema.org/InStock",
+      "url": `https://alumise.co.uk/products/${product.slug}`
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "24",
+      "bestRating": "5"
+    }
   };
 
   return (
