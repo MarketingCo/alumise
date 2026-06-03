@@ -46,7 +46,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/aluminium-shopfronts',
-        destination: '/products/commercial-shopfronts',
+        destination: '/services/shopfronts',
         permanent: true,
       },
       {

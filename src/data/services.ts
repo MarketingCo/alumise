@@ -262,8 +262,7 @@ export const services: Service[] = [
     slug: "roof-lanterns",
     title: "Roof Lanterns",
     metaTitle: "Roof Lanterns Edinburgh | Bespoke Aluminium Skylights",
-    metaDescription:
-      "Aluminium roof lanterns manufactured in Penicuik. Slimline rafters, self-cleaning glass, U-values from 1.0 W/m²K.",
+    metaDescription: "Aluminium roof lanterns manufactured in Penicuik. Slimline rafters, self-cleaning glass, U-values from 1.0 W/m²K. Precision engineered for Edinburgh homes.",
     shortDesc:
       "Architectural aluminium roof lanterns with slimline rafters, self-cleaning glass, and superior thermal performance for Edinburgh properties.",
     description: [
@@ -454,8 +453,7 @@ export const services: Service[] = [
     slug: "commercial-doors",
     title: "Commercial Doors",
     metaTitle: "Commercial Doors Edinburgh | Automatic & Manual Systems",
-    metaDescription:
-      "Commercial door systems for Edinburgh. DDA-compliant access, aluminium profiles, motion sensors, panic bar integration.",
+    metaDescription: "Commercial door systems for Edinburgh. DDA-compliant access, robust aluminium profiles, active motion sensors, and secure panic bar integration for businesses.",
     shortDesc:
       "Automatic sliding, swing, and manual commercial door systems engineered for high-traffic Edinburgh businesses.",
     description: [
@@ -598,8 +596,7 @@ export const services: Service[] = [
     slug: "conservatories",
     title: "Conservatories & Orangeries",
     metaTitle: "Conservatories & Orangeries Edinburgh | Bespoke Glass Rooms",
-    metaDescription:
-      "Conservatories manufactured in Penicuik for Edinburgh. Aluminium frames, self-cleaning glass, U-values from 1.2 W/m²K.",
+    metaDescription: "Bespoke conservatories manufactured in Penicuik for Edinburgh homes. Thermally broken aluminium frames, self-cleaning glass, and U-values from 1.2 W/m²K.",
     shortDesc:
       "Bespoke conservatories and orangeries engineered for year-round comfort with superior thermal performance and architectural detail.",
     description: [

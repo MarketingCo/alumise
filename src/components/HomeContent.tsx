@@ -189,16 +189,20 @@ export default function HomeContent() {
               </span>
             </motion.div>
 
-            <motion.h1
+            <motion.div
               custom={1}
               initial="hidden"
               animate="visible"
               variants={fadeUp}
-              className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-tight mb-8"
-              style={{ fontFamily: 'var(--font-oswald)' }}
+              className="mb-8"
             >
-              The Last Glazing Your Home Will Ever Need | Aluminium Windows & Bifold Doors Edinburgh
-            </motion.h1>
+              <h1 
+                className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-tight"
+                style={{ fontFamily: 'var(--font-oswald)' }}
+              >
+                The Last Glazing Your Home Will Ever Need | Aluminium Windows & Bifold Doors Edinburgh
+              </h1>
+            </motion.div>
 
             <motion.p
               custom={2}

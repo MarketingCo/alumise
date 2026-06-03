@@ -17,7 +17,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   const title = `${material.name} | Alumise`;
-  const description = material.shortDesc.length > 155 ? material.shortDesc.substring(0, 152) + '...' : material.shortDesc;
+  const baseDesc = `${material.shortDesc} Explore our premium architectural glazing materials engineered for maximum thermal efficiency and structural integrity in Edinburgh.`;
+  const description = baseDesc.length > 155 ? baseDesc.substring(0, 152) + '...' : baseDesc;
 
   return {
     title: title.length > 60 ? title.substring(0, 57) + '...' : title,

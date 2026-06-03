@@ -17,7 +17,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   const title = `${product.title} | Alumise`;
-  const description = product.shortDesc.length > 155 ? product.shortDesc.substring(0, 152) + '...' : product.shortDesc;
+  const baseDesc = `${product.shortDesc} Manufactured in our Penicuik facility and expertly installed across Edinburgh and the Lothians. Get a free quote today.`;
+  const description = baseDesc.length > 155 ? baseDesc.substring(0, 152) + '...' : baseDesc;
 
   return {
     title: title.length > 60 ? title.substring(0, 57) + '...' : title,

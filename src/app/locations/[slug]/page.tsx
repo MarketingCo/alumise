@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   const title = `Architectural Glazing in ${location.name}, ${location.region} | Alumise`;
-  const fullDescription = `${location.description} Get a free quote for windows, doors and curtain walling in ${location.name}.`;
-  const description = fullDescription.length > 155 ? fullDescription.substring(0, 152) + '...' : fullDescription;
+  const baseDesc = `${location.description} Get a free quote for premium aluminium windows, bespoke bifold doors, and curtain walling in ${location.name}. Our Penicuik-manufactured systems are engineered for Scottish weather.`;
+  const description = baseDesc.length > 155 ? baseDesc.substring(0, 152) + '...' : baseDesc;
 
   return {
     title: title.length > 60 ? title.substring(0, 57) + '...' : title,

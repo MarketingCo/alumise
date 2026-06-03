@@ -17,7 +17,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   const title = `${project.title} | Alumise`;
-  const description = project.description.length > 155 ? project.description.substring(0, 152) + '...' : project.description;
+  const baseDesc = `${project.description} View this luxury architectural glazing case study by Alumise. Manufactured in Penicuik and installed to exacting standards.`;
+  const description = baseDesc.length > 155 ? baseDesc.substring(0, 152) + '...' : baseDesc;
 
   return {
     title: title.length > 60 ? title.substring(0, 57) + '...' : title,

@@ -24,7 +24,7 @@ export default function Footer() {
           <div>
             <h4 className="text-[10px] uppercase tracking-[0.3em] font-bold text-alumise-gold mb-6">Navigate</h4>
             <ul className="space-y-3">
-              {['Products', 'Services', 'Process', 'About', 'Contact', 'Quote'].map((item) => (
+              {['Products', 'Services', 'Materials', 'Projects', 'Process', 'About', 'Trust', 'Contact', 'Quote'].map((item) => (
                 <li key={item}>
                   <Link
                     href={`/${item.toLowerCase()}`}
@@ -42,12 +42,9 @@ export default function Footer() {
             <h4 className="text-[10px] uppercase tracking-[0.3em] font-bold text-alumise-gold mb-6">Partners</h4>
             <ul className="space-y-3">
               <li>
-                <Link
-                  href="https://crescent-builders.co.uk"
-                  className="text-sm text-alumise-silver hover:text-white transition-colors"
-                >
+                <span className="text-sm text-alumise-silver">
                   Home Extension Management
-                </Link>
+                </span>
               </li>
             </ul>
           </div>
