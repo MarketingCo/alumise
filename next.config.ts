@@ -103,7 +103,17 @@ const nextConfig: NextConfig = {
         source: '/44-2',
         destination: '/',
         permanent: true,
-      }
+      },
+      {
+        source: '/locations/fife',
+        destination: '/locations',
+        permanent: true,
+      },
+      {
+        source: '/locations/scottish-borders',
+        destination: '/locations',
+        permanent: true,
+      },
     ];
   },
   images: {
