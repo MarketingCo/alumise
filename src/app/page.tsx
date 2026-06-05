@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Alumise | Aluminium Windows, Bifold Doors & Glazing Edinburgh',
     description: 'Premium architectural glazing manufactured in our Penicuik facility. Precision-engineered aluminium systems for luxury residential and commercial projects. Book a Design Consultation.',
-    url: 'https://alumise.co.uk/',
+    url: 'https://alumise.co.uk',
     siteName: 'Alumise',
     locale: 'en_GB',
     type: 'website',

@@ -141,7 +141,7 @@ const projectGallery = [
     size: 'small',
   },
   {
-    src: 'https://images.unsplash.com/photo-1600566753190-17f0bb2a6c3e?q=80&w=2070&auto=format&fit=crop',
+    src: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop',
     alt: 'Commercial curtain walling facade on modern office building in Scotland',
     size: 'large',
   },

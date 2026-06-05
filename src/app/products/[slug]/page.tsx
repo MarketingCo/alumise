@@ -57,6 +57,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     "offers": {
       "@type": "AggregateOffer",
       "priceCurrency": "GBP",
+      "lowPrice": "500",
+      "highPrice": "15000",
       "offerCount": "1",
       "availability": "https://schema.org/InStock",
       "url": `https://alumise.co.uk/products/${product.slug}`
