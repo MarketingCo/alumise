@@ -24,13 +24,24 @@ export default function Footer() {
           <div>
             <h4 className="text-[10px] uppercase tracking-[0.3em] font-bold text-alumise-gold mb-6">Navigate</h4>
             <ul className="space-y-3">
-              {['Products', 'Services', 'Materials', 'Projects', 'Process', 'About', 'Trust', 'Contact', 'Quote'].map((item) => (
-                <li key={item}>
+              {[
+                { label: 'Products', href: '/products' },
+                { label: 'Services', href: '/services' },
+                { label: 'Materials', href: '/materials' },
+                { label: 'Projects', href: '/projects' },
+                { label: 'Case Studies', href: '/case-studies/alumise' },
+                { label: 'Process', href: '/process' },
+                { label: 'About', href: '/about' },
+                { label: 'Trust', href: '/trust' },
+                { label: 'Contact', href: '/contact' },
+                { label: 'Quote', href: '/quote' },
+              ].map((item) => (
+                <li key={item.label}>
                   <Link
-                    href={`/${item.toLowerCase()}`}
+                    href={item.href}
                     className="text-sm text-alumise-silver hover:text-white transition-colors"
                   >
-                    {item}
+                    {item.label}
                   </Link>
                 </li>
               ))}
@@ -68,9 +79,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-alumise-gold flex-shrink-0" />
-                <a href="mailto:info@alumise.co.uk" className="text-sm hover:text-alumise-gold transition-colors">
-                  info@alumise.co.uk
-                </a>
+                <span className="text-sm text-alumise-silver" dangerouslySetInnerHTML={{ __html: '<!--email_off-->info@alumise.co.uk<!--/email_off-->' }} />
               </div>
             </address>
           </div>

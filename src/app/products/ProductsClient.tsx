@@ -29,18 +29,6 @@ function ProductsContent() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <section className="bg-alumise-obsidian pt-40 pb-20 text-white">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <h1 className="text-5xl md:text-7xl font-bold uppercase mb-6 tracking-tighter">
-            Architectural <span className="text-alumise-gold">Systems.</span>
-          </h1>
-          <p className="text-lg text-brand-grey max-w-2xl font-light leading-relaxed">
-            Explore our comprehensive range of precision-engineered glazing solutions. From high-performance aluminium to heritage timber.
-          </p>
-        </div>
-      </section>
-
       {/* Filter Bar */}
       <section className="sticky top-[72px] z-40 bg-gray-50 border-b border-gray-200 py-4 shadow-sm">
         <div className="container mx-auto px-4 max-w-7xl">

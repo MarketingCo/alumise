@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Alumise",
+  title: "Privacy Policy",
+  description: "Read the Alumise privacy policy. We explain how we collect, use, and protect your personal data in compliance with UK GDPR.",
   alternates: { canonical: '/privacy-policy' },
+  openGraph: {
+    title: "Privacy Policy",
+    description: "Read the Alumise privacy policy. We explain how we collect, use, and protect your personal data in compliance with UK GDPR.",
+    url: 'https://alumise.co.uk/privacy-policy',
+    type: 'website',
+  },
 };
 
 export default function PrivacyPolicyPage() {
@@ -93,7 +100,7 @@ export default function PrivacyPolicyPage() {
               If you have any questions about this privacy policy or our data practices, or if you wish to exercise your rights, please contact us:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Email:</strong> info@alumise.co.uk</li>
+              <li><strong>Email:</strong> <span dangerouslySetInnerHTML={{ __html: '<!--email_off-->info@alumise.co.uk<!--/email_off-->' }} /></li>
               <li><strong>Telephone:</strong> 0131 210 0321</li>
               <li><strong>Address:</strong> Alumise Ltd, Unit 2B, Eastfield Industrial Estate, Penicuik, Midlothian, EH26 8HA</li>
             </ul>

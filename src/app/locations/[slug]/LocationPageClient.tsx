@@ -5,19 +5,18 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { 
-  MapPin, 
-  ArrowLeft, 
-  CheckCircle2, 
-  ArrowRight, 
-  Building2, 
+import {
+  MapPin,
+  ArrowLeft,
+  CheckCircle2,
+  ArrowRight,
   ShieldCheck,
   Zap,
   Ruler
 } from 'lucide-react';
 import { locations } from '@/data/locations';
 import { projects } from '@/data/projects';
-import { categories } from '@/data/products';
+import { products } from '@/data/products';
 
 export default function LocationPageClient({ slug }: { slug: string }) {
   const location = locations.find(l => l.slug === slug);
@@ -54,28 +53,30 @@ export default function LocationPageClient({ slug }: { slug: string }) {
         </div>
       </section>
 
-      {/* Local Services Grid */}
+      {/* Product Systems */}
       <section className="py-24 border-b border-gray-50">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16 space-y-4">
-            <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-alumise-gold">Regional Expertise</h2>
-            <p className="text-3xl font-bold uppercase tracking-tight">Our Solutions for {location.name}</p>
+            <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-alumise-gold">Installed in {location.name}</h2>
+            <p className="text-3xl font-bold uppercase tracking-tight">Aluminium Glazing Systems</p>
+            <p className="text-gray-500 font-light max-w-2xl mx-auto text-base leading-relaxed">
+              Every system below is precision-manufactured at our Penicuik facility and available for installation across {location.name} and the surrounding area.
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {categories.map((cat, idx) => (
-              <div key={cat} className="p-8 border border-gray-100 bg-white hover:shadow-xl transition-all">
-                <Building2 className="w-8 h-8 text-alumise-gold mb-6" />
-                <h4 className="font-bold uppercase tracking-tight text-lg mb-4">{cat}</h4>
-                <p className="text-xs text-gray-400 font-light leading-relaxed mb-6">
-                  Precision-engineered {cat.toLowerCase()} systems tailored for {location.name} developments.
-                </p>
-                <Link 
-                  href={`/products?category=${cat.toLowerCase().replace(' ', '-')}`}
-                  className="text-[10px] font-bold uppercase tracking-widest text-alumise-gold hover:underline"
-                >
-                  Explore Category
-                </Link>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {products.map((product) => (
+              <Link
+                key={product.slug}
+                href={`/products/${product.slug}`}
+                className="p-8 border border-gray-100 bg-white hover:shadow-xl hover:border-alumise-gold transition-all group"
+              >
+                <span className="text-[10px] uppercase tracking-widest font-bold text-alumise-gold block mb-3">{product.category}</span>
+                <h3 className="font-bold uppercase tracking-tight text-lg mb-3 group-hover:text-alumise-gold transition-colors leading-snug">{product.title}</h3>
+                <p className="text-xs text-gray-400 font-light leading-relaxed mb-5">{product.shortDesc}</p>
+                <span className="text-[10px] font-bold uppercase tracking-widest text-alumise-gold flex items-center">
+                  View {product.title} <ArrowRight className="ml-2 w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </Link>
             ))}
           </div>
         </div>
@@ -156,6 +157,33 @@ export default function LocationPageClient({ slug }: { slug: string }) {
           </div>
         </section>
       )}
+
+      {/* Guides for Local Homeowners */}
+      <section className="py-24 bg-gray-50 border-t border-gray-100">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-16 space-y-4">
+            <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-alumise-gold">Knowledge Hub</h2>
+            <p className="text-3xl font-bold uppercase tracking-tight">Guides for {location.name} Homeowners</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Link href="/blog/aluminium-bifold-doors-prices-edinburgh" className="p-8 bg-white border border-gray-100 hover:shadow-xl transition-all group">
+              <span className="text-[10px] uppercase tracking-widest font-bold text-alumise-gold block mb-3">Pricing Guide</span>
+              <h3 className="font-bold uppercase tracking-tight mb-3 group-hover:text-alumise-gold transition-colors leading-snug">Aluminium Bifold Door Prices in Edinburgh</h3>
+              <p className="text-xs text-gray-400 font-light leading-relaxed">A detailed breakdown of what bifold doors cost in Edinburgh, including supply and installation across {location.region}.</p>
+            </Link>
+            <Link href="/blog/aluminium-windows-vs-upvc-2026-edinburgh-guide" className="p-8 bg-white border border-gray-100 hover:shadow-xl transition-all group">
+              <span className="text-[10px] uppercase tracking-widest font-bold text-alumise-gold block mb-3">Buyers Guide</span>
+              <h3 className="font-bold uppercase tracking-tight mb-3 group-hover:text-alumise-gold transition-colors leading-snug">Aluminium Windows vs uPVC: 2026 Edinburgh Guide</h3>
+              <p className="text-xs text-gray-400 font-light leading-relaxed">Everything {location.name} homeowners need to know when choosing between aluminium and uPVC windows.</p>
+            </Link>
+            <Link href="/blog/planning-permission-new-windows-edinburgh" className="p-8 bg-white border border-gray-100 hover:shadow-xl transition-all group">
+              <span className="text-[10px] uppercase tracking-widest font-bold text-alumise-gold block mb-3">Planning Rules</span>
+              <h3 className="font-bold uppercase tracking-tight mb-3 group-hover:text-alumise-gold transition-colors leading-snug">Do You Need Planning Permission for New Windows?</h3>
+              <p className="text-xs text-gray-400 font-light leading-relaxed">What {location.name} residents in conservation areas and listed buildings need to know before installing new glazing.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Quote CTA */}
       <section className="py-40 bg-white text-center">

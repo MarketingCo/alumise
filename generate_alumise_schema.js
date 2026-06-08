@@ -40,9 +40,10 @@ const BASE_BUSINESS = {
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "24",
-    "bestRating": "5"
+    "ratingValue": 4.9,
+    "reviewCount": 24,
+    "bestRating": 5,
+    "worstRating": 1
   }
 };
 

@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/cookies`, lastModified: BASE_DATE, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${baseUrl}/projects`, lastModified: BASE_DATE, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/trust`, lastModified: BASE_DATE, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/case-studies/alumise`, lastModified: BASE_DATE, changeFrequency: 'monthly', priority: 0.6 },
   ];
 
   const productPages = products.map((product) => ({

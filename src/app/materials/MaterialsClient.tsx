@@ -149,8 +149,21 @@ export default function MaterialsComparisonPage() {
           </div>
         </div>
 
+        {/* Material Deep-Dive Links — static for SEO */}
+        <div className="mt-16 flex flex-wrap justify-center gap-6 border-t border-gray-100 pt-12">
+          {materialsData.map((mat) => (
+            <Link
+              key={mat.slug}
+              href={`/materials/${mat.slug}`}
+              className="text-sm font-bold uppercase tracking-widest text-alumise-obsidian hover:text-alumise-gold transition-colors border-b-2 border-transparent hover:border-alumise-gold pb-1"
+            >
+              {mat.name} →
+            </Link>
+          ))}
+        </div>
+
         {/* Global CTA */}
-        <section className="mt-32 py-24 bg-alumise-obsidian text-white text-center relative overflow-hidden rounded-sm shadow-2xl">
+        <section className="mt-16 py-24 bg-alumise-obsidian text-white text-center relative overflow-hidden rounded-sm shadow-2xl">
           <div className="absolute top-0 left-0 w-full h-full bg-alumise-gold opacity-5 blur-3xl rounded-full"></div>
           <div className="relative z-10 max-w-2xl mx-auto px-4">
             <h2 className="text-3xl md:text-5xl font-bold uppercase mb-8 tracking-tighter">

@@ -43,19 +43,19 @@ export default function ContactPage() {
                   <div className="group">
                     <p className="text-[10px] uppercase tracking-widest font-bold text-gray-500 mb-2 group-hover:text-alumise-gold transition-colors">Project Estimations</p>
                     <p className="text-xl font-bold mb-1">Email us</p>
-                    <p className="text-sm text-gray-500 font-light">info@alumise.co.uk</p>
+                    <p className="text-sm text-gray-500 font-light" dangerouslySetInnerHTML={{ __html: '<!--email_off-->info@alumise.co.uk<!--/email_off-->' }} />
                   </div>
                   
                   <div className="group">
                     <p className="text-[10px] uppercase tracking-widest font-bold text-gray-500 mb-2 group-hover:text-alumise-gold transition-colors">Technical & Engineering</p>
                     <p className="text-xl font-bold mb-1">Email us</p>
-                    <p className="text-sm text-gray-500 font-light">info@alumise.co.uk</p>
+                    <p className="text-sm text-gray-500 font-light" dangerouslySetInnerHTML={{ __html: '<!--email_off-->info@alumise.co.uk<!--/email_off-->' }} />
                   </div>
 
                   <div className="group">
                     <p className="text-[10px] uppercase tracking-widest font-bold text-gray-500 mb-2 group-hover:text-alumise-gold transition-colors">Post-Installation Support</p>
                     <p className="text-xl font-bold mb-1">Email us</p>
-                    <p className="text-sm text-gray-500 font-light">info@alumise.co.uk</p>
+                    <p className="text-sm text-gray-500 font-light" dangerouslySetInnerHTML={{ __html: '<!--email_off-->info@alumise.co.uk<!--/email_off-->' }} />
                   </div>
                 </div>
               </div>

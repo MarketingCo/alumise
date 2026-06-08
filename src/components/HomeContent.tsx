@@ -622,20 +622,20 @@ export default function HomeContent() {
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {[
-                  'Edinburgh',
-                  'Midlothian',
-                  'East Lothian',
-                  'West Lothian',
-                  'Fife',
-                  'Scottish Borders',
+                  { label: 'Edinburgh', href: '/locations/edinburgh' },
+                  { label: 'Midlothian', href: '/locations/midlothian' },
+                  { label: 'East Lothian', href: '/locations/east-lothian' },
+                  { label: 'West Lothian', href: '/locations/west-lothian' },
+                  { label: 'Fife', href: '/locations' },
+                  { label: 'Scottish Borders', href: '/locations' },
                 ].map((area) => (
                   <Link
-                    key={area}
-                    href={`/locations/${area.toLowerCase().replace(/ /g, '-')}`}
+                    key={area.label}
+                    href={area.href}
                     className="group flex items-center gap-2 text-sm font-semibold text-alumise-obsidian hover:text-alumise-gold transition-colors"
                   >
                     <ChevronRight size={14} className="text-alumise-gold opacity-0 group-hover:opacity-100 -ml-5 group-hover:ml-0 transition-all" />
-                    {area}
+                    {area.label}
                   </Link>
                 ))}
               </div>
@@ -744,9 +744,7 @@ export default function HomeContent() {
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-[0.3em] text-alumise-silver font-bold mb-1">Email us</p>
-                  <a href="mailto:info@alumise.co.uk" className="text-xl hover:text-alumise-gold transition-colors">
-                    info@alumise.co.uk
-                  </a>
+                  <span className="text-xl text-white/80" dangerouslySetInnerHTML={{ __html: '<!--email_off-->info@alumise.co.uk<!--/email_off-->' }} />
                 </div>
               </div>
 

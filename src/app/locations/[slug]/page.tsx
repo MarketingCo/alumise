@@ -14,12 +14,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return { title: 'Location Not Found | Alumise' };
   }
 
-  const title = `Architectural Glazing in ${location.name}, ${location.region} | Alumise`;
+  const title = `${location.name} Aluminium Windows & Bifold Doors`;
   const baseDesc = `${location.description} Get a free quote for premium aluminium windows, bespoke bifold doors, and curtain walling in ${location.name}. Our Penicuik-manufactured systems are engineered for Scottish weather.`;
   const description = baseDesc.length > 155 ? baseDesc.substring(0, 152) + '...' : baseDesc;
 
   return {
-    title: title.length > 60 ? title.substring(0, 57) + '...' : title,
+    title,
     description: description,
     alternates: { canonical: `/locations/${location.slug}` },
     openGraph: {

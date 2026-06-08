@@ -2,14 +2,15 @@ import { Metadata } from 'next';
 import LocationsClient from './LocationsClient';
 
 export const metadata: Metadata = {
-  title: 'Areas We Serve | Edinburgh & Lothians Glazing | Alumise',
+  title: 'Areas We Serve | Edinburgh & Lothians Glazing',
   description: 'Alumise provides premium architectural glazing across Edinburgh, Midlothian, East Lothian, and West Lothian. View our local service areas.',
   alternates: { canonical: '/locations' },
   openGraph: {
-    title: 'Areas We Serve | Edinburgh & Lothians Glazing | Alumise',
+    title: 'Areas We Serve | Edinburgh & Lothians Glazing',
     description: 'Alumise provides premium architectural glazing across Edinburgh, Midlothian, East Lothian, and West Lothian. View our local service areas.',
     url: 'https://alumise.co.uk/locations',
     type: 'website',
+    images: [{ url: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop', width: 1200, height: 630, alt: 'Alumise Service Areas — Edinburgh & Lothians' }],
   },
 };
 

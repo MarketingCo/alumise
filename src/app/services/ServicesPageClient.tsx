@@ -149,7 +149,7 @@ export default function ServicesPageClient() {
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-alumise-gold" />
-              <span>info@alumise.co.uk</span>
+              <span dangerouslySetInnerHTML={{ __html: '<!--email_off-->info@alumise.co.uk<!--/email_off-->' }} />
             </div>
           </div>
         </div>
