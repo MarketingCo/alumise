@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Our Glazing & Aluminium Services",
     description: "Premium glazing and aluminium services manufactured in Penicuik for Edinburgh. Bifold doors, sash windows, curtain walling, shopfronts and more.",
-    images: [{ url: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop", width: 1200, height: 630, alt: "Alumise Services" }],
+    images: [{ url: "/images/unsplash_1507679799987-c73779587ccf_q80_w2071.jpg", width: 1200, height: 630, alt: "Alumise Services" }],
   },
 };
 

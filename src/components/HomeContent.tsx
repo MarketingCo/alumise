@@ -126,32 +126,32 @@ const testimonials = [
 
 const projectGallery = [
   {
-    src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop',
+    src: '/images/unsplash_1600607687939-ce8a6c25118c_q80_w2053.jpg',
     alt: 'Modern Edinburgh extension with aluminium bifold doors and roof lantern',
     size: 'large',
   },
   {
-    src: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=2070&auto=format&fit=crop',
+    src: '/images/unsplash_1600566752355-35792bedcfea_q80_w2070.jpg',
     alt: 'Interior view of steel-look heritage partition in Scottish townhouse',
     size: 'small',
   },
   {
-    src: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2070&auto=format&fit=crop',
+    src: '/images/unsplash_1600585154526-990dced4db0d_q80_w2070.jpg',
     alt: 'Minimal sliding doors opening onto Edinburgh garden terrace',
     size: 'small',
   },
   {
-    src: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop',
+    src: '/images/unsplash_1486406146926-c627a92ad1ab_q80_w2070.jpg',
     alt: 'Commercial curtain walling facade on modern office building in Scotland',
     size: 'large',
   },
   {
-    src: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1974&auto=format&fit=crop',
+    src: '/images/unsplash_1600210492486-724fe5c67fb0_q80_w1974.jpg',
     alt: 'Bespoke aluminium windows in traditional Edinburgh villa renovation',
     size: 'small',
   },
   {
-    src: 'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?q=80&w=2070&auto=format&fit=crop',
+    src: '/images/unsplash_1600573472592-401b489a3cdc_q80_w2070.jpg',
     alt: 'Roof lantern illuminating contemporary kitchen diner in Midlothian home',
     size: 'small',
   },
@@ -164,7 +164,7 @@ export default function HomeContent() {
       <section className="relative min-h-[100dvh] bg-alumise-obsidian text-white overflow-hidden flex items-end">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop"
+            src="/images/unsplash_1600607687920-4e2a09cf159d_q80_w2070.jpg"
             alt="Premium aluminium bifold doors opening onto a landscaped garden terrace at dusk"
             fill
             className="object-cover opacity-50"
@@ -414,7 +414,7 @@ export default function HomeContent() {
               className="order-1 lg:order-2 relative h-[400px] md:h-[600px] lg:h-[700px]"
             >
               <Image
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
+                src="/images/unsplash_1600585154340-be6161a56a0c_q80_w2070.jpg"
                 alt="Alumise manufacturing facility in Penicuik with aluminium glazing frames in production"
                 fill
                 className="object-cover"
@@ -649,7 +649,7 @@ export default function HomeContent() {
               className="relative h-[400px] md:h-[500px] bg-alumise-cream"
             >
               <Image
-                src="https://images.unsplash.com/photo-1506377295352-e3154d43ea9e?q=80&w=1974&auto=format&fit=crop"
+                src="/images/unsplash_1506377295352-e3154d43ea9e_q80_w1974.jpg"
                 alt="Edinburgh skyline with traditional and modern Scottish architecture"
                 fill
                 className="object-cover"
@@ -668,7 +668,7 @@ export default function HomeContent() {
       <section className="py-28 md:py-36 bg-alumise-obsidian text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=2070&auto=format&fit=crop"
+            src="/images/unsplash_1600607688969-a5bfcd646154_q80_w2070.jpg"
             alt="Luxury interior with aluminium glazing framing a garden view"
             fill
             className="object-cover opacity-20"

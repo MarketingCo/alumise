@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: "Discover Alumise, Scotland's leading manufacturer of premium aluminium windows, bifold doors, and architectural glazing. Based in Penicuik, serving Edinburgh.",
     url: 'https://alumise.co.uk/about',
     type: 'website',
-    images: [{ url: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop', width: 1200, height: 630, alt: 'About Alumise — Premium Glazing Manufacturers' }],
+    images: [{ url: '/images/unsplash_1507679799987-c73779587ccf_q80_w2071.jpg', width: 1200, height: 630, alt: 'About Alumise — Premium Glazing Manufacturers' }],
   },
 };
 

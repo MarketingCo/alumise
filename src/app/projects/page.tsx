@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: 'Explore our portfolio of premium architectural glazing projects. See our aluminium windows, bifold doors, and roof lanterns installed across Edinburgh.',
     url: 'https://alumise.co.uk/projects',
     type: 'website',
-    images: [{ url: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop', width: 1200, height: 630, alt: 'Alumise Glazing Projects Edinburgh' }],
+    images: [{ url: '/images/unsplash_1507679799987-c73779587ccf_q80_w2071.jpg', width: 1200, height: 630, alt: 'Alumise Glazing Projects Edinburgh' }],
   },
 };
 

@@ -47,7 +47,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["bifold-doors", "sliding-doors", "entrance-doors"],
     image:
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop",
+      "/images/unsplash_1600607687920-4e2a09cf159d_q80_w2070.jpg",
     faq: [
       {
         question: "What U-value can I expect from your bifold doors?",
@@ -95,7 +95,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["sliding-doors", "bifold-doors", "casement-windows"],
     image:
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
+      "/images/unsplash_1512917774080-9991f1c4c750_q80_w2070.jpg",
     faq: [
       {
         question: "What is the difference between inline and lift-and-slide?",
@@ -143,7 +143,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["entrance-doors", "casement-windows", "bifold-doors"],
     image:
-      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=1918&auto=format&fit=crop",
+      "/images/unsplash_1560185007-cde436f6a4d0_q80_w1918.jpg",
     faq: [
       {
         question: "Should I choose aluminium or uPVC French doors?",
@@ -191,7 +191,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["casement-windows", "steel-look-heritage", "entrance-doors"],
     image:
-      "https://images.unsplash.com/photo-1503708928676-1cb796a0891e?q=80&w=1974&auto=format&fit=crop",
+      "/images/unsplash_1503708928676-1cb796a0891e_q80_w1974.jpg",
     faq: [
       {
         question: "Will these sash windows pass planning in a conservation area?",
@@ -239,7 +239,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["casement-windows", "tilt-turn-windows", "steel-look-heritage"],
     image:
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
+      "/images/unsplash_1512917774080-9991f1c4c750_q80_w2070.jpg",
     faq: [
       {
         question: "What is the difference between aluminium and uPVC casement windows?",
@@ -286,7 +286,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["roof-lanterns", "casement-windows", "bifold-doors"],
     image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
+      "/images/unsplash_1600585154340-be6161a56a0c_q80_w2070.jpg",
     faq: [
       {
         question: "What size roof lantern can you manufacture?",
@@ -334,7 +334,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["roof-lanterns", "casement-windows", "bifold-doors"],
     image:
-      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop",
+      "/images/unsplash_1507679799987-c73779587ccf_q80_w2071.jpg",
     faq: [
       {
         question: "Can skylights be installed on a flat roof?",
@@ -382,7 +382,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["curtain-walling", "entrance-doors", "steel-look-heritage"],
     image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+      "/images/unsplash_1486406146926-c627a92ad1ab_q80_w2070.jpg",
     faq: [
       {
         question: "What is the difference between stick-build and unitised curtain walling?",
@@ -430,7 +430,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["curtain-walling", "entrance-doors", "steel-look-heritage"],
     image:
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop",
+      "/images/unsplash_1534438327276-14e5300c3a48_q80_w2070.jpg",
     faq: [
       {
         question: "How long does shopfront installation take?",
@@ -477,7 +477,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["curtain-walling", "entrance-doors", "steel-look-heritage"],
     image:
-      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=1918&auto=format&fit=crop",
+      "/images/unsplash_1560185007-cde436f6a4d0_q80_w1918.jpg",
     faq: [
       {
         question: "Are automatic doors expensive to run?",
@@ -525,7 +525,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["casement-windows", "tilt-turn-windows", "steel-look-heritage"],
     image:
-      "https://images.unsplash.com/photo-1503708928676-1cb796a0891e?q=80&w=1974&auto=format&fit=crop",
+      "/images/unsplash_1503708928676-1cb796a0891e_q80_w1974.jpg",
     faq: [
       {
         question: "Do I need planning permission to replace my windows?",
@@ -573,7 +573,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["bifold-doors", "sliding-doors", "entrance-doors"],
     image:
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop",
+      "/images/unsplash_1600607687920-4e2a09cf159d_q80_w2070.jpg",
     faq: [
       {
         question: "How long does a door installation take?",
@@ -620,7 +620,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["roof-lanterns", "casement-windows", "bifold-doors"],
     image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
+      "/images/unsplash_1600585154340-be6161a56a0c_q80_w2070.jpg",
     faq: [
       {
         question: "Do I need planning permission for a conservatory?",
@@ -668,7 +668,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["casement-windows", "entrance-doors", "steel-look-heritage"],
     image:
-      "https://images.unsplash.com/photo-1503708928676-1cb796a0891e?q=80&w=1974&auto=format&fit=crop",
+      "/images/unsplash_1503708928676-1cb796a0891e_q80_w1974.jpg",
     faq: [
       {
         question: "Will secondary glazing damage my original sash windows?",
@@ -716,7 +716,7 @@ export const services: Service[] = [
     ],
     relatedProducts: ["steel-look-heritage", "casement-windows", "entrance-doors"],
     image:
-      "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=2070&auto=format&fit=crop",
+      "/images/unsplash_1516455590571-18256e5bb9ff_q80_w2070.jpg",
     faq: [
       {
         question: "How do steel-look windows compare to genuine Crittall?",

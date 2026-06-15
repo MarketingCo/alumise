@@ -47,7 +47,7 @@ const MegaMenu = () => {
       featured: {
         title: 'All Services',
         desc: 'Browse our complete range of glazing and aluminium services for residential and commercial projects across Edinburgh and the Lothians.',
-        image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop',
+        image: '/images/unsplash_1507679799987-c73779587ccf_q80_w2071.jpg',
         href: '/services'
       }
     },
@@ -77,7 +77,7 @@ const MegaMenu = () => {
       featured: {
         title: 'Bespoke Solutions',
         desc: 'Need something unique? Our engineering team can design custom glazing for any project.',
-        image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop',
+        image: '/images/unsplash_1507679799987-c73779587ccf_q80_w2071.jpg',
         href: '/products'
       }
     },

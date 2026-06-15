@@ -48,7 +48,7 @@ export const products: Product[] = [
       "By choosing Alumise, you are supporting local manufacturing. Our doors are not 'off-the-shelf' products; they are custom-fabricated by our skilled engineers at Eastfield Industrial Estate in Penicuik. This local proximity allows us to maintain strict quality control, offer faster lead times across Midlothian and Edinburgh, and provide direct technical support that national resellers simply cannot match."
     ],
     features: ['Slimline Profiles', 'High-Security Multi-Point Locking', 'Flush Threshold Options', 'Exceptional Thermal Performance'],
-    heroImage: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop',
+    heroImage: '/images/unsplash_1600607687920-4e2a09cf159d_q80_w2070.jpg',
     technicalSpecs: {
       uValue: 'From 1.3 W/m²K',
       maxDimensions: 'Up to 3m height per leaf',
@@ -79,7 +79,7 @@ export const products: Product[] = [
       "By choosing Alumise, you are dealing directly with the manufacturer. Our sliding doors are custom-fabricated by our expert team at Eastfield Industrial Estate in Penicuik. This local proximity allows us to maintain strict quality control, offer shorter lead times across Edinburgh and the Lothians, and provide direct technical support that national resellers cannot match."
     ],
     features: ['Ultra-Slim Sightlines', 'Massive Panel Capability', 'Smooth Lift-and-Slide Action', 'High Weather Resistance'],
-    heroImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop',
+    heroImage: '/images/unsplash_1512917774080-9991f1c4c750_q80_w2070.jpg',
     technicalSpecs: {
       uValue: 'From 1.1 W/m²K',
       maxDimensions: 'Up to 3.5m height, 3m width per leaf',
@@ -110,7 +110,7 @@ export const products: Product[] = [
       "When you choose an Alumise entrance door, you are dealing directly with the experts. Our doors are custom-fabricated by our skilled team at Eastfield Industrial Estate in Penicuik. This allows us to maintain strict quality control, offer faster lead times across Edinburgh and Midlothian, and provide direct technical support throughout the design and installation process."
     ],
     features: ['Smart Lock Integration', 'Thermally Broken Thresholds', 'Limitless Design Options', 'Police-Approved Security'],
-    heroImage: 'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=1918&auto=format&fit=crop',
+    heroImage: '/images/unsplash_1560185007-cde436f6a4d0_q80_w1918.jpg',
     technicalSpecs: {
       uValue: 'From 0.9 W/m²K',
       maxDimensions: 'Bespoke Sizing up to 1.5m width',
@@ -142,7 +142,7 @@ export const products: Product[] = [
       "When you buy from Alumise, you are buying direct from the source. Our windows are fabricated by our expert team at Eastfield Industrial Estate in Penicuik. This eliminates the middleman, providing you with better value, faster lead times across Edinburgh and Midlothian, and the peace of mind that comes from knowing exactly where your windows were made."
     ],
     features: ['A-Rated Energy Efficiency', 'Double or Triple Glazing', 'Heritage Steel-Look Options', 'Concealed Hinges'],
-    heroImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop',
+    heroImage: '/images/unsplash_1512917774080-9991f1c4c750_q80_w2070.jpg',
     technicalSpecs: {
       uValue: 'From 0.8 W/m²K (Triple)',
       maxDimensions: 'Up to 1.8m height',
@@ -173,7 +173,7 @@ export const products: Product[] = [
       "When you choose Alumise, you are choosing precision engineering from the heart of Midlothian. Our tilt-and-turn windows are custom-fabricated by our skilled team at Eastfield Industrial Estate in Penicuik. This allows us to maintain total quality control, offer faster lead times across Edinburgh, and provide direct technical support that national resellers simply cannot match."
     ],
     features: ['Dual Operation Mode', 'Easy Internal Cleaning', 'High Security Locking', 'Superior Airtightness'],
-    heroImage: 'https://images.unsplash.com/photo-1503708928676-1cb796a0891e?q=80&w=1974&auto=format&fit=crop',
+    heroImage: '/images/unsplash_1503708928676-1cb796a0891e_q80_w1974.jpg',
     technicalSpecs: {
       uValue: 'From 0.9 W/m²K',
       maxDimensions: 'Up to 2.4m height',
@@ -203,7 +203,7 @@ export const products: Product[] = [
       "Unlike national suppliers who ship products from afar, Alumise manufactures your roof lanterns locally in Penicuik. This means we can offer unparalleled technical support, faster delivery times across Edinburgh, and a guarantee of quality that comes from direct oversight of the fabrication process. When you choose Alumise, you are choosing precision engineering from the heart of Midlothian."
     ],
     features: ['Self-Cleaning Glass', 'Solar Control Coatings', 'Ultra-Slim Rafters', 'High-Performance Insulated Glass'],
-    heroImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
+    heroImage: '/images/unsplash_1600585154340-be6161a56a0c_q80_w2070.jpg',
     technicalSpecs: {
       uValue: 'From 1.0 W/m²K (Overall)',
       maxDimensions: 'Unlimited via Link Systems',
@@ -235,7 +235,7 @@ export const products: Product[] = [
       "By choosing Alumise for your commercial facade, you are dealing with a local manufacturer. Every component of our curtain walling is fabricated by our skilled team at Eastfield Industrial Estate in Penicuik. This allows for faster lead times, direct technical accountability, and the ability to respond rapidly to on-site requirements across Edinburgh and the Central Belt."
     ],
     features: ['Thermal Break Technology', 'Structural Silicone Glazing', 'High Wind-Load Resistance', 'BIM Integrated Design'],
-    heroImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop',
+    heroImage: '/images/unsplash_1486406146926-c627a92ad1ab_q80_w2070.jpg',
     technicalSpecs: {
       uValue: 'Project Specific (to 0.7)',
       maxDimensions: 'Structural spans up to 12m+',
@@ -266,7 +266,7 @@ export const products: Product[] = [
       "By choosing Alumise, you are DEALING directly with the manufacturer. Our steel-look heritage systems are custom-fabricated by our skilled team at Eastfield Industrial Estate in Penicuik. This allows us to maintain strict quality control, offer faster lead times across Edinburgh and Midlothian, and provide direct technical support that national resellers simply cannot match."
     ],
     features: ['Iconic Slim Glazing Bars', 'Traditional Industrial Hardware', 'High Thermal Efficiency', 'Internal Partition Options'],
-    heroImage: 'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=2070&auto=format&fit=crop',
+    heroImage: '/images/unsplash_1516455590571-18256e5bb9ff_q80_w2070.jpg',
     technicalSpecs: {
       uValue: 'From 1.2 W/m²K',
       maxDimensions: 'Unlimited via Multi-Panel Screens',

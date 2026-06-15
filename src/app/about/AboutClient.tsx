@@ -43,7 +43,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="relative h-[600px] bg-gray-100">
             <Image 
-              src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop"
+              src="/images/unsplash_1507679799987-c73779587ccf_q80_w2071.jpg"
               alt="Our Facility"
               fill
               className="object-cover grayscale hover:grayscale-0 transition-all duration-700"

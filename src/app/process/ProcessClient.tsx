@@ -107,7 +107,7 @@ export default function ProcessPage() {
                 </div>
                 <div className="lg:w-1/2 relative h-[450px] w-full bg-gray-100">
                   <Image 
-                    src={`https://images.unsplash.com/photo-${idx === 0 ? '1507679799987-c73779587ccf' : idx === 1 ? '1581094794329-c8112a89af12' : idx === 2 ? '1504307651254-35680f356dfd' : '1503387762-592deb58ef4e'}?q=80&w=2071&auto=format&fit=crop`}
+                    src={idx === 0 ? '/images/unsplash_1507679799987-c73779587ccf_q80_w2071.jpg' : idx === 1 ? '/images/unsplash_1503387762-592deb58ef4e_q80_w2031.jpg' : idx === 2 ? '/images/unsplash_1503387762-592deb58ef4e_q80_w2031.jpg' : '/images/unsplash_1503387762-592deb58ef4e_q80_w2031.jpg'}
                     alt={step.title}
                     fill
                     className="object-cover grayscale hover:grayscale-0 transition-all duration-700"

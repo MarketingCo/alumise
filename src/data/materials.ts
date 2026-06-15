@@ -26,7 +26,7 @@ export const materialsData: MaterialInsight[] = [
       "Naturally corrosion-resistant and 100% recyclable, our aluminium systems are finished with high-grade marine-level powder coating, ensuring they withstand the harshest Edinburgh coastal environments for decades with virtually zero maintenance.",
       "Our systems utilize advanced thermal break technology—polyamide strips that separate the inner and outer frames—to eliminate thermal bridging and deliver exceptional energy efficiency."
     ],
-    heroImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop',
+    heroImage: '/images/unsplash_1486406146926-c627a92ad1ab_q80_w2070.jpg',
     metrics: {
       durability: 10,
       thermalEfficiency: 8,
@@ -56,7 +56,7 @@ export const materialsData: MaterialInsight[] = [
       "Timber is a natural insulator, offering the lowest U-values in the industry. Combined with our high-performance glazing, it creates a thermal envelope that far exceeds even the strictest building regulations.",
       "Available in a variety of sustainably sourced hardwoods and softwoods, each system is factory-finished with micro-porous stains or paints that allow the wood to breathe while offering long-term weather protection."
     ],
-    heroImage: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop',
+    heroImage: '/images/unsplash_1600607687920-4e2a09cf159d_q80_w2070.jpg',
     metrics: {
       durability: 8,
       thermalEfficiency: 10,
@@ -82,7 +82,7 @@ export const materialsData: MaterialInsight[] = [
       "We offer 'flush-sash' designs that mimic the appearance of traditional timber or sleek aluminium, providing a high-end look at a more accessible price point.",
       "uPVC is completely impervious to rot and corrosion, making it an extremely low-maintenance option for busy homeowners and commercial property managers."
     ],
-    heroImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop',
+    heroImage: '/images/unsplash_1512917774080-9991f1c4c750_q80_w2070.jpg',
     metrics: {
       durability: 8,
       thermalEfficiency: 9,
@@ -108,7 +108,7 @@ export const materialsData: MaterialInsight[] = [
       "Featuring ultra-slim horizontal glazing bars and industrial-style hardware, these systems are perfect for heritage renovations in Edinburgh's New Town or modern internal office partitions.",
       "Because they are built using high-strength aluminium, they offer the same minimalist sightlines as steel but at a fraction of the cost and with significantly better thermal performance."
     ],
-    heroImage: 'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=2070&auto=format&fit=crop',
+    heroImage: '/images/unsplash_1516455590571-18256e5bb9ff_q80_w2070.jpg',
     metrics: {
       durability: 10,
       thermalEfficiency: 8,

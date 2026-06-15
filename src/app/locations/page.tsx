@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: 'Alumise provides premium architectural glazing across Edinburgh, Midlothian, East Lothian, and West Lothian. View our local service areas.',
     url: 'https://alumise.co.uk/locations',
     type: 'website',
-    images: [{ url: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop', width: 1200, height: 630, alt: 'Alumise Service Areas — Edinburgh & Lothians' }],
+    images: [{ url: '/images/unsplash_1507679799987-c73779587ccf_q80_w2071.jpg', width: 1200, height: 630, alt: 'Alumise Service Areas — Edinburgh & Lothians' }],
   },
 };
 

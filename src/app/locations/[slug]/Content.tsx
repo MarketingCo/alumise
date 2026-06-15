@@ -115,7 +115,7 @@ export default function LocationContent({ slug }: { slug: string }) {
           </div>
           <div className="relative h-[500px] bg-gray-100">
             <Image 
-              src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop"
+              src="/images/unsplash_1507679799987-c73779587ccf_q80_w2071.jpg"
               alt="Local Projects"
               fill
               className="object-cover grayscale hover:grayscale-0 transition-all duration-700"

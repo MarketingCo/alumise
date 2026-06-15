@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-06-05",
     author: "Alumise Ltd Team",
     category: "Targeted Guide",
-    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/unsplash_1600607687920-4e2a09cf159d_q80_w2070.jpg",
     content: `
       <p>Alumise Ltd holds a pre-eminent position among **commercial glazing contractors in Scotland**, specialising in the advanced engineering, precise manufacture, and expert installation of bespoke architectural glazing systems and high-performance commercial aluminium fenestration. Our expertise is grounded in a nuanced understanding of building physics, advanced structural principles, and contemporary architectural imperatives, positioning us as the definitive partner for complex and high-value projects across the Scottish built environment.</p><h2>Precision Engineering & Core Competencies</h2><p>Our operational framework is meticulously engineered for the consistent delivery of exceptional quality and technical precision across every project, irrespective of its scale or complexity.</p><h3>Bespoke Architectural Glazing Solutions</h3><p>We engineer bespoke glazing solutions that consistently surpass conventional specifications. This encompasses unique geometric configurations, specific performance criteria such as enhanced thermal transmittance (achieving U-values below 1.0 W/m²K), superior acoustic attenuation (Rw values exceeding 40 dB), and integrated solar control mechanisms. Our design methodologies integrate rigorous analysis to address project-specific aesthetic and functional imperatives, ensuring seamless integration within the overarching building envelope strategy.</p><h3>Advanced Commercial Aluminium Manufacturing</h3><p>Our vertically integrated manufacturing facility leverages advanced CNC technology and precision fabrication processes for commercial aluminium systems. This internal capability ensures stringent quality control over every component, from structural framing and thermal breaks to sophisticated glazing retention systems. We exclusively utilise ECCS-compliant (European Convention for Constructional Steelwork) aluminium profiles, offering optimal strength-to-weight ratios and long-term durability, while adhering to robust environmental stewardship principles.</p><h2>Comprehensive Service Integration</h2><p>Alumise Ltd delivers an end-to-end service, meticulously managed from initial concept development through to final commissioning and handover.</p><h3>Design & Engineering Excellence</h3><p>Our design-assist methodology promotes early-stage, collaborative engagement with architects and main contractors. We deploy advanced computational platforms, including Finite Element Analysis (FEA) for structural integrity, computational fluid dynamics (CFD) for airflow and thermal performance, and full Building Information Modelling (BIM) integration. This ensures optimal system specification, proactive clash detection, and comprehensive performance validation prior to fabrication.</p><h3>Precision Fabrication & Quality Control</h3><p>Manufacturing operations adhere to ISO 9001 quality management protocols. Each aluminium profile undergoes precision cutting, machining, and assembly to sub-millimetre tolerances. Glazing units, typically comprising high-performance coated low-emissivity glass, are sourced exclusively from certified suppliers and integrated under controlled conditions, guaranteeing hermetic sealing and optimal performance characteristics as specified by EN 1279 standards.</p><h3>Expert Installation & Project Management</h3><p>Our IRATA-certified installation teams are adept at navigating the complex logistical demands associated with high-rise and large-format glazing. Project management is meticulously executed, ensuring adherence to critical path schedules, stringent health and safety mandates (compliant with CDM Regulations), and minimised operational disruption. Post-installation, validated system integrity through hydrostatic testing and air permeability assessments is standard practice.</p><h2>Advanced Glazing Typologies for Contemporary Architecture</h2><p>Alumise Ltd possesses proven proficiency in the implementation of a diverse array of advanced glazing systems.</p><h3>High-Performance Curtain Walling</h3><p>We design and install both stick-built and unitised curtain walling systems, engineered and optimised for diverse building typologies. Our solutions feature advanced thermal breaking technologies, integrated pressure equalisation chambers, and a comprehensive range of infill options, including spandrel panels, opaque glazing, and brise soleil for enhanced solar shading.</p><h3>Unitised & Semi-Unitised Facades</h3><p>To facilitate expedited construction timelines and optimise factory-controlled quality, our unitised façade systems present inherent advantages. These pre-assembled, modular units seamlessly integrate vision glazing, spandrel panels, and structural elements, allowing for rapid enclosure of the building envelope while mitigating on-site risks and enhancing safety.</p><h3>Structural & Frameless Glazing</h3><p>For projects demanding uncompromised transparency and minimalist aesthetics, our structural silicone glazing (SSG) and point-fixed systems provide expansive, unhindered glazed surfaces. Utilising high-modulus structural silicones and precision-engineered stainless steel components, these systems deliver exceptional clarity and architectural elegance while maintaining rigorous structural integrity and weather tightness.</p><h3>Advanced Rooflight & Atrium Systems</h3><p>We engineer sophisticated rooflight and atrium glazing solutions, encompassing bespoke pyramids, barrel vaults, and planar systems. These designs often incorporate integrated ventilation strategies, automated shading, and specialised safety glazing to maximise natural light penetration while effectively managing solar gain and maintaining optimal thermal comfort.</p><h2>Regulatory Adherence and Performance Assurance</h2><p>As premier **commercial glazing contractors in Scotland**, Alumise Ltd maintains rigorous compliance with all pertinent Scottish Building Standards, particularly Section 6 (Energy) for thermal performance and Section 4 (Safety) concerning structural integrity, fire safety, and safe access. All installations are specified and executed in strict adherence to harmonised European standards (e.g., EN 13830 for curtain walling, EN 14351-1 for windows and doors), guaranteeing full regulatory compliance and enduring performance throughout the asset lifecycle.</p><h2>The Alumise Ltd Advantage</h2><p>A partnership with Alumise Ltd represents an engagement with a leader in architectural glazing.</p><h3>Profound Technical Competence</h3><p>Our team, comprising chartered engineers, architectural technologists, and highly skilled fabricators and installers, offers a profound depth of technical competence. This collective expertise enables the confident and precise execution of the most technically demanding projects, consistently delivering innovative solutions to complex design challenges.</p><h3>End-to-End Project Accountability</h3><p>From initial consultation and conceptualisation through manufacturing, installation, and post-completion support, Alumise Ltd operates as a singular point of accountability. This integrated approach optimises communication pathways, mitigates project risks, and guarantees seamless delivery, instilling unequivocal client confidence.</p><h3>Sustainable & Future-Proof Solutions</h3><p>We are committed to engineering glazing solutions that demonstrably enhance a building's lifecycle performance. Our systems are conceived for optimal energy efficiency, material circularity, and long-term resilience, aligning precisely with contemporary sustainability imperatives and future-proof asset strategies.</p><p>For discerning projects requiring a convergence of unparalleled technical expertise and an unwavering commitment to engineering excellence within Scotland's commercial glazing sector, Alumise Ltd represents the definitive partnership. Prospective clients are invited to engage with our technical team to explore bespoke project solutions. <a href="/contact"></a></p>
     `.split('\n').map(p => p.trim()).filter(p => p !== ''),
@@ -35,7 +35,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-06-05",
     author: "Alumise Ltd Team",
     category: "Targeted Guide",
-    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/unsplash_1600607687920-4e2a09cf159d_q80_w2070.jpg",
     content: `
       The procurement of high-performance aluminium bifold door systems within Edinburgh's distinct architectural landscape involves a nuanced understanding of a complex pricing framework. Alumise Ltd, as a leading provider of bespoke architectural glazing solutions, offers this technical insight to facilitate informed investment decisions concerning premium aluminium bifold installations.
 
@@ -85,7 +85,7 @@ For a comprehensive, project-specific quotation, integrating precise technical s
     date: 'May 19, 2026',
     author: 'Technical Director',
     category: 'Materials',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/unsplash_1512917774080-9991f1c4c750_q80_w2070.jpg',
     content: [
       "Choosing between aluminium and uPVC windows is one of the most important decisions Edinburgh homeowners face when upgrading their property. Both materials have evolved dramatically, and the gap between them has narrowed in some areas while widening in others. This guide cuts through the marketing noise to give you the facts you need for 2026.",
       "<h3 class='text-xl font-bold mb-3 mt-8'>Thermal Performance: The Numbers That Matter</h3>",
@@ -115,7 +115,7 @@ For a comprehensive, project-specific quotation, integrating precise technical s
     date: 'April 10, 2026',
     author: 'Lead Engineer',
     category: 'Technical',
-    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop',
+    image: '/images/unsplash_1507679799987-c73779587ccf_q80_w2071.jpg',
     content: [
       "Structural glazing is more than just an aesthetic choice; it is a complex engineering challenge that requires precise calculation and meticulous execution. By using the glass itself as a load-bearing element, architects can create facades with minimal visible support, offering total clarity and seamless integration.",
       "At Alumise, we utilize advanced computational simulations to determine the exact glass thickness and bonding requirements for every structural project. This ensures that the aesthetic vision is backed by uncompromising structural integrity.",
@@ -129,7 +129,7 @@ For a comprehensive, project-specific quotation, integrating precise technical s
     date: 'March 28, 2026',
     author: 'Technical Director',
     category: 'Materials',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/unsplash_1512917774080-9991f1c4c750_q80_w2070.jpg',
     content: [
       "The debate between aluminium and uPVC is one of the most common in modern construction. While both materials offer excellent benefits, the right choice depends on the specific requirements of your project—be it residential luxury or commercial durability.",
       "Aluminium is favored for its strength-to-weight ratio, allowing for much slimmer profiles and larger glass spans. This makes it the ideal choice for modern architectural designs that prioritize light and minimalist sightlines.",
@@ -143,7 +143,7 @@ For a comprehensive, project-specific quotation, integrating precise technical s
     date: 'March 15, 2026',
     author: 'Design Consultant',
     category: 'Heritage',
-    image: 'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/unsplash_1516455590571-18256e5bb9ff_q80_w2070.jpg',
     content: [
       "Preserving the historic character of Edinburgh’s New Town and conservation areas requires a sensitive approach to glazing. Our steel-look heritage systems provide the iconic slim sightlines of traditional steel windows with the modern benefits of thermally-broken aluminium.",
       "These systems are increasingly approved for use in listed buildings due to their ability to mimic original industrial profiles while drastically improving the building's thermal envelope and security.",
@@ -157,7 +157,7 @@ For a comprehensive, project-specific quotation, integrating precise technical s
     date: 'May 1, 2026',
     author: 'Technical Director',
     category: 'Pricing',
-    image: 'https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/unsplash_1509644851169-2acc08aa25b5_q80_w2070.jpg',
     content: [
       "Bifold doors have become one of the most sought-after glazing upgrades for Edinburgh homes, offering seamless transitions between interior and garden spaces while flooding rooms with natural light. Whether you live in a Victorian villa in Morningside, a tenement flat in Bruntsfield, or a new build on the outskirts of the city, understanding the real cost of bifold doors is essential before starting your project.",
       "At Alumise, we manufacture <a href=\"/products?category=doors\">aluminium bifold door systems</a> at our Penicuik facility, which means we can offer competitive pricing across Edinburgh and the Lothians without the markup of national distributors. In this guide, we break down exactly what you can expect to pay in 2026 and what factors influence the final installed price.",
@@ -179,7 +179,7 @@ For a comprehensive, project-specific quotation, integrating precise technical s
     date: 'April 28, 2026',
     author: 'Lead Engineer',
     category: 'Materials',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/unsplash_1512917774080-9991f1c4c750_q80_w2070.jpg',
     content: [
       "Scotland’s weather is famously unpredictable. One day brings driving horizontal rain off the North Sea; the next brings bright sunshine and temperature swings that test every building material to its limit. For homeowners in Edinburgh, the Lothians, Fife, and Glasgow, choosing the right window material is not just about aesthetics—it is about long-term resilience against some of the most demanding climate conditions in the UK.",
       "Aluminium and uPVC are the two dominant materials in the Scottish glazing market, and both have evolved dramatically over the past decade. At Alumise, we manufacture both <a href=\"/materials/aluminium\">thermally broken aluminium systems</a> and high-grade uPVC profiles at our Penicuik facility, giving us direct insight into how each performs in real Scottish conditions.",
@@ -201,7 +201,7 @@ For a comprehensive, project-specific quotation, integrating precise technical s
     date: 'April 25, 2026',
     author: 'Design Consultant',
     category: 'Regulations',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/unsplash_1486406146926-c627a92ad1ab_q80_w2070.jpg',
     content: [
       "Replacing windows is one of the most common home improvements in Edinburgh, but it is also one of the most regulated. Between permitted development rights, conservation area restrictions, and listed building controls, many homeowners are unsure whether they need planning permission before upgrading their glazing. The short answer is: sometimes yes, sometimes no, and it depends entirely on where you live and what you are changing.",
       "Under Scottish permitted development rights, most homeowners can replace windows and doors without applying for planning permission, provided the new units are similar in appearance to the originals. This covers the majority of properties in Edinburgh\'s suburban areas such as Corstorphine, Colinton, and Fairmilehead. If you are simply upgrading from old single-glazed timber sashes to modern double-glazed timber-alternative windows in a standard residential street, you usually do not need planning consent.",
@@ -223,7 +223,7 @@ For a comprehensive, project-specific quotation, integrating precise technical s
     date: 'April 22, 2026',
     author: 'Technical Director',
     category: 'Regulations',
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2011&auto=format&fit=crop',
+    image: '/images/unsplash_1554224155-6726b3ff858f_q80_w2011.jpg',
     content: [
       "Every window and door replacement in Scotland must comply with Building Regulations, but not every homeowner realises there are two distinct routes to prove that compliance. The two most common are FENSA certification and Building Control approval. While both achieve the same end goal—demonstrating that your installation meets thermal efficiency and safety standards—they differ significantly in process, cost, and convenience.",
       "FENSA, which stands for the Fenestration Self-Assessment Scheme, is a government-authorised competent person scheme. Installers registered with FENSA—like Alumise—are assessed annually to ensure their work consistently meets Building Regulations. When a FENSA-registered company installs your windows, they can self-certify the work and issue a FENSA certificate directly, without involving the local council\'s building control department.",
@@ -245,7 +245,7 @@ For a comprehensive, project-specific quotation, integrating precise technical s
     date: 'April 18, 2026',
     author: 'Lead Engineer',
     category: 'Technical',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
+    image: '/images/unsplash_1497366216548-37526070297c_q80_w2069.jpg',
     content: [
       "Scotland has some of the most demanding thermal requirements in the UK, and for good reason. Long winters, cold winds from the North Sea, and rising energy costs mean that the performance of your windows directly affects both comfort and household bills. Triple glazing has been marketed as the ultimate solution, but is it genuinely worth the extra investment for Scottish homes, or does modern double glazing already provide sufficient performance?",
       "The fundamental difference is simple: double glazing uses two panes of glass separated by a gas-filled cavity, while triple glazing adds a third pane and a second cavity. This extra layer reduces thermal transmittance, measured as the U-value. A typical modern double-glazed unit achieves a U-value around 1.2 W/m²K, while a high-specification triple-glazed unit can reach 0.8 W/m²K or lower. In Scotland\'s climate, that 0.4 difference is meaningful over the lifetime of the window.",
@@ -267,7 +267,7 @@ For a comprehensive, project-specific quotation, integrating precise technical s
     date: 'April 15, 2026',
     author: 'Design Consultant',
     category: 'Heritage',
-    image: 'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/unsplash_1516455590571-18256e5bb9ff_q80_w2070.jpg',
     content: [
       "Edinburgh is one of the most architecturally significant cities in Europe, and much of its historic fabric is protected through conservation area designations. From the Georgian crescents of the New Town to the medieval closes of the Old Town, these areas are subject to strict planning controls that affect everything from roofline alterations to front garden walls. For homeowners considering window replacements, understanding conservation area rules is not optional—it is essential.",
       "A conservation area is defined by its special architectural or historic interest, and Edinburgh has over fifty of them. Within these areas, the local planning authority has additional powers to control changes that would normally be permitted development. This means that even something as seemingly minor as replacing a window or changing its colour can require full planning permission.",
@@ -289,7 +289,7 @@ For a comprehensive, project-specific quotation, integrating precise technical s
     date: 'April 12, 2026',
     author: 'Technical Director',
     category: 'Advice',
-    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2031&auto=format&fit=crop',
+    image: '/images/unsplash_1503387762-592deb58ef4e_q80_w2031.jpg',
     content: [
       "Replacing your windows is a significant investment, and the quality of the installation is just as important as the quality of the windows themselves. A poorly installed premium window will underperform, leak, and fail prematurely. For homeowners in Midlothian—from Penicuik and Dalkeith to Bonnyrigg and Loanhead—choosing the right installer requires more than comparing headline prices. Here are seven essential checks to make before you commit.",
       "First, verify FENSA registration or equivalent Building Control accreditation. Any installer replacing windows in Scotland must demonstrate compliance with Building Regulations, and the easiest way to do this is through a competent person scheme. Ask for the installer\'s FENSA number and verify it on the official FENSA website. At Alumise, we are fully FENSA-registered, and every installation we complete in Midlothian is backed by a compliance certificate.",
@@ -311,7 +311,7 @@ For a comprehensive, project-specific quotation, integrating precise technical s
     date: 'April 8, 2026',
     author: 'Lead Engineer',
     category: 'Commercial',
-    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/unsplash_1441986300917-64674bd600d8_q80_w2070.jpg',
     content: [
       "Commercial shopfronts are the public face of a business, but they are also highly regulated building elements. In Scotland, shopfront glazing must comply with a web of regulations covering structural safety, thermal performance, accessibility, fire safety, and security. For retailers, restaurateurs, and commercial landlords, understanding these requirements is essential to avoid enforcement action, insurance disputes, and costly remedial work.",
       "Scottish Building Standards set the baseline for all shopfront installations. These standards are technically part of the Building Regulations and are enforced by local authority verifiers. Any new shopfront or substantial alteration to an existing one requires a building warrant before work begins. Operating without a warrant is an offence and can result in fines and orders to remove non-compliant work.",
@@ -333,7 +333,7 @@ For a comprehensive, project-specific quotation, integrating precise technical s
     date: 'April 5, 2026',
     author: 'Design Consultant',
     category: 'Heritage',
-    image: 'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/unsplash_1516455590571-18256e5bb9ff_q80_w2070.jpg',
     content: [
       "Edinburgh\'s architectural identity is inseparable from its sash windows. From the towering Georgian windows of the New Town to the more modest Victorian sashes of Leith and Portobello, these vertically sliding frames define the city\'s streetscape. When they reach the end of their service life, owners of period properties face a difficult choice: restore or replace with timber, or opt for a modern timber-alternative system.",
       "Traditional timber sash windows remain the gold standard for authenticity. Nothing replicates the warmth, grain, and character of properly machined hardwood. For Category A and B listed buildings, and for conservation areas with strict Article 4 Directions, timber is often the only material that planning officers will approve. Accoya, a modified timber product, offers exceptional durability and dimensional stability, resisting the rot and swelling that plague standard softwood sashes in Scotland\'s wet climate.",
@@ -356,7 +356,7 @@ For a comprehensive, project-specific quotation, integrating precise technical s
     date: 'April 2, 2026',
     author: 'Lead Engineer',
     category: 'Residential',
-    image: 'https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/unsplash_1460317442991-0ec209397118_q80_w2070.jpg',
     content: [
       "Edinburgh\'s tenement flats are the backbone of the city\'s housing stock. From the grand stone buildings of Marchmont and Bruntsfield to the more modest blocks of Leith and Gorgie, tens of thousands of Scots live in these characterful properties. But tenements also present unique challenges for window replacement: shared walls, common ownership, restricted access, street noise, and the need to preserve architectural character while dramatically improving performance.",
       "Aluminium windows are increasingly the material of choice for tenement flat upgrades, and for good reason. Their strength allows for slim profiles that maximise glass area in relatively small window openings, while thermally broken construction achieves U-values that rival or exceed uPVC. For tenement flats, where every square inch of light matters, aluminium\'s slim sightlines make a visible difference.",
