@@ -18,6 +18,7 @@ import {
   Mail,
 } from 'lucide-react';
 import { products } from '@/data/products';
+import FacilityEdge from '@/components/FacilityEdge';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -500,6 +501,9 @@ export default function HomeContent() {
           </div>
         </div>
       </section>
+
+      {/* ── FACILITY EDGE ── */}
+      <FacilityEdge />
 
       {/* ── PROCESS ── */}
       <section className="py-28 md:py-36 bg-alumise-obsidian text-white">

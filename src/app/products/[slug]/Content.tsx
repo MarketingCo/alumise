@@ -15,6 +15,8 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { products } from '@/data/products';
+import { projects } from '@/data/projects';
+import { MapPin, ArrowRightLeft } from 'lucide-react';
 
 export default function ProductPageContent({ slug }: { slug: string }) {
   const product = products.find(p => p.slug === slug);
@@ -155,6 +157,123 @@ export default function ProductPageContent({ slug }: { slug: string }) {
                   </div>
                 </div>
               )}
+
+              {/* Material Performance Comparison Table */}
+              <div className="pt-16 border-t border-gray-100">
+                <div className="flex items-center space-x-3 mb-6">
+                  <ArrowRightLeft className="w-4 h-4 text-alumise-gold" />
+                  <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-alumise-gold">
+                    Material Performance Comparison
+                  </h3>
+                </div>
+                <p className="text-xs text-gray-500 font-light mb-8 leading-relaxed">
+                  How precision-engineered aluminium compares against alternative frame materials on key architectural requirements.
+                </p>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left border-collapse text-xs">
+                    <thead>
+                      <tr className="border-b border-gray-100">
+                        <th className="py-3 font-bold uppercase text-gray-400 tracking-wider">Requirement</th>
+                        <th className="py-3 font-bold uppercase text-alumise-gold tracking-wider">Aluminium</th>
+                        <th className="py-3 font-bold uppercase text-gray-500 tracking-wider">Premium Timber</th>
+                        <th className="py-3 font-bold uppercase text-gray-500 tracking-wider">Standard uPVC</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-50">
+                      {[
+                        {
+                          metric: 'Sightlines & Framing',
+                          alum: 'Ultra-Slim (from 20mm)',
+                          upvc: 'Bulky profiles (70mm+)',
+                          timber: 'Traditional profiles (60mm+)'
+                        },
+                        {
+                          metric: 'Structural Lifespan',
+                          alum: '50+ Years (A-grade alloy)',
+                          upvc: '15 - 25 Years (Degrades/fades)',
+                          timber: '30 - 50 Years (Requires repaint)'
+                        },
+                        {
+                          metric: 'Maintenance Required',
+                          alum: 'Virtually Zero (Simple wipe)',
+                          upvc: 'Low (Wash occasionally)',
+                          timber: 'High (Repaint every 5 yrs)'
+                        },
+                        {
+                          metric: 'Thermal Efficiency',
+                          alum: 'U-Value from 0.8 W/m²K',
+                          upvc: 'U-Value from 1.1 W/m²K',
+                          timber: 'U-Value from 1.0 W/m²K'
+                        },
+                        {
+                          metric: 'Bespoke Span Capacity',
+                          alum: 'Extreme (Heavy glass loads)',
+                          upvc: 'Restricted (Lacks stiffness)',
+                          timber: 'Moderate (Heavy but strong)'
+                        }
+                      ].map((row, idx) => (
+                        <tr key={idx} className="hover:bg-gray-50/50">
+                          <td className="py-4 font-semibold text-alumise-obsidian">{row.metric}</td>
+                          <td className="py-4 font-bold text-alumise-obsidian bg-alumise-cream/30 px-3">{row.alum}</td>
+                          <td className="py-4 text-gray-500">{row.timber}</td>
+                          <td className="py-4 text-gray-500">{row.upvc}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* Linked Case Study Module */}
+              {(() => {
+                const getRelatedProject = (productSlug: string) => {
+                  if (productSlug === 'bifold-doors') return projects.find(p => p.slug === 'morningside-extension');
+                  if (productSlug === 'sliding-doors') return projects.find(p => p.slug === 'east-lothian-coastal-villa');
+                  if (['casement-windows', 'tilt-turn-windows', 'steel-look-heritage'].includes(productSlug)) {
+                    return projects.find(p => p.slug === 'new-town-georgian-court');
+                  }
+                  if (productSlug === 'curtain-walling') return projects.find(p => p.slug === 'leith-waterfront-creative-hub');
+                  return null;
+                };
+                const proj = getRelatedProject(product.slug);
+                if (!proj) return null;
+
+                return (
+                  <div className="pt-16 border-t border-gray-100">
+                    <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-alumise-gold mb-8">
+                      Featured Project Case Study
+                    </h3>
+                    <div className="group border border-gray-100 bg-white hover:shadow-2xl transition-all duration-500 flex flex-col md:flex-row overflow-hidden">
+                      <div className="relative h-64 md:h-auto md:w-2/5 overflow-hidden bg-gray-100">
+                        <Image 
+                          src={proj.image} 
+                          alt={proj.title} 
+                          fill 
+                          className="object-cover group-hover:scale-105 transition-transform duration-700" 
+                        />
+                      </div>
+                      <div className="p-8 md:w-3/5 space-y-4 flex flex-col justify-center">
+                        <div className="flex items-center space-x-2 text-[10px] uppercase tracking-widest font-bold text-alumise-gold">
+                          <MapPin className="w-3 h-3" />
+                          <span>{proj.location}</span>
+                        </div>
+                        <h4 className="text-2xl font-bold uppercase text-alumise-obsidian group-hover:text-alumise-gold transition-colors">
+                          {proj.title}
+                        </h4>
+                        <p className="text-xs text-gray-500 font-light leading-relaxed line-clamp-3">
+                          {proj.description}
+                        </p>
+                        <Link 
+                          href={`/projects/${proj.slug}`}
+                          className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold border-b border-alumise-obsidian pb-1 w-fit group-hover:border-alumise-gold group-hover:text-alumise-gold transition-all"
+                        >
+                          View Case Study Specs <ArrowRight className="ml-2 w-3 h-3" />
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
             </div>
 
             {/* Right Column: Sticky CTA / Sidebar */}
