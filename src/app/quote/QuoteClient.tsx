@@ -116,20 +116,32 @@ export default function QuotePage() {
                 <div>
                   <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-alumise-gold mb-6">01. Select System Category</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {categories.map((cat) => (
+                    {[
+                      { id: 'Doors', label: 'Bifolds & Sliding Doors', desc: 'Slimline bifolding and panoramic sliding systems' },
+                      { id: 'Windows', label: 'Aluminium Windows', desc: 'Casement, tilt-turn, and slimline frames' },
+                      { id: 'Roof Lanterns', label: 'Roof Lanterns & Skylights', desc: 'Sleek glass lanterns and borderless flat rooflights' },
+                      { id: 'Commercial', label: 'Commercial & Shopfronts', desc: 'Curtain walling and retail glazing systems' },
+                      { id: 'TimberCo Heritage', label: 'Heritage Timber (TimberCo)', desc: 'Victorian sash & case or modern timber systems' },
+                      { id: 'Custom Fabrications', label: 'Custom Pressings & Trims', desc: 'Express CNC cut and folded aluminium sills & flashings' }
+                    ].map((cat) => (
                       <button
-                        key={cat}
+                        key={cat.id}
                         type="button"
-                        aria-label={`Select ${cat} category`}
-                        onClick={() => updateData('category', cat)}
-                        className={`flex items-center p-6 border transition-all ${
-                          formData.category === cat 
+                        aria-label={`Select ${cat.label}`}
+                        onClick={() => {
+                          updateData('category', cat.id);
+                          // If selecting custom fabrications or timber, pre-set a matching material to expedite the flow
+                          if (cat.id === 'Custom Fabrications') updateData('material', 'Aluminium');
+                          if (cat.id === 'TimberCo Heritage') updateData('material', 'Timber');
+                        }}
+                        className={`flex flex-col items-start p-6 border transition-all text-left ${
+                          formData.category === cat.id 
                             ? 'border-alumise-gold bg-alumise-gold/5 text-alumise-gold shadow-lg' 
                             : 'border-gray-100 hover:border-gray-300'
                         }`}
                       >
-                        <Building2 className={`w-6 h-6 mr-4 ${formData.category === cat ? 'text-alumise-gold' : 'text-gray-500'}`} />
-                        <span className="font-bold uppercase tracking-tight text-sm">{cat}</span>
+                        <span className="font-bold uppercase tracking-tight text-sm mb-1">{cat.label}</span>
+                        <span className="text-[10px] text-gray-400 font-light leading-snug">{cat.desc}</span>
                       </button>
                     ))}
                   </div>

@@ -10,6 +10,7 @@ import {
   CheckCircle2,
   Award
 } from 'lucide-react';
+import FacilityEdge from '@/components/FacilityEdge';
 
 export default function AboutPage() {
   const stats = [
@@ -80,6 +81,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* ── FACILITY EDGE ── */}
+      <FacilityEdge />
 
       {/* Quote CTA */}
       <section className="py-40 bg-alumise-obsidian text-white text-center relative overflow-hidden">
