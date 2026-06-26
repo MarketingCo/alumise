@@ -18,6 +18,17 @@ export default function Footer() {
               Premium aluminium windows, bifold doors and architectural glazing.
               Manufactured in Penicuik. Installed across Edinburgh and Scotland.
             </p>
+            <div className="border-t border-white/5 pt-4">
+              <p className="text-xs text-alumise-silver font-semibold mb-1 uppercase tracking-wider">Our Fabrication Sister-Brand:</p>
+              <a 
+                href="https://formalu.co.uk" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-xs text-alumise-gold hover:underline flex items-center gap-1 font-bold"
+              >
+                FormAlu (Bespoke Aluminium Flashings & Cills)
+              </a>
+            </div>
           </div>
 
           {/* Navigation */}
