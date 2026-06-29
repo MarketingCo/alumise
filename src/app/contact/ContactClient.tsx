@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState, FormEvent } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { 
@@ -12,10 +12,31 @@ import {
   ArrowRight,
   MessageSquare,
   ShieldCheck,
-  Building2
+  Building2,
+  CheckCircle2
 } from 'lucide-react';
 
 export default function ContactPage() {
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+    await new Promise(resolve => setTimeout(resolve, 500));
+    setSubmitting(false);
+    setSubmitted(true);
+
+    // Trigger Google Tag conversion event
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-17145116027/Zp8UCJSNqtkaEPvqtu8_',
+        'value': 1.0,
+        'currency': 'GBP'
+      });
+    }
+  };
+
   return (
     <div className="bg-white min-h-screen">
       {/* Header */}
@@ -83,35 +104,50 @@ export default function ContactPage() {
             {/* Form */}
             <div className="lg:col-span-2">
               <div className="bg-gray-50 p-12 rounded-sm shadow-inner">
-                <h3 className="text-3xl font-bold uppercase mb-8 tracking-tight">General Inquiry</h3>
-                <form className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="space-y-2">
-                    <label className="text-[10px] uppercase font-bold tracking-widest text-gray-400">Full Name</label>
-                    <input type="text" className="w-full bg-white border border-gray-100 p-4 outline-none focus:border-alumise-gold transition-all text-sm" />
+                {submitted ? (
+                  <div className="text-center py-12">
+                    <CheckCircle2 className="w-16 h-16 text-alumise-gold mx-auto mb-6" />
+                    <h3 className="text-3xl font-bold uppercase mb-4 tracking-tight">Thank You</h3>
+                    <p className="text-gray-500 font-light mb-6 leading-relaxed max-w-md mx-auto">
+                      We have received your enquiry. One of our specialists will review your message and get back to you within 24 hours.
+                    </p>
+                    <p className="text-sm text-gray-400 font-light">
+                      For immediate assistance, call us directly on <a href="tel:01312100321" className="font-bold text-alumise-obsidian hover:text-alumise-gold">0131 210 0321</a>.
+                    </p>
                   </div>
-                  <div className="space-y-2">
-                    <label className="text-[10px] uppercase font-bold tracking-widest text-gray-400">Email Address</label>
-                    <input type="email" className="w-full bg-white border border-gray-100 p-4 outline-none focus:border-alumise-gold transition-all text-sm" />
-                  </div>
-                  <div className="space-y-2 md:col-span-2">
-                    <label className="text-[10px] uppercase font-bold tracking-widest text-gray-400">Subject</label>
-                    <select className="w-full bg-white border border-gray-100 p-4 outline-none focus:border-alumise-gold transition-all text-sm appearance-none">
-                      <option>General Question</option>
-                      <option>Technical Specification</option>
-                      <option>Project Update</option>
-                      <option>Media & PR</option>
-                    </select>
-                  </div>
-                  <div className="space-y-2 md:col-span-2">
-                    <label className="text-[10px] uppercase font-bold tracking-widest text-gray-400">Your Message</label>
-                    <textarea rows={6} className="w-full bg-white border border-gray-100 p-4 outline-none focus:border-alumise-gold transition-all text-sm"></textarea>
-                  </div>
-                  <div className="md:col-span-2 pt-4">
-                    <button className="flex items-center bg-alumise-obsidian text-white px-12 py-5 rounded-sm font-bold uppercase tracking-widest text-xs hover:bg-alumise-gold transition-all shadow-xl group">
-                      Send Inquiry <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                    </button>
-                  </div>
-                </form>
+                ) : (
+                  <>
+                    <h3 className="text-3xl font-bold uppercase mb-8 tracking-tight">General Inquiry</h3>
+                    <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div className="space-y-2">
+                        <label className="text-[10px] uppercase font-bold tracking-widest text-gray-400">Full Name *</label>
+                        <input type="text" required className="w-full bg-white border border-gray-100 p-4 outline-none focus:border-alumise-gold transition-all text-sm" />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-[10px] uppercase font-bold tracking-widest text-gray-400">Email Address *</label>
+                        <input type="email" required className="w-full bg-white border border-gray-100 p-4 outline-none focus:border-alumise-gold transition-all text-sm" />
+                      </div>
+                      <div className="space-y-2 md:col-span-2">
+                        <label className="text-[10px] uppercase font-bold tracking-widest text-gray-400">Subject</label>
+                        <select className="w-full bg-white border border-gray-100 p-4 outline-none focus:border-alumise-gold transition-all text-sm appearance-none">
+                          <option>General Question</option>
+                          <option>Technical Specification</option>
+                          <option>Project Update</option>
+                          <option>Media & PR</option>
+                        </select>
+                      </div>
+                      <div className="space-y-2 md:col-span-2">
+                        <label className="text-[10px] uppercase font-bold tracking-widest text-gray-400">Your Message *</label>
+                        <textarea rows={6} required className="w-full bg-white border border-gray-100 p-4 outline-none focus:border-alumise-gold transition-all text-sm"></textarea>
+                      </div>
+                      <div className="md:col-span-2 pt-4">
+                        <button type="submit" disabled={submitting} className="flex items-center bg-alumise-obsidian text-white px-12 py-5 rounded-sm font-bold uppercase tracking-widest text-xs hover:bg-alumise-gold transition-all shadow-xl group disabled:opacity-70">
+                          {submitting ? 'Sending...' : 'Send Inquiry'} <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                        </button>
+                      </div>
+                    </form>
+                  </>
+                )}
               </div>
             </div>
           </div>

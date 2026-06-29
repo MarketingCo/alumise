@@ -14,6 +14,15 @@ export default function ContactForm() {
     await new Promise(resolve => setTimeout(resolve, 500));
     setSubmitting(false);
     setSubmitted(true);
+    
+    // Trigger Google Tag conversion event
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-17145116027/Zp8UCJSNqtkaEPvqtu8_',
+        'value': 1.0,
+        'currency': 'GBP'
+      });
+    }
   };
 
   if (submitted) {
